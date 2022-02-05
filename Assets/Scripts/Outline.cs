@@ -17,6 +17,8 @@ public class Outline : MonoBehaviour {
     GameObject CreateOutline(Material outlineMat, float scaleFactor, Color color) {
 
         GameObject outlineObject = Instantiate(this.gameObject, transform.position, transform.rotation, transform);
+        outlineObject.transform.localScale = Vector3.one;
+        outlineObject.transform.localPosition = new Vector3(0, 0, -0.09f);
 
         foreach (var rend in outlineObject.GetComponentsInChildren<Renderer>()) {
             rend.material = outlineMat;
