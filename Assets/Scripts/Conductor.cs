@@ -9,8 +9,11 @@ public class Conductor : MonoBehaviour
     public int BPM {get; private set;}
     [field: SerializeField]
     public float trackLengthInSeconds {get; private set;}
-    
     [SerializeField]
     private AudioClip musicTrack;
+
+    public float Crotchet { // length of a beat
+        get {return 60 / BPM; }
+    }
 
 }
