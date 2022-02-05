@@ -1,0 +1,8021 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5826831076613930331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831076613930330}
+  - component: {fileID: 5826831076613930325}
+  m_Layer: 0
+  m_Name: White - deem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831076613930330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831076613930331}
+  m_LocalRotation: {x: -0, y: 0.13072276, z: -0, w: 0.991419}
+  m_LocalPosition: {x: 18.4, y: 81.8, z: 76.2}
+  m_LocalScale: {x: 0.5171551, y: 0.5171551, z: 0.5171551}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831078409839910}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 15.023, z: 0}
+--- !u!108 &5826831076613930325
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831076613930331}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 35
+  m_Range: 24.26
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077164984876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077164984879}
+  - component: {fileID: 5826831077164984878}
+  m_Layer: 0
+  m_Name: Blue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077164984879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077164984876}
+  m_LocalRotation: {x: -0.021728253, y: -0.99477893, z: 0.06912112, w: 0.0718691}
+  m_LocalPosition: {x: 0.27312735, y: 11.691014, z: 15.255514}
+  m_LocalScale: {x: 0.5721716, y: 0.5721716, z: 0.57217157}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831078268460553}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 6.781, y: 541.48596, z: 0.175}
+--- !u!108 &5826831077164984878
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077164984876}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0.0039215684, g: 0.7774451, b: 1, a: 1}
+  m_Intensity: 15.19
+  m_Range: 69.284615
+  m_SpotAngle: 65.32113
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077387400890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077387400885}
+  - component: {fileID: 5826831077387400884}
+  m_Layer: 0
+  m_Name: Yellow - deem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077387400885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077387400890}
+  m_LocalRotation: {x: -0, y: 0.13072276, z: -0, w: 0.991419}
+  m_LocalPosition: {x: 22.1, y: 38.4, z: 61.4}
+  m_LocalScale: {x: 0.78840363, y: 0.78840363, z: 0.78840363}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831077518197123}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 15.023, z: 0}
+--- !u!108 &5826831077387400884
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077387400890}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.67094934, b: 0.0039215684, a: 1}
+  m_Intensity: 24
+  m_Range: 37.2
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077460033239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077460033238}
+  - component: {fileID: 5826831077460033235}
+  - component: {fileID: 5826831077460033232}
+  - component: {fileID: 5826831077460033233}
+  m_Layer: 0
+  m_Name: Yuenwoo_Building1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077460033238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077460033239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5826831077518197123}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5826831077460033235
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077460033239}
+  m_Mesh: {fileID: 0}
+--- !u!23 &5826831077460033232
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077460033239}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5826831077460033233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077460033239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b26957667d5104ab632a10dc9da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  advancedMode: 0
+  voxelFilePath: /Applications/MagicaVoxel-0/vox/yw personal/buildings/color experi.vox
+  voxelFileGUID: 
+  voxelFileObject: {fileID: 0}
+  voxelFileSubIndex: 0
+  fileType: 0
+  fileRefreshLastTimeTicks: 637796287576459410
+  dataVersion: 115
+  legacyVoxImport: 0
+  legacyAssetNaming: 0
+  importMode: 1
+  importFlags: 0
+  importScale: {x: 1, y: 1, z: 1}
+  importOffset: {x: 0, y: 0, z: 0}
+  localOffset: {x: -21, y: -0, z: -182}
+  enableFaceFlags: -1
+  disableData:
+    disableList: []
+    faceList: 
+  combineFaces: 1
+  ignoreCavity: 1
+  shareSameFace: 1
+  removeUnusedPalettes: 1
+  shareSameMaterial: 1
+  voxelStructure: {fileID: 0}
+  generateLightmapUVs: 0
+  generateLightmapUVsAngleError: 8
+  generateLightmapUVsAreaError: 15
+  generateLightmapUVsHardAngle: 88
+  generateLightmapUVsPackMargin: 4
+  generateTangents: 0
+  generateVertexColors: 0
+  generateVertexColorMax: {r: 1, g: 1, b: 1, a: 1}
+  generateVertexColorMin: {r: 0.64, g: 0.64, b: 0.64, a: 1}
+  meshFaceVertexOffset: 0
+  generateMipMaps: 0
+  updateMeshRendererMaterials: 1
+  updateMaterialTexture: 1
+  loadFromVoxelFile: 1
+  materialData:
+  - materialList: []
+    name: 
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  - materialList:
+    - x: 38
+      y: 50
+      z: 234
+    - x: 39
+      y: 50
+      z: 234
+    - x: 37
+      y: 50
+      z: 232
+    - x: 37
+      y: 50
+      z: 233
+    - x: 37
+      y: 50
+      z: 234
+    - x: 38
+      y: 50
+      z: 233
+    - x: 40
+      y: 64
+      z: 213
+    - x: 39
+      y: 64
+      z: 213
+    - x: 38
+      y: 64
+      z: 213
+    - x: 33
+      y: 64
+      z: 213
+    - x: 37
+      y: 64
+      z: 213
+    - x: 34
+      y: 64
+      z: 213
+    - x: 36
+      y: 64
+      z: 213
+    - x: 35
+      y: 64
+      z: 213
+    - x: 33
+      y: 64
+      z: 212
+    - x: 34
+      y: 64
+      z: 212
+    - x: 35
+      y: 64
+      z: 212
+    - x: 36
+      y: 64
+      z: 212
+    - x: 37
+      y: 64
+      z: 212
+    - x: 38
+      y: 64
+      z: 212
+    - x: 39
+      y: 64
+      z: 212
+    - x: 40
+      y: 64
+      z: 212
+    - x: 40
+      y: 93
+      z: 223
+    - x: 34
+      y: 101
+      z: 217
+    - x: 34
+      y: 66
+      z: 200
+    - x: 34
+      y: 66
+      z: 201
+    - x: 35
+      y: 66
+      z: 200
+    - x: 34
+      y: 67
+      z: 200
+    - x: 34
+      y: 67
+      z: 201
+    - x: 35
+      y: 66
+      z: 201
+    - x: 37
+      y: 49
+      z: 232
+    - x: 37
+      y: 49
+      z: 233
+    - x: 37
+      y: 49
+      z: 234
+    - x: 38
+      y: 49
+      z: 234
+    - x: 38
+      y: 49
+      z: 233
+    - x: 39
+      y: 49
+      z: 234
+    name: 39 87 88
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.69, g: 0.69, b: 0.69, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 33
+      y: 62
+      z: 175
+    - x: 33
+      y: 62
+      z: 176
+    - x: 33
+      y: 62
+      z: 177
+    - x: 28
+      y: 73
+      z: 105
+    - x: 27
+      y: 73
+      z: 105
+    - x: 26
+      y: 73
+      z: 105
+    - x: 28
+      y: 73
+      z: 104
+    - x: 27
+      y: 73
+      z: 104
+    - x: 26
+      y: 73
+      z: 104
+    - x: 35
+      y: 66
+      z: 82
+    - x: 35
+      y: 66
+      z: 81
+    name: 71 115 160
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.37, g: 0.37, b: 0.37, a: 1}
+      emissionPower: 4.5
+  - materialList:
+    - x: 40
+      y: 93
+      z: 222
+    - x: 40
+      y: 93
+      z: 221
+    - x: 34
+      y: 100
+      z: 215
+    - x: 34
+      y: 101
+      z: 216
+    - x: 45
+      y: 31
+      z: 201
+    - x: 45
+      y: 31
+      z: 202
+    - x: 45
+      y: 31
+      z: 200
+    - x: 45
+      y: 31
+      z: 203
+    - x: 45
+      y: 31
+      z: 199
+    - x: 45
+      y: 31
+      z: 204
+    - x: 42
+      y: 31
+      z: 195
+    - x: 45
+      y: 31
+      z: 198
+    - x: 45
+      y: 31
+      z: 205
+    - x: 43
+      y: 31
+      z: 195
+    - x: 41
+      y: 31
+      z: 195
+    - x: 45
+      y: 31
+      z: 197
+    - x: 45
+      y: 31
+      z: 206
+    - x: 44
+      y: 31
+      z: 195
+    - x: 40
+      y: 31
+      z: 195
+    - x: 45
+      y: 31
+      z: 196
+    - x: 45
+      y: 31
+      z: 207
+    - x: 45
+      y: 31
+      z: 195
+    - x: 39
+      y: 31
+      z: 195
+    - x: 45
+      y: 31
+      z: 208
+    - x: 38
+      y: 31
+      z: 195
+    - x: 37
+      y: 31
+      z: 195
+    - x: 36
+      y: 31
+      z: 195
+    - x: 35
+      y: 31
+      z: 195
+    - x: 59
+      y: 29
+      z: 191
+    - x: 59
+      y: 29
+      z: 190
+    - x: 34
+      y: 31
+      z: 195
+    - x: 34
+      y: 31
+      z: 191
+    - x: 35
+      y: 31
+      z: 191
+    - x: 35
+      y: 31
+      z: 192
+    - x: 33
+      y: 31
+      z: 195
+    - x: 32
+      y: 31
+      z: 195
+    - x: 53
+      y: 31
+      z: 196
+    - x: 31
+      y: 31
+      z: 195
+    - x: 54
+      y: 31
+      z: 196
+    - x: 30
+      y: 31
+      z: 195
+    - x: 55
+      y: 31
+      z: 196
+    - x: 56
+      y: 31
+      z: 196
+    - x: 57
+      y: 31
+      z: 196
+    - x: 58
+      y: 31
+      z: 196
+    - x: 59
+      y: 31
+      z: 196
+    - x: 60
+      y: 31
+      z: 196
+    - x: 61
+      y: 31
+      z: 196
+    - x: 62
+      y: 31
+      z: 196
+    - x: 63
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 201
+    - x: 68
+      y: 31
+      z: 202
+    - x: 64
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 200
+    - x: 36
+      y: 29
+      z: 191
+    - x: 68
+      y: 31
+      z: 203
+    - x: 65
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 199
+    - x: 36
+      y: 29
+      z: 192
+    - x: 68
+      y: 31
+      z: 204
+    - x: 66
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 198
+    - x: 68
+      y: 31
+      z: 205
+    - x: 67
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 197
+    - x: 68
+      y: 31
+      z: 206
+    - x: 68
+      y: 31
+      z: 196
+    - x: 68
+      y: 31
+      z: 207
+    - x: 68
+      y: 31
+      z: 208
+    - x: 36
+      y: 30
+      z: 191
+    - x: 36
+      y: 30
+      z: 192
+    - x: 15
+      y: 30
+      z: 65
+    - x: 33
+      y: 62
+      z: 56
+    - x: 33
+      y: 62
+      z: 57
+    - x: 33
+      y: 62
+      z: 58
+    - x: 16
+      y: 31
+      z: 65
+    - x: 16
+      y: 30
+      z: 65
+    name: 17 86 160
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.55, g: 0.55, b: 0.55, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 22
+      y: 59
+      z: 13
+    - x: 16
+      y: 35
+      z: 106
+    - x: 16
+      y: 35
+      z: 105
+    - x: 16
+      y: 35
+      z: 104
+    - x: 16
+      y: 35
+      z: 103
+    - x: 16
+      y: 35
+      z: 99
+    - x: 16
+      y: 35
+      z: 98
+    - x: 16
+      y: 35
+      z: 97
+    - x: 16
+      y: 35
+      z: 96
+    - x: 16
+      y: 35
+      z: 93
+    - x: 16
+      y: 35
+      z: 92
+    - x: 16
+      y: 35
+      z: 91
+    - x: 16
+      y: 35
+      z: 90
+    - x: 16
+      y: 35
+      z: 86
+    - x: 16
+      y: 35
+      z: 83
+    - x: 16
+      y: 35
+      z: 79
+    - x: 16
+      y: 36
+      z: 106
+    - x: 16
+      y: 36
+      z: 102
+    - x: 16
+      y: 36
+      z: 99
+    - x: 16
+      y: 36
+      z: 93
+    - x: 16
+      y: 36
+      z: 89
+    - x: 16
+      y: 36
+      z: 86
+    - x: 16
+      y: 36
+      z: 83
+    - x: 16
+      y: 36
+      z: 79
+    - x: 16
+      y: 37
+      z: 106
+    - x: 16
+      y: 37
+      z: 102
+    - x: 16
+      y: 37
+      z: 99
+    - x: 16
+      y: 37
+      z: 93
+    - x: 16
+      y: 37
+      z: 89
+    - x: 16
+      y: 37
+      z: 86
+    - x: 16
+      y: 37
+      z: 83
+    - x: 16
+      y: 37
+      z: 79
+    - x: 16
+      y: 38
+      z: 106
+    - x: 16
+      y: 38
+      z: 104
+    - x: 16
+      y: 38
+      z: 103
+    - x: 16
+      y: 38
+      z: 99
+    - x: 16
+      y: 38
+      z: 97
+    - x: 16
+      y: 38
+      z: 96
+    - x: 16
+      y: 38
+      z: 93
+    - x: 16
+      y: 38
+      z: 91
+    - x: 16
+      y: 38
+      z: 90
+    - x: 16
+      y: 38
+      z: 86
+    - x: 16
+      y: 38
+      z: 83
+    - x: 16
+      y: 38
+      z: 79
+    - x: 16
+      y: 39
+      z: 106
+    - x: 16
+      y: 39
+      z: 102
+    - x: 16
+      y: 39
+      z: 99
+    - x: 16
+      y: 39
+      z: 93
+    - x: 16
+      y: 39
+      z: 86
+    - x: 16
+      y: 39
+      z: 83
+    - x: 16
+      y: 39
+      z: 80
+    - x: 16
+      y: 39
+      z: 79
+    - x: 16
+      y: 40
+      z: 106
+    - x: 16
+      y: 40
+      z: 102
+    - x: 16
+      y: 40
+      z: 99
+    - x: 16
+      y: 40
+      z: 93
+    - x: 16
+      y: 40
+      z: 86
+    - x: 16
+      y: 40
+      z: 83
+    - x: 16
+      y: 40
+      z: 81
+    - x: 16
+      y: 40
+      z: 79
+    - x: 16
+      y: 41
+      z: 106
+    - x: 16
+      y: 41
+      z: 105
+    - x: 16
+      y: 41
+      z: 104
+    - x: 16
+      y: 41
+      z: 103
+    - x: 16
+      y: 41
+      z: 99
+    - x: 16
+      y: 41
+      z: 98
+    - x: 16
+      y: 41
+      z: 97
+    - x: 16
+      y: 41
+      z: 96
+    - x: 16
+      y: 41
+      z: 93
+    - x: 16
+      y: 41
+      z: 92
+    - x: 16
+      y: 41
+      z: 91
+    - x: 16
+      y: 41
+      z: 90
+    - x: 16
+      y: 41
+      z: 86
+    - x: 16
+      y: 41
+      z: 83
+    - x: 16
+      y: 41
+      z: 82
+    - x: 16
+      y: 41
+      z: 79
+    name: 144 144 144
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.21, g: 0.21, b: 0.21, a: 1}
+      emissionPower: 2
+  - materialList:
+    - x: 22
+      y: 59
+      z: 132
+    name: 192 35 160
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.42, g: 0.42, b: 0.42, a: 1}
+      emissionPower: 4.5
+  - materialList:
+    - x: 16
+      y: 20
+      z: 102
+    - x: 15
+      y: 20
+      z: 102
+    - x: 16
+      y: 21
+      z: 102
+    - x: 15
+      y: 21
+      z: 102
+    name: 81 198 205
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.57, g: 0.57, b: 0.57, a: 1}
+      emissionPower: 4.5
+  - materialList:
+    - x: 16
+      y: 32
+      z: 128
+    - x: 16
+      y: 32
+      z: 129
+    - x: 16
+      y: 36
+      z: 127
+    - x: 16
+      y: 34
+      z: 131
+    - x: 16
+      y: 36
+      z: 129
+    - x: 16
+      y: 38
+      z: 132
+    - x: 16
+      y: 35
+      z: 131
+    - x: 16
+      y: 33
+      z: 130
+    - x: 15
+      y: 44
+      z: 128
+    - x: 15
+      y: 44
+      z: 129
+    - x: 15
+      y: 43
+      z: 127
+    - x: 15
+      y: 42
+      z: 127
+    - x: 15
+      y: 41
+      z: 128
+    - x: 15
+      y: 40
+      z: 126
+    - x: 15
+      y: 40
+      z: 129
+    - x: 15
+      y: 39
+      z: 124
+    - x: 15
+      y: 39
+      z: 125
+    - x: 15
+      y: 38
+      z: 123
+    - x: 15
+      y: 38
+      z: 128
+    - x: 15
+      y: 38
+      z: 129
+    - x: 15
+      y: 40
+      z: 131
+    - x: 15
+      y: 40
+      z: 132
+    - x: 15
+      y: 39
+      z: 130
+    - x: 15
+      y: 38
+      z: 131
+    - x: 15
+      y: 38
+      z: 132
+    - x: 15
+      y: 36
+      z: 127
+    - x: 15
+      y: 36
+      z: 129
+    - x: 15
+      y: 36
+      z: 130
+    - x: 15
+      y: 35
+      z: 128
+    - x: 15
+      y: 35
+      z: 131
+    - x: 15
+      y: 34
+      z: 131
+    - x: 15
+      y: 33
+      z: 130
+    - x: 15
+      y: 32
+      z: 127
+    - x: 15
+      y: 32
+      z: 128
+    - x: 15
+      y: 32
+      z: 129
+    - x: 15
+      y: 39
+      z: 133
+    - x: 16
+      y: 39
+      z: 133
+    - x: 16
+      y: 40
+      z: 131
+    - x: 16
+      y: 40
+      z: 132
+    - x: 16
+      y: 40
+      z: 129
+    - x: 16
+      y: 41
+      z: 128
+    - x: 15
+      y: 43
+      z: 130
+    - x: 16
+      y: 43
+      z: 130
+    - x: 16
+      y: 44
+      z: 128
+    - x: 16
+      y: 44
+      z: 129
+    - x: 15
+      y: 36
+      z: 126
+    - x: 16
+      y: 36
+      z: 126
+    - x: 15
+      y: 35
+      z: 125
+    - x: 16
+      y: 35
+      z: 125
+    - x: 15
+      y: 34
+      z: 125
+    - x: 16
+      y: 34
+      z: 125
+    - x: 15
+      y: 33
+      z: 126
+    - x: 16
+      y: 33
+      z: 126
+    - x: 16
+      y: 40
+      z: 126
+    - x: 16
+      y: 39
+      z: 124
+    - x: 16
+      y: 39
+      z: 125
+    - x: 16
+      y: 38
+      z: 123
+    - x: 16
+      y: 43
+      z: 127
+    - x: 16
+      y: 42
+      z: 127
+    - x: 16
+      y: 32
+      z: 127
+    - x: 16
+      y: 33
+      z: 179
+    - x: 16
+      y: 33
+      z: 178
+    - x: 16
+      y: 33
+      z: 177
+    - x: 16
+      y: 33
+      z: 176
+    - x: 16
+      y: 33
+      z: 175
+    - x: 16
+      y: 33
+      z: 174
+    - x: 16
+      y: 33
+      z: 173
+    - x: 16
+      y: 33
+      z: 172
+    - x: 16
+      y: 33
+      z: 171
+    - x: 16
+      y: 33
+      z: 170
+    - x: 16
+      y: 33
+      z: 169
+    - x: 16
+      y: 33
+      z: 168
+    - x: 16
+      y: 33
+      z: 167
+    - x: 16
+      y: 33
+      z: 166
+    - x: 16
+      y: 33
+      z: 165
+    - x: 16
+      y: 33
+      z: 164
+    - x: 16
+      y: 33
+      z: 163
+    - x: 16
+      y: 33
+      z: 162
+    - x: 16
+      y: 33
+      z: 161
+    - x: 16
+      y: 33
+      z: 160
+    - x: 16
+      y: 33
+      z: 159
+    - x: 16
+      y: 33
+      z: 158
+    - x: 16
+      y: 33
+      z: 157
+    - x: 16
+      y: 33
+      z: 156
+    - x: 16
+      y: 33
+      z: 155
+    - x: 16
+      y: 33
+      z: 154
+    - x: 16
+      y: 33
+      z: 153
+    - x: 16
+      y: 33
+      z: 152
+    - x: 16
+      y: 33
+      z: 151
+    - x: 16
+      y: 33
+      z: 150
+    - x: 16
+      y: 33
+      z: 149
+    - x: 16
+      y: 33
+      z: 148
+    - x: 16
+      y: 33
+      z: 147
+    - x: 16
+      y: 33
+      z: 146
+    - x: 16
+      y: 34
+      z: 179
+    - x: 16
+      y: 34
+      z: 178
+    - x: 16
+      y: 34
+      z: 177
+    - x: 16
+      y: 34
+      z: 176
+    - x: 16
+      y: 34
+      z: 175
+    - x: 16
+      y: 34
+      z: 174
+    - x: 16
+      y: 34
+      z: 173
+    - x: 16
+      y: 34
+      z: 172
+    - x: 16
+      y: 34
+      z: 171
+    - x: 16
+      y: 34
+      z: 170
+    - x: 16
+      y: 34
+      z: 169
+    - x: 16
+      y: 34
+      z: 168
+    - x: 16
+      y: 34
+      z: 167
+    - x: 16
+      y: 34
+      z: 166
+    - x: 16
+      y: 34
+      z: 165
+    - x: 16
+      y: 34
+      z: 164
+    - x: 16
+      y: 34
+      z: 163
+    - x: 16
+      y: 34
+      z: 162
+    - x: 16
+      y: 34
+      z: 161
+    - x: 16
+      y: 34
+      z: 160
+    - x: 16
+      y: 34
+      z: 159
+    - x: 16
+      y: 34
+      z: 158
+    - x: 16
+      y: 34
+      z: 157
+    - x: 16
+      y: 34
+      z: 156
+    - x: 16
+      y: 34
+      z: 155
+    - x: 16
+      y: 34
+      z: 154
+    - x: 16
+      y: 34
+      z: 153
+    - x: 16
+      y: 34
+      z: 152
+    - x: 16
+      y: 34
+      z: 151
+    - x: 16
+      y: 34
+      z: 150
+    - x: 16
+      y: 34
+      z: 149
+    - x: 16
+      y: 39
+      z: 159
+    - x: 16
+      y: 39
+      z: 161
+    - x: 16
+      y: 39
+      z: 164
+    - x: 16
+      y: 39
+      z: 166
+    - x: 16
+      y: 39
+      z: 169
+    - x: 16
+      y: 36
+      z: 162
+    - x: 16
+      y: 36
+      z: 161
+    - x: 16
+      y: 36
+      z: 160
+    - x: 16
+      y: 36
+      z: 159
+    - x: 16
+      y: 36
+      z: 158
+    - x: 16
+      y: 36
+      z: 157
+    - x: 16
+      y: 36
+      z: 156
+    - x: 16
+      y: 39
+      z: 146
+    - x: 16
+      y: 39
+      z: 149
+    - x: 16
+      y: 39
+      z: 151
+    - x: 16
+      y: 39
+      z: 154
+    - x: 16
+      y: 39
+      z: 156
+    - x: 16
+      y: 38
+      z: 146
+    - x: 16
+      y: 38
+      z: 149
+    - x: 16
+      y: 38
+      z: 151
+    - x: 16
+      y: 38
+      z: 154
+    - x: 16
+      y: 36
+      z: 146
+    - x: 16
+      y: 36
+      z: 147
+    - x: 16
+      y: 36
+      z: 148
+    - x: 16
+      y: 36
+      z: 149
+    - x: 16
+      y: 36
+      z: 150
+    - x: 16
+      y: 36
+      z: 151
+    - x: 16
+      y: 36
+      z: 152
+    - x: 16
+      y: 36
+      z: 163
+    - x: 16
+      y: 36
+      z: 164
+    - x: 16
+      y: 36
+      z: 165
+    - x: 16
+      y: 36
+      z: 166
+    - x: 16
+      y: 36
+      z: 167
+    - x: 16
+      y: 41
+      z: 179
+    - x: 16
+      y: 41
+      z: 178
+    - x: 16
+      y: 40
+      z: 177
+    - x: 16
+      y: 40
+      z: 179
+    - x: 16
+      y: 38
+      z: 172
+    - x: 16
+      y: 38
+      z: 173
+    - x: 16
+      y: 38
+      z: 175
+    - x: 16
+      y: 38
+      z: 179
+    - x: 16
+      y: 39
+      z: 172
+    - x: 16
+      y: 40
+      z: 175
+    - x: 16
+      y: 40
+      z: 172
+    - x: 16
+      y: 40
+      z: 146
+    - x: 16
+      y: 40
+      z: 147
+    - x: 16
+      y: 40
+      z: 148
+    - x: 16
+      y: 40
+      z: 149
+    - x: 16
+      y: 40
+      z: 151
+    - x: 16
+      y: 40
+      z: 152
+    - x: 16
+      y: 40
+      z: 153
+    - x: 16
+      y: 40
+      z: 154
+    - x: 16
+      y: 36
+      z: 155
+    - x: 16
+      y: 36
+      z: 154
+    - x: 16
+      y: 36
+      z: 153
+    - x: 16
+      y: 40
+      z: 169
+    - x: 16
+      y: 40
+      z: 167
+    - x: 16
+      y: 40
+      z: 166
+    - x: 16
+      y: 40
+      z: 164
+    - x: 16
+      y: 40
+      z: 163
+    - x: 16
+      y: 40
+      z: 162
+    - x: 16
+      y: 40
+      z: 161
+    - x: 16
+      y: 40
+      z: 159
+    - x: 16
+      y: 39
+      z: 179
+    - x: 16
+      y: 39
+      z: 175
+    - x: 16
+      y: 41
+      z: 149
+    - x: 16
+      y: 36
+      z: 173
+    - x: 16
+      y: 36
+      z: 174
+    - x: 16
+      y: 36
+      z: 175
+    - x: 16
+      y: 41
+      z: 146
+    - x: 16
+      y: 34
+      z: 146
+    - x: 16
+      y: 34
+      z: 147
+    - x: 16
+      y: 34
+      z: 148
+    - x: 16
+      y: 38
+      z: 171
+    - x: 16
+      y: 38
+      z: 169
+    - x: 16
+      y: 38
+      z: 166
+    - x: 16
+      y: 38
+      z: 164
+    - x: 16
+      y: 38
+      z: 161
+    - x: 16
+      y: 38
+      z: 158
+    - x: 16
+      y: 38
+      z: 157
+    - x: 16
+      y: 42
+      z: 179
+    - x: 16
+      y: 42
+      z: 175
+    - x: 16
+      y: 36
+      z: 176
+    - x: 16
+      y: 36
+      z: 177
+    - x: 16
+      y: 36
+      z: 178
+    - x: 16
+      y: 41
+      z: 176
+    - x: 16
+      y: 42
+      z: 173
+    - x: 16
+      y: 42
+      z: 172
+    - x: 16
+      y: 41
+      z: 175
+    - x: 16
+      y: 42
+      z: 171
+    - x: 16
+      y: 42
+      z: 169
+    - x: 16
+      y: 42
+      z: 166
+    - x: 16
+      y: 41
+      z: 172
+    - x: 16
+      y: 41
+      z: 169
+    - x: 16
+      y: 41
+      z: 168
+    - x: 16
+      y: 41
+      z: 166
+    - x: 16
+      y: 41
+      z: 164
+    - x: 16
+      y: 36
+      z: 168
+    - x: 16
+      y: 36
+      z: 169
+    - x: 16
+      y: 42
+      z: 164
+    - x: 16
+      y: 42
+      z: 161
+    - x: 16
+      y: 42
+      z: 158
+    - x: 16
+      y: 42
+      z: 157
+    - x: 16
+      y: 42
+      z: 154
+    - x: 16
+      y: 42
+      z: 151
+    - x: 16
+      y: 42
+      z: 148
+    - x: 16
+      y: 42
+      z: 147
+    - x: 16
+      y: 36
+      z: 179
+    - x: 16
+      y: 41
+      z: 161
+    - x: 16
+      y: 39
+      z: 130
+    - x: 16
+      y: 36
+      z: 130
+    - x: 16
+      y: 35
+      z: 128
+    - x: 16
+      y: 36
+      z: 170
+    - x: 16
+      y: 36
+      z: 171
+    - x: 16
+      y: 36
+      z: 172
+    - x: 16
+      y: 41
+      z: 159
+    - x: 16
+      y: 41
+      z: 156
+    - x: 16
+      y: 41
+      z: 154
+    - x: 16
+      y: 38
+      z: 128
+    - x: 16
+      y: 38
+      z: 129
+    - x: 16
+      y: 38
+      z: 131
+    - x: 16
+      y: 41
+      z: 151
+    name: 129 129 129
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.27, g: 0.27, b: 0.27, a: 1}
+      emissionPower: 2
+  - materialList:
+    - x: 17
+      y: 31
+      z: 119
+    - x: 17
+      y: 31
+      z: 120
+    - x: 17
+      y: 31
+      z: 121
+    - x: 17
+      y: 31
+      z: 122
+    - x: 17
+      y: 31
+      z: 123
+    - x: 17
+      y: 31
+      z: 124
+    - x: 17
+      y: 31
+      z: 125
+    - x: 17
+      y: 31
+      z: 126
+    - x: 17
+      y: 31
+      z: 138
+    - x: 17
+      y: 31
+      z: 127
+    - x: 17
+      y: 31
+      z: 137
+    - x: 17
+      y: 31
+      z: 128
+    - x: 17
+      y: 31
+      z: 136
+    - x: 17
+      y: 31
+      z: 129
+    - x: 17
+      y: 31
+      z: 135
+    - x: 17
+      y: 31
+      z: 130
+    - x: 17
+      y: 31
+      z: 134
+    - x: 17
+      y: 31
+      z: 131
+    - x: 17
+      y: 31
+      z: 133
+    - x: 17
+      y: 31
+      z: 132
+    - x: 18
+      y: 31
+      z: 119
+    - x: 18
+      y: 31
+      z: 120
+    - x: 18
+      y: 31
+      z: 121
+    - x: 18
+      y: 31
+      z: 122
+    - x: 18
+      y: 31
+      z: 123
+    - x: 18
+      y: 31
+      z: 124
+    - x: 18
+      y: 31
+      z: 125
+    - x: 18
+      y: 31
+      z: 126
+    - x: 18
+      y: 31
+      z: 127
+    - x: 18
+      y: 31
+      z: 128
+    - x: 18
+      y: 31
+      z: 129
+    - x: 18
+      y: 31
+      z: 130
+    - x: 18
+      y: 31
+      z: 131
+    - x: 18
+      y: 31
+      z: 132
+    - x: 18
+      y: 31
+      z: 133
+    - x: 18
+      y: 31
+      z: 134
+    - x: 18
+      y: 31
+      z: 135
+    - x: 18
+      y: 31
+      z: 136
+    - x: 18
+      y: 31
+      z: 137
+    - x: 18
+      y: 31
+      z: 138
+    - x: 17
+      y: 36
+      z: 128
+    - x: 17
+      y: 32
+      z: 119
+    - x: 17
+      y: 33
+      z: 119
+    - x: 17
+      y: 32
+      z: 120
+    - x: 17
+      y: 34
+      z: 119
+    - x: 17
+      y: 33
+      z: 120
+    - x: 17
+      y: 32
+      z: 121
+    - x: 17
+      y: 35
+      z: 119
+    - x: 17
+      y: 34
+      z: 120
+    - x: 17
+      y: 33
+      z: 121
+    - x: 17
+      y: 32
+      z: 122
+    - x: 17
+      y: 36
+      z: 119
+    - x: 17
+      y: 35
+      z: 120
+    - x: 17
+      y: 34
+      z: 121
+    - x: 17
+      y: 33
+      z: 122
+    - x: 17
+      y: 32
+      z: 123
+    - x: 17
+      y: 41
+      z: 119
+    - x: 17
+      y: 37
+      z: 119
+    - x: 17
+      y: 36
+      z: 120
+    - x: 17
+      y: 35
+      z: 121
+    - x: 17
+      y: 34
+      z: 122
+    - x: 17
+      y: 33
+      z: 123
+    - x: 17
+      y: 32
+      z: 124
+    - x: 17
+      y: 40
+      z: 119
+    - x: 17
+      y: 41
+      z: 120
+    - x: 17
+      y: 42
+      z: 121
+    - x: 17
+      y: 38
+      z: 119
+    - x: 17
+      y: 37
+      z: 120
+    - x: 17
+      y: 36
+      z: 121
+    - x: 17
+      y: 35
+      z: 122
+    - x: 17
+      y: 34
+      z: 123
+    - x: 17
+      y: 33
+      z: 124
+    - x: 17
+      y: 32
+      z: 125
+    - x: 17
+      y: 39
+      z: 119
+    - x: 17
+      y: 40
+      z: 120
+    - x: 17
+      y: 41
+      z: 121
+    - x: 17
+      y: 42
+      z: 122
+    - x: 17
+      y: 38
+      z: 120
+    - x: 17
+      y: 37
+      z: 121
+    - x: 17
+      y: 36
+      z: 122
+    - x: 17
+      y: 35
+      z: 123
+    - x: 17
+      y: 34
+      z: 124
+    - x: 17
+      y: 33
+      z: 125
+    - x: 17
+      y: 32
+      z: 126
+    - x: 17
+      y: 39
+      z: 120
+    - x: 17
+      y: 40
+      z: 121
+    - x: 17
+      y: 41
+      z: 122
+    - x: 17
+      y: 42
+      z: 123
+    - x: 17
+      y: 43
+      z: 124
+    - x: 17
+      y: 38
+      z: 121
+    - x: 17
+      y: 37
+      z: 122
+    - x: 17
+      y: 36
+      z: 123
+    - x: 17
+      y: 35
+      z: 124
+    - x: 17
+      y: 34
+      z: 125
+    - x: 17
+      y: 33
+      z: 126
+    - x: 17
+      y: 32
+      z: 127
+    - x: 17
+      y: 39
+      z: 121
+    - x: 17
+      y: 40
+      z: 122
+    - x: 17
+      y: 41
+      z: 123
+    - x: 17
+      y: 42
+      z: 124
+    - x: 17
+      y: 43
+      z: 125
+    - x: 17
+      y: 44
+      z: 126
+    - x: 17
+      y: 38
+      z: 122
+    - x: 17
+      y: 37
+      z: 123
+    - x: 17
+      y: 36
+      z: 124
+    - x: 17
+      y: 35
+      z: 125
+    - x: 17
+      y: 34
+      z: 126
+    - x: 17
+      y: 33
+      z: 127
+    - x: 17
+      y: 32
+      z: 128
+    - x: 17
+      y: 39
+      z: 122
+    - x: 17
+      y: 40
+      z: 123
+    - x: 17
+      y: 41
+      z: 124
+    - x: 17
+      y: 42
+      z: 125
+    - x: 17
+      y: 43
+      z: 126
+    - x: 17
+      y: 44
+      z: 127
+    - x: 17
+      y: 38
+      z: 123
+    - x: 17
+      y: 37
+      z: 124
+    - x: 17
+      y: 36
+      z: 125
+    - x: 17
+      y: 35
+      z: 126
+    - x: 17
+      y: 34
+      z: 127
+    - x: 17
+      y: 33
+      z: 128
+    - x: 17
+      y: 32
+      z: 129
+    - x: 17
+      y: 39
+      z: 123
+    - x: 17
+      y: 40
+      z: 124
+    - x: 17
+      y: 41
+      z: 125
+    - x: 17
+      y: 42
+      z: 126
+    - x: 17
+      y: 43
+      z: 127
+    - x: 17
+      y: 44
+      z: 128
+    - x: 17
+      y: 38
+      z: 124
+    - x: 17
+      y: 37
+      z: 125
+    - x: 17
+      y: 36
+      z: 126
+    - x: 17
+      y: 35
+      z: 127
+    - x: 17
+      y: 34
+      z: 128
+    - x: 17
+      y: 33
+      z: 129
+    - x: 17
+      y: 32
+      z: 130
+    - x: 17
+      y: 39
+      z: 124
+    - x: 17
+      y: 40
+      z: 125
+    - x: 17
+      y: 41
+      z: 126
+    - x: 17
+      y: 42
+      z: 127
+    - x: 17
+      y: 43
+      z: 128
+    - x: 17
+      y: 44
+      z: 129
+    - x: 17
+      y: 38
+      z: 125
+    - x: 17
+      y: 37
+      z: 126
+    - x: 17
+      y: 36
+      z: 127
+    - x: 17
+      y: 35
+      z: 128
+    - x: 17
+      y: 34
+      z: 129
+    - x: 17
+      y: 33
+      z: 130
+    - x: 17
+      y: 32
+      z: 131
+    - x: 17
+      y: 39
+      z: 125
+    - x: 17
+      y: 40
+      z: 126
+    - x: 17
+      y: 41
+      z: 127
+    - x: 17
+      y: 42
+      z: 128
+    - x: 17
+      y: 43
+      z: 129
+    - x: 17
+      y: 44
+      z: 130
+    - x: 17
+      y: 38
+      z: 126
+    - x: 17
+      y: 37
+      z: 127
+    - x: 17
+      y: 35
+      z: 129
+    - x: 17
+      y: 34
+      z: 130
+    - x: 17
+      y: 33
+      z: 131
+    - x: 17
+      y: 32
+      z: 132
+    - x: 17
+      y: 39
+      z: 126
+    - x: 17
+      y: 40
+      z: 127
+    - x: 17
+      y: 41
+      z: 128
+    - x: 17
+      y: 42
+      z: 129
+    - x: 17
+      y: 43
+      z: 130
+    - x: 17
+      y: 44
+      z: 131
+    - x: 17
+      y: 38
+      z: 127
+    - x: 17
+      y: 37
+      z: 128
+    - x: 17
+      y: 36
+      z: 129
+    - x: 17
+      y: 35
+      z: 130
+    - x: 17
+      y: 34
+      z: 131
+    - x: 17
+      y: 33
+      z: 132
+    - x: 17
+      y: 32
+      z: 133
+    - x: 17
+      y: 39
+      z: 127
+    - x: 17
+      y: 40
+      z: 128
+    - x: 17
+      y: 41
+      z: 129
+    - x: 17
+      y: 42
+      z: 130
+    - x: 17
+      y: 43
+      z: 131
+    - x: 17
+      y: 44
+      z: 132
+    - x: 17
+      y: 38
+      z: 128
+    - x: 17
+      y: 37
+      z: 129
+    - x: 17
+      y: 36
+      z: 130
+    - x: 17
+      y: 35
+      z: 131
+    - x: 17
+      y: 34
+      z: 132
+    - x: 17
+      y: 33
+      z: 133
+    - x: 17
+      y: 32
+      z: 134
+    - x: 17
+      y: 39
+      z: 128
+    - x: 17
+      y: 40
+      z: 129
+    - x: 17
+      y: 41
+      z: 130
+    - x: 17
+      y: 42
+      z: 131
+    - x: 17
+      y: 43
+      z: 132
+    - x: 17
+      y: 44
+      z: 133
+    - x: 17
+      y: 38
+      z: 129
+    - x: 17
+      y: 37
+      z: 130
+    - x: 17
+      y: 36
+      z: 131
+    - x: 17
+      y: 35
+      z: 132
+    - x: 17
+      y: 34
+      z: 133
+    - x: 17
+      y: 33
+      z: 134
+    - x: 17
+      y: 32
+      z: 135
+    - x: 17
+      y: 39
+      z: 129
+    - x: 17
+      y: 40
+      z: 130
+    - x: 17
+      y: 41
+      z: 131
+    - x: 17
+      y: 42
+      z: 132
+    - x: 17
+      y: 43
+      z: 133
+    - x: 17
+      y: 44
+      z: 134
+    - x: 17
+      y: 38
+      z: 130
+    - x: 17
+      y: 37
+      z: 131
+    - x: 17
+      y: 36
+      z: 132
+    - x: 17
+      y: 35
+      z: 133
+    - x: 17
+      y: 34
+      z: 134
+    - x: 17
+      y: 33
+      z: 135
+    - x: 17
+      y: 32
+      z: 136
+    - x: 17
+      y: 39
+      z: 130
+    - x: 17
+      y: 40
+      z: 131
+    - x: 17
+      y: 41
+      z: 132
+    - x: 17
+      y: 42
+      z: 133
+    - x: 17
+      y: 43
+      z: 134
+    - x: 17
+      y: 44
+      z: 135
+    - x: 17
+      y: 38
+      z: 131
+    - x: 17
+      y: 37
+      z: 132
+    - x: 17
+      y: 36
+      z: 133
+    - x: 17
+      y: 35
+      z: 134
+    - x: 17
+      y: 34
+      z: 135
+    - x: 17
+      y: 33
+      z: 136
+    - x: 17
+      y: 32
+      z: 137
+    - x: 17
+      y: 39
+      z: 131
+    - x: 17
+      y: 40
+      z: 132
+    - x: 17
+      y: 41
+      z: 133
+    - x: 17
+      y: 42
+      z: 134
+    - x: 17
+      y: 43
+      z: 135
+    - x: 17
+      y: 44
+      z: 136
+    - x: 17
+      y: 38
+      z: 132
+    - x: 17
+      y: 37
+      z: 133
+    - x: 17
+      y: 36
+      z: 134
+    - x: 17
+      y: 35
+      z: 135
+    - x: 17
+      y: 34
+      z: 136
+    - x: 17
+      y: 33
+      z: 137
+    - x: 17
+      y: 32
+      z: 138
+    - x: 17
+      y: 39
+      z: 132
+    - x: 17
+      y: 40
+      z: 133
+    - x: 17
+      y: 41
+      z: 134
+    - x: 17
+      y: 42
+      z: 135
+    - x: 17
+      y: 43
+      z: 136
+    - x: 17
+      y: 44
+      z: 137
+    - x: 17
+      y: 38
+      z: 133
+    - x: 17
+      y: 37
+      z: 134
+    - x: 17
+      y: 36
+      z: 135
+    - x: 17
+      y: 35
+      z: 136
+    - x: 17
+      y: 34
+      z: 137
+    - x: 17
+      y: 33
+      z: 138
+    - x: 17
+      y: 39
+      z: 133
+    - x: 17
+      y: 40
+      z: 134
+    - x: 17
+      y: 41
+      z: 135
+    - x: 17
+      y: 42
+      z: 136
+    - x: 17
+      y: 43
+      z: 137
+    - x: 17
+      y: 44
+      z: 138
+    - x: 17
+      y: 38
+      z: 134
+    - x: 17
+      y: 37
+      z: 135
+    - x: 17
+      y: 36
+      z: 136
+    - x: 17
+      y: 35
+      z: 137
+    - x: 17
+      y: 34
+      z: 138
+    - x: 17
+      y: 39
+      z: 134
+    - x: 17
+      y: 40
+      z: 135
+    - x: 17
+      y: 41
+      z: 136
+    - x: 17
+      y: 42
+      z: 137
+    - x: 17
+      y: 43
+      z: 138
+    - x: 17
+      y: 38
+      z: 135
+    - x: 17
+      y: 37
+      z: 136
+    - x: 17
+      y: 36
+      z: 137
+    - x: 17
+      y: 35
+      z: 138
+    - x: 17
+      y: 39
+      z: 135
+    - x: 17
+      y: 40
+      z: 136
+    - x: 17
+      y: 41
+      z: 137
+    - x: 17
+      y: 42
+      z: 138
+    - x: 17
+      y: 38
+      z: 136
+    - x: 17
+      y: 37
+      z: 137
+    - x: 17
+      y: 36
+      z: 138
+    - x: 17
+      y: 39
+      z: 136
+    - x: 17
+      y: 40
+      z: 137
+    - x: 17
+      y: 41
+      z: 138
+    - x: 17
+      y: 38
+      z: 137
+    - x: 17
+      y: 37
+      z: 138
+    - x: 17
+      y: 39
+      z: 137
+    - x: 17
+      y: 40
+      z: 138
+    - x: 17
+      y: 38
+      z: 138
+    - x: 17
+      y: 39
+      z: 138
+    - x: 17
+      y: 44
+      z: 125
+    - x: 17
+      y: 44
+      z: 124
+    - x: 17
+      y: 43
+      z: 123
+    - x: 17
+      y: 44
+      z: 123
+    - x: 17
+      y: 43
+      z: 122
+    - x: 17
+      y: 44
+      z: 122
+    - x: 17
+      y: 43
+      z: 121
+    - x: 17
+      y: 42
+      z: 120
+    - x: 17
+      y: 44
+      z: 121
+    - x: 17
+      y: 43
+      z: 120
+    - x: 17
+      y: 42
+      z: 119
+    - x: 17
+      y: 44
+      z: 120
+    - x: 17
+      y: 43
+      z: 119
+    - x: 17
+      y: 44
+      z: 119
+    - x: 18
+      y: 31
+      z: 1
+    - x: 18
+      y: 31
+      z: 2
+    - x: 18
+      y: 31
+      z: 3
+    - x: 18
+      y: 31
+      z: 4
+    - x: 18
+      y: 31
+      z: 5
+    - x: 18
+      y: 31
+      z: 6
+    - x: 18
+      y: 31
+      z: 7
+    - x: 18
+      y: 31
+      z: 8
+    - x: 18
+      y: 31
+      z: 9
+    - x: 18
+      y: 31
+      z: 10
+    - x: 18
+      y: 31
+      z: 11
+    - x: 18
+      y: 31
+      z: 12
+    - x: 18
+      y: 31
+      z: 13
+    - x: 18
+      y: 31
+      z: 14
+    - x: 18
+      y: 31
+      z: 15
+    - x: 18
+      y: 31
+      z: 16
+    - x: 18
+      y: 31
+      z: 17
+    - x: 18
+      y: 31
+      z: 18
+    - x: 18
+      y: 31
+      z: 19
+    name: 21 36 88
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0.17
+      smoothness: 0.9
+      alpha: 0
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  - materialList:
+    - x: 21
+      y: 22
+      z: 192
+    - x: 21
+      y: 22
+      z: 194
+    name: 97 255 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.17, g: 0.17, b: 0.17, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 21
+      y: 25
+      z: 192
+    - x: 21
+      y: 24
+      z: 194
+    - x: 21
+      y: 24
+      z: 193
+    - x: 21
+      y: 24
+      z: 192
+    name: 255 208 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.13, g: 0.13, b: 0.13, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 16
+      y: 38
+      z: 203
+    - x: 16
+      y: 38
+      z: 204
+    - x: 16
+      y: 38
+      z: 205
+    - x: 16
+      y: 38
+      z: 206
+    - x: 16
+      y: 38
+      z: 207
+    - x: 16
+      y: 38
+      z: 208
+    - x: 16
+      y: 38
+      z: 209
+    - x: 16
+      y: 38
+      z: 210
+    - x: 16
+      y: 38
+      z: 211
+    - x: 16
+      y: 38
+      z: 212
+    - x: 16
+      y: 38
+      z: 213
+    - x: 16
+      y: 38
+      z: 214
+    - x: 16
+      y: 38
+      z: 215
+    - x: 16
+      y: 38
+      z: 216
+    - x: 16
+      y: 38
+      z: 217
+    - x: 16
+      y: 38
+      z: 218
+    - x: 16
+      y: 38
+      z: 219
+    - x: 16
+      y: 38
+      z: 220
+    - x: 16
+      y: 38
+      z: 223
+    - x: 16
+      y: 38
+      z: 225
+    - x: 16
+      y: 38
+      z: 229
+    - x: 16
+      y: 38
+      z: 230
+    - x: 16
+      y: 38
+      z: 231
+    - x: 16
+      y: 38
+      z: 232
+    - x: 16
+      y: 38
+      z: 233
+    - x: 16
+      y: 37
+      z: 189
+    - x: 16
+      y: 37
+      z: 228
+    - x: 16
+      y: 37
+      z: 229
+    - x: 16
+      y: 37
+      z: 230
+    - x: 16
+      y: 37
+      z: 231
+    - x: 16
+      y: 37
+      z: 232
+    - x: 16
+      y: 37
+      z: 233
+    - x: 16
+      y: 36
+      z: 189
+    - x: 16
+      y: 36
+      z: 190
+    - x: 16
+      y: 36
+      z: 191
+    - x: 16
+      y: 36
+      z: 192
+    - x: 16
+      y: 36
+      z: 193
+    - x: 16
+      y: 36
+      z: 194
+    - x: 16
+      y: 43
+      z: 209
+    - x: 16
+      y: 43
+      z: 208
+    - x: 16
+      y: 36
+      z: 195
+    - x: 16
+      y: 36
+      z: 196
+    - x: 16
+      y: 36
+      z: 197
+    - x: 16
+      y: 36
+      z: 198
+    - x: 16
+      y: 36
+      z: 199
+    - x: 16
+      y: 36
+      z: 200
+    - x: 16
+      y: 36
+      z: 201
+    - x: 16
+      y: 36
+      z: 202
+    - x: 16
+      y: 36
+      z: 203
+    - x: 16
+      y: 36
+      z: 204
+    - x: 16
+      y: 36
+      z: 205
+    - x: 16
+      y: 36
+      z: 206
+    - x: 16
+      y: 36
+      z: 207
+    - x: 16
+      y: 36
+      z: 208
+    - x: 16
+      y: 36
+      z: 209
+    - x: 16
+      y: 43
+      z: 207
+    - x: 16
+      y: 43
+      z: 206
+    - x: 16
+      y: 43
+      z: 205
+    - x: 16
+      y: 43
+      z: 204
+    - x: 16
+      y: 43
+      z: 203
+    - x: 16
+      y: 43
+      z: 202
+    - x: 16
+      y: 43
+      z: 201
+    - x: 16
+      y: 43
+      z: 200
+    - x: 16
+      y: 43
+      z: 199
+    - x: 16
+      y: 43
+      z: 198
+    - x: 16
+      y: 43
+      z: 197
+    - x: 16
+      y: 36
+      z: 210
+    - x: 16
+      y: 36
+      z: 211
+    - x: 16
+      y: 36
+      z: 212
+    - x: 16
+      y: 36
+      z: 213
+    - x: 16
+      y: 36
+      z: 214
+    - x: 16
+      y: 36
+      z: 215
+    - x: 16
+      y: 36
+      z: 216
+    - x: 16
+      y: 36
+      z: 217
+    - x: 16
+      y: 36
+      z: 218
+    - x: 16
+      y: 36
+      z: 219
+    - x: 16
+      y: 36
+      z: 220
+    - x: 16
+      y: 36
+      z: 221
+    - x: 16
+      y: 36
+      z: 222
+    - x: 16
+      y: 36
+      z: 223
+    - x: 16
+      y: 36
+      z: 224
+    - x: 16
+      y: 36
+      z: 225
+    - x: 16
+      y: 36
+      z: 226
+    - x: 16
+      y: 41
+      z: 199
+    - x: 16
+      y: 36
+      z: 227
+    - x: 16
+      y: 36
+      z: 228
+    - x: 16
+      y: 36
+      z: 229
+    - x: 16
+      y: 36
+      z: 230
+    - x: 16
+      y: 36
+      z: 231
+    - x: 16
+      y: 36
+      z: 232
+    - x: 16
+      y: 36
+      z: 233
+    - x: 16
+      y: 35
+      z: 189
+    - x: 16
+      y: 35
+      z: 190
+    - x: 16
+      y: 35
+      z: 191
+    - x: 16
+      y: 41
+      z: 197
+    - x: 16
+      y: 41
+      z: 196
+    - x: 16
+      y: 35
+      z: 192
+    - x: 16
+      y: 35
+      z: 193
+    - x: 16
+      y: 35
+      z: 194
+    - x: 16
+      y: 35
+      z: 195
+    - x: 16
+      y: 35
+      z: 196
+    - x: 16
+      y: 35
+      z: 197
+    - x: 16
+      y: 35
+      z: 198
+    - x: 16
+      y: 35
+      z: 199
+    - x: 16
+      y: 35
+      z: 200
+    - x: 16
+      y: 35
+      z: 201
+    - x: 16
+      y: 41
+      z: 194
+    - x: 16
+      y: 35
+      z: 202
+    - x: 16
+      y: 35
+      z: 203
+    - x: 16
+      y: 35
+      z: 204
+    - x: 16
+      y: 35
+      z: 205
+    - x: 16
+      y: 35
+      z: 206
+    - x: 16
+      y: 35
+      z: 207
+    - x: 16
+      y: 35
+      z: 208
+    - x: 16
+      y: 35
+      z: 209
+    - x: 16
+      y: 35
+      z: 210
+    - x: 16
+      y: 35
+      z: 211
+    - x: 16
+      y: 35
+      z: 212
+    - x: 16
+      y: 35
+      z: 213
+    - x: 16
+      y: 35
+      z: 214
+    - x: 16
+      y: 35
+      z: 215
+    - x: 16
+      y: 35
+      z: 216
+    - x: 16
+      y: 35
+      z: 217
+    - x: 16
+      y: 40
+      z: 212
+    - x: 16
+      y: 40
+      z: 214
+    - x: 16
+      y: 40
+      z: 215
+    - x: 16
+      y: 40
+      z: 221
+    - x: 16
+      y: 40
+      z: 223
+    - x: 16
+      y: 35
+      z: 218
+    - x: 16
+      y: 35
+      z: 219
+    - x: 16
+      y: 35
+      z: 220
+    - x: 16
+      y: 35
+      z: 221
+    - x: 16
+      y: 35
+      z: 222
+    - x: 16
+      y: 35
+      z: 223
+    - x: 16
+      y: 35
+      z: 224
+    - x: 16
+      y: 35
+      z: 225
+    - x: 16
+      y: 35
+      z: 226
+    - x: 16
+      y: 35
+      z: 227
+    - x: 16
+      y: 35
+      z: 228
+    - x: 16
+      y: 35
+      z: 229
+    - x: 16
+      y: 35
+      z: 230
+    - x: 16
+      y: 35
+      z: 231
+    - x: 16
+      y: 35
+      z: 232
+    - x: 16
+      y: 35
+      z: 233
+    - x: 16
+      y: 40
+      z: 211
+    - x: 16
+      y: 40
+      z: 209
+    - x: 16
+      y: 40
+      z: 207
+    - x: 16
+      y: 40
+      z: 206
+    - x: 16
+      y: 40
+      z: 204
+    - x: 16
+      y: 40
+      z: 202
+    - x: 16
+      y: 40
+      z: 201
+    - x: 16
+      y: 40
+      z: 199
+    - x: 16
+      y: 40
+      z: 197
+    - x: 16
+      y: 40
+      z: 196
+    - x: 16
+      y: 41
+      z: 209
+    - x: 16
+      y: 41
+      z: 214
+    - x: 16
+      y: 41
+      z: 216
+    - x: 16
+      y: 41
+      z: 217
+    - x: 16
+      y: 41
+      z: 220
+    - x: 16
+      y: 41
+      z: 222
+    - x: 16
+      y: 40
+      z: 194
+    - x: 16
+      y: 40
+      z: 192
+    - x: 16
+      y: 40
+      z: 189
+    - x: 16
+      y: 41
+      z: 233
+    - x: 16
+      y: 41
+      z: 232
+    - x: 16
+      y: 42
+      z: 194
+    - x: 16
+      y: 42
+      z: 192
+    - x: 16
+      y: 42
+      z: 191
+    - x: 16
+      y: 42
+      z: 189
+    - x: 16
+      y: 43
+      z: 233
+    - x: 16
+      y: 43
+      z: 232
+    - x: 16
+      y: 39
+      z: 215
+    - x: 16
+      y: 39
+      z: 214
+    - x: 16
+      y: 39
+      z: 212
+    - x: 16
+      y: 39
+      z: 211
+    - x: 16
+      y: 39
+      z: 209
+    - x: 16
+      y: 39
+      z: 208
+    - x: 16
+      y: 39
+      z: 205
+    - x: 16
+      y: 39
+      z: 204
+    - x: 16
+      y: 43
+      z: 231
+    - x: 16
+      y: 43
+      z: 230
+    - x: 16
+      y: 43
+      z: 229
+    - x: 16
+      y: 43
+      z: 228
+    - x: 16
+      y: 43
+      z: 227
+    - x: 16
+      y: 39
+      z: 202
+    - x: 16
+      y: 39
+      z: 201
+    - x: 16
+      y: 42
+      z: 233
+    - x: 16
+      y: 43
+      z: 212
+    - x: 16
+      y: 43
+      z: 213
+    - x: 16
+      y: 43
+      z: 214
+    - x: 16
+      y: 43
+      z: 215
+    - x: 16
+      y: 43
+      z: 216
+    - x: 16
+      y: 43
+      z: 217
+    - x: 16
+      y: 43
+      z: 218
+    - x: 16
+      y: 43
+      z: 219
+    - x: 16
+      y: 43
+      z: 220
+    - x: 16
+      y: 43
+      z: 221
+    - x: 16
+      y: 43
+      z: 222
+    - x: 16
+      y: 43
+      z: 223
+    - x: 16
+      y: 43
+      z: 224
+    - x: 16
+      y: 43
+      z: 225
+    - x: 16
+      y: 43
+      z: 226
+    - x: 16
+      y: 40
+      z: 231
+    - x: 16
+      y: 40
+      z: 232
+    - x: 16
+      y: 40
+      z: 233
+    - x: 16
+      y: 41
+      z: 189
+    - x: 16
+      y: 41
+      z: 191
+    - x: 16
+      y: 39
+      z: 199
+    - x: 16
+      y: 39
+      z: 189
+    - x: 16
+      y: 39
+      z: 191
+    - x: 16
+      y: 39
+      z: 192
+    - x: 16
+      y: 39
+      z: 194
+    - x: 16
+      y: 39
+      z: 195
+    - x: 16
+      y: 39
+      z: 198
+    - x: 16
+      y: 39
+      z: 232
+    - x: 16
+      y: 39
+      z: 231
+    - x: 16
+      y: 39
+      z: 230
+    - x: 16
+      y: 39
+      z: 224
+    - x: 16
+      y: 39
+      z: 222
+    - x: 16
+      y: 39
+      z: 219
+    - x: 16
+      y: 39
+      z: 218
+    - x: 16
+      y: 39
+      z: 217
+    - x: 16
+      y: 39
+      z: 216
+    - x: 16
+      y: 38
+      z: 202
+    - x: 16
+      y: 38
+      z: 201
+    - x: 16
+      y: 38
+      z: 200
+    - x: 16
+      y: 38
+      z: 199
+    - x: 16
+      y: 38
+      z: 198
+    - x: 16
+      y: 38
+      z: 197
+    - x: 16
+      y: 38
+      z: 196
+    - x: 16
+      y: 38
+      z: 195
+    - x: 16
+      y: 38
+      z: 194
+    - x: 16
+      y: 38
+      z: 193
+    - x: 16
+      y: 38
+      z: 192
+    - x: 16
+      y: 38
+      z: 191
+    - x: 16
+      y: 38
+      z: 190
+    - x: 16
+      y: 43
+      z: 189
+    - x: 16
+      y: 43
+      z: 190
+    - x: 16
+      y: 43
+      z: 191
+    - x: 16
+      y: 43
+      z: 192
+    - x: 16
+      y: 43
+      z: 193
+    - x: 16
+      y: 43
+      z: 194
+    - x: 16
+      y: 43
+      z: 195
+    - x: 16
+      y: 43
+      z: 196
+    - x: 16
+      y: 38
+      z: 189
+    - x: 16
+      y: 39
+      z: 233
+    - x: 16
+      y: 42
+      z: 221
+    - x: 16
+      y: 42
+      z: 219
+    - x: 16
+      y: 42
+      z: 215
+    - x: 16
+      y: 42
+      z: 214
+    - x: 16
+      y: 42
+      z: 212
+    - x: 16
+      y: 42
+      z: 211
+    - x: 16
+      y: 42
+      z: 201
+    - x: 16
+      y: 42
+      z: 199
+    - x: 16
+      y: 42
+      z: 197
+    - x: 16
+      y: 42
+      z: 196
+    - x: 16
+      y: 43
+      z: 211
+    - x: 16
+      y: 43
+      z: 210
+    - x: 16
+      y: 41
+      z: 207
+    - x: 16
+      y: 41
+      z: 206
+    - x: 16
+      y: 41
+      z: 204
+    - x: 16
+      y: 42
+      z: 209
+    - x: 16
+      y: 42
+      z: 208
+    - x: 16
+      y: 42
+      z: 205
+    - x: 16
+      y: 42
+      z: 204
+    - x: 16
+      y: 42
+      z: 202
+    name: 229 160 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.87, g: 0.87, b: 0.87, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 16
+      y: 42
+      z: 198
+    - x: 16
+      y: 42
+      z: 195
+    - x: 16
+      y: 41
+      z: 225
+    - x: 16
+      y: 41
+      z: 226
+    - x: 16
+      y: 41
+      z: 227
+    - x: 16
+      y: 41
+      z: 228
+    - x: 16
+      y: 42
+      z: 224
+    - x: 16
+      y: 41
+      z: 205
+    - x: 16
+      y: 41
+      z: 203
+    - x: 16
+      y: 41
+      z: 202
+    - x: 16
+      y: 42
+      z: 206
+    - x: 16
+      y: 42
+      z: 207
+    - x: 15
+      y: 41
+      z: 226
+    - x: 15
+      y: 40
+      z: 226
+    - x: 15
+      y: 42
+      z: 226
+    - x: 15
+      y: 41
+      z: 227
+    - x: 15
+      y: 41
+      z: 225
+    - x: 15
+      y: 39
+      z: 226
+    - x: 15
+      y: 40
+      z: 227
+    - x: 15
+      y: 40
+      z: 225
+    - x: 15
+      y: 42
+      z: 227
+    - x: 15
+      y: 42
+      z: 225
+    - x: 15
+      y: 41
+      z: 228
+    - x: 15
+      y: 41
+      z: 224
+    - x: 15
+      y: 38
+      z: 226
+    - x: 15
+      y: 39
+      z: 227
+    - x: 15
+      y: 39
+      z: 225
+    - x: 15
+      y: 40
+      z: 228
+    - x: 15
+      y: 40
+      z: 224
+    - x: 15
+      y: 42
+      z: 228
+    - x: 15
+      y: 42
+      z: 224
+    - x: 15
+      y: 41
+      z: 229
+    - x: 15
+      y: 41
+      z: 223
+    - x: 15
+      y: 37
+      z: 226
+    - x: 15
+      y: 38
+      z: 227
+    - x: 15
+      y: 39
+      z: 228
+    - x: 15
+      y: 40
+      z: 229
+    - x: 15
+      y: 42
+      z: 229
+    - x: 15
+      y: 42
+      z: 223
+    - x: 15
+      y: 41
+      z: 230
+    - x: 15
+      y: 37
+      z: 227
+    - x: 15
+      y: 37
+      z: 225
+    - x: 15
+      y: 38
+      z: 228
+    - x: 15
+      y: 39
+      z: 229
+    - x: 15
+      y: 40
+      z: 230
+    - x: 15
+      y: 42
+      z: 230
+    - x: 15
+      y: 42
+      z: 222
+    - x: 15
+      y: 41
+      z: 231
+    - x: 15
+      y: 37
+      z: 224
+    - x: 15
+      y: 42
+      z: 231
+    - x: 15
+      y: 38
+      z: 224
+    - x: 15
+      y: 37
+      z: 223
+    - x: 15
+      y: 42
+      z: 232
+    - x: 15
+      y: 37
+      z: 222
+    - x: 15
+      y: 38
+      z: 222
+    - x: 15
+      y: 37
+      z: 221
+    - x: 15
+      y: 38
+      z: 221
+    - x: 15
+      y: 37
+      z: 220
+    - x: 15
+      y: 39
+      z: 221
+    - x: 15
+      y: 37
+      z: 219
+    - x: 15
+      y: 39
+      z: 220
+    - x: 15
+      y: 37
+      z: 218
+    - x: 15
+      y: 40
+      z: 220
+    - x: 15
+      y: 37
+      z: 217
+    - x: 15
+      y: 40
+      z: 219
+    - x: 15
+      y: 37
+      z: 216
+    - x: 15
+      y: 41
+      z: 219
+    - x: 15
+      y: 40
+      z: 218
+    - x: 15
+      y: 37
+      z: 215
+    - x: 15
+      y: 41
+      z: 218
+    - x: 15
+      y: 40
+      z: 217
+    - x: 15
+      y: 37
+      z: 214
+    - x: 15
+      y: 42
+      z: 218
+    - x: 15
+      y: 40
+      z: 216
+    - x: 15
+      y: 37
+      z: 213
+    - x: 15
+      y: 42
+      z: 217
+    - x: 15
+      y: 37
+      z: 212
+    - x: 15
+      y: 42
+      z: 216
+    - x: 15
+      y: 37
+      z: 211
+    - x: 15
+      y: 37
+      z: 210
+    - x: 15
+      y: 37
+      z: 209
+    - x: 15
+      y: 37
+      z: 208
+    - x: 15
+      y: 37
+      z: 207
+    - x: 15
+      y: 37
+      z: 206
+    - x: 15
+      y: 37
+      z: 205
+    - x: 15
+      y: 37
+      z: 204
+    - x: 15
+      y: 37
+      z: 203
+    - x: 15
+      y: 37
+      z: 202
+    - x: 15
+      y: 37
+      z: 201
+    - x: 15
+      y: 37
+      z: 200
+    - x: 15
+      y: 37
+      z: 199
+    - x: 15
+      y: 37
+      z: 198
+    - x: 15
+      y: 37
+      z: 197
+    - x: 15
+      y: 37
+      z: 196
+    - x: 15
+      y: 37
+      z: 195
+    - x: 15
+      y: 37
+      z: 194
+    - x: 15
+      y: 37
+      z: 193
+    - x: 15
+      y: 37
+      z: 192
+    - x: 15
+      y: 37
+      z: 191
+    - x: 15
+      y: 37
+      z: 190
+    - x: 15
+      y: 41
+      z: 213
+    - x: 15
+      y: 40
+      z: 213
+    - x: 15
+      y: 42
+      z: 213
+    - x: 15
+      y: 41
+      z: 212
+    - x: 15
+      y: 39
+      z: 213
+    - x: 15
+      y: 41
+      z: 211
+    - x: 15
+      y: 41
+      z: 210
+    - x: 15
+      y: 40
+      z: 210
+    - x: 15
+      y: 42
+      z: 210
+    - x: 15
+      y: 39
+      z: 210
+    - x: 15
+      y: 41
+      z: 208
+    - x: 15
+      y: 40
+      z: 208
+    - x: 15
+      y: 42
+      z: 206
+    - x: 15
+      y: 42
+      z: 207
+    - x: 15
+      y: 40
+      z: 205
+    - x: 15
+      y: 41
+      z: 205
+    - x: 15
+      y: 39
+      z: 207
+    - x: 15
+      y: 39
+      z: 206
+    - x: 15
+      y: 41
+      z: 203
+    - x: 15
+      y: 40
+      z: 203
+    - x: 15
+      y: 42
+      z: 203
+    - x: 15
+      y: 41
+      z: 202
+    - x: 15
+      y: 39
+      z: 203
+    - x: 15
+      y: 41
+      z: 201
+    - x: 15
+      y: 41
+      z: 200
+    - x: 15
+      y: 40
+      z: 200
+    - x: 15
+      y: 42
+      z: 200
+    - x: 15
+      y: 39
+      z: 200
+    - x: 15
+      y: 41
+      z: 198
+    - x: 15
+      y: 40
+      z: 198
+    - x: 15
+      y: 42
+      z: 198
+    - x: 15
+      y: 39
+      z: 196
+    - x: 15
+      y: 39
+      z: 197
+    - x: 15
+      y: 40
+      z: 195
+    - x: 15
+      y: 41
+      z: 195
+    - x: 15
+      y: 42
+      z: 195
+    - x: 15
+      y: 40
+      z: 193
+    - x: 15
+      y: 39
+      z: 193
+    - x: 15
+      y: 41
+      z: 193
+    - x: 15
+      y: 42
+      z: 193
+    - x: 15
+      y: 41
+      z: 192
+    - x: 15
+      y: 40
+      z: 191
+    - x: 15
+      y: 40
+      z: 190
+    - x: 15
+      y: 39
+      z: 190
+    - x: 15
+      y: 41
+      z: 190
+    - x: 15
+      y: 42
+      z: 190
+    - x: 15
+      y: 41
+      z: 221
+    - x: 15
+      y: 42
+      z: 220
+    - x: 15
+      y: 40
+      z: 222
+    - x: 15
+      y: 39
+      z: 223
+    - x: 15
+      y: 41
+      z: 215
+    - x: 16
+      y: 42
+      z: 203
+    - x: 16
+      y: 42
+      z: 200
+    - x: 16
+      y: 38
+      z: 221
+    - x: 16
+      y: 38
+      z: 222
+    - x: 16
+      y: 38
+      z: 224
+    - x: 16
+      y: 38
+      z: 226
+    - x: 16
+      y: 38
+      z: 227
+    - x: 16
+      y: 38
+      z: 228
+    - x: 16
+      y: 37
+      z: 190
+    - x: 16
+      y: 37
+      z: 191
+    - x: 16
+      y: 37
+      z: 192
+    - x: 16
+      y: 37
+      z: 193
+    - x: 16
+      y: 37
+      z: 194
+    - x: 16
+      y: 37
+      z: 195
+    - x: 16
+      y: 37
+      z: 196
+    - x: 16
+      y: 37
+      z: 197
+    - x: 16
+      y: 37
+      z: 198
+    - x: 16
+      y: 37
+      z: 199
+    - x: 16
+      y: 37
+      z: 200
+    - x: 16
+      y: 37
+      z: 201
+    - x: 16
+      y: 37
+      z: 202
+    - x: 16
+      y: 37
+      z: 203
+    - x: 16
+      y: 37
+      z: 204
+    - x: 16
+      y: 37
+      z: 205
+    - x: 16
+      y: 37
+      z: 206
+    - x: 16
+      y: 37
+      z: 207
+    - x: 16
+      y: 37
+      z: 208
+    - x: 16
+      y: 37
+      z: 209
+    - x: 16
+      y: 37
+      z: 210
+    - x: 16
+      y: 37
+      z: 211
+    - x: 16
+      y: 37
+      z: 212
+    - x: 16
+      y: 37
+      z: 213
+    - x: 16
+      y: 37
+      z: 214
+    - x: 16
+      y: 37
+      z: 215
+    - x: 16
+      y: 37
+      z: 216
+    - x: 16
+      y: 37
+      z: 217
+    - x: 16
+      y: 37
+      z: 218
+    - x: 16
+      y: 37
+      z: 219
+    - x: 16
+      y: 37
+      z: 220
+    - x: 16
+      y: 37
+      z: 221
+    - x: 16
+      y: 37
+      z: 222
+    - x: 16
+      y: 37
+      z: 223
+    - x: 16
+      y: 37
+      z: 224
+    - x: 16
+      y: 37
+      z: 225
+    - x: 16
+      y: 37
+      z: 226
+    - x: 16
+      y: 37
+      z: 227
+    - x: 16
+      y: 41
+      z: 201
+    - x: 16
+      y: 41
+      z: 200
+    - x: 16
+      y: 41
+      z: 198
+    - x: 16
+      y: 41
+      z: 195
+    - x: 16
+      y: 41
+      z: 193
+    - x: 16
+      y: 40
+      z: 213
+    - x: 16
+      y: 40
+      z: 216
+    - x: 16
+      y: 40
+      z: 217
+    - x: 16
+      y: 40
+      z: 218
+    - x: 16
+      y: 40
+      z: 219
+    - x: 16
+      y: 40
+      z: 220
+    - x: 16
+      y: 40
+      z: 222
+    - x: 16
+      y: 40
+      z: 224
+    - x: 16
+      y: 34
+      z: 189
+    - x: 16
+      y: 34
+      z: 190
+    - x: 16
+      y: 34
+      z: 191
+    - x: 16
+      y: 34
+      z: 192
+    - x: 16
+      y: 34
+      z: 193
+    - x: 16
+      y: 34
+      z: 194
+    - x: 16
+      y: 34
+      z: 195
+    - x: 16
+      y: 34
+      z: 196
+    - x: 16
+      y: 40
+      z: 225
+    - x: 16
+      y: 40
+      z: 226
+    - x: 16
+      y: 40
+      z: 227
+    - x: 16
+      y: 40
+      z: 228
+    - x: 16
+      y: 34
+      z: 197
+    - x: 16
+      y: 34
+      z: 198
+    - x: 16
+      y: 34
+      z: 199
+    - x: 16
+      y: 34
+      z: 200
+    - x: 16
+      y: 34
+      z: 201
+    - x: 16
+      y: 34
+      z: 202
+    - x: 16
+      y: 34
+      z: 203
+    - x: 16
+      y: 34
+      z: 204
+    - x: 16
+      y: 34
+      z: 205
+    - x: 16
+      y: 34
+      z: 206
+    - x: 16
+      y: 34
+      z: 207
+    - x: 16
+      y: 34
+      z: 208
+    - x: 16
+      y: 34
+      z: 209
+    - x: 16
+      y: 34
+      z: 210
+    - x: 16
+      y: 34
+      z: 211
+    - x: 16
+      y: 34
+      z: 212
+    - x: 16
+      y: 34
+      z: 213
+    - x: 16
+      y: 34
+      z: 214
+    - x: 16
+      y: 34
+      z: 215
+    - x: 16
+      y: 34
+      z: 216
+    - x: 16
+      y: 34
+      z: 217
+    - x: 16
+      y: 34
+      z: 218
+    - x: 16
+      y: 40
+      z: 210
+    - x: 16
+      y: 34
+      z: 219
+    - x: 16
+      y: 34
+      z: 220
+    - x: 16
+      y: 40
+      z: 208
+    - x: 16
+      y: 40
+      z: 205
+    - x: 16
+      y: 40
+      z: 203
+    - x: 16
+      y: 40
+      z: 200
+    - x: 16
+      y: 40
+      z: 198
+    - x: 16
+      y: 34
+      z: 221
+    - x: 16
+      y: 34
+      z: 222
+    - x: 16
+      y: 34
+      z: 223
+    - x: 16
+      y: 34
+      z: 224
+    - x: 16
+      y: 34
+      z: 225
+    - x: 16
+      y: 34
+      z: 226
+    - x: 16
+      y: 34
+      z: 227
+    - x: 16
+      y: 34
+      z: 228
+    - x: 16
+      y: 34
+      z: 229
+    - x: 16
+      y: 34
+      z: 230
+    - x: 16
+      y: 34
+      z: 231
+    - x: 16
+      y: 34
+      z: 232
+    - x: 16
+      y: 34
+      z: 233
+    - x: 16
+      y: 33
+      z: 189
+    - x: 16
+      y: 33
+      z: 190
+    - x: 16
+      y: 33
+      z: 191
+    - x: 16
+      y: 33
+      z: 192
+    - x: 16
+      y: 33
+      z: 193
+    - x: 16
+      y: 33
+      z: 194
+    - x: 16
+      y: 33
+      z: 195
+    - x: 16
+      y: 33
+      z: 196
+    - x: 16
+      y: 33
+      z: 197
+    - x: 16
+      y: 33
+      z: 198
+    - x: 16
+      y: 33
+      z: 199
+    - x: 16
+      y: 33
+      z: 200
+    - x: 16
+      y: 33
+      z: 201
+    - x: 16
+      y: 41
+      z: 208
+    - x: 16
+      y: 41
+      z: 210
+    - x: 16
+      y: 41
+      z: 211
+    - x: 16
+      y: 41
+      z: 212
+    - x: 16
+      y: 41
+      z: 213
+    - x: 16
+      y: 41
+      z: 215
+    - x: 16
+      y: 41
+      z: 218
+    - x: 16
+      y: 41
+      z: 219
+    - x: 16
+      y: 41
+      z: 221
+    - x: 16
+      y: 33
+      z: 202
+    - x: 16
+      y: 33
+      z: 203
+    - x: 16
+      y: 33
+      z: 204
+    - x: 16
+      y: 33
+      z: 205
+    - x: 16
+      y: 33
+      z: 206
+    - x: 16
+      y: 33
+      z: 207
+    - x: 16
+      y: 33
+      z: 208
+    - x: 16
+      y: 33
+      z: 209
+    - x: 16
+      y: 33
+      z: 210
+    - x: 16
+      y: 33
+      z: 211
+    - x: 16
+      y: 33
+      z: 212
+    - x: 16
+      y: 33
+      z: 213
+    - x: 16
+      y: 33
+      z: 214
+    - x: 16
+      y: 33
+      z: 215
+    - x: 16
+      y: 41
+      z: 223
+    - x: 16
+      y: 41
+      z: 224
+    - x: 16
+      y: 33
+      z: 216
+    - x: 16
+      y: 33
+      z: 217
+    - x: 16
+      y: 33
+      z: 218
+    - x: 16
+      y: 33
+      z: 219
+    - x: 16
+      y: 33
+      z: 220
+    - x: 16
+      y: 33
+      z: 221
+    - x: 16
+      y: 33
+      z: 222
+    - x: 16
+      y: 33
+      z: 223
+    - x: 16
+      y: 33
+      z: 224
+    - x: 16
+      y: 33
+      z: 225
+    - x: 16
+      y: 33
+      z: 226
+    - x: 16
+      y: 33
+      z: 227
+    - x: 16
+      y: 33
+      z: 228
+    - x: 16
+      y: 33
+      z: 229
+    - x: 16
+      y: 33
+      z: 230
+    - x: 16
+      y: 33
+      z: 231
+    - x: 16
+      y: 33
+      z: 232
+    - x: 16
+      y: 33
+      z: 233
+    - x: 16
+      y: 40
+      z: 193
+    - x: 16
+      y: 40
+      z: 191
+    - x: 16
+      y: 40
+      z: 190
+    - x: 16
+      y: 41
+      z: 231
+    - x: 16
+      y: 41
+      z: 230
+    - x: 16
+      y: 41
+      z: 229
+    - x: 16
+      y: 42
+      z: 193
+    - x: 16
+      y: 42
+      z: 190
+    - x: 16
+      y: 39
+      z: 213
+    - x: 16
+      y: 39
+      z: 210
+    - x: 16
+      y: 39
+      z: 207
+    - x: 16
+      y: 39
+      z: 206
+    - x: 16
+      y: 39
+      z: 203
+    - x: 16
+      y: 39
+      z: 200
+    - x: 16
+      y: 42
+      z: 225
+    - x: 16
+      y: 42
+      z: 226
+    - x: 16
+      y: 42
+      z: 227
+    - x: 16
+      y: 42
+      z: 228
+    - x: 16
+      y: 42
+      z: 229
+    - x: 16
+      y: 42
+      z: 230
+    - x: 16
+      y: 42
+      z: 231
+    - x: 16
+      y: 42
+      z: 232
+    - x: 16
+      y: 40
+      z: 229
+    - x: 16
+      y: 40
+      z: 230
+    - x: 16
+      y: 41
+      z: 190
+    - x: 16
+      y: 41
+      z: 192
+    - x: 16
+      y: 39
+      z: 190
+    - x: 16
+      y: 39
+      z: 193
+    - x: 16
+      y: 39
+      z: 196
+    - x: 16
+      y: 39
+      z: 197
+    - x: 16
+      y: 40
+      z: 195
+    - x: 16
+      y: 39
+      z: 229
+    - x: 16
+      y: 39
+      z: 228
+    - x: 16
+      y: 39
+      z: 227
+    - x: 16
+      y: 39
+      z: 226
+    - x: 16
+      y: 39
+      z: 225
+    - x: 16
+      y: 39
+      z: 223
+    - x: 16
+      y: 39
+      z: 221
+    - x: 16
+      y: 39
+      z: 220
+    - x: 16
+      y: 42
+      z: 223
+    - x: 16
+      y: 42
+      z: 222
+    - x: 16
+      y: 42
+      z: 220
+    - x: 16
+      y: 42
+      z: 218
+    - x: 16
+      y: 42
+      z: 217
+    - x: 16
+      y: 42
+      z: 216
+    - x: 16
+      y: 42
+      z: 213
+    - x: 16
+      y: 42
+      z: 210
+    name: 58 12 12
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.26, g: 0.26, b: 0.26, a: 1}
+      emissionPower: 2
+  - materialList:
+    - x: 16
+      y: 31
+      z: 116
+    - x: 16
+      y: 32
+      z: 116
+    - x: 16
+      y: 32
+      z: 68
+    name: 163 157 157
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0.57
+      smoothness: 0.9
+      alpha: 0
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  - materialList:
+    - x: 19
+      y: 77
+      z: 289
+    - x: 20
+      y: 76
+      z: 289
+    - x: 22
+      y: 76
+      z: 289
+    - x: 21
+      y: 76
+      z: 289
+    - x: 19
+      y: 76
+      z: 289
+    name: 255 102 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 1, g: 1, b: 1, a: 1}
+      emissionPower: 9.5
+  - materialList:
+    - x: 25
+      y: 28
+      z: 128
+    - x: 26
+      y: 28
+      z: 128
+    - x: 25
+      y: 28
+      z: 129
+    - x: 26
+      y: 28
+      z: 129
+    - x: 37
+      y: 35
+      z: 256
+    - x: 36
+      y: 35
+      z: 256
+    - x: 37
+      y: 35
+      z: 255
+    - x: 36
+      y: 35
+      z: 255
+    - x: 36
+      y: 35
+      z: 257
+    - x: 37
+      y: 35
+      z: 257
+    - x: 37
+      y: 35
+      z: 254
+    - x: 36
+      y: 35
+      z: 254
+    - x: 37
+      y: 35
+      z: 253
+    - x: 36
+      y: 35
+      z: 253
+    - x: 37
+      y: 35
+      z: 252
+    - x: 36
+      y: 35
+      z: 252
+    - x: 37
+      y: 35
+      z: 251
+    - x: 36
+      y: 35
+      z: 251
+    - x: 37
+      y: 35
+      z: 250
+    - x: 36
+      y: 35
+      z: 250
+    - x: 36
+      y: 35
+      z: 258
+    - x: 37
+      y: 35
+      z: 258
+    - x: 25
+      y: 28
+      z: 9
+    - x: 26
+      y: 28
+      z: 9
+    - x: 25
+      y: 28
+      z: 10
+    - x: 26
+      y: 28
+      z: 10
+    name: 255 255 255
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.48, g: 0.48, b: 0.48, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 40
+      y: 92
+      z: 221
+    - x: 40
+      y: 92
+      z: 222
+    - x: 34
+      y: 100
+      z: 216
+    - x: 42
+      y: 31
+      z: 210
+    - x: 43
+      y: 31
+      z: 210
+    - x: 41
+      y: 31
+      z: 210
+    - x: 44
+      y: 31
+      z: 210
+    - x: 40
+      y: 31
+      z: 210
+    - x: 45
+      y: 31
+      z: 209
+    - x: 39
+      y: 31
+      z: 210
+    - x: 38
+      y: 31
+      z: 210
+    - x: 50
+      y: 31
+      z: 196
+    - x: 37
+      y: 31
+      z: 210
+    - x: 59
+      y: 30
+      z: 191
+    - x: 59
+      y: 30
+      z: 190
+    - x: 32
+      y: 31
+      z: 191
+    - x: 51
+      y: 31
+      z: 196
+    - x: 32
+      y: 31
+      z: 192
+    - x: 33
+      y: 31
+      z: 191
+    - x: 33
+      y: 31
+      z: 192
+    - x: 34
+      y: 31
+      z: 192
+    - x: 36
+      y: 31
+      z: 210
+    - x: 49
+      y: 31
+      z: 209
+    - x: 52
+      y: 31
+      z: 196
+    - x: 35
+      y: 31
+      z: 210
+    - x: 50
+      y: 31
+      z: 209
+    - x: 34
+      y: 31
+      z: 210
+    - x: 51
+      y: 31
+      z: 209
+    - x: 33
+      y: 31
+      z: 210
+    - x: 52
+      y: 31
+      z: 209
+    - x: 32
+      y: 31
+      z: 210
+    - x: 53
+      y: 31
+      z: 209
+    - x: 29
+      y: 31
+      z: 195
+    - x: 31
+      y: 31
+      z: 210
+    - x: 54
+      y: 31
+      z: 209
+    - x: 28
+      y: 31
+      z: 195
+    - x: 30
+      y: 31
+      z: 210
+    - x: 55
+      y: 31
+      z: 209
+    - x: 27
+      y: 31
+      z: 195
+    - x: 29
+      y: 31
+      z: 210
+    - x: 56
+      y: 31
+      z: 209
+    - x: 26
+      y: 31
+      z: 195
+    - x: 28
+      y: 31
+      z: 210
+    - x: 57
+      y: 31
+      z: 209
+    - x: 25
+      y: 31
+      z: 195
+    - x: 27
+      y: 31
+      z: 210
+    - x: 58
+      y: 31
+      z: 209
+    - x: 24
+      y: 31
+      z: 195
+    - x: 26
+      y: 31
+      z: 210
+    - x: 59
+      y: 31
+      z: 209
+    - x: 23
+      y: 31
+      z: 195
+    - x: 25
+      y: 31
+      z: 210
+    - x: 60
+      y: 31
+      z: 209
+    - x: 24
+      y: 31
+      z: 210
+    - x: 61
+      y: 31
+      z: 209
+    - x: 23
+      y: 31
+      z: 210
+    - x: 62
+      y: 31
+      z: 209
+    - x: 63
+      y: 31
+      z: 209
+    - x: 64
+      y: 31
+      z: 209
+    - x: 65
+      y: 31
+      z: 209
+    - x: 66
+      y: 31
+      z: 209
+    - x: 67
+      y: 31
+      z: 209
+    - x: 68
+      y: 31
+      z: 89
+    - x: 67
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 88
+    - x: 66
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 87
+    - x: 65
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 78
+    - x: 67
+      y: 31
+      z: 77
+    - x: 68
+      y: 31
+      z: 86
+    - x: 64
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 79
+    - x: 66
+      y: 31
+      z: 77
+    - x: 68
+      y: 31
+      z: 85
+    - x: 63
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 80
+    - x: 65
+      y: 31
+      z: 77
+    - x: 68
+      y: 31
+      z: 84
+    - x: 62
+      y: 31
+      z: 90
+    - x: 68
+      y: 31
+      z: 81
+    - x: 64
+      y: 31
+      z: 77
+    - x: 68
+      y: 31
+      z: 83
+    - x: 68
+      y: 31
+      z: 82
+    - x: 63
+      y: 31
+      z: 77
+    - x: 60
+      y: 31
+      z: 90
+    - x: 25
+      y: 31
+      z: 91
+    - x: 23
+      y: 31
+      z: 76
+    - x: 24
+      y: 13
+      z: 65
+    - x: 59
+      y: 31
+      z: 90
+    - x: 26
+      y: 31
+      z: 91
+    - x: 24
+      y: 31
+      z: 76
+    - x: 58
+      y: 31
+      z: 90
+    - x: 27
+      y: 31
+      z: 91
+    - x: 60
+      y: 31
+      z: 77
+    - x: 25
+      y: 31
+      z: 76
+    - x: 57
+      y: 31
+      z: 90
+    - x: 28
+      y: 31
+      z: 91
+    - x: 59
+      y: 31
+      z: 77
+    - x: 26
+      y: 31
+      z: 76
+    - x: 56
+      y: 31
+      z: 90
+    - x: 29
+      y: 31
+      z: 91
+    - x: 58
+      y: 31
+      z: 77
+    - x: 27
+      y: 31
+      z: 76
+    - x: 36
+      y: 30
+      z: 73
+    - x: 36
+      y: 30
+      z: 72
+    - x: 55
+      y: 31
+      z: 90
+    - x: 30
+      y: 31
+      z: 91
+    - x: 57
+      y: 31
+      z: 77
+    - x: 28
+      y: 31
+      z: 76
+    - x: 54
+      y: 31
+      z: 90
+    - x: 31
+      y: 31
+      z: 91
+    - x: 56
+      y: 31
+      z: 77
+    - x: 29
+      y: 31
+      z: 76
+    - x: 36
+      y: 29
+      z: 73
+    - x: 23
+      y: 31
+      z: 91
+    - x: 36
+      y: 29
+      z: 72
+    - x: 45
+      y: 31
+      z: 82
+    - x: 45
+      y: 31
+      z: 83
+    - x: 45
+      y: 31
+      z: 81
+    - x: 45
+      y: 31
+      z: 84
+    - x: 45
+      y: 31
+      z: 80
+    - x: 45
+      y: 31
+      z: 85
+    - x: 42
+      y: 31
+      z: 76
+    - x: 45
+      y: 31
+      z: 79
+    - x: 45
+      y: 31
+      z: 86
+    - x: 43
+      y: 31
+      z: 76
+    - x: 41
+      y: 31
+      z: 76
+    - x: 45
+      y: 31
+      z: 78
+    - x: 45
+      y: 31
+      z: 87
+    - x: 44
+      y: 31
+      z: 76
+    - x: 40
+      y: 31
+      z: 76
+    - x: 45
+      y: 31
+      z: 77
+    - x: 42
+      y: 31
+      z: 91
+    - x: 45
+      y: 31
+      z: 88
+    - x: 39
+      y: 31
+      z: 76
+    - x: 43
+      y: 31
+      z: 91
+    - x: 41
+      y: 31
+      z: 91
+    - x: 45
+      y: 31
+      z: 89
+    - x: 38
+      y: 31
+      z: 76
+    - x: 44
+      y: 31
+      z: 91
+    - x: 40
+      y: 31
+      z: 91
+    - x: 45
+      y: 31
+      z: 90
+    - x: 37
+      y: 31
+      z: 76
+    - x: 39
+      y: 31
+      z: 91
+    - x: 36
+      y: 31
+      z: 76
+    - x: 38
+      y: 31
+      z: 91
+    - x: 35
+      y: 31
+      z: 76
+    - x: 50
+      y: 31
+      z: 77
+    - x: 37
+      y: 31
+      z: 91
+    - x: 59
+      y: 29
+      z: 72
+    - x: 59
+      y: 30
+      z: 72
+    - x: 59
+      y: 29
+      z: 71
+    - x: 59
+      y: 30
+      z: 71
+    - x: 34
+      y: 31
+      z: 76
+    - x: 32
+      y: 31
+      z: 72
+    - x: 51
+      y: 31
+      z: 77
+    - x: 32
+      y: 31
+      z: 73
+    - x: 33
+      y: 31
+      z: 72
+    - x: 33
+      y: 31
+      z: 73
+    - x: 34
+      y: 31
+      z: 72
+    - x: 34
+      y: 31
+      z: 73
+    - x: 36
+      y: 31
+      z: 91
+    - x: 49
+      y: 31
+      z: 90
+    - x: 35
+      y: 31
+      z: 72
+    - x: 35
+      y: 31
+      z: 73
+    - x: 33
+      y: 31
+      z: 76
+    - x: 52
+      y: 31
+      z: 77
+    - x: 61
+      y: 31
+      z: 90
+    - x: 24
+      y: 31
+      z: 91
+    - x: 35
+      y: 31
+      z: 91
+    - x: 50
+      y: 31
+      z: 90
+    - x: 32
+      y: 31
+      z: 76
+    - x: 53
+      y: 31
+      z: 77
+    - x: 34
+      y: 31
+      z: 91
+    - x: 51
+      y: 31
+      z: 90
+    - x: 31
+      y: 31
+      z: 76
+    - x: 54
+      y: 31
+      z: 77
+    - x: 33
+      y: 31
+      z: 91
+    - x: 52
+      y: 31
+      z: 90
+    - x: 30
+      y: 31
+      z: 76
+    - x: 55
+      y: 31
+      z: 77
+    - x: 32
+      y: 31
+      z: 91
+    - x: 53
+      y: 31
+      z: 90
+    - x: 34
+      y: 100
+      z: 96
+    - x: 34
+      y: 100
+      z: 97
+    - x: 61
+      y: 31
+      z: 77
+    - x: 62
+      y: 31
+      z: 77
+    name: 255 234 140
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.41, g: 0.41, b: 0.41, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 46
+      y: 22
+      z: 142
+    - x: 47
+      y: 22
+      z: 142
+    - x: 28
+      y: 22
+      z: 142
+    - x: 29
+      y: 22
+      z: 142
+    - x: 34
+      y: 22
+      z: 142
+    - x: 35
+      y: 22
+      z: 142
+    - x: 40
+      y: 22
+      z: 142
+    - x: 41
+      y: 22
+      z: 142
+    - x: 23
+      y: 22
+      z: 142
+    - x: 22
+      y: 22
+      z: 142
+    - x: 49
+      y: 23
+      z: 150
+    - x: 49
+      y: 23
+      z: 151
+    - x: 49
+      y: 23
+      z: 155
+    - x: 49
+      y: 23
+      z: 156
+    - x: 49
+      y: 23
+      z: 160
+    - x: 49
+      y: 23
+      z: 161
+    - x: 49
+      y: 23
+      z: 165
+    - x: 49
+      y: 23
+      z: 166
+    - x: 49
+      y: 23
+      z: 170
+    - x: 49
+      y: 23
+      z: 171
+    - x: 49
+      y: 23
+      z: 175
+    - x: 49
+      y: 23
+      z: 176
+    - x: 49
+      y: 23
+      z: 180
+    - x: 49
+      y: 23
+      z: 181
+    - x: 38
+      y: 105
+      z: 130
+    - x: 38
+      y: 105
+      z: 131
+    - x: 38
+      y: 105
+      z: 126
+    - x: 38
+      y: 105
+      z: 125
+    - x: 46
+      y: 22
+      z: 23
+    - x: 47
+      y: 22
+      z: 23
+    - x: 28
+      y: 22
+      z: 23
+    - x: 29
+      y: 22
+      z: 23
+    - x: 34
+      y: 22
+      z: 23
+    - x: 35
+      y: 22
+      z: 23
+    - x: 40
+      y: 22
+      z: 23
+    - x: 41
+      y: 22
+      z: 23
+    - x: 23
+      y: 22
+      z: 23
+    - x: 22
+      y: 22
+      z: 23
+    - x: 49
+      y: 23
+      z: 31
+    - x: 49
+      y: 23
+      z: 32
+    - x: 49
+      y: 23
+      z: 36
+    - x: 49
+      y: 23
+      z: 37
+    - x: 49
+      y: 23
+      z: 41
+    - x: 49
+      y: 23
+      z: 42
+    - x: 49
+      y: 23
+      z: 46
+    - x: 49
+      y: 23
+      z: 47
+    - x: 49
+      y: 23
+      z: 51
+    - x: 49
+      y: 23
+      z: 52
+    - x: 49
+      y: 23
+      z: 56
+    - x: 49
+      y: 23
+      z: 57
+    - x: 49
+      y: 23
+      z: 61
+    - x: 49
+      y: 23
+      z: 62
+    - x: 38
+      y: 105
+      z: 11
+    - x: 38
+      y: 105
+      z: 12
+    name: 226 228 145
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 34
+      y: 101
+      z: 97
+    - x: 34
+      y: 67
+      z: 82
+    - x: 34
+      y: 67
+      z: 81
+    name: 255 148 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.34, g: 0.34, b: 0.34, a: 1}
+      emissionPower: 9.5
+  - materialList:
+    - x: 33
+      y: 64
+      z: 93
+    - x: 34
+      y: 64
+      z: 93
+    - x: 35
+      y: 64
+      z: 93
+    - x: 36
+      y: 64
+      z: 93
+    - x: 37
+      y: 64
+      z: 93
+    - x: 38
+      y: 64
+      z: 93
+    - x: 39
+      y: 64
+      z: 93
+    - x: 40
+      y: 64
+      z: 93
+    - x: 33
+      y: 64
+      z: 94
+    - x: 34
+      y: 64
+      z: 94
+    - x: 35
+      y: 64
+      z: 94
+    - x: 36
+      y: 64
+      z: 94
+    - x: 37
+      y: 64
+      z: 94
+    - x: 38
+      y: 64
+      z: 94
+    - x: 39
+      y: 64
+      z: 94
+    - x: 40
+      y: 64
+      z: 94
+    name: 241 255 138
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.52, g: 0.52, b: 0.52, a: 1}
+      emissionPower: 7
+  - materialList:
+    - x: 22
+      y: 55
+      z: 132
+    - x: 22
+      y: 56
+      z: 132
+    - x: 22
+      y: 57
+      z: 132
+    - x: 22
+      y: 58
+      z: 132
+    - x: 22
+      y: 55
+      z: 13
+    - x: 22
+      y: 56
+      z: 13
+    - x: 22
+      y: 57
+      z: 13
+    - x: 22
+      y: 58
+      z: 13
+    name: 255 0 233
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+      emissionPower: 9.5
+  - materialList:
+    - x: 22
+      y: 19
+      z: 172
+    - x: 22
+      y: 19
+      z: 173
+    - x: 22
+      y: 19
+      z: 174
+    - x: 34
+      y: 114
+      z: 34
+    - x: 33
+      y: 114
+      z: 34
+    - x: 32
+      y: 114
+      z: 34
+    - x: 31
+      y: 114
+      z: 34
+    - x: 30
+      y: 114
+      z: 34
+    - x: 29
+      y: 114
+      z: 34
+    - x: 15
+      y: 41
+      z: 38
+    - x: 15
+      y: 41
+      z: 39
+    - x: 15
+      y: 41
+      z: 42
+    - x: 15
+      y: 41
+      z: 45
+    - x: 15
+      y: 41
+      z: 48
+    - x: 15
+      y: 41
+      z: 49
+    - x: 15
+      y: 41
+      z: 53
+    - x: 15
+      y: 41
+      z: 54
+    - x: 15
+      y: 40
+      z: 37
+    - x: 15
+      y: 40
+      z: 40
+    - x: 15
+      y: 40
+      z: 42
+    - x: 15
+      y: 40
+      z: 44
+    - x: 15
+      y: 40
+      z: 45
+    - x: 15
+      y: 40
+      z: 47
+    - x: 15
+      y: 40
+      z: 50
+    - x: 15
+      y: 40
+      z: 52
+    - x: 15
+      y: 39
+      z: 37
+    - x: 15
+      y: 39
+      z: 38
+    - x: 15
+      y: 39
+      z: 39
+    - x: 15
+      y: 39
+      z: 40
+    - x: 33
+      y: 114
+      z: 10
+    - x: 32
+      y: 114
+      z: 10
+    - x: 31
+      y: 114
+      z: 10
+    - x: 30
+      y: 114
+      z: 10
+    - x: 29
+      y: 114
+      z: 10
+    - x: 28
+      y: 114
+      z: 10
+    - x: 15
+      y: 39
+      z: 42
+    - x: 15
+      y: 39
+      z: 43
+    - x: 15
+      y: 39
+      z: 45
+    - x: 15
+      y: 39
+      z: 47
+    - x: 15
+      y: 39
+      z: 48
+    - x: 15
+      y: 39
+      z: 49
+    - x: 15
+      y: 39
+      z: 50
+    - x: 15
+      y: 38
+      z: 37
+    - x: 15
+      y: 38
+      z: 40
+    - x: 15
+      y: 38
+      z: 42
+    - x: 15
+      y: 38
+      z: 45
+    - x: 15
+      y: 38
+      z: 47
+    - x: 15
+      y: 38
+      z: 50
+    - x: 15
+      y: 38
+      z: 52
+    - x: 15
+      y: 37
+      z: 37
+    - x: 15
+      y: 37
+      z: 40
+    - x: 15
+      y: 37
+      z: 42
+    - x: 15
+      y: 37
+      z: 45
+    - x: 15
+      y: 37
+      z: 47
+    - x: 15
+      y: 37
+      z: 50
+    - x: 15
+      y: 37
+      z: 53
+    - x: 22
+      y: 19
+      z: 53
+    - x: 22
+      y: 19
+      z: 54
+    - x: 15
+      y: 37
+      z: 54
+    - x: 15
+      y: 40
+      z: 55
+    - x: 15
+      y: 39
+      z: 55
+    - x: 15
+      y: 38
+      z: 55
+    - x: 15
+      y: 39
+      z: 35
+    - x: 15
+      y: 40
+      z: 35
+    - x: 22
+      y: 19
+      z: 55
+    - x: 15
+      y: 41
+      z: 34
+    - x: 15
+      y: 41
+      z: 33
+    - x: 15
+      y: 41
+      z: 29
+    - x: 15
+      y: 41
+      z: 28
+    - x: 15
+      y: 41
+      z: 11
+    - x: 15
+      y: 41
+      z: 12
+    - x: 15
+      y: 41
+      z: 14
+    - x: 15
+      y: 41
+      z: 15
+    - x: 15
+      y: 41
+      z: 18
+    - x: 15
+      y: 41
+      z: 21
+    - x: 15
+      y: 41
+      z: 22
+    - x: 15
+      y: 40
+      z: 11
+    - x: 15
+      y: 40
+      z: 16
+    - x: 15
+      y: 40
+      z: 18
+    - x: 15
+      y: 39
+      z: 11
+    - x: 15
+      y: 39
+      z: 14
+    - x: 15
+      y: 39
+      z: 15
+    - x: 15
+      y: 39
+      z: 16
+    - x: 15
+      y: 39
+      z: 18
+    - x: 15
+      y: 39
+      z: 20
+    - x: 15
+      y: 39
+      z: 21
+    - x: 15
+      y: 38
+      z: 11
+    - x: 15
+      y: 38
+      z: 16
+    - x: 15
+      y: 38
+      z: 18
+    - x: 15
+      y: 38
+      z: 20
+    - x: 15
+      y: 37
+      z: 11
+    - x: 15
+      y: 37
+      z: 16
+    - x: 15
+      y: 37
+      z: 18
+    - x: 15
+      y: 37
+      z: 20
+    - x: 15
+      y: 37
+      z: 21
+    - x: 15
+      y: 37
+      z: 22
+    - x: 15
+      y: 41
+      z: 10
+    - x: 15
+      y: 40
+      z: 23
+    - x: 15
+      y: 39
+      z: 23
+    - x: 15
+      y: 38
+      z: 23
+    - x: 15
+      y: 37
+      z: 23
+    - x: 15
+      y: 40
+      z: 27
+    - x: 15
+      y: 40
+      z: 30
+    - x: 15
+      y: 40
+      z: 32
+    - x: 15
+      y: 41
+      z: 35
+    - x: 15
+      y: 39
+      z: 27
+    - x: 15
+      y: 39
+      z: 28
+    - x: 15
+      y: 39
+      z: 29
+    - x: 15
+      y: 39
+      z: 30
+    - x: 15
+      y: 39
+      z: 32
+    - x: 15
+      y: 37
+      z: 35
+    - x: 15
+      y: 38
+      z: 27
+    - x: 15
+      y: 38
+      z: 30
+    - x: 15
+      y: 38
+      z: 32
+    - x: 15
+      y: 38
+      z: 35
+    - x: 15
+      y: 37
+      z: 27
+    - x: 15
+      y: 37
+      z: 30
+    - x: 15
+      y: 37
+      z: 33
+    - x: 15
+      y: 37
+      z: 34
+    - x: 32
+      y: 113
+      z: 34
+    - x: 33
+      y: 113
+      z: 34
+    - x: 31
+      y: 113
+      z: 34
+    - x: 34
+      y: 113
+      z: 34
+    - x: 30
+      y: 113
+      z: 34
+    - x: 29
+      y: 113
+      z: 34
+    - x: 31
+      y: 113
+      z: 10
+    - x: 32
+      y: 113
+      z: 10
+    - x: 30
+      y: 113
+      z: 10
+    - x: 33
+      y: 113
+      z: 10
+    - x: 29
+      y: 113
+      z: 10
+    - x: 28
+      y: 113
+      z: 10
+    name: 155 51 0
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 0
+      smoothness: 0
+      alpha: 0
+      emission: {r: 0.19, g: 0.19, b: 0.19, a: 1}
+      emissionPower: 4.5
+  - materialList:
+    - x: 68
+      y: 22
+      z: 188
+    - x: 68
+      y: 21
+      z: 188
+    - x: 67
+      y: 22
+      z: 188
+    - x: 67
+      y: 21
+      z: 188
+    - x: 66
+      y: 22
+      z: 188
+    - x: 66
+      y: 21
+      z: 188
+    - x: 65
+      y: 22
+      z: 188
+    - x: 65
+      y: 21
+      z: 188
+    - x: 64
+      y: 22
+      z: 188
+    - x: 64
+      y: 21
+      z: 188
+    - x: 63
+      y: 22
+      z: 188
+    - x: 63
+      y: 21
+      z: 188
+    - x: 62
+      y: 22
+      z: 188
+    - x: 62
+      y: 21
+      z: 188
+    - x: 55
+      y: 17
+      z: 188
+    - x: 56
+      y: 17
+      z: 188
+    - x: 55
+      y: 16
+      z: 188
+    - x: 56
+      y: 16
+      z: 188
+    - x: 55
+      y: 15
+      z: 188
+    - x: 56
+      y: 15
+      z: 188
+    - x: 55
+      y: 22
+      z: 188
+    - x: 56
+      y: 22
+      z: 188
+    - x: 57
+      y: 22
+      z: 188
+    - x: 57
+      y: 21
+      z: 188
+    - x: 54
+      y: 22
+      z: 188
+    - x: 54
+      y: 21
+      z: 188
+    - x: 53
+      y: 22
+      z: 188
+    - x: 53
+      y: 21
+      z: 188
+    - x: 52
+      y: 22
+      z: 188
+    - x: 52
+      y: 21
+      z: 188
+    - x: 51
+      y: 22
+      z: 188
+    - x: 51
+      y: 21
+      z: 188
+    - x: 61
+      y: 16
+      z: 188
+    - x: 48
+      y: 22
+      z: 188
+    - x: 48
+      y: 21
+      z: 188
+    - x: 47
+      y: 22
+      z: 188
+    - x: 47
+      y: 21
+      z: 188
+    - x: 46
+      y: 22
+      z: 188
+    - x: 46
+      y: 21
+      z: 188
+    - x: 45
+      y: 22
+      z: 188
+    - x: 45
+      y: 21
+      z: 188
+    - x: 44
+      y: 22
+      z: 188
+    - x: 44
+      y: 21
+      z: 188
+    - x: 43
+      y: 22
+      z: 188
+    - x: 43
+      y: 21
+      z: 188
+    - x: 42
+      y: 22
+      z: 188
+    - x: 42
+      y: 21
+      z: 188
+    - x: 61
+      y: 19
+      z: 188
+    - x: 39
+      y: 22
+      z: 188
+    - x: 39
+      y: 21
+      z: 188
+    - x: 38
+      y: 22
+      z: 188
+    - x: 38
+      y: 21
+      z: 188
+    - x: 37
+      y: 22
+      z: 188
+    - x: 37
+      y: 21
+      z: 188
+    - x: 36
+      y: 22
+      z: 188
+    - x: 36
+      y: 21
+      z: 188
+    - x: 23
+      y: 22
+      z: 188
+    - x: 23
+      y: 21
+      z: 188
+    - x: 35
+      y: 22
+      z: 188
+    - x: 35
+      y: 21
+      z: 188
+    - x: 24
+      y: 22
+      z: 188
+    - x: 24
+      y: 21
+      z: 188
+    - x: 34
+      y: 22
+      z: 188
+    - x: 34
+      y: 21
+      z: 188
+    - x: 25
+      y: 22
+      z: 188
+    - x: 25
+      y: 21
+      z: 188
+    - x: 33
+      y: 22
+      z: 188
+    - x: 33
+      y: 21
+      z: 188
+    - x: 26
+      y: 22
+      z: 188
+    - x: 26
+      y: 21
+      z: 188
+    - x: 27
+      y: 22
+      z: 188
+    - x: 27
+      y: 21
+      z: 188
+    - x: 28
+      y: 22
+      z: 188
+    - x: 28
+      y: 21
+      z: 188
+    - x: 30
+      y: 22
+      z: 188
+    - x: 30
+      y: 21
+      z: 188
+    - x: 29
+      y: 22
+      z: 188
+    - x: 29
+      y: 21
+      z: 188
+    - x: 23
+      y: 20
+      z: 188
+    - x: 24
+      y: 20
+      z: 188
+    - x: 25
+      y: 20
+      z: 188
+    - x: 26
+      y: 20
+      z: 188
+    - x: 27
+      y: 20
+      z: 188
+    - x: 28
+      y: 20
+      z: 188
+    - x: 29
+      y: 20
+      z: 188
+    - x: 30
+      y: 20
+      z: 188
+    - x: 61
+      y: 22
+      z: 188
+    - x: 33
+      y: 20
+      z: 188
+    - x: 34
+      y: 20
+      z: 188
+    - x: 35
+      y: 20
+      z: 188
+    - x: 36
+      y: 20
+      z: 188
+    - x: 37
+      y: 20
+      z: 188
+    - x: 38
+      y: 20
+      z: 188
+    - x: 39
+      y: 20
+      z: 188
+    - x: 42
+      y: 20
+      z: 188
+    - x: 43
+      y: 20
+      z: 188
+    - x: 44
+      y: 20
+      z: 188
+    - x: 45
+      y: 20
+      z: 188
+    - x: 46
+      y: 20
+      z: 188
+    - x: 47
+      y: 20
+      z: 188
+    - x: 48
+      y: 20
+      z: 188
+    - x: 51
+      y: 20
+      z: 188
+    - x: 52
+      y: 20
+      z: 188
+    - x: 53
+      y: 20
+      z: 188
+    - x: 54
+      y: 20
+      z: 188
+    - x: 57
+      y: 20
+      z: 188
+    - x: 55
+      y: 21
+      z: 188
+    - x: 55
+      y: 14
+      z: 188
+    - x: 56
+      y: 14
+      z: 188
+    - x: 62
+      y: 20
+      z: 188
+    - x: 63
+      y: 20
+      z: 188
+    - x: 64
+      y: 20
+      z: 188
+    - x: 65
+      y: 20
+      z: 188
+    - x: 66
+      y: 20
+      z: 188
+    - x: 67
+      y: 20
+      z: 188
+    - x: 68
+      y: 20
+      z: 188
+    - x: 23
+      y: 19
+      z: 188
+    - x: 24
+      y: 19
+      z: 188
+    - x: 25
+      y: 19
+      z: 188
+    - x: 26
+      y: 19
+      z: 188
+    - x: 27
+      y: 19
+      z: 188
+    - x: 28
+      y: 19
+      z: 188
+    - x: 29
+      y: 19
+      z: 188
+    - x: 30
+      y: 19
+      z: 188
+    - x: 33
+      y: 19
+      z: 188
+    - x: 34
+      y: 19
+      z: 188
+    - x: 35
+      y: 19
+      z: 188
+    - x: 36
+      y: 19
+      z: 188
+    - x: 37
+      y: 19
+      z: 188
+    - x: 38
+      y: 19
+      z: 188
+    - x: 39
+      y: 19
+      z: 188
+    - x: 42
+      y: 19
+      z: 188
+    - x: 43
+      y: 19
+      z: 188
+    - x: 44
+      y: 19
+      z: 188
+    - x: 45
+      y: 19
+      z: 188
+    - x: 46
+      y: 19
+      z: 188
+    - x: 47
+      y: 19
+      z: 188
+    - x: 48
+      y: 19
+      z: 188
+    - x: 61
+      y: 15
+      z: 188
+    - x: 51
+      y: 19
+      z: 188
+    - x: 52
+      y: 19
+      z: 188
+    - x: 53
+      y: 19
+      z: 188
+    - x: 54
+      y: 19
+      z: 188
+    - x: 57
+      y: 19
+      z: 188
+    - x: 56
+      y: 21
+      z: 188
+    - x: 62
+      y: 19
+      z: 188
+    - x: 63
+      y: 19
+      z: 188
+    - x: 64
+      y: 19
+      z: 188
+    - x: 65
+      y: 19
+      z: 188
+    - x: 66
+      y: 19
+      z: 188
+    - x: 67
+      y: 19
+      z: 188
+    - x: 68
+      y: 19
+      z: 188
+    - x: 23
+      y: 18
+      z: 188
+    - x: 24
+      y: 18
+      z: 188
+    - x: 25
+      y: 18
+      z: 188
+    - x: 26
+      y: 18
+      z: 188
+    - x: 27
+      y: 18
+      z: 188
+    - x: 28
+      y: 18
+      z: 188
+    - x: 29
+      y: 18
+      z: 188
+    - x: 30
+      y: 18
+      z: 188
+    - x: 33
+      y: 18
+      z: 188
+    - x: 34
+      y: 18
+      z: 188
+    - x: 35
+      y: 18
+      z: 188
+    - x: 36
+      y: 18
+      z: 188
+    - x: 37
+      y: 18
+      z: 188
+    - x: 38
+      y: 18
+      z: 188
+    - x: 39
+      y: 18
+      z: 188
+    - x: 61
+      y: 18
+      z: 188
+    - x: 42
+      y: 18
+      z: 188
+    - x: 43
+      y: 18
+      z: 188
+    - x: 44
+      y: 18
+      z: 188
+    - x: 45
+      y: 18
+      z: 188
+    - x: 46
+      y: 18
+      z: 188
+    - x: 47
+      y: 18
+      z: 188
+    - x: 48
+      y: 18
+      z: 188
+    - x: 51
+      y: 18
+      z: 188
+    - x: 52
+      y: 18
+      z: 188
+    - x: 53
+      y: 18
+      z: 188
+    - x: 54
+      y: 18
+      z: 188
+    - x: 57
+      y: 18
+      z: 188
+    - x: 55
+      y: 20
+      z: 188
+    - x: 62
+      y: 18
+      z: 188
+    - x: 63
+      y: 18
+      z: 188
+    - x: 64
+      y: 18
+      z: 188
+    - x: 65
+      y: 18
+      z: 188
+    - x: 66
+      y: 18
+      z: 188
+    - x: 67
+      y: 18
+      z: 188
+    - x: 68
+      y: 18
+      z: 188
+    - x: 23
+      y: 17
+      z: 188
+    - x: 24
+      y: 17
+      z: 188
+    - x: 25
+      y: 17
+      z: 188
+    - x: 26
+      y: 17
+      z: 188
+    - x: 27
+      y: 17
+      z: 188
+    - x: 28
+      y: 17
+      z: 188
+    - x: 29
+      y: 17
+      z: 188
+    - x: 30
+      y: 17
+      z: 188
+    - x: 61
+      y: 21
+      z: 188
+    - x: 33
+      y: 17
+      z: 188
+    - x: 34
+      y: 17
+      z: 188
+    - x: 35
+      y: 17
+      z: 188
+    - x: 36
+      y: 17
+      z: 188
+    - x: 37
+      y: 17
+      z: 188
+    - x: 38
+      y: 17
+      z: 188
+    - x: 39
+      y: 17
+      z: 188
+    - x: 42
+      y: 17
+      z: 188
+    - x: 43
+      y: 17
+      z: 188
+    - x: 44
+      y: 17
+      z: 188
+    - x: 45
+      y: 17
+      z: 188
+    - x: 46
+      y: 17
+      z: 188
+    - x: 47
+      y: 17
+      z: 188
+    - x: 48
+      y: 17
+      z: 188
+    - x: 51
+      y: 17
+      z: 188
+    - x: 52
+      y: 17
+      z: 188
+    - x: 53
+      y: 17
+      z: 188
+    - x: 54
+      y: 17
+      z: 188
+    - x: 57
+      y: 17
+      z: 188
+    - x: 56
+      y: 20
+      z: 188
+    - x: 62
+      y: 17
+      z: 188
+    - x: 63
+      y: 17
+      z: 188
+    - x: 64
+      y: 17
+      z: 188
+    - x: 65
+      y: 17
+      z: 188
+    - x: 66
+      y: 17
+      z: 188
+    - x: 67
+      y: 17
+      z: 188
+    - x: 68
+      y: 17
+      z: 188
+    - x: 23
+      y: 16
+      z: 188
+    - x: 24
+      y: 16
+      z: 188
+    - x: 25
+      y: 16
+      z: 188
+    - x: 26
+      y: 16
+      z: 188
+    - x: 27
+      y: 16
+      z: 188
+    - x: 28
+      y: 16
+      z: 188
+    - x: 29
+      y: 16
+      z: 188
+    - x: 30
+      y: 16
+      z: 188
+    - x: 33
+      y: 16
+      z: 188
+    - x: 34
+      y: 16
+      z: 188
+    - x: 35
+      y: 16
+      z: 188
+    - x: 36
+      y: 16
+      z: 188
+    - x: 37
+      y: 16
+      z: 188
+    - x: 38
+      y: 16
+      z: 188
+    - x: 39
+      y: 16
+      z: 188
+    - x: 42
+      y: 16
+      z: 188
+    - x: 43
+      y: 16
+      z: 188
+    - x: 44
+      y: 16
+      z: 188
+    - x: 45
+      y: 16
+      z: 188
+    - x: 46
+      y: 16
+      z: 188
+    - x: 47
+      y: 16
+      z: 188
+    - x: 48
+      y: 16
+      z: 188
+    - x: 61
+      y: 14
+      z: 188
+    - x: 51
+      y: 16
+      z: 188
+    - x: 52
+      y: 16
+      z: 188
+    - x: 53
+      y: 16
+      z: 188
+    - x: 54
+      y: 16
+      z: 188
+    - x: 57
+      y: 16
+      z: 188
+    - x: 55
+      y: 19
+      z: 188
+    - x: 62
+      y: 16
+      z: 188
+    - x: 63
+      y: 16
+      z: 188
+    - x: 64
+      y: 16
+      z: 188
+    - x: 65
+      y: 16
+      z: 188
+    - x: 66
+      y: 16
+      z: 188
+    - x: 67
+      y: 16
+      z: 188
+    - x: 68
+      y: 16
+      z: 188
+    - x: 23
+      y: 15
+      z: 188
+    - x: 24
+      y: 15
+      z: 188
+    - x: 25
+      y: 15
+      z: 188
+    - x: 26
+      y: 15
+      z: 188
+    - x: 27
+      y: 15
+      z: 188
+    - x: 28
+      y: 15
+      z: 188
+    - x: 29
+      y: 15
+      z: 188
+    - x: 30
+      y: 15
+      z: 188
+    - x: 33
+      y: 15
+      z: 188
+    - x: 34
+      y: 15
+      z: 188
+    - x: 35
+      y: 15
+      z: 188
+    - x: 36
+      y: 15
+      z: 188
+    - x: 37
+      y: 15
+      z: 188
+    - x: 38
+      y: 15
+      z: 188
+    - x: 39
+      y: 15
+      z: 188
+    - x: 61
+      y: 17
+      z: 188
+    - x: 42
+      y: 15
+      z: 188
+    - x: 43
+      y: 15
+      z: 188
+    - x: 44
+      y: 15
+      z: 188
+    - x: 45
+      y: 15
+      z: 188
+    - x: 46
+      y: 15
+      z: 188
+    - x: 47
+      y: 15
+      z: 188
+    - x: 48
+      y: 15
+      z: 188
+    - x: 51
+      y: 15
+      z: 188
+    - x: 52
+      y: 15
+      z: 188
+    - x: 53
+      y: 15
+      z: 188
+    - x: 54
+      y: 15
+      z: 188
+    - x: 57
+      y: 15
+      z: 188
+    - x: 56
+      y: 19
+      z: 188
+    - x: 62
+      y: 15
+      z: 188
+    - x: 63
+      y: 15
+      z: 188
+    - x: 64
+      y: 15
+      z: 188
+    - x: 65
+      y: 15
+      z: 188
+    - x: 66
+      y: 15
+      z: 188
+    - x: 67
+      y: 15
+      z: 188
+    - x: 68
+      y: 15
+      z: 188
+    - x: 23
+      y: 14
+      z: 188
+    - x: 24
+      y: 14
+      z: 188
+    - x: 25
+      y: 14
+      z: 188
+    - x: 26
+      y: 14
+      z: 188
+    - x: 27
+      y: 14
+      z: 188
+    - x: 28
+      y: 14
+      z: 188
+    - x: 29
+      y: 14
+      z: 188
+    - x: 30
+      y: 14
+      z: 188
+    - x: 61
+      y: 20
+      z: 188
+    - x: 33
+      y: 14
+      z: 188
+    - x: 34
+      y: 14
+      z: 188
+    - x: 35
+      y: 14
+      z: 188
+    - x: 36
+      y: 14
+      z: 188
+    - x: 37
+      y: 14
+      z: 188
+    - x: 38
+      y: 14
+      z: 188
+    - x: 39
+      y: 14
+      z: 188
+    - x: 42
+      y: 14
+      z: 188
+    - x: 43
+      y: 14
+      z: 188
+    - x: 44
+      y: 14
+      z: 188
+    - x: 45
+      y: 14
+      z: 188
+    - x: 46
+      y: 14
+      z: 188
+    - x: 47
+      y: 14
+      z: 188
+    - x: 48
+      y: 14
+      z: 188
+    - x: 51
+      y: 14
+      z: 188
+    - x: 52
+      y: 14
+      z: 188
+    - x: 53
+      y: 14
+      z: 188
+    - x: 54
+      y: 14
+      z: 188
+    - x: 57
+      y: 14
+      z: 188
+    - x: 55
+      y: 18
+      z: 188
+    - x: 62
+      y: 14
+      z: 188
+    - x: 63
+      y: 14
+      z: 188
+    - x: 64
+      y: 14
+      z: 188
+    - x: 65
+      y: 14
+      z: 188
+    - x: 66
+      y: 14
+      z: 188
+    - x: 67
+      y: 14
+      z: 188
+    - x: 68
+      y: 14
+      z: 188
+    - x: 23
+      y: 13
+      z: 188
+    - x: 24
+      y: 13
+      z: 188
+    - x: 25
+      y: 13
+      z: 188
+    - x: 26
+      y: 13
+      z: 188
+    - x: 27
+      y: 13
+      z: 188
+    - x: 28
+      y: 13
+      z: 188
+    - x: 29
+      y: 13
+      z: 188
+    - x: 30
+      y: 13
+      z: 188
+    - x: 33
+      y: 13
+      z: 188
+    - x: 34
+      y: 13
+      z: 188
+    - x: 35
+      y: 13
+      z: 188
+    - x: 36
+      y: 13
+      z: 188
+    - x: 37
+      y: 13
+      z: 188
+    - x: 38
+      y: 13
+      z: 188
+    - x: 39
+      y: 13
+      z: 188
+    - x: 42
+      y: 13
+      z: 188
+    - x: 43
+      y: 13
+      z: 188
+    - x: 44
+      y: 13
+      z: 188
+    - x: 45
+      y: 13
+      z: 188
+    - x: 46
+      y: 13
+      z: 188
+    - x: 47
+      y: 13
+      z: 188
+    - x: 48
+      y: 13
+      z: 188
+    - x: 61
+      y: 13
+      z: 188
+    - x: 51
+      y: 13
+      z: 188
+    - x: 52
+      y: 13
+      z: 188
+    - x: 53
+      y: 13
+      z: 188
+    - x: 54
+      y: 13
+      z: 188
+    - x: 55
+      y: 13
+      z: 188
+    - x: 56
+      y: 13
+      z: 188
+    - x: 57
+      y: 13
+      z: 188
+    - x: 56
+      y: 18
+      z: 188
+    - x: 62
+      y: 13
+      z: 188
+    - x: 63
+      y: 13
+      z: 188
+    - x: 64
+      y: 13
+      z: 188
+    - x: 65
+      y: 13
+      z: 188
+    - x: 66
+      y: 13
+      z: 188
+    - x: 67
+      y: 13
+      z: 188
+    - x: 68
+      y: 13
+      z: 188
+    name: 255 255 255
+    transparent: 0
+    material:
+      renderingMode: 0
+      metallic: 1
+      smoothness: 1
+      alpha: 0
+      emission: {r: 0, g: 0, b: 0, a: 0}
+      emissionPower: 0
+  materialIndexes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001500000016000000
+  edit_importFoldout: 1
+  edit_objectFoldout: 1
+  edit_generateLightmapUVsAdvancedFoldout: 0
+  edit_helpEnable: 0
+  edit_configureMode: 0
+  edit_configureMaterialIndex: 0
+  edit_configureMaterialMainMode: 0
+  edit_configureMaterialSubMode: 0
+  edit_configureDisableMainMode: 0
+  edit_configureDisableSubMode: 0
+  edit_ConfigurePreviewMode: 0
+  edit_snapToHalfVoxel: 1
+  edit_enableMesh: []
+  mesh: {fileID: 0}
+  material: {fileID: 0}
+  materials:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  atlasTexture: {fileID: 0}
+--- !u!1 &5826831077518197121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077518197123}
+  - component: {fileID: 5826831077518197120}
+  m_Layer: 0
+  m_Name: Building lighting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077518197123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077518197121}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.019211, y: 77.61691, z: -8.778984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5826831078268460553}
+  - {fileID: 5826831077747796803}
+  - {fileID: 5826831077768042139}
+  - {fileID: 5826831077387400885}
+  - {fileID: 5826831078409839910}
+  m_Father: {fileID: 5826831077460033238}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &5826831077518197120
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077518197121}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077747796800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077747796803}
+  - component: {fileID: 5826831077747796802}
+  m_Layer: 0
+  m_Name: Pink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077747796803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077747796800}
+  m_LocalRotation: {x: -0, y: 0.13072276, z: -0, w: 0.991419}
+  m_LocalPosition: {x: -1.5, y: -9.6, z: 18.9}
+  m_LocalScale: {x: 0.69518, y: 0.69518, z: 0.69518}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831077518197123}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 15.023, z: 0}
+--- !u!108 &5826831077747796802
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077747796800}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.003921569, b: 0.21960786, a: 1}
+  m_Intensity: 4.92
+  m_Range: 37.2
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077768042136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077768042139}
+  - component: {fileID: 5826831077768042138}
+  m_Layer: 0
+  m_Name: 'Orange '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077768042139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077768042136}
+  m_LocalRotation: {x: 0.0022919474, y: 0.28706673, z: 0.07676618, w: 0.95482695}
+  m_LocalPosition: {x: 2.7, y: -167.4, z: -15.3}
+  m_LocalScale: {x: 0.61871016, y: 0.61871016, z: 0.61871016}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831077518197123}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -2.275, y: 33.297, z: 8.513}
+--- !u!108 &5826831077768042138
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077768042136}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.5487057, b: 0, a: 1}
+  m_Intensity: 20
+  m_Range: 33.056244
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831077791200262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831077791200257}
+  - component: {fileID: 5826831077791200256}
+  m_Layer: 0
+  m_Name: White - bright
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831077791200257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077791200262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.2022233, y: 119.4285, z: -56.427856}
+  m_LocalScale: {x: 0.89565605, y: 0.895656, z: 0.895656}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831078409839910}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 15.023, z: 0}
+--- !u!108 &5826831077791200256
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831077791200262}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 4.9
+  m_Range: 48
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831078202288721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831078202288720}
+  - component: {fileID: 5826831078202288723}
+  m_Layer: 0
+  m_Name: Mint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831078202288720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078202288721}
+  m_LocalRotation: {x: 0.09012566, y: -0.0045134006, z: -0.010419746, w: 0.9958657}
+  m_LocalPosition: {x: -6.134548, y: -6.331, z: 1.0593193}
+  m_LocalScale: {x: 1.3764, y: 1.3764001, z: 1.3764}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5826831078268460553}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 11.701, y: -6.727, z: 1.497}
+--- !u!108 &5826831078202288723
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078202288721}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0, g: 0.9367819, b: 1, a: 1}
+  m_Intensity: 30.6
+  m_Range: 33.670975
+  m_SpotAngle: 46
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831078268460558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831078268460553}
+  - component: {fileID: 5826831078268460552}
+  m_Layer: 0
+  m_Name: Blue (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831078268460553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078268460558}
+  m_LocalRotation: {x: 0.010371982, y: -0.057721585, z: 0.024294082, w: 0.9979833}
+  m_LocalPosition: {x: 14.4, y: 41.1, z: -0.1}
+  m_LocalScale: {x: 1.7477273, y: 1.7477273, z: 1.7477273}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5826831078202288720}
+  - {fileID: 5826831077164984879}
+  m_Father: {fileID: 5826831077518197123}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 1.347, y: -6.589, z: 2.711}
+--- !u!108 &5826831078268460552
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078268460558}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0, g: 0.3667977, b: 1, a: 1}
+  m_Intensity: 15.19
+  m_Range: 35.81542
+  m_SpotAngle: 76.91248
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &5826831078409839911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5826831078409839910}
+  - component: {fileID: 5826831078409839905}
+  m_Layer: 0
+  m_Name: White - deem (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5826831078409839910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078409839911}
+  m_LocalRotation: {x: -0, y: 0.13072276, z: -0, w: 0.991419}
+  m_LocalPosition: {x: 7, y: -126.8, z: 11.2}
+  m_LocalScale: {x: 0.6907899, y: 0.6907899, z: 0.6907899}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5826831076613930330}
+  - {fileID: 5826831077791200257}
+  m_Father: {fileID: 5826831077518197123}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 15.023, z: 0}
+--- !u!108 &5826831078409839905
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826831078409839911}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 0, g: 0.39954376, b: 1, a: 1}
+  m_Intensity: 25.6
+  m_Range: 63.42837
+  m_SpotAngle: 14.562524
+  m_InnerSpotAngle: 12.37397
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
