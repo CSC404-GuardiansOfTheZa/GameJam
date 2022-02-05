@@ -46,8 +46,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        road.localScale = new Vector3(2, 1, 1); //new Vector3(roadLength, 1, 1);
-        road.localPosition = Vector3.right * 10; //Vector3.right * roadLength * 5;
+        // road.localScale = new Vector3(2, 1, 1); //new Vector3(roadLength, 1, 1);
+        // road.localPosition = Vector3.right * 10; //Vector3.right * roadLength * 5;
         endMarker.localPosition = Vector3.right * 20; //Vector3.right * roadLength * 10;
 
         float secondsPerBeat = 60.0f/(float)trackBPM;
