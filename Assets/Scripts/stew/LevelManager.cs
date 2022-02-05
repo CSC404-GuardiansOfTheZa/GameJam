@@ -61,13 +61,17 @@ public class LevelManager : MonoBehaviour
 
     void Update() {
         if (pizzaMan.transform.position.y < -30) {
-            Debug.Log("LOSE LOSE LOSE LOSE!");
-            dynamicChildren.GetComponent<Scrolling>().Stop();
+            this.Lose();
         }
 
         if (Input.GetKeyDown(KeyCode.R)){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    public void Lose() {
+        Debug.Log("LOSE LOSE LOSE LOSE!");
+        dynamicChildren.GetComponent<Scrolling>().Stop();
     }
 
     private IEnumerator Beat(float beatTime) {
