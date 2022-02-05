@@ -23,8 +23,8 @@ public class MouseFollower : MonoBehaviour
         _transform.position = _cam.ScreenToWorldPoint(
             new Vector3(
                 Input.mousePosition.x, 
-                Input.mousePosition.y, 
-                Mathf.Abs(_cam.transform.position.z)-5
+                Input.mousePosition.y,
+                Mathf.Abs(_cam.transform.position.z) - 5
             )
         );
         

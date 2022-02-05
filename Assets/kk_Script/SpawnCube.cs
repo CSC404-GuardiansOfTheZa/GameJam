@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SpawnCube : MonoBehaviour
 {
-     [SerializeField] GameObject AnglePrefab = null;
-     [SerializeField] Transform movingStage;
-        private Camera _cam = null;
+    [SerializeField] GameObject AnglePrefab = null;
+    [SerializeField] Transform movingStage;
+    private Camera _cam = null;
     
     [SerializeField] private int maxCubes = 3;
     private List<GameObject> cubes = new List<GameObject>();
@@ -23,16 +23,17 @@ public class SpawnCube : MonoBehaviour
     }
 
     void SpawnAtMousePos(){
-        if(Input.GetMouseButtonDown(0)){
-            // // Mouse.current.position.ReadValue()
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("left click");
+        //}
+        if(Input.GetMouseButtonDown(1)){
+            Debug.Log("right Click");
             Vector3 position = _cam.ScreenToWorldPoint(new Vector3(
                 Input.mousePosition.x, 
                 Input.mousePosition.y, 
                 Mathf.Abs(_cam.transform.position.z)
             ));
-            // Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
-            // RaycastHit hit;
-            // if(Physics.Raycast(ray, out hit)){
             if (cubes.Count < maxCubes){
                 var newCube = Instantiate(AnglePrefab, position, Quaternion.identity, movingStage) as GameObject;
                 cubes.Add(newCube);
@@ -41,8 +42,6 @@ public class SpawnCube : MonoBehaviour
                 cubes.Add(cubes[0]);
                 cubes.RemoveAt(0);
             }
-            
-            // }
 
         }
     }
