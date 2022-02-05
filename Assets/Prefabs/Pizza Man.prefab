@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6389186319616852582}
   m_Layer: 0
   m_Name: Pizza Man
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,6 +68,7 @@ MonoBehaviour:
   zMax: -1
   xMin: -3
   xMax: 13
+  jumpSFX: {fileID: 0}
 --- !u!54 &6389186319616852582
 Rigidbody:
   m_ObjectHideFlags: 0
