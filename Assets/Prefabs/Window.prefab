@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d5453aab960a0e443927f95803875000, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,7 +159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d5453aab960a0e443927f95803875000, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -288,7 +288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d5453aab960a0e443927f95803875000, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,6 +334,8 @@ GameObject:
   - component: {fileID: 8220487274264493501}
   - component: {fileID: 8220487274264493500}
   - component: {fileID: 8220487274264493502}
+  - component: {fileID: 854788999}
+  - component: {fileID: 854788998}
   m_Layer: 0
   m_Name: Window
   m_TagString: Interactable
@@ -391,3 +393,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93072e9aef8d7dc46ab692c9798dc8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &854788999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220487274264493491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.23, y: 1.58, z: 0.22}
+  m_Center: {x: 0.54, y: 0.28, z: 0}
+--- !u!114 &854788998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220487274264493491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18fddc2fe0902e42b2febec9fb81b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
+  outlineScaleFactor: 1.1
+  outlineColor: {r: 1, g: 0.02020948, b: 0, a: 0.6313726}
