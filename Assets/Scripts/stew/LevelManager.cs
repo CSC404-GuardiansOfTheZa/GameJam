@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject treeToSpawn;
-    [SerializeField]
-    private BeatKeeper beatKeeper;
 
     [Space(5)]
     [Header("Children")]
@@ -52,11 +48,11 @@ public class LevelManager : MonoBehaviour
 
         float secondsPerBeat = 60.0f/(float)trackBPM;
         float poleIntervals = ((roadLength * 10) / trackLengthInSeconds) * secondsPerBeat * everyNthBeat; // scroll speed (units/s) * # of s / beat
-        for (int i = 0; i < everyNthBeat * (int) ((trackLengthInSeconds/60.0f) * trackBPM); i++){
-            Instantiate(treeToSpawn, new Vector3(i * poleIntervals, 2, 4), Quaternion.identity, dynamicChildren);
-        }
+        // for (int i = 0; i < everyNthBeat * (int) ((trackLengthInSeconds/60.0f) * trackBPM); i++){
+        //     Instantiate(treeToSpawn, new Vector3(i * poleIntervals, 2, 4), Quaternion.identity, dynamicChildren);
+        // }
 
-        StartCoroutine(Beat(secondsPerBeat * everyNthBeat));
+        // StartCoroutine(Beat(secondsPerBeat * everyNthBeat));
     }
 
     void Update() {
@@ -74,13 +70,13 @@ public class LevelManager : MonoBehaviour
         dynamicChildren.GetComponent<Scrolling>().Stop();
     }
 
-    private IEnumerator Beat(float beatTime) {
-        while (true){
-            this.beatKeeper.Beat();
-            float jumpSpeed = Random.Range(3, 4);
-            this.pizzaMan.Jump(jumpSpeed);
-            yield return new WaitForSeconds(beatTime);
-        }
-    }
+    // private IEnumerator Beat(float beatTime) {
+    //     while (true){
+    //         this.beatKeeper.Beat();
+    //         float jumpSpeed = Random.Range(3, 4);
+    //         this.pizzaMan.Jump(jumpSpeed);
+    //         yield return new WaitForSeconds(beatTime);
+    //     }
+    // }
 
 }

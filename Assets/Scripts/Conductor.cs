@@ -6,6 +6,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class Conductor : MonoBehaviour
 {
+    private static Conductor _instance;
+    public static Conductor Instance { get { return _instance; } } 
+
+
     [Header("NOTE: Add music track HERE, not at AudioSource")]
     [SerializeField]
     private AudioClip musicTrack;
@@ -35,16 +39,21 @@ public class Conductor : MonoBehaviour
     [Space(10)]
     [Header("DEBUG")]
     [SerializeField]
-    private bool placeholder = false;
+    private List<BeatKeeper> beatkeepers;
 
     private int beat = 1;
 
     void Awake() {
+        if (_instance != null && _instance != this) {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+
         asource = GetComponent<AudioSource>();
         asource.clip = this.musicTrack;
         Crotchet = 60.0f / (float) BPM;
     }
-
 
     double lastBeat = 0; 
     void Start() {
@@ -56,6 +65,7 @@ public class Conductor : MonoBehaviour
     
     void Update() {
         if (SongPosition > Crotchet * beat) {
+            this.beatkeepers[((beat-1)%4)].Beat();
             Debug.Log(((beat-1)%4) + 1);
             beat += 1;
         }
