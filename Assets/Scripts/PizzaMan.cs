@@ -80,8 +80,8 @@ public class PizzaMan : MonoBehaviour {
             xSpeed = speed;
         }
 
-        // rigidbody.velocity = new Vector3(0, verticalSpeed, horizontalSpeed);
-        rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, zSpeed);
+        // rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, zSpeed);
+        rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, 0);
 
 
     }
