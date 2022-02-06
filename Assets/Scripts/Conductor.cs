@@ -38,8 +38,6 @@ public class Conductor : MonoBehaviour
     
     [Space(10)]
     [Header("DEBUG")]
-    [SerializeField]
-    private List<BeatKeeper> beatkeepers;
 
     private int beat = 1;
 
@@ -62,11 +60,12 @@ public class Conductor : MonoBehaviour
         Debug.Log(Crotchet);
     }
 
+    public delegate void onBeatDelegate(int beatNum);
+    public event onBeatDelegate onBeat;
     
     void Update() {
-        if (SongPosition > Crotchet * beat) {
-            this.beatkeepers[((beat-1)%4)].Beat();
-            Debug.Log(((beat-1)%4) + 1);
+        if (SongPosition > Crotchet * beat && onBeat != null) {
+            onBeat(beat);
             beat += 1;
         }
     }

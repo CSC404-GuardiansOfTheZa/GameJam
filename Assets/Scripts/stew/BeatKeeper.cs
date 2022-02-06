@@ -7,11 +7,15 @@ public class BeatKeeper : MonoBehaviour
     Material mat;
     [SerializeField]
     Color color = Color.yellow;
+    [SerializeField]
+    [Range(0, 3)]
+    private int nthBeat;
 
     void Start() {
         this.mat = GetComponent<Renderer>().material;
         this.color.a = 0;
         mat.color = this.color;
+        Conductor.Instance.onBeat += this.Beat;
     }
 
     void Update() {
@@ -21,7 +25,9 @@ public class BeatKeeper : MonoBehaviour
         }
     }
 
-    public void Beat() {
+    public void Beat(int beatNum) {
+        if ((beatNum-1)%4 != nthBeat)   return;
+
         this.color.a = 1;
     }
 }
