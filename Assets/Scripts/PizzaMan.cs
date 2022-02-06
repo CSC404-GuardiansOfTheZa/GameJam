@@ -36,7 +36,7 @@ public class PizzaMan : MonoBehaviour {
     private void Start() {
         zSpeed = speed;
         xSpeed = speed;
-
+        Conductor.Instance.onBeat += JumpListener;
         // while (true) {
         //     yield return new WaitForSeconds(Random.Range(1, 5));
         //     float jumpSpeed = Random.Range(2, 6);
@@ -86,9 +86,15 @@ public class PizzaMan : MonoBehaviour {
 
     }
 
+    public void JumpListener(int beat){
+        if (beat % 2 == 0){
+            this.Jump(Random.Range(3, 4));
+        }
+    }
+
     public void Jump(float speed) {
         jumpSpeed = speed * jumpSpeedMultiplier;
         isJump = true;
-        asource.PlayOneShot(jumpSFX, 0.5f);
+        asource.PlayOneShot(jumpSFX, 0.8f);
     }
 }

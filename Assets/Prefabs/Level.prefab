@@ -1790,11 +1790,6 @@ MonoBehaviour:
   <BPM>k__BackingField: 68
   <TrackLengthInSeconds>k__BackingField: 84
   <TrackOffsetInSeconds>k__BackingField: 0
-  beatkeepers:
-  - {fileID: 909356394913951456}
-  - {fileID: 743022405901501665}
-  - {fileID: 7396084118300283080}
-  - {fileID: 2742051498808444413}
 --- !u!82 &3113712826317402623
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3143,6 +3138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: nthBeat
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6626527238707444100, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
       propertyPath: m_Name
       value: BeatKeeper (3)
@@ -3154,17 +3153,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3177090844440989051, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
   m_PrefabInstance: {fileID: 3886002095378739825}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7396084118300283080 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
-  m_PrefabInstance: {fileID: 3886002095378739825}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46788582a9e0b56e0b9c5cc5540160ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6414902619241784920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3228,23 +3216,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: color.b
+      value: 0.015686274
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: color.g
+      value: 0.043188505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: nthBeat
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6626527238707444100, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
       propertyPath: m_Name
       value: BeatKeeper (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
---- !u!114 &743022405901501665 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
-  m_PrefabInstance: {fileID: 6414902619241784920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46788582a9e0b56e0b9c5cc5540160ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8435528780707801891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3177090844440989051, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
@@ -3319,17 +3308,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
---- !u!114 &909356394913951456 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
-  m_PrefabInstance: {fileID: 6906093910994979929}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46788582a9e0b56e0b9c5cc5540160ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &8340689153701511458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3177090844440989051, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
@@ -3398,23 +3376,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: color.g
+      value: 0.25112438
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: color.r
+      value: 0.015686274
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
+      propertyPath: nthBeat
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6626527238707444100, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
       propertyPath: m_Name
       value: BeatKeeper (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
---- !u!114 &2742051498808444413 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6001592964295123641, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
-  m_PrefabInstance: {fileID: 8449958308030539588}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46788582a9e0b56e0b9c5cc5540160ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6436491616596814399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3177090844440989051, guid: c2fac0391401c24d3b5b987fd615f993, type: 3}
