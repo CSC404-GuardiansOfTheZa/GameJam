@@ -49,6 +49,12 @@ public class PizzaMan : MonoBehaviour {
         if (Input.GetButtonDown("Jump")) {
             Jump(3f);
         }
+
+        transform.position = new Vector3(
+            transform.position.x,
+            transform.position.y,
+            1.2f // magic number alert!
+        );
     }
 
 
