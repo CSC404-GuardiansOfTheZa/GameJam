@@ -7,12 +7,10 @@ public class DragDrop : MonoBehaviour
 
     private Camera _cam;
 
-    [SerializeField] private Animator _myAnimationController;
+    private Animator _myAnimationController;
     // Start is called before the first frame update
     void Start()
     {
-        _cam = Camera.main;
-        _myAnimationController = GetComponent<Animator>();
 
     }
 
@@ -34,8 +32,11 @@ public class DragDrop : MonoBehaviour
                 if (hit.transform != null)
                 {
                     if (hit.collider.CompareTag("Drag_Cover"))
-                    { 
-                        _myAnimationController.SetTrigger("MoveManHole");
+                    {
+                        Animator anim = hit.transform.GetComponentInParent<Animator>();
+                        if (anim){
+                            anim.SetTrigger("MoveManHole");
+                        }
                     }
                     else
                     {
