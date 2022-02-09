@@ -35,8 +35,4 @@ public class Window : MonoBehaviour, IInteractable {
         }
         #endif
     }
-
-
-
-
 }

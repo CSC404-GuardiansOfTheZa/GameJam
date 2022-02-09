@@ -3,31 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PizzaMan : MonoBehaviour {
-
-    [SerializeField] private float speed = 3.0f;
-    [SerializeField] private float jumpSpeedMultiplier = 3f;
-    [SerializeField] private float fallMultiplier = 2.5f;
-
-    [SerializeField] private float zMin = -4f;
-    [SerializeField] private float zMax = -4f;
-
-
-    [SerializeField] private float xMin = -3f;
-    [SerializeField] private float xMax = 13f;
-
+    [SerializeField] private float jumpSpeed = 3.0f;
+    [SerializeField] private float gravityMultiplier = 3.0f;
+    [Header("SFX")]
     [SerializeField] private AudioClip jumpSFX;
+    [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
 
-    [SerializeField] private float JumpAmount = 3.0f;
-
+    private float __fallMultiplier;
     private bool isJump = false;
-
     private Rigidbody rigidbody;
-    private float jumpSpeed = 0f;
-
-    private float zSpeed = 0f;
-    private float xSpeed = 0f;
-
     private AudioSource asource;
+    private Vector3 startPos;
 
 
     private void Awake() {
@@ -36,33 +22,26 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private void Start() {
-        zSpeed = speed;
-        xSpeed = speed;
-        Conductor.Instance.onBeat += JumpListener;
-        // while (true) {
-        //     yield return new WaitForSeconds(Random.Range(1, 5));
-        //     float jumpSpeed = Random.Range(2, 6);
-        //     Jump(jumpSpeed);
-        // }
-
+        Conductor.Instance.onBeat += JumpOnBeat;
+        startPos = transform.position;
     }
 
     private void Update() {
+        #if UNITY_EDITOR
         if (Input.GetButtonDown("Jump")) {
-            Jump(3f);
+            Jump();
         }
+        #endif
 
         transform.position = new Vector3(
-            transform.position.x,
+            startPos.x,
             transform.position.y,
-            1.2f // magic number alert!
+            startPos.z
         );
     }
 
 
     private void FixedUpdate() {
-
-
         float verticalSpeed = rigidbody.velocity.y;
 
         if (isJump) {
@@ -70,39 +49,21 @@ public class PizzaMan : MonoBehaviour {
             isJump = false;
         }
 
-        if (rigidbody.velocity.y < 0) {
-            verticalSpeed += Physics.gravity.y * fallMultiplier * Time.fixedDeltaTime;
-        }
-
-        float z_pos = transform.position.z;
-        if (z_pos >= zMax) {
-            zSpeed = -speed;
-        } else if (z_pos <= zMin) {
-            zSpeed = speed;
-        }
-
-        float x_pos = transform.position.x;
-        if (x_pos >= xMax) {
-            xSpeed = -speed;
-        } else if (x_pos <= xMin) {
-            xSpeed = speed;
-        }
-
-        // rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, zSpeed);
-        rigidbody.velocity = new Vector3(0, verticalSpeed, 0);
-
-
+        if (rigidbody.velocity.y < 0)
+            verticalSpeed += Physics.gravity.y * (gravityMultiplier-1) * Time.fixedDeltaTime;
+        
+        rigidbody.velocity = Vector3.up * verticalSpeed;
     }
 
-    public void JumpListener(int beat){
+    public void JumpOnBeat(int beat){
         if (beat % 2 == 0){
-            this.Jump(this.JumpAmount);
+            this.Jump();
         }
     }
 
-    public void Jump(float speed) {
-        jumpSpeed = speed * jumpSpeedMultiplier;
+    public void Jump() {
+        // TODO: shoot raycast down to check if actually on the ground.
         isJump = true;
-        asource.PlayOneShot(jumpSFX, 0.8f);
+        asource.PlayOneShot(jumpSFX, jumpSFXVolume);
     }
 }

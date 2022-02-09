@@ -9,11 +9,8 @@ using UnityEngine;
 public class BeatKeeper : MonoBehaviour
 {
     Material mat;
-    [SerializeField]
-    Color color = Color.yellow;
-    [SerializeField]
-    [Range(1, 8)]
-    private int nthBeat; // The nth beat in a measure. Counts from 1 up.
+    [SerializeField] Color color = Color.yellow;
+    [SerializeField] [Range(1, 8)] private int nthBeat; // The nth beat in a measure. Counts from 1 up.
 
     void Start() {
         this.mat = GetComponent<Renderer>().material;
