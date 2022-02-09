@@ -8,22 +8,48 @@ public class PizzaMan : MonoBehaviour {
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
+    
+    private Rigidbody rigidbody;
+    private AudioSource asource;
+    private Collider col;
 
     private float __fallMultiplier;
     private bool isJump = false;
-    private Rigidbody rigidbody;
-    private AudioSource asource;
     private Vector3 startPos;
+    private float distanceToGround;
 
+    public bool IsGrounded() {
+        return Physics.Raycast(transform.position, Vector3.down, distanceToGround + 0.2f);
+    }
+
+    public void JumpOnBeat(int beat){
+        if (IsGrounded()){
+            Debug.Log("GROUNDED");
+        } else {
+            Debug.Log("MIDAIR");
+        }
+        if (beat % 2 == 0){
+            this.Jump();
+        }
+    }
+
+    public void Jump() {
+        // TODO: shoot raycast down to check if actually on the ground.
+        isJump = true;
+        asource.PlayOneShot(jumpSFX, jumpSFXVolume);
+    }
 
     private void Awake() {
         rigidbody = GetComponent<Rigidbody>();
         asource = GetComponent<AudioSource>();
+        col = GetComponent<Collider>();
     }
 
     private void Start() {
         Conductor.Instance.onBeat += JumpOnBeat;
         startPos = transform.position;
+        distanceToGround = Mathf.Abs(col.bounds.extents.y - col.bounds.center.y);
+        Debug.Log(distanceToGround);
     }
 
     private void Update() {
@@ -44,26 +70,14 @@ public class PizzaMan : MonoBehaviour {
     private void FixedUpdate() {
         float verticalSpeed = rigidbody.velocity.y;
 
-        if (isJump) {
+        if (isJump && IsGrounded()) {
             verticalSpeed = jumpSpeed;
-            isJump = false;
         }
+        isJump = false;
 
         if (rigidbody.velocity.y < 0)
             verticalSpeed += Physics.gravity.y * (gravityMultiplier-1) * Time.fixedDeltaTime;
         
         rigidbody.velocity = Vector3.up * verticalSpeed;
-    }
-
-    public void JumpOnBeat(int beat){
-        if (beat % 2 == 0){
-            this.Jump();
-        }
-    }
-
-    public void Jump() {
-        // TODO: shoot raycast down to check if actually on the ground.
-        isJump = true;
-        asource.PlayOneShot(jumpSFX, jumpSFXVolume);
     }
 }

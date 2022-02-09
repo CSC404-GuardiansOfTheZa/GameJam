@@ -11,16 +11,11 @@ public class Conductor : MonoBehaviour
 
 
     [Header("NOTE: Add music track HERE, not at AudioSource")]
-    [SerializeField]
-    private AudioClip musicTrack;
-    [field: SerializeField]
-    public int BPM {get; private set;}
-    [field: SerializeField]
-    public float TrackLengthInSeconds {get; private set;}
-    [field: SerializeField]
-    public float TrackOffsetInSeconds {get; private set;}
-    [field: SerializeField]
-    public int BeatsPerMeasure {get; private set;}
+    [SerializeField] private AudioClip musicTrack;
+    [field: SerializeField] public int BPM {get; private set;}
+    [field: SerializeField] public float TrackLengthInSeconds {get; private set;}
+    [field: SerializeField] public float TrackOffsetInSeconds {get; private set;}
+    [field: SerializeField] public int BeatsPerMeasure {get; private set;}
 
     public float Crotchet { // length of a beat
         get; private set;
