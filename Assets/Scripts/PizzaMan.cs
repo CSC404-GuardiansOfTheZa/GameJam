@@ -5,6 +5,7 @@ using UnityEngine;
 public class PizzaMan : MonoBehaviour {
     [SerializeField] private float jumpSpeed = 3.0f;
     [SerializeField] private float gravityMultiplier = 3.0f;
+    [SerializeField] private int jumpOnEveryNthBeat = 2;
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
@@ -23,7 +24,7 @@ public class PizzaMan : MonoBehaviour {
     }
 
     public void JumpOnBeat(int beat){
-        if (beat % 2 == 0){
+        if (beat % jumpOnEveryNthBeat == 0){
             this.Jump();
         }
     }
