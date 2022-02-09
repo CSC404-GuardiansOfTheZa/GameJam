@@ -13,7 +13,6 @@ public class Conductor : MonoBehaviour
     [Header("NOTE: Add music track HERE, not at AudioSource")]
     [SerializeField]
     private AudioClip musicTrack;
-
     [field: SerializeField]
     public int BPM {get; private set;}
     [field: SerializeField]
