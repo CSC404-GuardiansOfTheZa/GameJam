@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4432092245300271416}
   - component: {fileID: 4432092245300271423}
   - component: {fileID: 875933164}
+  - component: {fileID: 5739095152501940}
   m_Layer: 0
   m_Name: Angel
   m_TagString: Untagged
@@ -92,6 +93,19 @@ MonoBehaviour:
   cubeToSpawn: {fileID: 4133659176752456297, guid: bf2ee652428334571b00b44461886c36, type: 3}
   movingStage: {fileID: 0}
   maxCubes: 2
+--- !u!114 &5739095152501940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4432092245300271422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086cf26ac61bdba4d96ed1156740597a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layersToActivate: 07000000
 --- !u!1001 &7639954661238609945
 PrefabInstance:
   m_ObjectHideFlags: 0

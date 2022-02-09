@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4760799634888652384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ManHoleGroup
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,9 +48,9 @@ GameObject:
   - component: {fileID: 196280075}
   - component: {fileID: 7357590812761274264}
   - component: {fileID: 3677028135033215549}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ManHoleCover
-  m_TagString: Drag_Cover
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,9 +193,9 @@ GameObject:
   - component: {fileID: 8439986859634216832}
   - component: {fileID: 5586542706992986002}
   - component: {fileID: 1032596695}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ManHole
-  m_TagString: DropArea
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

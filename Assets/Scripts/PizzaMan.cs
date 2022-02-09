@@ -23,20 +23,16 @@ public class PizzaMan : MonoBehaviour {
     }
 
     public void JumpOnBeat(int beat){
-        if (IsGrounded()){
-            Debug.Log("GROUNDED");
-        } else {
-            Debug.Log("MIDAIR");
-        }
         if (beat % 2 == 0){
             this.Jump();
         }
     }
 
     public void Jump() {
-        // TODO: shoot raycast down to check if actually on the ground.
-        isJump = true;
-        asource.PlayOneShot(jumpSFX, jumpSFXVolume);
+        if (IsGrounded()){
+            isJump = true;
+            asource.PlayOneShot(jumpSFX, jumpSFXVolume);
+        }
     }
 
     private void Awake() {
@@ -70,7 +66,7 @@ public class PizzaMan : MonoBehaviour {
     private void FixedUpdate() {
         float verticalSpeed = rigidbody.velocity.y;
 
-        if (isJump && IsGrounded()) {
+        if (isJump) {
             verticalSpeed = jumpSpeed;
         }
         isJump = false;

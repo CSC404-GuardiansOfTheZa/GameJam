@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8220487273621469511}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 8220487274264493502}
   - component: {fileID: 854788999}
   - component: {fileID: 854788998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Window
   m_TagString: Interactable
   m_Icon: {fileID: 0}
