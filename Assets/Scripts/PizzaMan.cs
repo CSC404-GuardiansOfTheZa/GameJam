@@ -17,6 +17,8 @@ public class PizzaMan : MonoBehaviour {
 
     [SerializeField] private AudioClip jumpSFX;
 
+    [SerializeField] private float JumpAmount = 3.0f;
+
     private bool isJump = false;
 
     private Rigidbody rigidbody;
@@ -87,14 +89,14 @@ public class PizzaMan : MonoBehaviour {
         }
 
         // rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, zSpeed);
-        rigidbody.velocity = new Vector3(xSpeed, verticalSpeed, 0);
+        rigidbody.velocity = new Vector3(0, verticalSpeed, 0);
 
 
     }
 
     public void JumpListener(int beat){
         if (beat % 2 == 0){
-            this.Jump(Random.Range(3, 4));
+            this.Jump(this.JumpAmount);
         }
     }
 
