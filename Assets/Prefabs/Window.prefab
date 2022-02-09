@@ -347,9 +347,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8220487274264493501}
   - component: {fileID: 8220487274264493500}
-  - component: {fileID: 8220487274264493502}
   - component: {fileID: 854788999}
   - component: {fileID: 854788998}
+  - component: {fileID: 4320924827339247918}
   m_Layer: 7
   m_Name: Window
   m_TagString: Interactable
@@ -395,18 +395,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8220487274264493502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8220487274264493491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93072e9aef8d7dc46ab692c9798dc8aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &854788999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -435,3 +423,16 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
   outlineScaleFactor: 1.5
   outlineColor: {r: 1, g: 0.02020948, b: 0, a: 0.6313726}
+--- !u!114 &4320924827339247918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220487274264493491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5ec5678939bdf1b9f72a712e72855d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationName: Next

@@ -44,10 +44,10 @@ GameObject:
   - component: {fileID: 8439986858253831226}
   - component: {fileID: 8439986858253831229}
   - component: {fileID: 8439986858253831228}
-  - component: {fileID: 8439986858253831227}
   - component: {fileID: 196280075}
   - component: {fileID: 7357590812761274264}
   - component: {fileID: 3677028135033215549}
+  - component: {fileID: 8151487655139704779}
   m_Layer: 7
   m_Name: ManHoleCover
   m_TagString: Interactable
@@ -120,18 +120,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8439986858253831227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8439986858253831230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2aa34c1b012486683df79be0381c80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &196280075
 Animator:
   serializedVersion: 4
@@ -180,6 +168,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &8151487655139704779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8439986858253831230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5ec5678939bdf1b9f72a712e72855d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationName: MoveManHole
 --- !u!1 &8439986859634216834
 GameObject:
   m_ObjectHideFlags: 0
