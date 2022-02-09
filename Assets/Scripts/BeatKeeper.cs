@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+* Goes onto a "BeatKeeper" game object.
+* When the Beat function is called, the BeatKeeper flashes"
+**/
 public class BeatKeeper : MonoBehaviour
 {
     Material mat;
     [SerializeField]
     Color color = Color.yellow;
     [SerializeField]
-    [Range(0, 3)]
-    private int nthBeat;
+    [Range(1, 8)]
+    private int nthBeat; // The nth beat in a measure. Counts from 1 up.
 
     void Start() {
         this.mat = GetComponent<Renderer>().material;
@@ -26,7 +30,8 @@ public class BeatKeeper : MonoBehaviour
     }
 
     public void Beat(int beatNum) {
-        if ((beatNum-1)%4 != nthBeat)   return;
+        if ((beatNum-1)%Conductor.Instance.BeatsPerMeasure != nthBeat-1)
+            return;
 
         this.color.a = 1;
     }

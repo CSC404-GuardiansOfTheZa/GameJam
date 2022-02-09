@@ -20,6 +20,8 @@ public class Conductor : MonoBehaviour
     public float TrackLengthInSeconds {get; private set;}
     [field: SerializeField]
     public float TrackOffsetInSeconds {get; private set;}
+    [field: SerializeField]
+    public int BeatsPerMeasure {get; private set;}
 
     public float Crotchet { // length of a beat
         get; private set;
