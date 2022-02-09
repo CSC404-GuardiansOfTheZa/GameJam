@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Window : MonoBehaviour, IInteractable {
-
+public class Window : MonoBehaviour, IInteractable 
+{
+    // TODO: merge with ManholeCover.cs
     private Animator animator;
 
     void Start() {
