@@ -6,6 +6,7 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private float jumpSpeed = 3.0f;
     [SerializeField] private float gravityMultiplier = 3.0f;
     [SerializeField] private int jumpOnEveryNthBeat = 2;
+    [SerializeField] private float groundingSensitivity = 0.2f;
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
@@ -20,7 +21,7 @@ public class PizzaMan : MonoBehaviour {
     private float distanceToGround;
 
     public bool IsGrounded() {
-        return Physics.Raycast(transform.position, Vector3.down, distanceToGround + 0.2f);
+        return Physics.Raycast(transform.position, Vector3.down, distanceToGround + groundingSensitivity);
     }
 
     public void JumpOnBeat(int beat){
