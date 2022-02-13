@@ -4,29 +4,24 @@ using UnityEngine;
 
 public class SpawnCube : MonoBehaviour
 {
-    [SerializeField] GameObject AnglePrefab = null;
+    [SerializeField] GameObject cubeToSpawn = null;
     [SerializeField] Transform movingStage;
+    [SerializeField] private int maxCubes = 3;
+
+    private List<GameObject> cubeHistory = new List<GameObject>();
     private Camera _cam = null;
     
-    [SerializeField] private int maxCubes = 3;
-    private List<GameObject> cubes = new List<GameObject>();
-    // Start is called before the first frame update
     void Start()
     {
       _cam = Camera.main;
     }
 
-    // Update is called once per frame
     void Update()
     {
         SpawnAtMousePos();
     }
 
     void SpawnAtMousePos(){
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Debug.Log("left click");
-        //}
         if(Input.GetMouseButtonDown(1)){
             Debug.Log("right Click");
             Vector3 position = _cam.ScreenToWorldPoint(new Vector3(
@@ -34,15 +29,14 @@ public class SpawnCube : MonoBehaviour
                 Input.mousePosition.y, 
                 Mathf.Abs(_cam.transform.position.z)
             ));
-            if (cubes.Count < maxCubes){
-                var newCube = Instantiate(AnglePrefab, position, Quaternion.identity, movingStage) as GameObject;
-                cubes.Add(newCube);
+            if (cubeHistory.Count < maxCubes){
+                var newCube = Instantiate(cubeToSpawn, position, Quaternion.identity, movingStage) as GameObject;
+                cubeHistory.Add(newCube);
             } else {
-                cubes[0].transform.position = position;
-                cubes.Add(cubes[0]);
-                cubes.RemoveAt(0);
+                cubeHistory[0].transform.position = position;
+                cubeHistory.Add(cubeHistory[0]);
+                cubeHistory.RemoveAt(0);
             }
-
         }
     }
 }
