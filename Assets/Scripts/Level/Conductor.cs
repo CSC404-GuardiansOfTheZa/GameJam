@@ -9,17 +9,15 @@ public class Conductor : MonoBehaviour
     private static Conductor _instance;
     public static Conductor Instance { get { return _instance; } } 
 
+    public delegate void onBeatDelegate(int beatNum);
+    public event onBeatDelegate onBeat;
 
     [Header("NOTE: Add music track HERE, not at AudioSource")]
-    [SerializeField]
-    private AudioClip musicTrack;
-
-    [field: SerializeField]
-    public int BPM {get; private set;}
-    [field: SerializeField]
-    public float TrackLengthInSeconds {get; private set;}
-    [field: SerializeField]
-    public float TrackOffsetInSeconds {get; private set;}
+    [SerializeField] private AudioClip musicTrack;
+    [field: SerializeField] public int BPM {get; private set;}
+    [field: SerializeField] public float TrackLengthInSeconds {get; private set;}
+    [field: SerializeField] public float TrackOffsetInSeconds {get; private set;}
+    [field: SerializeField] public int BeatsPerMeasure {get; private set;}
 
     public float Crotchet { // length of a beat
         get; private set;
@@ -33,13 +31,9 @@ public class Conductor : MonoBehaviour
         }
     }
 
-    private double dspTimeStart = -1.0f;
     private AudioSource asource;
-    
-    [Space(10)]
-    [Header("DEBUG")]
-
-    private int beat = 1;
+    private double dspTimeStart = -1.0f;
+    private int beat = 1; 
 
     void Awake() {
         if (_instance != null && _instance != this) {
@@ -52,16 +46,11 @@ public class Conductor : MonoBehaviour
         asource.clip = this.musicTrack;
         Crotchet = 60.0f / (float) BPM;
     }
-
-    double lastBeat = 0; 
     void Start() {
         asource.Play();
         dspTimeStart = AudioSettings.dspTime;
         Debug.Log(Crotchet);
     }
-
-    public delegate void onBeatDelegate(int beatNum);
-    public event onBeatDelegate onBeat;
     
     void Update() {
         if (SongPosition > Crotchet * beat && onBeat != null) {

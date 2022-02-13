@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1586149654870008346}
   - component: {fileID: 5713833442453970058}
   m_Layer: 0
-  m_Name: AngelPrefab
+  m_Name: SpawnedPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
