@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b917a12fe4ac044a9bfdb8974362c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 40
+  smoothTime: 50
   rotateSpeed: 10
 --- !u!95 &905345763094487678
 Animator:
