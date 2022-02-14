@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smoothTime: 50
   rotateSpeed: 10
+  speedForMaxLean: 50
+  maxLeanAngle: 60
 --- !u!95 &905345763094487678
 Animator:
   serializedVersion: 4
