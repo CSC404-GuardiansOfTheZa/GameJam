@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b917a12fe4ac044a9bfdb8974362c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 50
+  smoothTime: 40
   rotateSpeed: 10
   speedForMaxLean: 50
   maxLeanAngle: 60
