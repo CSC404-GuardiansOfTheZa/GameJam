@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WaterSpout : MonoBehaviour {
+    [SerializeField] private ParticleSystem particleSystem;
+    [Header("Spout Properties")]
     [SerializeField] private float secondsToExtend = 1.0f;
     [SerializeField] private bool startExtended = false;
     [SerializeField] private float strengthOnPizzaGuy = 5.0f;
@@ -16,10 +18,12 @@ public class WaterSpout : MonoBehaviour {
         this.extended = this.startExtended;
         SpoutHeight = transform.localScale.y;
         SetYScale(this.extended ? SpoutHeight : 0);
+        EnableParticleSystem(this.extended);
     }
 
     public void ToggleSpout() {
         extended = !this.extended;
+        EnableParticleSystem(this.extended);
         StartCoroutine(ExtendTo(extended ? SpoutHeight : 0));
     }
 
@@ -34,6 +38,16 @@ public class WaterSpout : MonoBehaviour {
         }
     }
 
+    private void EnableParticleSystem(bool flag) {
+        if (this.particleSystem != null) {
+            if (flag) {
+                this.particleSystem.Play();
+            } else {
+                this.particleSystem.Stop();
+            }
+        }
+    }
+    
     private void SetYScale(float yScale) {
         // When setting scale, also set y position so it only scales from the top (instead of from the center)
         Vector3 scale = transform.localScale;

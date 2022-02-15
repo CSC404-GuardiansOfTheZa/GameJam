@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196b0dd1eff60fe46abbde4be197ef4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleSystem: {fileID: 5376877092633441375}
   secondsToExtend: 1
   startExtended: 1
   strengthOnPizzaGuy: 500
