@@ -475,6 +475,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6707994166108658807}
   - component: {fileID: 8980473180379492080}
+  - component: {fileID: -3113262255193488896}
+  - component: {fileID: 8254201035590407081}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -511,3 +513,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3113262255193488896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8703999173025420884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bac262477c980e949bd3d5b0d50619f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relativeStartPos: {x: -20, y: 30, z: 0}
+  hoverDistance: 1.85
+  hoverDuration: 10
+  framesToBeginHover: 180
+--- !u!114 &8254201035590407081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8703999173025420884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18fddc2fe0902e42b2febec9fb81b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
+  outlineScaleFactor: 1.8
+  outlineColor: {r: 0.23829654, g: 0.8018868, b: 0.45923358, a: 1}
