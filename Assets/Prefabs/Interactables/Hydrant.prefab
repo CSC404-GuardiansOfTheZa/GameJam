@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 5376877091920379406}
   - component: {fileID: 5376877091920379403}
   - component: {fileID: 5376877091920379400}
-  - component: {fileID: 5376877091920379401}
+  - component: {fileID: 7069395653153180833}
   - component: {fileID: 6155833051397377842}
   m_Layer: 7
   m_Name: WaterSpout
@@ -287,8 +287,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5376877091920379401
-CapsuleCollider:
+--- !u!65 &7069395653153180833
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -297,10 +297,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.8, z: 5}
+  m_Center: {x: 0.000000059604645, y: 0.1, z: -0.00000008940697}
 --- !u!114 &6155833051397377842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToExtend: 1
+  startExtended: 1
+  strengthOnPizzaGuy: 500
 --- !u!1 &5376877092026819420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,7 +5237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5376877092717185704}
   m_LocalRotation: {x: 0, y: 0.17364816, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0.28499997, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5275,7 +5276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spout: {fileID: 6155833051397377842}
-  startWithExtendedSpout: 0
 --- !u!65 &4982524926145761922
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 public class WaterSpout : MonoBehaviour {
     [SerializeField] private float secondsToExtend = 1.0f;
     [SerializeField] private bool startExtended = false;
+    [SerializeField] private float strengthOnPizzaGuy = 5.0f;
 
     public float SpoutHeight { get; set; } = -1;
 
@@ -33,7 +34,7 @@ public class WaterSpout : MonoBehaviour {
         }
     }
 
-    public void SetYScale(float yScale) {
+    private void SetYScale(float yScale) {
         // When setting scale, also set y position so it only scales from the top (instead of from the center)
         Vector3 scale = transform.localScale;
         scale.y = yScale;
@@ -42,5 +43,13 @@ public class WaterSpout : MonoBehaviour {
         Vector3 pos = transform.localPosition;
         pos.y = yScale;
         transform.localPosition = pos;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Player")) {
+            Debug.Log("Spout detects Player");
+            PizzaMan pizzaMan = other.GetComponent<PizzaMan>() as PizzaMan;
+            pizzaMan.ActivateWaterSpout(this.strengthOnPizzaGuy);
+        }
     }
 }
