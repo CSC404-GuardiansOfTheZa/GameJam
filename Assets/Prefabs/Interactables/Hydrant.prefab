@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5376877091620191631}
   - component: {fileID: 5376877091620191625}
   - component: {fileID: 5376877091620191630}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376877091655354998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Small Circles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5376877091710385819}
   - component: {fileID: 5376877091710385813}
   - component: {fileID: 5376877091710385818}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TopRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,8 @@ GameObject:
   - component: {fileID: 5376877091920379403}
   - component: {fileID: 5376877091920379400}
   - component: {fileID: 5376877091920379401}
-  m_Layer: 0
+  - component: {fileID: 6155833051397377842}
+  m_Layer: 7
   m_Name: WaterSpout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,8 +229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5376877091920379407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.823, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalScale: {x: 0.25, y: 4, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5376877092633441373}
@@ -300,6 +301,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &6155833051397377842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376877091920379407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196b0dd1eff60fe46abbde4be197ef4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsToExtend: 1
 --- !u!1 &5376877092026819420
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +325,7 @@ GameObject:
   - component: {fileID: 5376877092026819423}
   - component: {fileID: 5376877092026819417}
   - component: {fileID: 5376877092026819422}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +408,7 @@ GameObject:
   - component: {fileID: 5376877092633441373}
   - component: {fileID: 5376877092633441375}
   - component: {fileID: 5376877092633441372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FallingParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5204,7 +5218,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376877092717185707}
-  m_Layer: 0
+  - component: {fileID: 1828324775}
+  - component: {fileID: 2496198071206099461}
+  - component: {fileID: 4982524926145761922}
+  m_Layer: 7
   m_Name: HydrantModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5230,6 +5247,48 @@ Transform:
   m_Father: {fileID: 5376877093099881044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &1828324775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376877092717185704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18fddc2fe0902e42b2febec9fb81b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
+  outlineScaleFactor: 1.5
+  outlineColor: {r: 0.34486467, g: 0.8207547, b: 0.3213332, a: 0}
+--- !u!114 &2496198071206099461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376877092717185704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 243ed92610556324692ec4a86a028ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spout: {fileID: 6155833051397377842}
+  startWithExtendedSpout: 0
+--- !u!65 &4982524926145761922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376877092717185704}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2, z: 1.5}
+  m_Center: {x: 0, y: 0.355, z: 0}
 --- !u!1 &5376877092918210098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,7 +5300,7 @@ GameObject:
   - component: {fileID: 5376877092918210125}
   - component: {fileID: 5376877092918210127}
   - component: {fileID: 5376877092918210124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5324,7 +5383,7 @@ GameObject:
   - component: {fileID: 5376877092958266043}
   - component: {fileID: 5376877092958266037}
   - component: {fileID: 5376877092958266042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5407,7 +5466,7 @@ GameObject:
   - component: {fileID: 5376877093002528233}
   - component: {fileID: 5376877093002528235}
   - component: {fileID: 5376877093002528232}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5488,7 +5547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5376877093099881044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hydrant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5523,7 +5582,7 @@ GameObject:
   - component: {fileID: 5376877093239118911}
   - component: {fileID: 5376877093239118905}
   - component: {fileID: 5376877093239118910}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HydrantBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
