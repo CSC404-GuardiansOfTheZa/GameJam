@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
@@ -8,34 +9,65 @@ public class Bird : MonoBehaviour, IInteractable {
 	[SerializeField] private float hoverDistance = 2.5f; // # of units to hover over the ground 
 	[SerializeField] private float hoverDuration = 10f; // # of seconds to hover over the pizza guy, if not shoo'd
 	[SerializeField] private int framesToBeginHover = 60; // # of frames from trigger to hovering.
-	
-	public void HoverOver(Transform target) {
-		Vector3 targetPos = target.position; 
-		transform.position = targetPos + this.relativeStartPos;
-		transform.SetParent(null);
-		StartCoroutine(BeginHover(targetPos));
+
+	private Collider col;
+
+	private void Awake() {
+		this.col = this.GetComponent<Collider>();
 	}
 
-	IEnumerator BeginHover(Vector3 targetPos) {
-		// Based on a parabola, with vertex at (targetPos+hoverDistance), that passes thru relativeStartPos
-		Vector3 vertex = targetPos + (hoverDistance * Vector3.up);
-		Vector3 startPos = transform.position;
-		float a = (startPos.y - vertex.y) / ((startPos.x - vertex.x) * (startPos.x - vertex.x));
+	public void HoverOver(Transform target) {
+		transform.SetParent(null);
+		Vector3 targetPos = target.position; 
+		StartCoroutine(BeginHover(
+			targetPos + this.relativeStartPos,
+			targetPos + (this.hoverDistance * Vector3.up)
+		));
+	}
+
+	IEnumerator BeginHover(Vector3 startPos, Vector3 vertexPt) {
+		// Based on a parabola that passes through startPos
+		// If exit is true, goes from startPos to vertexPt. Else, go from vertexPt to StartPos
+		float a = (startPos.y - vertexPt.y) / ((startPos.x - vertexPt.x) * (startPos.x - vertexPt.x));
 		
 		for (int frame = 0; frame <= this.framesToBeginHover; frame++) {
 			float x = Mathf.Lerp(
 				startPos.x, 
-				vertex.x, 
+				vertexPt.x, 
 				(float) frame / this.framesToBeginHover
 			);
-			float y = (a * (x - vertex.x) * (x - vertex.x)) + vertex.y;  // y = a (x - h)^2 + k
-			transform.position = new Vector3(x, y, startPos.z);
+			float y = (a * (x - vertexPt.x) * (x - vertexPt.x)) + vertexPt.y;  // y = a (x - h)^2 + k
+			transform.position = new Vector3(x, y, vertexPt.z);
 			yield return null;
 		}
 	}
 
+	IEnumerator EndHover(float newHeight) {
+		Vector3 targetPos = transform.position + (newHeight * Vector3.up);
+		for (int frame = 0; frame <= this.framesToBeginHover; frame++) {
+			transform.position = Vector3.Lerp(
+				transform.position, 
+				targetPos, 
+				Mathf.Pow((float) frame / this.framesToBeginHover, 2)
+			);
+			yield return null;
+		}	
+		this.gameObject.SetActive(false);
+	}
+
+
 	public void Trigger() {
 		// Shoo away the Bird
+		// Disable colider 
+		this.col.enabled = false;
+		
+		StartCoroutine(EndHover(10f)); // TODO: turn this magic number into a SerializeField
+	}
+
+	private void Update() {
+		#if UNITY_EDITOR
+		if (Input.GetKeyDown(KeyCode.B)) this.Trigger();
+		#endif
 	}
 
 	float easeOutBack(float x) {
