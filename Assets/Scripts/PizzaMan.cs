@@ -19,6 +19,7 @@ public class PizzaMan : MonoBehaviour {
     private bool isJump = false;
     private Vector3 startPos;
     private float distanceToGround;
+    private bool hitFireHydrant = false;
 
     public bool IsGrounded() {
         return Physics.Raycast(transform.position, Vector3.down, distanceToGround + groundingSensitivity);
@@ -35,6 +36,14 @@ public class PizzaMan : MonoBehaviour {
             isJump = true;
             asource.PlayOneShot(jumpSFX, jumpSFXVolume);
         }
+    }
+
+    public void ActivateWaterSpout(float strength) {
+        // Called when makes contact with the water spout from a fire hydrant
+        if (this.IsGrounded()) return;
+        this.hitFireHydrant = true;
+        this.rigidbody.AddForce(Vector3.up * strength);
+        Debug.Log("Player recieved function call from Spout!");
     }
 
     private void Awake() {
@@ -75,6 +84,12 @@ public class PizzaMan : MonoBehaviour {
 
         if (rigidbody.velocity.y < 0)
             verticalSpeed += Physics.gravity.y * (gravityMultiplier-1) * Time.fixedDeltaTime;
+
+        if (this.hitFireHydrant) {
+            // if (this.rigidbody.velocity.y < 0) verticalSpeed /= 2;
+            // else verticalSpeed *= 2;
+            this.hitFireHydrant = false;
+        }
         
         rigidbody.velocity = Vector3.up * verticalSpeed;
     }
