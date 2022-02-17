@@ -19,7 +19,7 @@ public class Outline : MonoBehaviour {
 
         GameObject outlineObject = Instantiate(this.gameObject, transform.position, transform.rotation, transform);
         outlineObject.transform.localScale = Vector3.one;
-        outlineObject.transform.localPosition = new Vector3(0, 0, -0.09f);
+        outlineObject.transform.localPosition = new Vector3(0, 0, 0);
 
         foreach (var rend in outlineObject.GetComponentsInChildren<Renderer>()) {
             rend.material = outlineMat;
@@ -46,15 +46,4 @@ public class Outline : MonoBehaviour {
         outlineObject.SetActive(false);
     }
 
-    // private void OnMouseEnter() {
-    //     outlineObject.SetActive(true);
-    // }
-
-    private void OnMouseOver() {
-        // transform.Rotate(Vector3.up, 1f, Space.World);
-    }
-
-    // private void OnMouseExit() {
-    //     outlineObject.SetActive(false);
-    // }
 }
