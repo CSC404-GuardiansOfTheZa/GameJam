@@ -19,7 +19,7 @@ public class CraneRotation : MonoBehaviour
     {
     	if(Input.GetMouseButtonDown(0) && !rotate){
     		rotate = true;
-    		StartCoroutine(RotateMe(Vector3.up * (-180), 0.5f));
+    		StartCoroutine(RotateMe(Vector3.up * (-180), 5f));
     	}        
     }
 
