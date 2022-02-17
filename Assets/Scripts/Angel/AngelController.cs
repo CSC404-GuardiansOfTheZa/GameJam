@@ -66,18 +66,4 @@ public class AngelController : MonoBehaviour {
 
     }
 
-    // void OnTriggerEnter(Collider collider) {
-    //     if (!collider.TryGetComponent<IInteractable>(out IInteractable _))
-    //         return;
-    //     selectedInteractable?.GetComponent<Outline>()?.HideOutline(); // disable outline of prev selected interactable
-    //     selectedInteractable = collider.gameObject;
-    //     collider.GetComponent<Outline>()?.ShowOutline();
-    // }
-
-    // void OnTriggerExit(Collider collider) {
-    //     collider.GetComponent<Outline>()?.HideOutline();
-    //     if (selectedInteractable == collider.gameObject)
-    //         selectedInteractable = null;
-    // }
-
 }
