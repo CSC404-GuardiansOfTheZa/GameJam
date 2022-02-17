@@ -11,6 +11,7 @@ TagManager:
   - Interactable
   - Road
   - Crane
+  - DeathObstacle
   layers:
   - Default
   - TransparentFX
