@@ -10,6 +10,7 @@ TagManager:
   - UnDraggable
   - Interactable
   - Road
+  - Crane
   layers:
   - Default
   - TransparentFX
