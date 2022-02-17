@@ -9,6 +9,7 @@ TagManager:
   - Drag_Cover
   - UnDraggable
   - Interactable
+  - Road
   layers:
   - Default
   - TransparentFX
