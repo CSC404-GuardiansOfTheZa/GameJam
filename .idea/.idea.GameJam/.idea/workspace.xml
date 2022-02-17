@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bob" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:stew" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Ethan" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bob" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:final" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:kk" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:luciano" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:stew" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza delivery characters.blend.zip" beforeDir="false" afterPath="$PROJECT_DIR$/pizza delivery characters.blend.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizza delivery characters.obj.zip" beforeDir="false" afterPath="$PROJECT_DIR$/pizza delivery characters.obj.zip" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Level/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AngelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CursorLock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Angel/AngelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FollowPizzaMan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FollowPizzaManHeight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RotateYAxis.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ConstantRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Bird/BirdTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Bird/Bird.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Hydrant/Hydrant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Hydrant/WaterSpout.cs" />
+        <option value="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="24vhrcnzcZIIaHtJnxLl2oe9Erl" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="" />
+      <created>1644517170270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644517170270</updated>
+      <workItem from="1644517178402" duration="2466000" />
+      <workItem from="1644861179551" duration="8132000" />
+      <workItem from="1644891573702" duration="8663000" />
+      <workItem from="1644940958024" duration="7996000" />
+      <workItem from="1644957810264" duration="5136000" />
+      <workItem from="1644993703723" duration="671000" />
+      <workItem from="1645114662000" duration="253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="314" y="163" width="1272" height="711" key="SettingsEditor" timestamp="1644894146047">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="314" y="163" width="1272" height="711" key="SettingsEditor/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644894146047" />
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog" timestamp="1644962291855">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644962291855" />
+    <state x="2012" y="248" width="1736" height="866" key="VCS.FileHistoryDialog/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644876333069" />
+    <state x="2697" y="371" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644877526648">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state x="2697" y="371" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644877526648" />
+    <state x="1963" y="215" width="1893" height="1038" key="dock-window-1" timestamp="1644876956834">
+      <screen x="1920" y="156" width="1920" height="1050" />
+    </state>
+    <state x="1963" y="215" width="1893" height="1038" key="dock-window-1/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644876956834" />
+    <state x="632" y="258" width="655" height="534" key="find.popup" timestamp="1644959679543">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="632" y="258" width="655" height="534" key="find.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644959679543" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1644960700181">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644960700181" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1645114729235">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644953689622" />
+    <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644893838132" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1645114729235" />
+  </component>
+</project>

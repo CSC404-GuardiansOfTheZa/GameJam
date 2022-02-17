@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Stew\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Stew\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GameJam.-111580046.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Stew\Documents\Documents\School\404\GameJam" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="kk_Script" t="Include">
+          <e p="CraneRotation.cs" t="Include" />
+          <e p="DragDrop.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
+          <e p="HoleCollider.cs" t="Include" />
+          <e p="MouseFollower.cs" t="Include" />
+          <e p="SpawnCube.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Outline.cs" t="Include" />
+          <e p="PizzaMan.cs" t="Include" />
+          <e p="Stew" t="Include">
+            <e p="BeatKeeper.cs" t="Include" />
+            <e p="BPMVisuals.cs" t="Include" />
+            <e p="LevelManager.cs" t="Include" />
+            <e p="Scrolling.cs" t="Include" />
+          </e>
+          <e p="Window.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="Outline 2.shader" t="Include" />
+        </e>
+        <e p="UrbanNightSky" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
+        <e p="VoxelImporter" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="EditorCommon.cs" t="Include" />
+              <e p="Exporter" t="Include">
+                <e p="DaeExporter.cs" t="Include" />
+                <e p="DaeExporterWindow.cs" t="Include" />
+              </e>
+              <e p="Library" t="Include">
+                <e p="Collada_Main" t="Include">
+                  <e p="Collada_B_Rep" t="Include">
+                    <e p="Curves" t="Include">
+                      <e p="Grendgine_Collada_Circle.cs" t="Include" />
+                      <e p="Grendgine_Collada_Curve.cs" t="Include" />
+                      <e p="Grendgine_Collada_Curves.cs" t="Include" />
+                      <e p="Grendgine_Collada_Ellipse.cs" t="Include" />
+                      <e p="Grendgine_Collada_Hyperbola.cs" t="Include" />
+                      <e p="Grendgine_Collada_Line.cs" t="Include" />
+                      <e p="Grendgine_Collada_Nurbs.cs" t="Include" />
+                      <e p="Grendgine_Collada_Parabola.cs" t="Include" />
+                      <e p="Grendgine_Collada_Surface_Curves.cs" t="Include" />
+                    </e>
+                    <e p="Geometry" t="Include">
+                      <e p="Grendgine_Collada_B_Rep.cs" t="Include" />
+                    </e>
+                    <e p="Surfaces" t="Include">
+                      <e p="Grendgine_Collada_Cone.cs" t="Include" />
+                      <e p="Grendgine_Collada_Cylinder_B_Rep.cs" t="Include" />
+                      <e p="Grendgine_Collada_Nurbs_Surface.cs" t="Include" />
+                      <e p="Grendgine_Collada_Surface.cs" t="Include" />
+                      <e p="Grendgine_Collada_Surfaces.cs" t="Include" />
+                      <e p="Grendgine_Collada_Swept_Surface.cs" t="Include" />
+                      <e p="Grendgine_Collada_Torus.cs" t="Include" />
+                    </e>
+                    <e p="Topology" t="Include">
+                      <e p="Grendgine_Collada_Edges.cs" t="Include" />
+                      <e p="Grendgine_Collada_Faces.cs" t="Include" />
+                      <e p="Grendgine_Collada_PCurves.cs" t="Include" />
+                      <e p="Grendgine_Collada_Shells.cs" t="Include" />
+                      <e p="Grendgine_Collada_Solids.cs" t="Include" />
+                      <e p="Grendgine_Collada_Wires.cs" t="Include" />
+                    </e>
+                    <e p="Transformation" t="Include">
+                      <e p="Grendgine_Collada_Orient.cs" t="Include" />
+                      <e p="Grendgine_Collada_Origin.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Collada_Core" t="Include">
+                    <e p="Animation" t="Include">
+                      <e p="Grendgine_Collada_Animation.cs" t="Include" />
+                      <e p="Grendgine_Collada_Animation_Clip.cs" t="Include" />
+                      <e p="Grendgine_Collada_Channel.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Animation.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Animation_Clips.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Animations.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler.cs" t="Include" />
+                    </e>
+                    <e p="Camera" t="Include">
+                      <e p="Grendgine_Collada_Camera.cs" t="Include" />
+                      <e p="Grendgine_Collada_Imager.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Camera.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Cameras.cs" t="Include" />
+                      <e p="Grendgine_Collada_Optics.cs" t="Include" />
+                      <e p="Grendgine_Collada_Orthographic.cs" t="Include" />
+                      <e p="Grendgine_Collada_Perspective.cs" t="Include" />
+                    </e>
+                    <e p="Controller" t="Include">
+                      <e p="Grendgine_Collada_Controller.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Controller.cs" t="Include" />
+                      <e p="Grendgine_Collada_Joints.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Controllers.cs" t="Include" />
+                      <e p="Grendgine_Collada_Morph.cs" t="Include" />
+                      <e p="Grendgine_Collada_Skeleton.cs" t="Include" />
+                      <e p="Grendgine_Collada_Skin.cs" t="Include" />
+                      <e p="Grendgine_Collada_Targets.cs" t="Include" />
+                      <e p="Grendgine_Collada_Vertex_Weights.cs" t="Include" />
+                    </e>
+                    <e p="Custom_Types" t="Include">
+                      <e p="Grendgine_Collada_Geographic_Location_Altitude.cs" t="Include" />
+                      <e p="Grendgine_Collada_Poly_PH.cs" t="Include" />
+                    </e>
+                    <e p="Data_Flow" t="Include">
+                      <e p="Grendgine_Collada_Accessor.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bool_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_Float_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_IDREF_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_Input_Shared.cs" t="Include" />
+                      <e p="Grendgine_Collada_Input_Unshared.cs" t="Include" />
+                      <e p="Grendgine_Collada_Int_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_Name_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_SIDREF_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_Source.cs" t="Include" />
+                      <e p="Grendgine_Collada_Token_Array.cs" t="Include" />
+                    </e>
+                    <e p="Extensibility" t="Include">
+                      <e p="Grendgine_Collada_Extra.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common.cs" t="Include" />
+                    </e>
+                    <e p="Geometry" t="Include">
+                      <e p="Grendgine_Collada_Control_Vertices.cs" t="Include" />
+                      <e p="Grendgine_Collada_Geometry.cs" t="Include" />
+                      <e p="Grendgine_Collada_Geometry_Common_Fields.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Geometry.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Geometries.cs" t="Include" />
+                      <e p="Grendgine_Collada_Lines.cs" t="Include" />
+                      <e p="Grendgine_Collada_Linestrips.cs" t="Include" />
+                      <e p="Grendgine_Collada_Mesh.cs" t="Include" />
+                      <e p="Grendgine_Collada_Polygons.cs" t="Include" />
+                      <e p="Grendgine_Collada_Polylist.cs" t="Include" />
+                      <e p="Grendgine_Collada_Spline.cs" t="Include" />
+                      <e p="Grendgine_Collada_Triangles.cs" t="Include" />
+                      <e p="Grendgine_Collada_Trifans.cs" t="Include" />
+                      <e p="Grendgine_Collada_Tristrips.cs" t="Include" />
+                      <e p="Grendgine_Collada_Vertices.cs" t="Include" />
+                    </e>
+                    <e p="Lighting" t="Include">
+                      <e p="Grendgine_Collada_Ambient.cs" t="Include" />
+                      <e p="Grendgine_Collada_Color.cs" t="Include" />
+                      <e p="Grendgine_Collada_Directional.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Light.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Lights.cs" t="Include" />
+                      <e p="Grendgine_Collada_Light.cs" t="Include" />
+                      <e p="Grendgine_Collada_Point.cs" t="Include" />
+                      <e p="Grendgine_Collada_Spot.cs" t="Include" />
+                    </e>
+                    <e p="Mathematics" t="Include">
+                      <e p="Grendgine_Collada_Formula.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Formula.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Formulas.cs" t="Include" />
+                    </e>
+                    <e p="Metadata" t="Include">
+                      <e p="Grendgine_Collada_Asset.cs" t="Include" />
+                      <e p="Grendgine_Collada_Asset_Contributor.cs" t="Include" />
+                      <e p="Grendgine_Collada_Asset_Coverage.cs" t="Include" />
+                      <e p="Grendgine_Collada_Asset_Unit.cs" t="Include" />
+                      <e p="Grendgine_Collada_Geographic_Location.cs" t="Include" />
+                    </e>
+                    <e p="Parameters" t="Include">
+                      <e p="Grendgine_Collada_New_Param.cs" t="Include" />
+                      <e p="Grendgine_Collada_Param.cs" t="Include" />
+                      <e p="Grendgine_Collada_Set_Param.cs" t="Include" />
+                    </e>
+                    <e p="Scene" t="Include">
+                      <e p="Grendgine_Collada_Evaluate_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Node.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Visual_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Nodes.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Visual_Scenes.cs" t="Include" />
+                      <e p="Grendgine_Collada_Node.cs" t="Include" />
+                      <e p="Grendgine_Collada_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Visual_Scene.cs" t="Include" />
+                    </e>
+                    <e p="Technique_Common" t="Include">
+                      <e p="Grendgine_Collada_Technique_Common_Formula.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Light.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Optics.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Source.cs" t="Include" />
+                    </e>
+                    <e p="Transform" t="Include">
+                      <e p="Grendgine_Collada_Lookat.cs" t="Include" />
+                      <e p="Grendgine_Collada_Matrix.cs" t="Include" />
+                      <e p="Grendgine_Collada_Rotate.cs" t="Include" />
+                      <e p="Grendgine_Collada_Scale.cs" t="Include" />
+                      <e p="Grendgine_Collada_Skew.cs" t="Include" />
+                      <e p="Grendgine_Collada_Translate.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Collada_FX" t="Include">
+                    <e p="Custom_Types" t="Include">
+                      <e p="Grendgine_Collada_Array_Length.cs" t="Include" />
+                      <e p="Grendgine_Collada_Constant_Attribute.cs" t="Include" />
+                      <e p="Grendgine_Collada_Format_Hint.cs" t="Include" />
+                      <e p="Grendgine_Collada_Hex.cs" t="Include" />
+                      <e p="Grendgine_Collada_Mips_Attribute.cs" t="Include" />
+                      <e p="Grendgine_Collada_Ref_String.cs" t="Include" />
+                      <e p="Grendgine_Collada_Renderable_Share.cs" t="Include" />
+                      <e p="Grendgine_Collada_Size_2D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Size_3D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Size_Ratio.cs" t="Include" />
+                      <e p="Grendgine_Collada_Size_Width_Only.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Override.cs" t="Include" />
+                      <e p="Grendgine_Collada_TexCoord_Semantic.cs" t="Include" />
+                      <e p="Grendgine_Collada_Texture.cs" t="Include" />
+                    </e>
+                    <e p="Effects" t="Include">
+                      <e p="Grendgine_Collada_Annotate.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind_Vertex_Input.cs" t="Include" />
+                      <e p="Grendgine_Collada_Effect.cs" t="Include" />
+                      <e p="Grendgine_Collada_Effect_Technique.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Effect.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Effects.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Hint.cs" t="Include" />
+                    </e>
+                    <e p="Materials" t="Include">
+                      <e p="Grendgine_Collada_Bind_FX.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind_Material.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Material_Geometry.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Materials.cs" t="Include" />
+                      <e p="Grendgine_Collada_Material.cs" t="Include" />
+                    </e>
+                    <e p="Parameters" t="Include">
+                      <e p="Grendgine_Collada_Array.cs" t="Include" />
+                      <e p="Grendgine_Collada_Modifier.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler_Image.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler_States.cs" t="Include" />
+                      <e p="Grendgine_Collada_Semantic.cs" t="Include" />
+                      <e p="Grendgine_Collada_UserType.cs" t="Include" />
+                    </e>
+                    <e p="Profiles" t="Include">
+                      <e p="BRIDGE" t="Include">
+                        <e p="Grendgine_Collada_Profile_BRIDGE.cs" t="Include" />
+                      </e>
+                      <e p="CG" t="Include">
+                        <e p="Grendgine_Collada_Pass_CG.cs" t="Include" />
+                        <e p="Grendgine_Collada_Profile_CG.cs" t="Include" />
+                        <e p="Grendgine_Collada_Program_CG.cs" t="Include" />
+                        <e p="Grendgine_Collada_Shader_CG.cs" t="Include" />
+                        <e p="Grendgine_Collada_Technique_CG.cs" t="Include" />
+                      </e>
+                      <e p="Common" t="Include">
+                        <e p="Grendgine_Collada_Effect_Technique_COMMON.cs" t="Include" />
+                        <e p="Grendgine_Collada_Profile_COMMON.cs" t="Include" />
+                      </e>
+                      <e p="GLES" t="Include">
+                        <e p="Grendgine_Collada_Pass_GLES.cs" t="Include" />
+                        <e p="Grendgine_Collada_Profile_GLES.cs" t="Include" />
+                        <e p="Grendgine_Collada_Technique_GLES.cs" t="Include" />
+                      </e>
+                      <e p="GLES2" t="Include">
+                        <e p="Grendgine_Collada_Pass_GLES2.cs" t="Include" />
+                        <e p="Grendgine_Collada_Profile_GLES2.cs" t="Include" />
+                        <e p="Grendgine_Collada_Program_GLES2.cs" t="Include" />
+                        <e p="Grendgine_Collada_Shader_GLES2.cs" t="Include" />
+                        <e p="Grendgine_Collada_Technique_GLES2.cs" t="Include" />
+                      </e>
+                      <e p="GLSL" t="Include">
+                        <e p="Grendgine_Collada_Pass_GLSL.cs" t="Include" />
+                        <e p="Grendgine_Collada_Profile_GLSL.cs" t="Include" />
+                        <e p="Grendgine_Collada_Program_GLSL.cs" t="Include" />
+                        <e p="Grendgine_Collada_Shader_GLSL.cs" t="Include" />
+                        <e p="Grendgine_Collada_Technique_GLSL.cs" t="Include" />
+                      </e>
+                      <e p="Grendgine_Collada_Profile.cs" t="Include" />
+                    </e>
+                    <e p="Rendering" t="Include">
+                      <e p="Grendgine_Collada_Blinn.cs" t="Include" />
+                      <e p="Grendgine_Collada_Color_Clear.cs" t="Include" />
+                      <e p="Grendgine_Collada_Color_Target.cs" t="Include" />
+                      <e p="Grendgine_Collada_Constant.cs" t="Include" />
+                      <e p="Grendgine_Collada_Depth_Clear.cs" t="Include" />
+                      <e p="Grendgine_Collada_Depth_Target.cs" t="Include" />
+                      <e p="Grendgine_Collada_Draw.cs" t="Include" />
+                      <e p="Grendgine_Collada_Evaluate.cs" t="Include" />
+                      <e p="Grendgine_Collada_FX_Common_Color_Or_Texture_Type.cs" t="Include" />
+                      <e p="Grendgine_Collada_FX_Common_Float_Or_Param_Type.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Material_Rendering.cs" t="Include" />
+                      <e p="Grendgine_Collada_Lambert.cs" t="Include" />
+                      <e p="Grendgine_Collada_Pass.cs" t="Include" />
+                      <e p="Grendgine_Collada_Phong.cs" t="Include" />
+                      <e p="Grendgine_Collada_Render.cs" t="Include" />
+                      <e p="Grendgine_Collada_States.cs" t="Include" />
+                      <e p="Grendgine_Collada_Stencil_Clear.cs" t="Include" />
+                      <e p="Grendgine_Collada_Stencil_Target.cs" t="Include" />
+                    </e>
+                    <e p="Shaders" t="Include">
+                      <e p="Grendgine_Collada_Binary.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind_Attribute.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind_Uniform.cs" t="Include" />
+                      <e p="Grendgine_Collada_Code.cs" t="Include" />
+                      <e p="Grendgine_Collada_Compiler.cs" t="Include" />
+                      <e p="Grendgine_Collada_Include.cs" t="Include" />
+                      <e p="Grendgine_Collada_Linker.cs" t="Include" />
+                      <e p="Grendgine_Collada_Shader.cs" t="Include" />
+                      <e p="Grendgine_Collada_Shader_Sources.cs" t="Include" />
+                    </e>
+                    <e p="Technique_Common" t="Include">
+                      <e p="Grendgine_Collada_Technique_Common_Bind_Material.cs" t="Include" />
+                    </e>
+                    <e p="Texturing" t="Include">
+                      <e p="Grendgine_Collada_Alpha.cs" t="Include" />
+                      <e p="Grendgine_Collada_Argument_Alpha.cs" t="Include" />
+                      <e p="Grendgine_Collada_Argument_RGB.cs" t="Include" />
+                      <e p="Grendgine_Collada_Create_2D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Create_3D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Create_Cube.cs" t="Include" />
+                      <e p="Grendgine_Collada_Format.cs" t="Include" />
+                      <e p="Grendgine_Collada_FX_Sampler_Common.cs" t="Include" />
+                      <e p="Grendgine_Collada_Image.cs" t="Include" />
+                      <e p="Grendgine_Collada_Init_From.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Image.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Images.cs" t="Include" />
+                      <e p="Grendgine_Collada_RGB.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler1D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler2D.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sampler3D.cs" t="Include" />
+                      <e p="Grendgine_Collada_SamplerCUBE.cs" t="Include" />
+                      <e p="Grendgine_Collada_SamplerDEPTH.cs" t="Include" />
+                      <e p="Grendgine_Collada_SamplerRECT.cs" t="Include" />
+                      <e p="Grendgine_Collada_Surface.cs" t="Include" />
+                      <e p="Grendgine_Collada_TexCombiner.cs" t="Include" />
+                      <e p="Grendgine_Collada_TexEnv.cs" t="Include" />
+                      <e p="Grendgine_Collada_Texture_Pipeline.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Collada_Helpers" t="Include">
+                    <e p="Grendgine_Collada_Bool_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Float2_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Float_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_Int_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_Parse_Utils.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Float_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Int_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_String_Array_String.cs" t="Include" />
+                  </e>
+                  <e p="Collada_Kinematics" t="Include">
+                    <e p="Articulated_Systems" t="Include">
+                      <e p="Grendgine_Collada_Articulated_System.cs" t="Include" />
+                      <e p="Grendgine_Collada_Axis_Info.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind.cs" t="Include" />
+                      <e p="Grendgine_Collada_Connect_Param.cs" t="Include" />
+                      <e p="Grendgine_Collada_Effector_Info.cs" t="Include" />
+                      <e p="Grendgine_Collada_Frame_Object.cs" t="Include" />
+                      <e p="Grendgine_Collada_Frame_Origin.cs" t="Include" />
+                      <e p="Grendgine_Collada_Frame_TCP.cs" t="Include" />
+                      <e p="Grendgine_Collada_Frame_Tip.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Articulated_System.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Articulated_Systems.cs" t="Include" />
+                      <e p="Grendgine_Collada_Motion.cs" t="Include" />
+                    </e>
+                    <e p="Custom_Types" t="Include">
+                      <e p="Grendgine_Collada_Axis_Info_Kinematics.cs" t="Include" />
+                      <e p="Grendgine_Collada_Axis_Info_Motion.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics_Axis_Info_Index.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics_Axis_Info_Limits.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics_Limits.cs" t="Include" />
+                    </e>
+                    <e p="Joints" t="Include">
+                      <e p="Grendgine_Collada_Joint.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Joints.cs" t="Include" />
+                      <e p="Grendgine_Collada_Prismatic.cs" t="Include" />
+                      <e p="Grendgine_Collada_Revolute.cs" t="Include" />
+                    </e>
+                    <e p="Kinematics_Models" t="Include">
+                      <e p="Grendgine_Collada_Attachment_End.cs" t="Include" />
+                      <e p="Grendgine_Collada_Attachment_Full.cs" t="Include" />
+                      <e p="Grendgine_Collada_Attachment_Start.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Joint.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Kinematics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Kinematics_Models.cs" t="Include" />
+                      <e p="Grendgine_Collada_Link.cs" t="Include" />
+                    </e>
+                    <e p="Kinematics_Scenes" t="Include">
+                      <e p="Grendgine_Collada_Bind_Joint_Axis.cs" t="Include" />
+                      <e p="Grendgine_Collada_Bind_Kinematics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Kinematics_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Kinematics_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Kinematics_Scene.cs" t="Include" />
+                    </e>
+                    <e p="Technique_Common" t="Include">
+                      <e p="Grendgine_Collada_Technique_Common_Kinematics.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Kinematics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Motion.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Collada_Physics" t="Include">
+                    <e p="Analytical_Shape" t="Include">
+                      <e p="Grendgine_Collada_Box.cs" t="Include" />
+                      <e p="Grendgine_Collada_Capsule.cs" t="Include" />
+                      <e p="Grendgine_Collada_Convex_Mesh.cs" t="Include" />
+                      <e p="Grendgine_Collada_Cylinder.cs" t="Include" />
+                      <e p="Grendgine_Collada_Plane.cs" t="Include" />
+                      <e p="Grendgine_Collada_Shape.cs" t="Include" />
+                      <e p="Grendgine_Collada_Sphere.cs" t="Include" />
+                    </e>
+                    <e p="Custom_Types" t="Include">
+                      <e p="Grendgine_Collada_Constraint_Limit_Detail.cs" t="Include" />
+                      <e p="Grendgine_Collada_Constraint_Limits.cs" t="Include" />
+                      <e p="Grendgine_Collada_Constraint_Spring.cs" t="Include" />
+                      <e p="Grendgine_Collada_Constraint_Spring_Type.cs" t="Include" />
+                      <e p="Grendgine_Collada_Mass_Frame.cs" t="Include" />
+                    </e>
+                    <e p="Physics_Material" t="Include">
+                      <e p="Grendgine_Collada_Instance_Physics_Material.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Physics_Materials.cs" t="Include" />
+                      <e p="Grendgine_Collada_Physics_Material.cs" t="Include" />
+                    </e>
+                    <e p="Physics_Model" t="Include">
+                      <e p="Grendgine_Collada_Attachment.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Physics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Rigid_Body.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Rigid_Constraint.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Physics_Models.cs" t="Include" />
+                      <e p="Grendgine_Collada_Physics_Model.cs" t="Include" />
+                      <e p="Grendgine_Collada_Ref_Attachment.cs" t="Include" />
+                      <e p="Grendgine_Collada_Rigid_Body.cs" t="Include" />
+                      <e p="Grendgine_Collada_Rigid_Constraint.cs" t="Include" />
+                    </e>
+                    <e p="Physics_Scene" t="Include">
+                      <e p="Grendgine_Collada_Force_Field.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Force_Field.cs" t="Include" />
+                      <e p="Grendgine_Collada_Instance_Physics_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Force_Fields.cs" t="Include" />
+                      <e p="Grendgine_Collada_Library_Physics_Scenes.cs" t="Include" />
+                      <e p="Grendgine_Collada_Physics_Scene.cs" t="Include" />
+                    </e>
+                    <e p="Technique_Common" t="Include">
+                      <e p="Grendgine_Collada_Technique_Common_Instance_Rigid_Body.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Physics_Material.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Physics_Scene.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Rigid_Body.cs" t="Include" />
+                      <e p="Grendgine_Collada_Technique_Common_Rigid_Constraint.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Enums" t="Include">
+                    <e p="Grendgine_Collada_Alpha_Operator.cs" t="Include" />
+                    <e p="Grendgine_Collada_Argument_Alpha_Operand.cs" t="Include" />
+                    <e p="Grendgine_Collada_Argument_RGB_Operand.cs" t="Include" />
+                    <e p="Grendgine_Collada_Argument_Source.cs" t="Include" />
+                    <e p="Grendgine_Collada_Face.cs" t="Include" />
+                    <e p="Grendgine_Collada_Format_Hint_Channels.cs" t="Include" />
+                    <e p="Grendgine_Collada_Format_Hint_Precision.cs" t="Include" />
+                    <e p="Grendgine_Collada_Format_Hint_Range.cs" t="Include" />
+                    <e p="Grendgine_Collada_FX_Opaque_Channel.cs" t="Include" />
+                    <e p="Grendgine_Collada_FX_Sampler_Common_Filter_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_FX_Sampler_Common_Wrap_Mode.cs" t="Include" />
+                    <e p="Grendgine_Collada_FX_Surface_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Geographic_Location_Altitude_Mode.cs" t="Include" />
+                    <e p="Grendgine_Collada_Input_Semantic.cs" t="Include" />
+                    <e p="Grendgine_Collada_Modifier_Value.cs" t="Include" />
+                    <e p="Grendgine_Collada_Node_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_RGB_Operator.cs" t="Include" />
+                    <e p="Grendgine_Collada_Sampler_Behavior.cs" t="Include" />
+                    <e p="Grendgine_Collada_Shader_Stage.cs" t="Include" />
+                    <e p="Grendgine_Collada_TexEnv_Operator.cs" t="Include" />
+                  </e>
+                  <e p="Grendgine_Collada.cs" t="Include" />
+                  <e p="Types" t="Include">
+                    <e p="Grendgine_Collada_Bool_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Bool_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Float2_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Float_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Int_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Common_SIDREF_Or_Param_Type.cs" t="Include" />
+                    <e p="Grendgine_Collada_Float_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_Int_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Bool.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Float.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Float_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Int_Array_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Name_Float.cs" t="Include" />
+                    <e p="Grendgine_Collada_SID_Name_String.cs" t="Include" />
+                    <e p="Grendgine_Collada_String_Array_String.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="ScriptableObject" t="Include">
+                <e p="BoneTemplate.cs" t="Include" />
+              </e>
+              <e p="VoxelBaseCore.cs" t="Include" />
+              <e p="VoxelBaseEditor.cs" t="Include" />
+              <e p="VoxelChunksObjectChunkCore.cs" t="Include" />
+              <e p="VoxelChunksObjectChunkEditor.cs" t="Include" />
+              <e p="VoxelChunksObjectCore.cs" t="Include" />
+              <e p="VoxelChunksObjectEditor.cs" t="Include" />
+              <e p="VoxelEditorCommon.cs" t="Include" />
+              <e p="VoxelFrameAnimationListWindow.cs" t="Include" />
+              <e p="VoxelFrameAnimationObjectCore.cs" t="Include" />
+              <e p="VoxelFrameAnimationObjectEditor.cs" t="Include" />
+              <e p="VoxelHumanoidConfigreAvatar.cs" t="Include" />
+              <e p="VoxelObjectCore.cs" t="Include" />
+              <e p="VoxelObjectEditor.cs" t="Include" />
+              <e p="VoxelScriptedImporter.cs" t="Include" />
+              <e p="VoxelScriptedImporterEditor.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObjectBoneCore.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObjectBoneEditor.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObjectCore.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObjectEditor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Common" t="Include">
+                <e p="DataTable.cs" t="Include" />
+                <e p="FlagTable.cs" t="Include" />
+                <e p="IntVector.cs" t="Include" />
+              </e>
+              <e p="Data" t="Include">
+                <e p="DisableData.cs" t="Include" />
+                <e p="MaterialData.cs" t="Include" />
+                <e p="StructureData.cs" t="Include" />
+                <e p="VoxelData.cs" t="Include" />
+                <e p="WeightData.cs" t="Include" />
+              </e>
+              <e p="Extra" t="Include">
+                <e p="VoxelBaseExplosion.cs" t="Include" />
+                <e p="VoxelChunksObjectChunkExplosion.cs" t="Include" />
+                <e p="VoxelChunksObjectExplosion.cs" t="Include" />
+                <e p="VoxelFrameAnimationObjectExplosion.cs" t="Include" />
+                <e p="VoxelObjectExplosion.cs" t="Include" />
+                <e p="VoxelSkinnedAnimationObjectExplosion.cs" t="Include" />
+              </e>
+              <e p="ScriptableObject" t="Include">
+                <e p="VoxelStructure.cs" t="Include" />
+              </e>
+              <e p="VoxelBase.cs" t="Include" />
+              <e p="VoxelChunksObject.cs" t="Include" />
+              <e p="VoxelChunksObjectChunk.cs" t="Include" />
+              <e p="VoxelFrameAnimationObject.cs" t="Include" />
+              <e p="VoxelObject.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObject.cs" t="Include" />
+              <e p="VoxelSkinnedAnimationObjectBone.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="GameJam.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
