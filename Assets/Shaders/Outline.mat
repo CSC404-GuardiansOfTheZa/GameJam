@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Outline
   m_Shader: {fileID: 4800000, guid: af6cdbaa40f51254890441070051194f, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: USE_PRECALCULATED_OUTLINE_NORMALS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -47,11 +47,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _DepthOffset: 0
-    - _PrecalculateNormals: 0
+    - _PrecalculateNormals: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Size: 0.057
-    - _Thickness: 0.04
+    - _Thickness: 0.1
     m_Colors:
     - _Color: {r: 1, g: 0.1556604, b: 0.1556604, a: 0}
   m_BuildTextureStacks: []
