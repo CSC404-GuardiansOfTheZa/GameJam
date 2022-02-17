@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scroller : MonoBehaviour
 {
     [SerializeField]
-    private Transform dynamicChildren;
+    private Transform dynamicLevelParent;
     [Header("Scroll Settings")]
     [SerializeField]
     private float scrollSpeed = 10; // Measured in units/second
@@ -30,7 +30,7 @@ public class Scroller : MonoBehaviour
         float deltaTime = Time.deltaTime;
         if (isInitialized && progress < 1.0f){
             progress += deltaTime / this.trackLength;
-            dynamicChildren.localPosition += Vector3.left * scrollSpeed * deltaTime;
+            this.dynamicLevelParent.localPosition += Vector3.left * scrollSpeed * deltaTime;
         }
     }
 }
