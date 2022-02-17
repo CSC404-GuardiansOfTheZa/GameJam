@@ -212,6 +212,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2812156747404529711}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (1)
@@ -286,6 +290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9078701983334564446}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window
@@ -360,6 +368,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2812156747404529711}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window
@@ -434,6 +446,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9078701983334564446}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (2)
@@ -508,6 +524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2812156747404529711}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (2)
@@ -582,6 +602,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9078701983334564446}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (3)
@@ -656,6 +680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 846004104595980538}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window
@@ -730,6 +758,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 846004104595980538}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (2)
@@ -804,6 +836,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9078701983334564446}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (1)
@@ -878,6 +914,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 846004104595980538}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (1)
@@ -952,6 +992,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2812156747404529711}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (3)
@@ -1026,6 +1070,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 846004104595980538}
     m_Modifications:
+    - target: {fileID: 1148319525, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
     - target: {fileID: 8220487274264493491, guid: 59e5af0c4a339364a9c83de05fe9c948, type: 3}
       propertyPath: m_Name
       value: Window (3)
