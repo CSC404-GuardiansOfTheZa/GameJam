@@ -8,6 +8,7 @@ public class Outline : MonoBehaviour {
     [SerializeField] private Color outlineColor;
     private GameObject outlineObject;
 
+
     void Start() {
         outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
         outlineObject.SetActive(false);
@@ -37,15 +38,23 @@ public class Outline : MonoBehaviour {
         return outlineObject;
     }
 
-    private void OnMouseEnter() {
+    public void ShowOutline() {
         outlineObject.SetActive(true);
     }
+
+    public void HideOutline() {
+        outlineObject.SetActive(false);
+    }
+
+    // private void OnMouseEnter() {
+    //     outlineObject.SetActive(true);
+    // }
 
     private void OnMouseOver() {
         // transform.Rotate(Vector3.up, 1f, Space.World);
     }
 
-    private void OnMouseExit() {
-        outlineObject.SetActive(false);
-    }
+    // private void OnMouseExit() {
+    //     outlineObject.SetActive(false);
+    // }
 }
