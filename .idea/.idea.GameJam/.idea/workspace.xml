@@ -69,10 +69,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza delivery characters.blend.zip" beforeDir="false" afterPath="$PROJECT_DIR$/pizza delivery characters.blend.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza delivery characters.obj.zip" beforeDir="false" afterPath="$PROJECT_DIR$/pizza delivery characters.obj.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +99,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Bird/BirdTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Bird/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Hydrant/Hydrant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Hydrant/WaterSpout.cs" />
         <option value="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" />
       </list>
     </option>
   </component>
