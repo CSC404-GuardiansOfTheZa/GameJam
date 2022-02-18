@@ -13,7 +13,7 @@ ScriptedImporter:
   gameObjectName: color_experi
   meshMode: 0
   importMode: 1
-  importScale: {x: 1, y: 1, z: 1}
+  importScale: {x: 0.2, y: 0.2, z: 0.2}
   importOffset: {x: 0, y: 0, z: 0}
   combineFaces: 1
   ignoreCavity: 1
@@ -21,111 +21,27 @@ ScriptedImporter:
   removeUnusedPalettes: 1
   shareSameMaterial: 1
   outputStructure: 0
-  generateLightmapUVs: 0
+  generateLightmapUVs: 1
   generateLightmapUVsAngleError: 8
   generateLightmapUVsAreaError: 15
   generateLightmapUVsHardAngle: 88
   generateLightmapUVsPackMargin: 4
-  generateTangents: 0
-  generateVertexColors: 0
+  generateTangents: 1
+  generateVertexColors: 1
   generateVertexColorMax: {r: 1, g: 1, b: 1, a: 1}
   generateVertexColorMin: {r: 0.64, g: 0.64, b: 0.64, a: 1}
   meshFaceVertexOffset: 0
-  loadFromVoxelFile: 1
+  loadFromVoxelFile: 0
   generateMipMaps: 0
   colliderType: 0
   createContactChunkFaces: 0
   materialMode: 0
   materials:
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
+  - {fileID: -156486658544998735, guid: b933378f38e7eff71b061733546a67a0, type: 3}
   materialNames:
   - color_experi_0
-  - color_experi_1
-  - color_experi_2
-  - color_experi_3
-  - color_experi_4
-  - color_experi_5
-  - color_experi_6
-  - color_experi_7
-  - color_experi_8
-  - color_experi_9
-  - color_experi_10
-  - color_experi_11
-  - color_experi_12
-  - color_experi_13
-  - color_experi_14
-  - color_experi_15
-  - color_experi_16
-  - color_experi_17
-  - color_experi_18
-  - color_experi_19
-  - color_experi_22
-  - color_experi_23
   remappedMaterials:
   - name: color_experi_0
-    material: {instanceID: 0}
-  - name: color_experi_1
-    material: {instanceID: 0}
-  - name: color_experi_2
-    material: {instanceID: 0}
-  - name: color_experi_3
-    material: {instanceID: 0}
-  - name: color_experi_4
-    material: {instanceID: 0}
-  - name: color_experi_5
-    material: {instanceID: 0}
-  - name: color_experi_6
-    material: {instanceID: 0}
-  - name: color_experi_7
-    material: {instanceID: 0}
-  - name: color_experi_8
-    material: {instanceID: 0}
-  - name: color_experi_9
-    material: {instanceID: 0}
-  - name: color_experi_10
-    material: {instanceID: 0}
-  - name: color_experi_11
-    material: {instanceID: 0}
-  - name: color_experi_12
-    material: {instanceID: 0}
-  - name: color_experi_13
-    material: {instanceID: 0}
-  - name: color_experi_14
-    material: {instanceID: 0}
-  - name: color_experi_15
-    material: {instanceID: 0}
-  - name: color_experi_16
-    material: {instanceID: 0}
-  - name: color_experi_17
-    material: {instanceID: 0}
-  - name: color_experi_18
-    material: {instanceID: 0}
-  - name: color_experi_19
-    material: {instanceID: 0}
-  - name: color_experi_22
-    material: {instanceID: 0}
-  - name: color_experi_23
     material: {instanceID: 0}
   export: 0
   legacyVoxImport: 0

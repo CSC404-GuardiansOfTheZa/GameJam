@@ -9,6 +9,9 @@ TagManager:
   - Drag_Cover
   - UnDraggable
   - Interactable
+  - Road
+  - Crane
+  - DeathObstacle
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - UI
   - Post Processing
   - Interactables
-  - 
+  - Outline
   - 
   - 
   - 
