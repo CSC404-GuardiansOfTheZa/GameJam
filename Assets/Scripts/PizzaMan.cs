@@ -67,7 +67,7 @@ public class PizzaMan : MonoBehaviour {
         #endif
 
         transform.position = new Vector3(
-            startPos.x,
+            transform.position.x,
             transform.position.y,
             startPos.z
         );

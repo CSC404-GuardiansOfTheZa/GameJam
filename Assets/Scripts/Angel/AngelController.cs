@@ -7,6 +7,7 @@ public class AngelController : MonoBehaviour {
 
     [SerializeField] private float smoothTime = 5f;
     [SerializeField] private float rotateSpeed = 10f;
+    [SerializeField] private float detectionRadius = 1f;
     [Header("Leaning")]
     [SerializeField] private float maxLeanSpeed = 50f; // When abs(velocity.x) reaches speedForMaxLean, the angel should then reach the max lean angle (specified below)
     [SerializeField] private float maxLeanAngle = 80f; // Angel can not lean more than maxLeanAngle degrees at full speed
@@ -25,7 +26,7 @@ public class AngelController : MonoBehaviour {
     void Update() {
 
         // detect interactables in vicinity
-        RaycastHit[] hits = Physics.SphereCastAll(transform.position, 0.5f, Vector3.forward);
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, this.detectionRadius, Vector3.forward);
         bool hasInteractable = false;
         foreach (var hit in hits) {
             if (!hit.collider.TryGetComponent<IInteractable>(out IInteractable _))
