@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ScoreBoardMenu : MonoBehaviour
 {
+	private int previousScene = 0;
+
     public void GoBack(){
-    	SceneManager.LoadScene(0);
+    	SceneManager.LoadScene(previousScene);
     }
 }
