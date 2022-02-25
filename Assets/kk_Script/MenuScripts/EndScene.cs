@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class EndScene : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject playerScoreObj;
+
+    void Start()
+    {
+        playerScoreObj.GetComponent<TMPro.TextMeshProUGUI>().text = "Your Score: " + ScoreManager.playerScore; 
+    }
+
     public void ReplayGame()
     {
         SceneManager.LoadScene(1);
