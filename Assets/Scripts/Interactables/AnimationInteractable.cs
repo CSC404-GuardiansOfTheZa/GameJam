@@ -13,7 +13,7 @@ public class AnimationInteractable : MonoBehaviour, IInteractable
     }
 
     public void Trigger() {
-        if (animator){
+        if (animator) {
             animator.SetTrigger(animationName);
         }
         #if UNITY_EDITOR

@@ -22,7 +22,6 @@ public class Window : MonoBehaviour, IInteractable {
 	}
 	
 	public void Trigger() {
-		Debug.Log("Window should be set now!");
 		this.isOpen = !this.isOpen;
 		StartCoroutine(this.SetWindow());
 	}
