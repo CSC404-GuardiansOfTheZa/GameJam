@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PizzaMan : MonoBehaviour {
     [SerializeField] private float jumpSpeed = 3.0f;
-    [SerializeField] private float gravityMultiplier = 3.0f;
     [SerializeField] private int jumpOnEveryNthBeat = 2;
     [SerializeField] private float groundingSensitivity = 0.2f;
     [Header("SFX")]
@@ -83,7 +82,7 @@ public class PizzaMan : MonoBehaviour {
         isJump = false;
 
         if (rigidbody.velocity.y < 0)
-            verticalSpeed += Physics.gravity.y * (gravityMultiplier - 1) * Time.fixedDeltaTime;
+            verticalSpeed += Physics.gravity.y * Time.fixedDeltaTime;
 
         if (this.hitFireHydrant) {
             // if (this.rigidbody.velocity.y < 0) verticalSpeed /= 2;
