@@ -54,7 +54,7 @@ public class AngelController : MonoBehaviour {
             new Vector3(
                 Input.mousePosition.x,
                 Input.mousePosition.y,
-                Mathf.Abs(this.cam.transform.position.z) - 5
+                Mathf.Abs(this.cam.transform.position.z)
             )
         );
 

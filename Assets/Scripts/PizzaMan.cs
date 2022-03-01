@@ -18,7 +18,7 @@ public class PizzaMan : MonoBehaviour {
     private bool isJump = false;
     private Vector3 startPos;
     private float distanceToGround;
-    private bool hitFireHydrant;
+    private bool hitFireHydrant = false;
 
     public bool IsGrounded() {
         return Physics.Raycast(transform.position, Vector3.down, distanceToGround + groundingSensitivity);
@@ -34,6 +34,8 @@ public class PizzaMan : MonoBehaviour {
         if (IsGrounded()) {
             isJump = true;
             asource.PlayOneShot(jumpSFX, jumpSFXVolume);
+            print("jumping on beat: ");
+
         }
     }
 
@@ -65,11 +67,11 @@ public class PizzaMan : MonoBehaviour {
         }
 #endif
 
-        transform.position = new Vector3(
-            transform.position.x,
-            transform.position.y,
-            startPos.z
-        );
+        // transform.position = new Vector3(
+        //     transform.position.x,
+        //     transform.position.y,
+        //     startPos.z
+        // );
     }
 
 
@@ -78,8 +80,8 @@ public class PizzaMan : MonoBehaviour {
 
         if (isJump) {
             verticalSpeed = jumpSpeed;
+            isJump = false;
         }
-        isJump = false;
 
         if (rigidbody.velocity.y < 0)
             verticalSpeed += Physics.gravity.y * Time.fixedDeltaTime;
@@ -91,5 +93,6 @@ public class PizzaMan : MonoBehaviour {
         }
 
         rigidbody.velocity = Vector3.up * verticalSpeed;
+        // print(verticalSpeed);
     }
 }
