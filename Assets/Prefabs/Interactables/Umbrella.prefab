@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 7088841673480905442}
   - component: {fileID: 7088841673480905471}
   - component: {fileID: 7088841673480905470}
+  - component: {fileID: 4966562456714589997}
   m_Layer: 0
   m_Name: Umbrella
   m_TagString: Untagged
@@ -356,6 +357,19 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 7133bfb4fb7dbf64fb300d8ceee53607, type: 2}
   outlineScaleFactor: 1
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &4966562456714589997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088841673480905444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4bde6888a208f429da0523449ed6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceStrength: 5
 --- !u!1 &7088841673501066038
 GameObject:
   m_ObjectHideFlags: 0
