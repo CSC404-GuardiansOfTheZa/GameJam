@@ -10,7 +10,7 @@ public class PizzaMan : MonoBehaviour {
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
-    
+
     private Rigidbody rigidbody;
     private AudioSource asource;
     private Collider col;
@@ -25,14 +25,14 @@ public class PizzaMan : MonoBehaviour {
         return Physics.Raycast(transform.position, Vector3.down, distanceToGround + groundingSensitivity);
     }
 
-    public void JumpOnBeat(int beat){
-        if (beat % jumpOnEveryNthBeat == 0){
+    public void JumpOnBeat(int beat) {
+        if (beat % jumpOnEveryNthBeat == 0) {
             this.Jump();
         }
     }
 
     public void Jump() {
-        if (IsGrounded()){
+        if (IsGrounded()) {
             isJump = true;
             asource.PlayOneShot(jumpSFX, jumpSFXVolume);
         }
@@ -43,7 +43,7 @@ public class PizzaMan : MonoBehaviour {
         asource = GetComponent<AudioSource>();
         col = GetComponent<Collider>();
     }
-    
+
     public void ActivateWaterSpout(float strength) {
         // Called when makes contact with the water spout from a fire hydrant
         if (this.IsGrounded()) return;
@@ -60,11 +60,11 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private void Update() {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Input.GetButtonDown("Jump")) {
             Jump();
         }
-        #endif
+#endif
 
         transform.position = new Vector3(
             transform.position.x,
@@ -83,14 +83,14 @@ public class PizzaMan : MonoBehaviour {
         isJump = false;
 
         if (rigidbody.velocity.y < 0)
-            verticalSpeed += Physics.gravity.y * (gravityMultiplier-1) * Time.fixedDeltaTime;
-        
+            verticalSpeed += Physics.gravity.y * (gravityMultiplier - 1) * Time.fixedDeltaTime;
+
         if (this.hitFireHydrant) {
             // if (this.rigidbody.velocity.y < 0) verticalSpeed /= 2;
             // else verticalSpeed *= 2;
             this.hitFireHydrant = false;
         }
-        
+
         rigidbody.velocity = Vector3.up * verticalSpeed;
     }
 }
