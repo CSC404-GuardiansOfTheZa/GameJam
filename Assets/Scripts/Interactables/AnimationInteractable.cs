@@ -20,8 +20,6 @@ public class AnimationInteractable : MonoBehaviour, IInteractable {
     }
 
     public void Trigger() {
-
-
         if (animator) {
             animator.SetTrigger(animationName);
             isActivated = !isActivated;

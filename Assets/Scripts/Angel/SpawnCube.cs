@@ -23,7 +23,6 @@ public class SpawnCube : MonoBehaviour
 
     void SpawnAtMousePos(){
         if(Input.GetMouseButtonDown(1)){
-            Debug.Log("right Click");
             Vector3 position = _cam.ScreenToWorldPoint(new Vector3(
                 Input.mousePosition.x, 
                 Input.mousePosition.y, 
