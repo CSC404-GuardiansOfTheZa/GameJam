@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scroller : MonoBehaviour
-{
+public class Scroller : MonoBehaviour {
     [SerializeField]
     private Transform dynamicLevelParent;
     [Header("Scroll Settings")]
     [SerializeField]
-    private float scrollSpeed = 10; // Measured in units/second
+    public float scrollSpeed = 10; // Measured in units/second
 
     private bool isInitialized = false;
     private float progress = 0; // 0 to 1
@@ -20,15 +19,13 @@ public class Scroller : MonoBehaviour
         this.trackLength = Conductor.Instance.TrackLengthInSeconds;
     }
 
-    public void Stop()
-    {
+    public void Stop() {
         isInitialized = false;
     }
 
-    void Update()
-    {
+    void Update() {
         float deltaTime = Time.deltaTime;
-        if (isInitialized && progress < 1.0f){
+        if (isInitialized && progress < 1.0f) {
             progress += deltaTime / this.trackLength;
             this.dynamicLevelParent.localPosition += Vector3.left * scrollSpeed * deltaTime;
         }

@@ -7674,6 +7674,27 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &2029539848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6641841076381036152, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+  m_PrefabInstance: {fileID: 6641841075283432162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2029539854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029539848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fbba2f1857448442b72cd72898243e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpMarkerPrefab: {fileID: 7020670816920934769, guid: 82213b378f5e3df46b34c13bac1e6c40, type: 3}
+  levelGeometry: {fileID: 2138406251}
+  jumpBeatDivision: 2
+  xOffset: 0.5
 --- !u!1001 &2038711204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9194,7 +9215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: scrollSpeed
-      value: 4.2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: dynamicLevelParent
