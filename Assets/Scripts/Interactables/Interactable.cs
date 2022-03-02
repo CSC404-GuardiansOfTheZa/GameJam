@@ -14,34 +14,33 @@ public abstract class Interactable : MonoBehaviour {
         protected set {
             if (value == this._isActive) return;
             this._isActive = value;
-            
-            if (this._isActive) {
-                this.OnActivate();
-            } else {
-                this.OnDeactivate();
-            }
+            this.OnActivationChange();
         }
     }
+
+    private bool mutex = false;
 
     protected void Awake() {
         IsActive = this.isActiveAtStart;
     }
 
     public virtual void Trigger() {
-        StartCoroutine(ActivateForDuration(this.activeDuration));
+        if (!this.mutex) {
+            this.mutex = true;
+            StartCoroutine(ActivateForDuration(this.activeDuration));
+        }
     }
 
-    protected abstract void OnActivate();
-    protected abstract void OnDeactivate();
+    protected abstract void OnActivationChange();
 
     protected IEnumerator ActivateForDuration(float duration) {
-        bool isActive_copy = IsActive;
+        bool isActive_copy = IsActive; // we just use a copy in case mutex doesn't work and there's a race condition
         IsActive = !isActive_copy;
         if (duration > 0) {
             yield return new WaitForSeconds(duration);
             IsActive = isActive_copy;
-        } else {
-            yield return null;
         }
+
+        this.mutex = false;
     }
 }

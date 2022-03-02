@@ -14,11 +14,7 @@ public class Bird : Interactable {
 	private bool isShooed;
 
 	// TODO: implement
-	protected override void OnActivate() {
-		throw new NotImplementedException();
-	}
-
-	protected override void OnDeactivate() {
+	protected override void OnActivationChange() {
 		throw new NotImplementedException();
 	}
 

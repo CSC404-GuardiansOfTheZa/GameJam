@@ -13,17 +13,7 @@ public class Hydrant : Interactable {
 		}
 	}
 
-	public override void Trigger() {
-		// TODO:
-		base.Trigger();
-		this.spout.ToggleSpout();
-	}
-
-	protected override void OnActivate() {
-		throw new NotImplementedException();
-	}
-
-	protected override void OnDeactivate() {
-		throw new NotImplementedException();
+	protected override void OnActivationChange() {
+		this.spout.ToggleSpout(this.IsActive);
 	}
 }

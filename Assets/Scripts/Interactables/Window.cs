@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 public class Window : Interactable {
+	[Header("Window Settings")]
 	[SerializeField] private float secondsToOpen = 2.0f;
 	[Header("Rotation")]
 	[SerializeField] private Transform pivot;
@@ -14,27 +15,13 @@ public class Window : Interactable {
 	[OnChangedCall("SetStartWindow")]
 	[SerializeField] private bool startOpen;
 
-	private bool isOpen;
-	private bool openingMutex = false; // must wait for window to fully open before closing again, and vice-versa
 	
 	public void Start() {
-		this.isOpen = this.startOpen;
 		this.StartCoroutine(this.SetWindow());
 	}
 	
-	public override void Trigger() {
-		base.Trigger();
-		this.isOpen = !this.isOpen;
+	protected override void OnActivationChange() {
 		StartCoroutine(this.SetWindow());
-	}
-	
-	
-	protected override void OnActivate() {
-		throw new NotImplementedException();
-	}
-
-	protected override void OnDeactivate() {
-		throw new NotImplementedException();
 	}
 
 	public void SetStartWindow() {
@@ -43,15 +30,11 @@ public class Window : Interactable {
 	}
 	
 	IEnumerator SetWindow() {
-		if (this.openingMutex) yield return null;
-		this.openingMutex = true;
+		float startRot = transform.eulerAngles.x; 
+		float endRot = this.IsActive ? this.openXRotation : this.closedXRotation;
 
-		// if this.isOpen is true, then that means its currently closed and this coroutine will open it
-		float startRot = !this.isOpen ? this.openXRotation : this.closedXRotation;
-		float endRot = this.isOpen ? this.openXRotation : this.closedXRotation;
-
-		float startScale = !this.isOpen ? this.scaleMultiplierWhenOpen : 1;
-		float endScale = this.isOpen ? this.scaleMultiplierWhenOpen : 1;
+		float startScale = transform.localScale.y;
+		float endScale = this.IsActive ? this.scaleMultiplierWhenOpen : 1;
 
 		float timeElapsed = 0.0f;
 		while (timeElapsed < this.secondsToOpen) {
@@ -69,7 +52,6 @@ public class Window : Interactable {
 		}
 
 		this.pivot.eulerAngles = new Vector3(endRot, 0, 0);
-		this.openingMutex = false;
 	}
 
 	private float EasedLerp(float a, float b, float t) {

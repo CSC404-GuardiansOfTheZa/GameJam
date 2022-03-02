@@ -26,11 +26,7 @@ public class AnimationInteractable : Interactable
         #endif
     }
 
-    protected override void OnActivate() {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void OnDeactivate() {
+    protected override void OnActivationChange() {
         throw new System.NotImplementedException();
     }
 }
