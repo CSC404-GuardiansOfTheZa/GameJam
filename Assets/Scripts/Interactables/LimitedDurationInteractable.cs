@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour {
+public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable {
     [SerializeField] private float activeDuration = 1.0f; // set to <= 0 for infinite duration
     [SerializeField] private bool isActiveAtStart = false;
 
@@ -24,7 +24,7 @@ public abstract class Interactable : MonoBehaviour {
         IsActive = this.isActiveAtStart;
     }
 
-    public virtual void Trigger() {
+    public void Trigger() {
         if (!this.mutex) {
             this.mutex = true;
             StartCoroutine(ActivateForDuration(this.activeDuration));

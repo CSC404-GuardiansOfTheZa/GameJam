@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-public class Window : Interactable {
+public class Window : LimitedDurationInteractable {
 	[Header("Window Settings")]
 	[SerializeField] private float secondsToOpen = 2.0f;
 	[Header("Rotation")]

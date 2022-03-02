@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hydrant : Interactable {
+public class Hydrant : LimitedDurationInteractable {
 	[SerializeField] private WaterSpout spout;
 
 	public void Start() {

@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationInteractable : Interactable
+public class AnimationInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] protected string animationName = "";
 
     protected Animator animator;    
 
     void Awake() {
-        base.Awake();
         animator = GetComponent<Animator>();
     }
 
-    public override void Trigger() {
-        base.Trigger();
-        // TODO: fix
+    public void Trigger() {
         if (animator) {
             animator.SetTrigger(animationName);
         }
@@ -24,9 +21,5 @@ public class AnimationInteractable : Interactable
             Debug.LogError("Interactable animation was triggered, but no Animator was set");
         }
         #endif
-    }
-
-    protected override void OnActivationChange() {
-        throw new System.NotImplementedException();
     }
 }
