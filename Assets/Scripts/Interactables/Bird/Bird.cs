@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VoxelImporter;
 
-public class Bird : MonoBehaviour, IInteractable {
+public class Bird : Interactable {
 	[SerializeField] private Vector3 relativeStartPos = new Vector3(-40, 50, 0); // Where to move to when beginning hover animation; relative to pizza guy's coords
 	[SerializeField] private float hoverDistance = 2.5f; // # of units to hover over the ground 
 	[SerializeField] private float hoverDuration = 10f; // # of seconds to hover over the pizza guy, if not shoo'd
@@ -11,6 +12,15 @@ public class Bird : MonoBehaviour, IInteractable {
 
 	private Collider col;
 	private bool isShooed;
+
+	// TODO: implement
+	protected override void OnActivate() {
+		throw new NotImplementedException();
+	}
+
+	protected override void OnDeactivate() {
+		throw new NotImplementedException();
+	}
 
 	private void Awake() {
 		this.col = this.GetComponent<Collider>();
@@ -62,7 +72,8 @@ public class Bird : MonoBehaviour, IInteractable {
 		this.gameObject.SetActive(false);
 	}
 
-	public void Trigger() {
+	public override void Trigger() {
+		base.Trigger();
 		// Shoo away the Bird
 		// Disable colider 
 		this.isShooed = true;

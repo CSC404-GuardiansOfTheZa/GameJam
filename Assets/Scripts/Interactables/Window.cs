@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
-public class Window : MonoBehaviour, IInteractable {
+public class Window : Interactable {
 	[SerializeField] private float secondsToOpen = 2.0f;
 	[Header("Rotation")]
 	[SerializeField] private Transform pivot;
@@ -21,9 +22,19 @@ public class Window : MonoBehaviour, IInteractable {
 		this.StartCoroutine(this.SetWindow());
 	}
 	
-	public void Trigger() {
+	public override void Trigger() {
+		base.Trigger();
 		this.isOpen = !this.isOpen;
 		StartCoroutine(this.SetWindow());
+	}
+	
+	
+	protected override void OnActivate() {
+		throw new NotImplementedException();
+	}
+
+	protected override void OnDeactivate() {
+		throw new NotImplementedException();
 	}
 
 	public void SetStartWindow() {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hydrant : MonoBehaviour, IInteractable {
+public class Hydrant : Interactable {
 	[SerializeField] private WaterSpout spout;
 
 	public void Start() {
@@ -13,7 +13,17 @@ public class Hydrant : MonoBehaviour, IInteractable {
 		}
 	}
 
-	public void Trigger() {
+	public override void Trigger() {
+		// TODO:
+		base.Trigger();
 		this.spout.ToggleSpout();
+	}
+
+	protected override void OnActivate() {
+		throw new NotImplementedException();
+	}
+
+	protected override void OnDeactivate() {
+		throw new NotImplementedException();
 	}
 }
