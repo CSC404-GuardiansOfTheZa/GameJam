@@ -69,7 +69,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +102,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactables/Hydrant/WaterSpout.cs" />
         <option value="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" />
       </list>
     </option>
   </component>
