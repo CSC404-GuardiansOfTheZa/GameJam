@@ -13,6 +13,7 @@ public class Umbrella : AnimationInteractable {
         if (!this.isActivated) return;
         if (!other.CompareTag("Player")) return;
         print("Player bounce on umbrella!");
+
         Rigidbody rigidbody = other.GetComponent<Rigidbody>();
         rigidbody.AddForce(Vector3.up * bounceStrength);
     }

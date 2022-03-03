@@ -49,6 +49,7 @@
               <e p="WaterSpout.cs" t="Include" />
             </e>
             <e p="IInteractable.cs" t="Include" />
+            <e p="LimitedDurationInteractable.cs" t="Include" />
             <e p="Manhole" t="Include">
               <e p="HoleCollider.cs" t="Include" />
             </e>

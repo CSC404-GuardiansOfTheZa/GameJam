@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d66a389e95448aa49b84ccf90f3c3b4e
+=======
+guid: 1df120ee36ed243cc95047e84177b6ed
+>>>>>>> yeunwoo
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
