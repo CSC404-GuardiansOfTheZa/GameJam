@@ -69,11 +69,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,11 +201,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644960700181" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1645114729235">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup" timestamp="1646277304362">
+      <screen x="1920" y="156" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644953689622" />
-    <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644893838132" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1646275781200" />
+    <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1646277304362" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1645114729235" />
   </component>
 </project>
