@@ -7,7 +7,6 @@ public class WaterSpout : MonoBehaviour {
     [SerializeField] private ParticleSystem particleSystem;
     [Header("Spout Properties")]
     [SerializeField] private float secondsToExtend = 1.0f;
-    [SerializeField] private bool startExtended = false;
     [SerializeField] private float strengthOnPizzaGuy = 5.0f;
 
     public float SpoutHeight { get; set; } = -1;
@@ -15,16 +14,15 @@ public class WaterSpout : MonoBehaviour {
     private bool extended;
     
     public void Awake() {
-        this.extended = this.startExtended;
         SpoutHeight = transform.localScale.y;
         SetYScale(this.extended ? SpoutHeight : 0);
         EnableParticleSystem(this.extended);
     }
 
-    public void ToggleSpout() {
-        extended = !this.extended;
+    public void ToggleSpout(bool _extended) {
+        this.extended = _extended;
         EnableParticleSystem(this.extended);
-        StartCoroutine(ExtendTo(extended ? SpoutHeight : 0));
+        StartCoroutine(ExtendTo(_extended ? SpoutHeight : 0));
     }
 
     IEnumerator ExtendTo(float height) {
