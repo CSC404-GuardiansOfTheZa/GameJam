@@ -18469,7 +18469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7088841673480905443, guid: 66020ee43847e98449cd4ae92326dd0b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.8061423
+      value: 1.9534379
       objectReference: {fileID: 0}
     - target: {fileID: 7088841673480905443, guid: 66020ee43847e98449cd4ae92326dd0b, type: 3}
       propertyPath: m_LocalScale.y
@@ -63067,7 +63067,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 905345763094487672, guid: 182e2cfdfbd5b8542bfc162916707c2d, type: 3}
       propertyPath: smoothTime
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 905345763094487672, guid: 182e2cfdfbd5b8542bfc162916707c2d, type: 3}
       propertyPath: detectionRadius
