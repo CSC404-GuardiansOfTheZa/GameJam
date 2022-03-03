@@ -69,9 +69,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d0ab8ce-5eb1-4549-9300-cbfb63c559b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelTemplate.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CursorLock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CursorLock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/kk_Script/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/kk_Script/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +94,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AngelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CursorLock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Angel/AngelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FollowPizzaMan.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FollowPizzaManHeight.cs" />
@@ -103,6 +106,8 @@
         <option value="$PROJECT_DIR$/Assets/kk_Script/CraneRotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PizzaMan.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Umbrella.cs" />
+        <option value="$PROJECT_DIR$/Assets/kk_Script/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CursorLock.cs" />
       </list>
     </option>
   </component>
@@ -196,18 +201,18 @@
       <screen x="1920" y="156" width="1920" height="1050" />
     </state>
     <state x="1963" y="215" width="1893" height="1038" key="dock-window-1/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1644876956834" />
-    <state x="632" y="258" width="655" height="534" key="find.popup" timestamp="1644959679543">
+    <state x="632" y="258" width="655" height="534" key="find.popup" timestamp="1646280357944">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="632" y="258" width="655" height="534" key="find.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644959679543" />
+    <state x="632" y="258" width="655" height="534" key="find.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1646280357944" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1644960700181">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1644960700181" />
-    <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup" timestamp="1646277304362">
-      <screen x="1920" y="156" width="1920" height="1050" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1646280347159">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1646275781200" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@0.0.1920.1050" timestamp="1646280347159" />
     <state x="2543" y="383" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.156.1920.1050@1920.156.1920.1050" timestamp="1646277304362" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1645114729235" />
   </component>
