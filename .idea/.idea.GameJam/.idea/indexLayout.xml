@@ -6,6 +6,9 @@
       <Path>../../../../../AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@1.2.5</Path>
     </attachedFolders>
     <explicitIncludes>
+      <Path>../../../../../AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.burst@1.6.4</Path>
+      <Path>../../../../../AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@1.2.5</Path>
+      <Path>../../../../../AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.toolchain.win-x86_64-linux-x86_64@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.burst@1.6.4</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.15.7</Path>
       <Path>Library/PackageCache/com.unity.editorcoroutines@1.0.0</Path>
