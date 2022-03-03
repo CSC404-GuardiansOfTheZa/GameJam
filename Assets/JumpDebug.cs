@@ -12,7 +12,7 @@ public class JumpDebug : MonoBehaviour {
     private int jumpBeatDivision = 2;
 
     [SerializeField]
-    private float xOffset = 0.5f;
+    private Vector3 offset = Vector3.zero;
 
     void Start() {
         Conductor.Instance.onBeat += SpawnMarker;
@@ -20,7 +20,7 @@ public class JumpDebug : MonoBehaviour {
 
     void SpawnMarker(int beat) {
         if (beat % jumpBeatDivision == 1) return;
-        GameObject g = Instantiate(jumpMarkerPrefab, new Vector3(xOffset, 0, 0), Quaternion.identity);
+        GameObject g = Instantiate(jumpMarkerPrefab, offset, Quaternion.identity);
         g.transform.SetParent(levelGeometry);
     }
 }
