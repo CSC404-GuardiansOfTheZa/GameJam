@@ -87,7 +87,8 @@ public class DragDrop : MonoBehaviour
             float diff_z= Mathf.Abs(_transform.position.z - target.position.z);
             if(col.gameObject.tag == destinationTag && diff_x < 1.3f && diff_z < 1.3f){
                 _transform.position = col.gameObject.transform.position;
-                col.gameObject.tag = "UnDraggable";
+                col.gameObject.tag = "CoverArea";
+                _transform.tag = "UnDraggable";
                 canMove = false;
             };
         };

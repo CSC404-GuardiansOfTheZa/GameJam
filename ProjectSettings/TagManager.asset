@@ -12,6 +12,7 @@ TagManager:
   - Road
   - Crane
   - DeathObstacle
+  - CoverArea
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,6 @@ TagManager:
   - Interactables
   - Outline
   - Pizza
-  - 
   - 
   - 
   - 
