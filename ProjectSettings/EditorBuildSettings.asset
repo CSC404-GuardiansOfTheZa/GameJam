@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: a4387730e7665429db7b23bf8c35b537
   - enabled: 1
-    path: Assets/Scenes/LevelTemplate-kkTest.unity
-    guid: e4eae79d48b7449829fe79a34ef095c0
+    path: Assets/Scenes/LevelTemplate.unity
+    guid: 1aae5b4e1c732b543a0dc7b970c1ea36
   - enabled: 1
     path: Assets/Scenes/Menus/SettingsMenu.unity
     guid: 4d4fc093e35ea450d8452dfff1e09de1
@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/EndMenu.unity
     guid: 4119b4f419f174e39adaf4d412b4d50c
-  - enabled: 1
-    path: Assets/Scenes/LevelTemplate.unity
-    guid: 1aae5b4e1c732b543a0dc7b970c1ea36
   m_configObjects: {}
