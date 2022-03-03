@@ -88,7 +88,7 @@ crashlytics-build.properties
 # Common IntelliJ Platform excludes
 
 **/.idea
-
+**/.ida/**
 # User specific
 **/.idea/**/workspace.xml
 **/.idea/**/tasks.xml

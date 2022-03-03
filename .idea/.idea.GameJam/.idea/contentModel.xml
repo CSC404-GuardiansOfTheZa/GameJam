@@ -29,6 +29,9 @@
             <e p="SpawnCube.cs" t="Include" />
           </e>
           <e p="BeatKeeper.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="FollowTargetVertically.cs" t="Include" />
+          </e>
           <e p="Coin.cs" t="Include" />
           <e p="CoinRotationOffset.cs" t="Include" />
           <e p="CraneRotation.cs" t="Include" />
@@ -50,6 +53,7 @@
               <e p="HoleCollider.cs" t="Include" />
             </e>
             <e p="Outline.cs" t="Include" />
+            <e p="Window.cs" t="Include" />
           </e>
           <e p="Level" t="Include">
             <e p="Conductor.cs" t="Include" />
@@ -57,6 +61,7 @@
             <e p="Scroller.cs" t="Include" />
           </e>
           <e p="MoveTest.cs" t="Include" />
+          <e p="OnChangedCallAttribute.cs" t="Include" />
           <e p="OutlineNormalsCalculator.cs" t="Include" />
           <e p="PizzaMan.cs" t="Include" />
           <e p="Umbrella.cs" t="Include" />
