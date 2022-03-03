@@ -10,6 +10,9 @@ TagManager:
   - UnDraggable
   - Interactable
   - Road
+  - Crane
+  - DeathObstacle
+  - CoverArea
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - Post Processing
   - Interactables
   - Outline
-  - 
+  - Pizza
   - 
   - 
   - 

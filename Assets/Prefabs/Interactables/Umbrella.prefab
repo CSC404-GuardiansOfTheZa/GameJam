@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 7088841673252660605}
   - component: {fileID: 7088841673252660602}
   - component: {fileID: 7088841673252660603}
-  - component: {fileID: 7088841673252660604}
   - component: {fileID: 7088841673252660601}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841673252660604
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673252660606}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841673252660601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841673254500633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,9 +141,8 @@ GameObject:
   - component: {fileID: 7088841673333903937}
   - component: {fileID: 7088841673333903966}
   - component: {fileID: 7088841673333903967}
-  - component: {fileID: 7088841673333903936}
   - component: {fileID: 7088841673333903965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,20 +214,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841673333903936
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673333903938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841673333903965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,10 +238,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7088841673480905443}
   - component: {fileID: 7088841673480905440}
-  - component: {fileID: 7088841673480905442}
   - component: {fileID: 7088841673480905471}
   - component: {fileID: 7088841673480905470}
-  m_Layer: 0
+  - component: {fileID: 4966562456714589997}
+  m_Layer: 7
   m_Name: Umbrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +257,7 @@ Transform:
   m_GameObject: {fileID: 7088841673480905444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.345, y: 0, z: -4.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7088841675193674010}
@@ -315,19 +285,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7088841673480905442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673480905444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe5ec5678939bdf1b9f72a712e72855d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationName: Next
 --- !u!65 &7088841673480905471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -336,7 +293,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7088841673480905444}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
@@ -356,6 +313,21 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 7133bfb4fb7dbf64fb300d8ceee53607, type: 2}
   outlineScaleFactor: 1
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &4966562456714589997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7088841673480905444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4bde6888a208f429da0523449ed6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationName: Next
+  animSpeedMult: 4
+  bounceStrength: 900
 --- !u!1 &7088841673501066038
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,9 +339,8 @@ GameObject:
   - component: {fileID: 7088841673501066037}
   - component: {fileID: 7088841673501066034}
   - component: {fileID: 7088841673501066035}
-  - component: {fileID: 7088841673501066036}
   - component: {fileID: 7088841673501066033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,20 +412,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841673501066036
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673501066038}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841673501066033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841673617332203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841673804796235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841673811623215}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,9 +544,8 @@ GameObject:
   - component: {fileID: 7088841673880988559}
   - component: {fileID: 7088841673880988556}
   - component: {fileID: 7088841673880988557}
-  - component: {fileID: 7088841673880988558}
   - component: {fileID: 7088841673880988555}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,20 +617,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841673880988558
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673880988592}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841673880988555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,9 +642,8 @@ GameObject:
   - component: {fileID: 7088841673888460081}
   - component: {fileID: 7088841673888460046}
   - component: {fileID: 7088841673888460047}
-  - component: {fileID: 7088841673888460080}
   - component: {fileID: 7088841673888460045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,20 +715,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841673888460080
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841673888460082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841673888460045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,7 +738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841673898804355}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674025687839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674067105535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674202549429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -941,9 +868,8 @@ GameObject:
   - component: {fileID: 7088841674210717204}
   - component: {fileID: 7088841674210717201}
   - component: {fileID: 7088841674210717202}
-  - component: {fileID: 7088841674210717203}
   - component: {fileID: 7088841674210717200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,20 +941,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841674210717203
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841674210717205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841674210717200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,9 +966,8 @@ GameObject:
   - component: {fileID: 7088841674223691473}
   - component: {fileID: 7088841674223691438}
   - component: {fileID: 7088841674223691439}
-  - component: {fileID: 7088841674223691472}
   - component: {fileID: 7088841674223691437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,20 +1039,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841674223691472
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841674223691474}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841674223691437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,7 +1062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674365950282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1094,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674450622711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,9 +1128,8 @@ GameObject:
   - component: {fileID: 7088841674493708713}
   - component: {fileID: 7088841674493708710}
   - component: {fileID: 7088841674493708711}
-  - component: {fileID: 7088841674493708712}
   - component: {fileID: 7088841674493708709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1305,20 +1201,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841674493708712
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841674493708714}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841674493708709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,9 +1226,8 @@ GameObject:
   - component: {fileID: 7088841674496793954}
   - component: {fileID: 7088841674496793983}
   - component: {fileID: 7088841674496793952}
-  - component: {fileID: 7088841674496793953}
   - component: {fileID: 7088841674496793982}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1418,20 +1299,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841674496793953
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841674496793955}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841674496793982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,7 +1322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674569004809}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,9 +1356,8 @@ GameObject:
   - component: {fileID: 7088841674674311077}
   - component: {fileID: 7088841674674311074}
   - component: {fileID: 7088841674674311075}
-  - component: {fileID: 7088841674674311076}
   - component: {fileID: 7088841674674311073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,20 +1429,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841674674311076
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841674674311078}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841674674311073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,7 +1452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841674842598847}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1632,7 +1484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7088841675005421423}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,9 +1518,8 @@ GameObject:
   - component: {fileID: 7088841675045289736}
   - component: {fileID: 7088841675045289733}
   - component: {fileID: 7088841675045289734}
-  - component: {fileID: 7088841675045289735}
   - component: {fileID: 7088841675045289732}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1740,20 +1591,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841675045289735
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841675045289737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841675045289732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,9 +1616,8 @@ GameObject:
   - component: {fileID: 7088841675072581594}
   - component: {fileID: 7088841675072581591}
   - component: {fileID: 7088841675072581592}
-  - component: {fileID: 7088841675072581593}
   - component: {fileID: 7088841675072581590}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1853,20 +1689,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841675072581593
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841675072581595}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841675072581590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,9 +1714,8 @@ GameObject:
   - component: {fileID: 7088841675193674010}
   - component: {fileID: 7088841675193674007}
   - component: {fileID: 7088841675193674008}
-  - component: {fileID: 7088841675193674009}
   - component: {fileID: 7088841675193674006}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shaft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1966,20 +1787,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7088841675193674009
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7088841675193674011}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &7088841675193674006
 MonoBehaviour:
   m_ObjectHideFlags: 0

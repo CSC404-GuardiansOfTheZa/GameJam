@@ -23,10 +23,8 @@ public class ActivatorOfInteractables : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100.0f, raycastLayerMask)) {
-                Debug.Log("GOTTEM");
                 IInteractable target = (IInteractable) hit.transform.GetComponent(typeof(IInteractable));
                 if (target != null) {
-                    Debug.Log("Pullin the trigger");
                     target.Trigger();
                 }
             }

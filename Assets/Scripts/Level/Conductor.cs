@@ -49,7 +49,6 @@ public class Conductor : MonoBehaviour
     void Start() {
         asource.Play();
         dspTimeStart = AudioSettings.dspTime;
-        Debug.Log(Crotchet);
     }
     
     void Update() {
