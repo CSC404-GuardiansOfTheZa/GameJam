@@ -467,6 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba4c981654c8754cac386a4eeac112a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeDuration: 1.4
+  isActiveAtStart: 0
   secondsToOpen: 0.125
   pivot: {fileID: 8220487274184569547}
   closedXRotation: 0
