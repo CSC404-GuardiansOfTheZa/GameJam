@@ -257,7 +257,7 @@ Transform:
   m_GameObject: {fileID: 7088841673480905444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.345, y: 0, z: -4.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7088841675193674010}
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationName: Next
   animSpeedMult: 4
-  bounceStrength: 500
+  bounceStrength: 900
 --- !u!1 &7088841673501066038
 GameObject:
   m_ObjectHideFlags: 0

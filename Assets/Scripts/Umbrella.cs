@@ -9,12 +9,12 @@ public class Umbrella : AnimationInteractable {
 
 
 
-    private void OnCollisionEnter(Collision other) {
+    private void OnTriggerEnter(Collider other) {
         if (!this.isActivated) return;
-        if (!other.transform.CompareTag("Player")) return;
+        if (!other.CompareTag("Player")) return;
         print("Player bounce on umbrella!");
-        
-        Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
+
+        Rigidbody rigidbody = other.GetComponent<Rigidbody>();
         rigidbody.AddForce(Vector3.up * bounceStrength);
     }
 
