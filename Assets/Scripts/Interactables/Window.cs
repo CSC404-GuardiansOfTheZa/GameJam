@@ -5,6 +5,7 @@ using UnityEngine;
 public class Window : LimitedDurationInteractable {
     [Header("Window Settings")]
     [SerializeField] private float secondsToOpen = 2.0f;
+    [SerializeField] private Collider platformCol;
     [Header("Rotation")]
     [SerializeField] private Transform pivot;
     [SerializeField] private float closedXRotation = 0.0f;
@@ -24,6 +25,7 @@ public class Window : LimitedDurationInteractable {
     }
 
     protected override void OnActivationChange(bool isStart) {
+        this.platformCol.enabled = this.IsActive;
         StartCoroutine(this.SetWindow());
         if (!isStart)
             _audioSource.PlayOneShot(clip);

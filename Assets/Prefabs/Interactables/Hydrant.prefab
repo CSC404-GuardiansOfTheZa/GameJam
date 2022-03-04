@@ -5264,7 +5264,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
   outlineScaleFactor: 1.5
   outlineColor: {r: 0.34486467, g: 0.8207547, b: 0.3213332, a: 0}
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 0.0627451, g: 0.76862746, b: 1, a: 1}
 --- !u!114 &2496198071206099461
 MonoBehaviour:
   m_ObjectHideFlags: 0
