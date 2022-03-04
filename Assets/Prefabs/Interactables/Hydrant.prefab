@@ -229,8 +229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5376877091920379407}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 0.25, y: 4, z: 0.25}
+  m_LocalPosition: {x: 0, y: 2.71, z: 0}
+  m_LocalScale: {x: 0.3, y: 12, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5376877092633441373}
@@ -298,8 +298,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1.8, z: 5}
-  m_Center: {x: 0.000000059604645, y: 0.1, z: -0.00000008940697}
+  m_Size: {x: 3, y: 2, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6155833051397377842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleSystem: {fileID: 5376877092633441375}
   secondsToExtend: 0.2
-  strengthOnPizzaGuy: 500
+  strengthOnPizzaGuy: 900
 --- !u!1 &5376877092026819420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,6 +5264,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
   outlineScaleFactor: 1.5
   outlineColor: {r: 0.34486467, g: 0.8207547, b: 0.3213332, a: 0}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!114 &2496198071206099461
 MonoBehaviour:
   m_ObjectHideFlags: 0
