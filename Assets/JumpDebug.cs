@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class JumpDebug : MonoBehaviour {
-
+#if UNITY_EDITOR
     [SerializeField]
     private GameObject jumpMarkerPrefab;
 
@@ -23,4 +23,5 @@ public class JumpDebug : MonoBehaviour {
         GameObject g = Instantiate(jumpMarkerPrefab, offset, Quaternion.identity);
         g.transform.SetParent(levelGeometry);
     }
+#endif
 }
