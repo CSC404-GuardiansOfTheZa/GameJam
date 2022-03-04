@@ -5,15 +5,19 @@ using UnityEngine;
 
 public class Hydrant : LimitedDurationInteractable {
 	[SerializeField] private WaterSpout spout;
+	private AudioSource _audioSource;
+	public AudioClip clip;
 
 	public void Start() {
 		if (this.spout == null) {
 			Debug.LogError("Error! spout is not set in Hydrant object!");
 			Destroy(this);
 		}
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	protected override void OnActivationChange() {
 		this.spout.ToggleSpout(this.IsActive);
+		_audioSource.PlayOneShot(clip);
 	}
 }
