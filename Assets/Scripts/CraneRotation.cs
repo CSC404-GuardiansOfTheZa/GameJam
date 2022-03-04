@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraneRotation : MonoBehaviour
+public class CraneRotation : MonoBehaviour, IInteractable
 {
     // Start is called before the first frame update
 
@@ -24,18 +24,27 @@ public class CraneRotation : MonoBehaviour
         }        
     }
 
-    IEnumerator RotateMe(Vector3 byAngles, float inTime, Transform transform)
+    public void Trigger() {
+        // Transform rotateObj = transform.parent.transform.Find("Stem");
+        Debug.Log("hit!");
+        Transform rotateObj = transform.parent;
+        // if(rotateObj.rotation.y == 1 || rotateObj.rotation.y == 0 || rotateObj.rotation.y == -1){
+            StartCoroutine(RotateMe(Vector3.up * (-180), 0.5f, rotateObj));
+        // }
+    }
+
+    IEnumerator RotateMe(Vector3 byAngles, float inTime, Transform tnsfm)
      {
-         var fromAngle = transform.rotation;
-         var toAngle = Quaternion.Euler(transform.eulerAngles + byAngles);
+         var fromAngle = tnsfm.rotation;
+         var toAngle = Quaternion.Euler(tnsfm.eulerAngles + byAngles);
          for (var t = 0f; t <= 1; t += Time.deltaTime / inTime)
          {
-             transform.rotation = Quaternion.Slerp(fromAngle, toAngle, t);
+             tnsfm.rotation = Quaternion.Slerp(fromAngle, toAngle, t);
            
              yield return null;
          }
             
-         transform.rotation = toAngle;
+         tnsfm.rotation = toAngle;
      }
 
 }
