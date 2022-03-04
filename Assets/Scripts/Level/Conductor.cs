@@ -33,8 +33,13 @@ public class Conductor : MonoBehaviour
 
     private AudioSource asource;
     private double dspTimeStart = -1.0f;
-    private int beat = 1; 
+    private int beat = 1;
 
+    public void StartSong() {
+       this.asource.Play(); 
+       dspTimeStart = AudioSettings.dspTime;
+    }
+    
     void Awake() {
         if (_instance != null && _instance != this) {
             Destroy(this.gameObject);
@@ -45,10 +50,7 @@ public class Conductor : MonoBehaviour
         asource = GetComponent<AudioSource>();
         asource.clip = this.musicTrack;
         Crotchet = 60.0f / (float) BPM;
-    }
-    void Start() {
-        asource.Play();
-        dspTimeStart = AudioSettings.dspTime;
+        LevelManager.Instance.OnLevelStart += this.StartSong;
     }
     
     void Update() {

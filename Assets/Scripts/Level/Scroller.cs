@@ -13,6 +13,10 @@ public class Scroller : MonoBehaviour {
     private float progress = 0; // 0 to 1
     private float trackLength; // Value taken from Conductor
 
+    public void Awake() {
+        LevelManager.Instance.OnLevelStart += this.Init;
+    }
+    
     public void Init() {
         this.isInitialized = true;
         this.progress = 0;

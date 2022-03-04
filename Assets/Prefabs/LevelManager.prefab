@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6641841076381036159}
   - component: {fileID: 7003629538467724588}
   - component: {fileID: 1076072968123455287}
-  - component: {fileID: 6641841076381036153}
   - component: {fileID: 5963458518764226006}
+  - component: {fileID: 6641841076381036153}
   - component: {fileID: 2132565474}
   m_Layer: 0
   m_Name: LevelManager
@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948c1f3efef0f45aaab76b1404c018c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 0}
+  secondsToWait: 1.5
 --- !u!114 &1076072968123455287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +67,20 @@ MonoBehaviour:
   <TrackLengthInSeconds>k__BackingField: 84
   <TrackOffsetInSeconds>k__BackingField: 0
   <BeatsPerMeasure>k__BackingField: 4
+--- !u!114 &5963458518764226006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6641841076381036152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611a6f41b0e8247de92e7bcbb7ab14ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dynamicLevelParent: {fileID: 0}
+  scrollSpeed: 3.5
 --- !u!82 &6641841076381036153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -161,20 +177,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5963458518764226006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6641841076381036152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 611a6f41b0e8247de92e7bcbb7ab14ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dynamicLevelParent: {fileID: 0}
-  scrollSpeed: 3.5
 --- !u!114 &2132565474
 MonoBehaviour:
   m_ObjectHideFlags: 0
