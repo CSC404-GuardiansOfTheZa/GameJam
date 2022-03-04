@@ -16,50 +16,71 @@ public class AngelController : MonoBehaviour {
     private Vector3 velocity = Vector3.zero;
 
     private float lean = 0.0f;
+    private int raycastLayerMask;
 
     private GameObject selectedInteractable = null;
 
     void Start() {
         this.cam = Camera.main;
+        this.raycastLayerMask = LayerMask.GetMask("Interactables");
     }
 
     void Update() {
+        // // detect interactables in vicinity
+        // RaycastHit[] hits = Physics.SphereCastAll(transform.position, this.detectionRadius, Vector3.forward);
+        // bool hasInteractable = false;
+        // foreach (var hit in hits) {
+        //     if (!hit.collider.TryGetComponent<IInteractable>(out IInteractable _))
+        //         continue;
+        //     hasInteractable = true;
+        //     if (selectedInteractable == hit.collider.gameObject) // same gameobject, do nothing
+        //         continue;
+        //     selectedInteractable?.GetComponent<Outline>()?.HideOutline();
+        //     hit.collider.GetComponent<Outline>()?.ShowOutline();
+        //     selectedInteractable = hit.collider.gameObject;
+        //     print(hit.collider.name);
+        // }
+        //
+        // if (!hasInteractable) {
+        //     selectedInteractable?.GetComponent<Outline>()?.HideOutline();
+        //     selectedInteractable = null;
+        // }
+        //
+        //
+        // // controls for interactable
+        // if (Input.GetMouseButtonDown(0))
+        //     selectedInteractable?.GetComponent<IInteractable>().Trigger();
 
-        // detect interactables in vicinity
-        RaycastHit[] hits = Physics.SphereCastAll(transform.position, this.detectionRadius, Vector3.forward);
-        bool hasInteractable = false;
-        foreach (var hit in hits) {
-            if (!hit.collider.TryGetComponent<IInteractable>(out IInteractable _))
-                continue;
-            hasInteractable = true;
-            if (selectedInteractable == hit.collider.gameObject) // same gameobject, do nothing
-                continue;
-            selectedInteractable?.GetComponent<Outline>()?.HideOutline();
-            hit.collider.GetComponent<Outline>()?.ShowOutline();
-            selectedInteractable = hit.collider.gameObject;
-            print(hit.collider.name);
+        Ray ray = this.cam.ScreenPointToRay(this.cam.WorldToScreenPoint(transform.position));
+        bool didRaycastHit = Physics.Raycast(ray, out RaycastHit hit, 100.0f, this.raycastLayerMask);
+        if (didRaycastHit) {
+            if (selectedInteractable != hit.collider.gameObject) {
+                // switching to different gameobject, so adjust the outlines
+                selectedInteractable?.GetComponent<Outline>()?.HideOutline();
+                hit.collider.GetComponent<Outline>()?.ShowOutline();
+                selectedInteractable = hit.collider.gameObject;
+            }
+
+            if (Input.GetMouseButton(0)) {
+                IInteractable target = (IInteractable) hit.transform.GetComponent(typeof(IInteractable));
+                if (target != null) {
+                    target.Trigger();
+                }
+            }
+        } else {
+            this.selectedInteractable?.GetComponent<Outline>()?.HideOutline();
+            this.selectedInteractable = null;
         }
-
-        if (!hasInteractable) {
-            selectedInteractable?.GetComponent<Outline>()?.HideOutline();
-            selectedInteractable = null;
-        }
-
-
-        // controls for interactable
-        if (Input.GetMouseButtonDown(0))
-            selectedInteractable?.GetComponent<IInteractable>().Trigger();
-
-        Vector3 target = this.cam.ScreenToWorldPoint(
+        
+        Vector3 movementTarget = this.cam.ScreenToWorldPoint(
             new Vector3(
                 Input.mousePosition.x,
                 Input.mousePosition.y,
                 Mathf.Abs(this.cam.transform.position.z)
             )
         );
-
-
-        transform.position = Vector3.SmoothDamp(transform.position, target, ref velocity, smoothTime * Time.deltaTime);
+        
+        transform.position = Vector3.SmoothDamp(transform.position, movementTarget, ref velocity, smoothTime * Time.deltaTime);
         transform.eulerAngles = new Vector3(
             -Mathf.Abs(this.velocity.x) / this.maxLeanSpeed * this.maxLeanAngle,
             Mathf.Lerp(transform.eulerAngles.y, velocity.x < 0 ? 90 : 270, rotateSpeed * Time.deltaTime),
