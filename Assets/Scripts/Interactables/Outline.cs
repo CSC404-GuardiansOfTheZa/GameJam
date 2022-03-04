@@ -8,10 +8,21 @@ public class Outline : MonoBehaviour {
     [SerializeField] private Color outlineColor;
     private GameObject outlineObject;
 
+    [SerializeField]
+    private Color highlightColor = Color.yellow;
 
-    void Start() {
+    private Color[] materialColors;
+    private Renderer[] childrenRenderers;
+
+
+    async void Start() {
         // outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
         // outlineObject.SetActive(false);
+        childrenRenderers = GetComponentsInChildren<Renderer>();
+        materialColors = new Color[childrenRenderers.Length];
+        for (int i = 0; i < childrenRenderers.Length; i++) {
+            materialColors[i] = childrenRenderers[i].material.color;
+        }
     }
 
     GameObject CreateOutline(Material outlineMat, float scaleFactor, Color color) {
@@ -38,17 +49,15 @@ public class Outline : MonoBehaviour {
     }
 
     public void ShowOutline() {
-        // outlineObject.SetActive(true);
-        foreach (var renderer in GetComponentsInChildren<Renderer>()) {
-            // renderer.material = outlineMaterial;
-            renderer.material.color = Color.yellow;
+        foreach (var renderer in childrenRenderers) {
+            renderer.material.color = highlightColor;
         }
+        // outlineObject.SetActive(true);
     }
 
     public void HideOutline() {
-        foreach (var renderer in GetComponentsInChildren<Renderer>()) {
-            // renderer.material = outlineMaterial;
-            renderer.material.color = Color.white;
+        for (int i = 0; i < childrenRenderers.Length; i++) {
+            childrenRenderers[i].material.color = materialColors[i];
         }
         // outlineObject.SetActive(false);
     }
