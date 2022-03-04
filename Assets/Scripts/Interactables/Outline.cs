@@ -10,9 +10,8 @@ public class Outline : MonoBehaviour {
 
 
     void Start() {
-        outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
-        outlineObject.SetActive(false);
-
+        // outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
+        // outlineObject.SetActive(false);
     }
 
     GameObject CreateOutline(Material outlineMat, float scaleFactor, Color color) {
@@ -39,11 +38,19 @@ public class Outline : MonoBehaviour {
     }
 
     public void ShowOutline() {
-        outlineObject.SetActive(true);
+        // outlineObject.SetActive(true);
+        foreach (var renderer in GetComponentsInChildren<Renderer>()) {
+            // renderer.material = outlineMaterial;
+            renderer.material.color = Color.yellow;
+        }
     }
 
     public void HideOutline() {
-        outlineObject.SetActive(false);
+        foreach (var renderer in GetComponentsInChildren<Renderer>()) {
+            // renderer.material = outlineMaterial;
+            renderer.material.color = Color.white;
+        }
+        // outlineObject.SetActive(false);
     }
 
 }
