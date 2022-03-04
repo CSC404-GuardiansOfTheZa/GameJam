@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/LevelsMenu.unity
     guid: 258d0e553927b40d3ac72bf6a3f370ed
   - enabled: 1
+    path: Assets/Scenes/Menus/EndMenu-Fail.unity
+    guid: 6e78f802f2f724de699c1d2db5a50a71
+  - enabled: 1
     path: Assets/Scenes/Menus/EndMenu.unity
     guid: 4119b4f419f174e39adaf4d412b4d50c
   m_configObjects: {}

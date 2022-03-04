@@ -67804,8 +67804,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8717692907660062506, guid: 90dd57add543f9049833e011b8ea0305, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 90dd57add543f9049833e011b8ea0305, type: 3}
+--- !u!1 &2004023070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1184200290755727372, guid: 90dd57add543f9049833e011b8ea0305, type: 3}
+  m_PrefabInstance: {fileID: 2004023069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2004023071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004023070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33515f5ee2eec2444b64e3b8b396d4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2005113181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71130,9 +71148,10 @@ GameObject:
   - component: {fileID: 2105507327}
   - component: {fileID: 2105507326}
   - component: {fileID: 2105507325}
+  - component: {fileID: 2105507328}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: EndWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71215,6 +71234,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105507323}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2105507328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105507323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33515f5ee2eec2444b64e3b8b396d4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106345591
 GameObject:
   m_ObjectHideFlags: 0
