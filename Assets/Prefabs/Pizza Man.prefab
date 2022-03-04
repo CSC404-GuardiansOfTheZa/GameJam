@@ -63,11 +63,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSpeed: 9.98
-  gravityMultiplier: 4.39
   jumpOnEveryNthBeat: 2
   groundingSensitivity: 0.05
   groundingRaycastShift: 0.05
-  jumpSFX: {fileID: 8300000, guid: a428dce827b4afc2ba83e1d86d3e0213, type: 3}
+  jumpSFX: {fileID: 8300000, guid: 15f96a139f0908b41964fb3d4c87445f, type: 3}
   jumpSFXVolume: 0.8
 --- !u!54 &6389186319616852582
 Rigidbody:
@@ -95,7 +94,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a428dce827b4afc2ba83e1d86d3e0213, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 15f96a139f0908b41964fb3d4c87445f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -456,6 +456,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 2100000, guid: 5aff81e956e68c8479eadb38ce2a8625, type: 2}
   outlineScaleFactor: 1.5
   outlineColor: {r: 1, g: 0.02020948, b: 0, a: 0.6313726}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!114 &546111412338764097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +477,7 @@ MonoBehaviour:
   openXRotation: 90
   scaleMultiplierWhenOpen: 1
   startOpen: 0
-  clip: {fileID: 8300000, guid: 25fba22147f574d609e466451cb57426, type: 3}
+  clip: {fileID: 8300000, guid: 0273ca48b16a17348a5bbd9c0f5b7af7, type: 3}
 --- !u!82 &6762047558596970364
 AudioSource:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25fba22147f574d609e466451cb57426, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.451
   m_Pitch: 1
