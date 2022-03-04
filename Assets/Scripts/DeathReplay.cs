@@ -17,6 +17,14 @@ public class DeathReplay : MonoBehaviour
     	if(collision.collider.tag == "Player" && _transform.tag != "CoverArea"){
     		Debug.Log("collide with dead object");
     		SceneManager.LoadScene(5);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
     	}
+        if(collision.collider.tag == "Player" && _transform.tag == "EndWall"){
+            Debug.Log("collide with dead object");
+            SceneManager.LoadScene(6);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }
