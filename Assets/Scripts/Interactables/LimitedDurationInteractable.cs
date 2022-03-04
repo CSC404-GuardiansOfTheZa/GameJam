@@ -14,14 +14,16 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
         protected set {
             if (value == this._isActive) return;
             this._isActive = value;
-            this.OnActivationChange();
+            this.OnActivationChange(false);
         }
     }
 
     private bool mutex = false;
 
     protected void Awake() {
-        IsActive = this.isActiveAtStart;
+        _isActive = this.isActiveAtStart;
+        this.OnActivationChange(true);
+        // IsActive = this.isActiveAtStart;
     }
 
     public void Trigger() {
@@ -31,7 +33,7 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
         }
     }
 
-    protected abstract void OnActivationChange();
+    protected abstract void OnActivationChange(bool isStart);
 
     protected IEnumerator ActivateForDuration(float duration) {
         bool isActive_copy = IsActive; // we just use a copy in case mutex doesn't work and there's a race condition
