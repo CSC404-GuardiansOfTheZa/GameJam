@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1076072968123455287}
   - component: {fileID: 6641841076381036153}
   - component: {fileID: 5963458518764226006}
+  - component: {fileID: 2132565474}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96f9782cebcd8e229aa15eaed2e3434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicTrack: {fileID: 8300000, guid: c109d2a23320c04bd9b72227d009bf7e, type: 3}
+  musicTrack: {fileID: 8300000, guid: b211b115be2f34e8e8079d1e015ed01a, type: 3}
   <BPM>k__BackingField: 68
   <TrackLengthInSeconds>k__BackingField: 84
   <TrackOffsetInSeconds>k__BackingField: 0
@@ -75,10 +76,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -173,4 +174,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dynamicLevelParent: {fileID: 0}
-  scrollSpeed: 4
+  scrollSpeed: 3.5
+--- !u!114 &2132565474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6641841076381036152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fbba2f1857448442b72cd72898243e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpMarkerPrefab: {fileID: 7020670816920934769, guid: 82213b378f5e3df46b34c13bac1e6c40, type: 3}
+  levelGeometry: {fileID: 0}
+  jumpBeatDivision: 2
+  offset: {x: 0, y: 0.3, z: -3}
