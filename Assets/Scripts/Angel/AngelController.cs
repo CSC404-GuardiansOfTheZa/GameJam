@@ -61,7 +61,7 @@ public class AngelController : MonoBehaviour {
                 selectedInteractable = hit.collider.gameObject;
             }
 
-            if (Input.GetMouseButton(0)) {
+            if (Input.GetMouseButtonDown(0)) {
                 IInteractable target = (IInteractable) hit.transform.GetComponent(typeof(IInteractable));
                 if (target != null) {
                     target.Trigger();
