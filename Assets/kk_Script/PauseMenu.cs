@@ -9,11 +9,14 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     private AudioSource _audioSource;
+    private AudioSource _pauseaudioSource;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
         _audioSource = GameObject.Find("LevelManager").GetComponent<AudioSource>();
+        _pauseaudioSource = GameObject.Find("PauseMusic").GetComponent<AudioSource>();
+        _pauseaudioSource.Stop();
     }
 
     // Update is called once per frame
@@ -50,16 +53,19 @@ public class PauseMenu : MonoBehaviour
     public void PlayMusic()
     {
          _audioSource.UnPause();
+         _pauseaudioSource.Stop();
     }
  
      public void StopMusic()
     {
          _audioSource.Pause();
+         _pauseaudioSource.Play();
     }
 
     public void GoToMenu(){
     	Time.timeScale = 1f;
     	SceneManager.LoadScene(0);
+        _pauseaudioSource.Stop();
     }
 
     public void QuitGame(){
