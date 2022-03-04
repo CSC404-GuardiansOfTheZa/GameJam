@@ -14,14 +14,19 @@ public class Window : LimitedDurationInteractable {
 	[Header("Start the window open")]
 	[OnChangedCall("SetStartWindow")]
 	[SerializeField] private bool startOpen;
+	private AudioSource _audioSource;
+	public AudioClip clip;
 
 	
 	public void Start() {
 		this.StartCoroutine(this.SetWindow());
+		_audioSource = GetComponent<AudioSource>();
+
 	}
 	
 	protected override void OnActivationChange() {
 		StartCoroutine(this.SetWindow());
+		_audioSource.Play();
 	}
 
 	public void SetStartWindow() {
