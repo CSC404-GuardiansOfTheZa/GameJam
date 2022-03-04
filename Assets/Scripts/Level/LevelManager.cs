@@ -2,33 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
     private static LevelManager _instance;
     public static LevelManager Instance { get { return _instance; } }
-    private Scroller levelScroller;
+
+    [SerializeField] private GameObject loadingScreen;
+    [SerializeField] private float secondsToWait = 1.0f;
+
+    public delegate void OnLevelStartDelegate();
+    public event OnLevelStartDelegate OnLevelStart;
     
-    void Awake()
-    {
+    void Awake() { // Set to run before all other scripts
         if (_instance != null && _instance != this) {
             Destroy(this.gameObject);
         } else {
             _instance = this;
         }
-        
-        levelScroller = GetComponent<Scroller>();
-        levelScroller.Init();
+
+        StartCoroutine(WaitForLoading());
     }
 
     void Update() {
+        #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.R)){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        #endif
     }
 
-    public void Lose() {
-        Debug.Log("LOSE LOSE LOSE LOSE!");
-        levelScroller.Stop();
+    private IEnumerator WaitForLoading() {
+        if (this.loadingScreen != null) {
+            this.loadingScreen.SetActive(true);
+            yield return new WaitForSecondsRealtime(this.secondsToWait);
+            this.loadingScreen.SetActive(false);
+        }
+
+        this.OnLevelStart?.Invoke();
     }
 }

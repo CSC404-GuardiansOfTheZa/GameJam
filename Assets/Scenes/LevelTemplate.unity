@@ -34849,6 +34849,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6389186319616852582, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
 --- !u!1 &1030982620
@@ -37675,6 +37679,11 @@ MeshFilter:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167567518403938096, guid: 6b56b16b622448845afd69576235c50d, type: 3}
   m_PrefabInstance: {fileID: 446529468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1128850238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4389122938710704149, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
+  m_PrefabInstance: {fileID: 1387716725}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1131909836
 GameObject:
@@ -46229,17 +46238,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2462554750562813909, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461739, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: m_Name
       value: PauseMenuGroup
-      objectReference: {fileID: 0}
-    - target: {fileID: 2462554750600461739, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461743, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: m_Pivot.x
@@ -53198,7 +53199,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9659091, y: 1}
+    m_SensorSize: {x: 1.7773722, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -72204,27 +72205,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131670365}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2132565473 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6641841076381036152, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-  m_PrefabInstance: {fileID: 6641841075283432162}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2132565474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132565473}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fbba2f1857448442b72cd72898243e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpMarkerPrefab: {fileID: 7020670816920934769, guid: 82213b378f5e3df46b34c13bac1e6c40, type: 3}
-  levelGeometry: {fileID: 954892994}
-  jumpBeatDivision: 2
-  offset: {x: 0, y: 0.3, z: -3}
 --- !u!1 &2133367096
 GameObject:
   m_ObjectHideFlags: 0
@@ -73749,30 +73729,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1901942889, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 2132565474, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1076072968123455287, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: musicTrack
+    - target: {fileID: 2132565474, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: levelGeometry
       value: 
-      objectReference: {fileID: 8300000, guid: b211b115be2f34e8e8079d1e015ed01a, type: 3}
-    - target: {fileID: 1076072968123455287, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: <BPM>k__BackingField
-      value: 68
-      objectReference: {fileID: 0}
-    - target: {fileID: 3157188535542178281, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572692364151208063, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: scrollSpeed
-      value: 3.5
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 954892994}
     - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: dynamicLevelParent
       value: 
@@ -73780,18 +73744,6 @@ PrefabInstance:
     - target: {fileID: 6641841076381036152, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: m_Name
       value: LevelManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641841076381036153, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641841076381036153, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6641841076381036153, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6641841076381036159, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: m_RootOrder
@@ -73836,6 +73788,14 @@ PrefabInstance:
     - target: {fileID: 6641841076381036159, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003629538467724588, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 1128850238}
+    - target: {fileID: 7003629538467724588, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: secondsToWait
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
