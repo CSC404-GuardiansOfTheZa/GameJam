@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2a73dafc2c319b4caac23e3117a9957, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -214,7 +214,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2a73dafc2c319b4caac23e3117a9957, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -405,8 +405,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.409563, y: 2.3220174, z: 0.7159536}
-  m_Center: {x: 1.023208, y: 6.2114315, z: 3.0299108}
+  m_Size: {x: 5.409563, y: 6.774027, z: 0.7159536}
+  m_Center: {x: 1.023208, y: 3.9854426, z: 3.0299108}
 --- !u!114 &2406856321879091705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ MonoBehaviour:
   outlineMaterial: {fileID: 0}
   outlineScaleFactor: 0
   outlineColor: {r: 0, g: 0, b: 0, a: 0}
-  highlightColor: {r: 0.8443396, g: 0.9514668, b: 1, a: 1}
+  highlightColor: {r: 0.9689451, g: 1, b: 0.4575472, a: 1}
 --- !u!4 &4545236152890177900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad6da2f4eada7ef45ba67358076800f1, type: 3}
