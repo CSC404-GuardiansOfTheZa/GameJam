@@ -40,7 +40,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator WaitForLoading() {
         if (this.loadingScreen != null) {
             this.loadingScreen.SetActive(true);
-            yield return new WaitForSecondsRealtime(this.secondsToWait);
+            yield return new WaitForSeconds(this.secondsToWait);
             this.loadingScreen.SetActive(false);
         }
 

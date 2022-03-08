@@ -102399,7 +102399,7 @@ PrefabInstance:
       objectReference: {fileID: 1387716727}
     - target: {fileID: 7003629538467724588, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: secondsToWait
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
