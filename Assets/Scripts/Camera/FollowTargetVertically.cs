@@ -7,10 +7,10 @@ using UnityEngine;
 public class FollowTargetVertically : MonoBehaviour {
 	[SerializeField] private PizzaMan pizzaMan;
 	// a value of 0.5 will be halfway from the center to the edges; i.e. 0.25 and 0.75 from the bottom.
-	[Range(0, 1f)] [SerializeField] private float innerBoundaryTop = 0.75f;
-	[Range(0, 1f)] [SerializeField] private float innerBoundaryBottom = 0.75f;
-	[Range(0, 1.5f)] [SerializeField] private float outerBoundaryTop = 0.85f;
-	[Range(0, 1.5f)] [SerializeField] private float outerBoundaryBottom = 0.85f;
+	[Range(-1f, 1f)] [SerializeField] private float innerBoundaryTop = 0.75f;
+	[Range(-1f, 1f)] [SerializeField] private float innerBoundaryBottom = 0.75f;
+	[Range(-1.5f, 1.5f)] [SerializeField] private float outerBoundaryTop = 0.85f;
+	[Range(-1.5f, 1.5f)] [SerializeField] private float outerBoundaryBottom = 0.85f;
 	[SerializeField] private float smoothTime = 0.5f;
 	[SerializeField] private float marginOfError = 0.2f; // how close to the target positions the camera can go.
 	

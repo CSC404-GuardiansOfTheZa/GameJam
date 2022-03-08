@@ -18528,7 +18528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382164515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 297.7, y: 2.5, z: 3.05}
+  m_LocalPosition: {x: 297.7, y: 3.5, z: 3.05}
   m_LocalScale: {x: 2300.6455, y: 0.1609, z: 0.08483094}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -97182,7 +97182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079145408}
   m_LocalRotation: {x: 0.07833619, y: -0, z: -0, w: 0.996927}
-  m_LocalPosition: {x: 4.999, y: 5.6, z: -14.283142}
+  m_LocalPosition: {x: 4.99999, y: 5.6, z: -14.283142}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97320,8 +97320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pizzaMan: {fileID: 1626342052}
-  innerBoundaryTop: 0.378
-  innerBoundaryBottom: 0.495
+  innerBoundaryTop: -0.05
+  innerBoundaryBottom: 0.54
   outerBoundaryTop: 0.894
   outerBoundaryBottom: 0.577
   smoothTime: 0.5
