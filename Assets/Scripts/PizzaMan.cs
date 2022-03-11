@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private float groundingSensitivity = 0.2f;
     [SerializeField] private float groundingRaycastShift = 0.5f;
     [Header("SFX")]
-    [SerializeField] private AudioClip jumpSFX;
+    [SerializeField] private List<AudioClip> jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
     
     public bool IsGrounded { get; set; }
@@ -57,7 +56,7 @@ public class PizzaMan : MonoBehaviour {
     private void Jump() {
         if (IsGrounded){
             isJump = true;
-            asource.PlayOneShot(jumpSFX, jumpSFXVolume);
+            asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
         } else {
             Debug.Log("couldn't jump because I'm not grounded!");
         }
