@@ -150,7 +150,10 @@ MonoBehaviour:
   jumpOnEveryNthBeat: 2
   groundingSensitivity: 0.05
   groundingRaycastShift: 0.05
-  jumpSFX: {fileID: 8300000, guid: 15f96a139f0908b41964fb3d4c87445f, type: 3}
+  jumpSFX:
+  - {fileID: 8300000, guid: a95739b2fb98ec348b01706d3a29e8fe, type: 3}
+  - {fileID: 8300000, guid: 4245881100e5f264495d748e4ad7eea3, type: 3}
+  - {fileID: 8300000, guid: c4fbcd25d5453314bb171d980612c6c2, type: 3}
   jumpSFXVolume: 0.8
 --- !u!54 &6389186319616852582
 Rigidbody:
