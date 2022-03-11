@@ -38,7 +38,8 @@ public class PizzaMan : MonoBehaviour {
     }
     
     private bool CheckIfGrounded() {
-        int layerMask = Physics.DefaultRaycastLayers & ~LayerMask.GetMask("Pizza");
+        // int layerMask = Physics.DefaultRaycastLayers & ~LayerMask.GetMask("Pizza");
+        int layerMask = LayerMask.GetMask("Platforms");
         // Shoot the raycast from one unit up: this helps pre
         return Physics.Raycast(
             transform.position + (groundingRaycastShift * Vector3.up), 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730602597375663746}
   - component: {fileID: 730602597375663757}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Arm
   m_TagString: Crane
   m_Icon: {fileID: 0}
