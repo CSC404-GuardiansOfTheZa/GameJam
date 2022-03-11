@@ -178,7 +178,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5946005343a366459737bc97c269789, type: 2}
+  - {fileID: 2100000, guid: 889eeed5b36363f4b9c2bbb6cbf6b896, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -443,6 +443,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeDuration: 1.85
   isActiveAtStart: 0
+  aboutToDeactivateColor: {r: 1, g: 0, b: 0, a: 1}
+  targetRenderers:
+  - {fileID: 8220487273621469504}
   secondsToOpen: 0.125
   platformCol: {fileID: 8220487273621469511}
   pivot: {fileID: 8220487274184569547}
