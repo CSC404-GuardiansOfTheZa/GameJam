@@ -44,13 +44,18 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
 
     protected IEnumerator ActivateForDuration(float duration) {
         bool isActive_copy = IsActive; // we just use a copy in case mutex doesn't work and there's a race condition
-        IsActive = !isActive_copy;
         
-        if (!this.mutex && duration > 0) {
+        if (duration > 0) {
+            if (this.mutex) {
+                yield break;
+            }
+            
             this.mutex = true;
+            IsActive = !isActive_copy;
             float elapsedTime = 0.0f;
             while (elapsedTime < duration) 
             {
+                // Turn progressively red
                 for (int i = 0; i < this.targetRenderers.Count; i++) {
                     var rnd = this.targetRenderers[i];
                     var startColor = this.targetRenderersColors[i];
@@ -70,6 +75,8 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
             }
             IsActive = isActive_copy;
             this.mutex = false;
+        } else {
+            IsActive = !isActive_copy;
         }
     }
 
