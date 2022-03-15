@@ -19,16 +19,17 @@ public class TutorialManager : MonoBehaviour {
     
     private int scriptIndex = -1;
     private Rigidbody pizzaRb;
-    private bool clickToContinue = true;
+    private bool clickToContinue = false;
 
     // Start is called before the first frame update
     void Start() {
-        this.SetDialogueToNextLineInScript();
         this.pizzaRb = this.pizza.GetComponent<Rigidbody>();
         this.pizzaRb.useGravity = false;
         Conductor.Instance.onBeat += this.OnBeat;
         this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
         this.window.OnActivated += this.OnWindowActivated;
+        this.StartCoroutine(this.clickToContinueText.FadeOut());
+        LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
     }
 
     public void OnWindowActivated() {
@@ -59,6 +60,9 @@ public class TutorialManager : MonoBehaviour {
         switch (this.scriptIndex) {
             // indices start at 0
             case 0:
+                yield return new WaitForSeconds(this.dialogueBox.FadeDuration * 5.0f / 3.0f);
+                this.StartCoroutine(this.clickToContinueText.FadeIn());
+                this.clickToContinue = true;
                 break;
             case 1:
                 this.StartCoroutine(this.clickToContinueText.FadeOut());
@@ -70,6 +74,7 @@ public class TutorialManager : MonoBehaviour {
             case 3:
                 break;
             case 4:
+                yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
                 float elapsedTime = 0;
                 while (elapsedTime < this.dialogueBox.FadeDuration) {
                     float t = elapsedTime / this.dialogueBox.FadeDuration;

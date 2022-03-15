@@ -148,6 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 62928615}
+  - component: {fileID: 62928616}
   m_Layer: 0
   m_Name: Jump Markers (Permanent)
   m_TagString: Untagged
@@ -179,6 +180,18 @@ Transform:
   m_Father: {fileID: 1116697225}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62928616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62928614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d8e00b3c2bb034d9e5b25fe3539396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71024450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +1842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297069160}
+  - component: {fileID: 1297069161}
   m_Layer: 0
   m_Name: Jump Markers
   m_TagString: Untagged
@@ -1851,6 +1865,18 @@ Transform:
   m_Father: {fileID: 1116697225}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1297069161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297069159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d8e00b3c2bb034d9e5b25fe3539396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1339098149
 PrefabInstance:
   m_ObjectHideFlags: 0

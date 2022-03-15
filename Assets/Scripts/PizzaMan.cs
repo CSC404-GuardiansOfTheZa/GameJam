@@ -12,6 +12,7 @@ public class PizzaMan : MonoBehaviour {
     [Header("SFX")]
     [SerializeField] private List<AudioClip> jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
+    [Header("Misc.")] [SerializeField] private Animator modelAnimator;
     
     public bool IsGrounded { get; set; }
     public int NumJumps { get; private set; }
@@ -44,11 +45,13 @@ public class PizzaMan : MonoBehaviour {
         this.paused = true;
         this.pausePos = transform.position;
         this.rigidbody.useGravity = false;
+        this.modelAnimator.speed = 0;
     }
 
     public void OnResume() {
         this.paused = false;
         this.rigidbody.useGravity = true;
+        this.modelAnimator.speed = 1.0f;
     }
     
     private bool CheckIfGrounded() {
