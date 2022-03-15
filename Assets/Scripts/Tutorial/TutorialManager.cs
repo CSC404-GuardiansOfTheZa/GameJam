@@ -6,6 +6,7 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour {
     [SerializeField] private List<string> openingScript = new List<string>();
     [SerializeField] private DialogueBox dialogueBox;
+    [SerializeField] private FadableText clickToContinue;
     private int scriptIndex = -1;
 
     // Start is called before the first frame update
@@ -18,6 +19,9 @@ public class TutorialManager : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0)) {
             this.SetDialogueToNextLineInScript();
+            if (this.scriptIndex == 1) {
+                this.StartCoroutine(this.clickToContinue.FadeAway());
+            }
         }
     }
 
