@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09181083, g: 0.09337396, b: 0.1518588, a: 1}
+  m_IndirectSpecularColor: {r: 0.09181083, g: 0.093374155, b: 0.1518588, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -429,18 +429,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -538,18 +526,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2356,18 +2332,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -2465,18 +2429,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3671,18 +3623,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -3842,18 +3782,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4919,18 +4847,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -5564,18 +5480,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -5870,18 +5774,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -5978,18 +5870,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6627,18 +6507,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -6992,18 +6860,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8095,18 +7951,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -8926,18 +8770,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9865,18 +9697,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -10421,18 +10241,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -10812,18 +10620,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11351,18 +11147,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12830,18 +12614,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -13357,18 +13129,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14523,18 +14283,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -15597,18 +15345,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -15807,18 +15543,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 1.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16569,18 +16293,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17950,18 +17662,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -18059,18 +17759,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21098,18 +20786,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -21202,18 +20878,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21506,18 +21170,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493491, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_Name
@@ -24199,18 +23851,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -24699,18 +24339,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -25053,18 +24681,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25642,18 +25258,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -26130,18 +25734,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28577,18 +28169,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -29167,18 +28747,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -29276,18 +28844,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29580,18 +29136,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30558,18 +30102,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32480,18 +32012,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -33194,18 +32714,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -34223,18 +33731,6 @@ PrefabInstance:
       propertyPath: isActiveAtStart
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -34883,18 +34379,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -35367,18 +34851,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36744,18 +36216,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 1.35
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -37110,18 +36570,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -37320,18 +36768,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37536,18 +36972,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -39918,18 +39342,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -40916,18 +40328,6 @@ PrefabInstance:
       propertyPath: isActiveAtStart
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -41219,18 +40619,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42149,18 +41537,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -42258,18 +41634,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -43050,18 +42414,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -43154,18 +42506,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45269,18 +44609,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -46560,18 +45888,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49573,18 +48889,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -51804,18 +51108,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -52727,18 +52019,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -52933,18 +52213,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54264,18 +53532,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -55229,18 +54485,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -55440,18 +54684,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -57289,18 +56521,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -59663,18 +58883,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -59767,18 +58975,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60572,18 +59768,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61747,18 +60931,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -62528,18 +61700,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64312,18 +63472,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66594,18 +65742,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -68407,18 +67543,6 @@ PrefabInstance:
       propertyPath: isActiveAtStart
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -70116,18 +69240,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -70886,18 +69998,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -70995,18 +70095,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71109,18 +70197,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.05842829
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.76413596
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.9528302
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -72343,18 +71419,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73892,18 +72956,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -74653,18 +73705,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -75902,18 +74942,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -76094,18 +75122,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -76503,18 +75519,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -77283,18 +76287,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487273621469504, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -77493,18 +76485,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -78138,18 +77118,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -79187,18 +78155,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 1.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -80722,18 +79678,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -83584,18 +82528,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -84081,18 +83013,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -85172,18 +84092,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -86398,18 +85306,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -87265,18 +86161,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -88751,18 +87635,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -89873,18 +88745,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 6762047558596970364, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: MaxDistance
       value: 499.48355
@@ -89986,18 +88846,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -92343,18 +91191,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -93362,18 +92198,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -94221,18 +93045,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -95216,18 +94028,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -96931,18 +95731,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -99324,18 +98112,6 @@ PrefabInstance:
       propertyPath: scaleMultiplierWhenOpen
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -100162,18 +98938,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -100368,18 +99132,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -100663,18 +99415,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -103017,18 +101757,6 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 0.9
       objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
-      objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -103917,18 +102645,6 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.b
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.g
-      value: 0.558918
-      objectReference: {fileID: 0}
-    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
-      propertyPath: aboutToDeactivateColor.r
-      value: 0.058823552
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
