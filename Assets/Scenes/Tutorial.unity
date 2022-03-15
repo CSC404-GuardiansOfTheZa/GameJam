@@ -2592,6 +2592,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7303116509305054165, guid: dfec8d9b723b08e4ab4463a1b8f9cd7d, type: 3}
   m_PrefabInstance: {fileID: 1350368959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1352907879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4031321216017431056, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+  m_PrefabInstance: {fileID: 4031321216222068566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1387716725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3057,6 +3068,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf72553534f20040885d4802876fa58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1626342053 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6389186319616852582, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
+  m_PrefabInstance: {fileID: 1626342050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1743175499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3938,9 +3954,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 174674890}
     m_Modifications:
     - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+      propertyPath: blackBG
+      value: 
+      objectReference: {fileID: 1352907879}
+    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: pizzaGuy
       value: 
       objectReference: {fileID: 113231480}
+    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+      propertyPath: pizzaGuyRb
+      value: 
+      objectReference: {fileID: 1626342053}
+    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+      propertyPath: openingScript.Array.data[2]
+      value: This here is our protagonist:\nThe Pizza Delivery Guy!
+      objectReference: {fileID: 0}
     - target: {fileID: 4031321216017431058, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: m_Name
       value: TutorialPanel

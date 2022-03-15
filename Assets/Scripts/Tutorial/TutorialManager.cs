@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour {
     [SerializeField] private List<string> openingScript = new List<string>();
+    [Header("Scene Objects")]
     [SerializeField] private DialogueBox dialogueBox;
     [SerializeField] private FadableText clickToContinue;
-    [SerializeField] private GameObject pizzaGuy;
+    [SerializeField] private Rigidbody pizzaGuyRb;
+    [SerializeField] private Image blackBG;
     private int scriptIndex = -1;
 
     // Start is called before the first frame update
     void Start() {
         this.SetDialogueToNextLineInScript();
-        this.pizzaGuy.GetComponent<Rigidbody>().useGravity = false;
+        this.pizzaGuyRb.useGravity = false;
     }
 
     // Update is called once per frame
@@ -44,7 +47,18 @@ public class TutorialManager : MonoBehaviour {
                 break;
             case 2:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
-                this.pizzaGuy.GetComponent<Rigidbody>().useGravity = true;
+                this.pizzaGuyRb.useGravity = true;
+                break;
+            case 3:
+                break;
+            case 4:
+                float elapsedTime = 0;
+                while (elapsedTime < this.dialogueBox.FadeDuration) {
+                    float t = elapsedTime / this.dialogueBox.FadeDuration;
+                    this.blackBG.color = Color.Lerp(Color.black, Color.clear, t);
+                    elapsedTime += Time.deltaTime;
+                    yield return null;
+                }
                 break;
         }
 

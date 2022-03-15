@@ -20,11 +20,13 @@ public class FadableText : MonoBehaviour
     }
 
     public IEnumerator SetText(string text, Color newTextColor) {
+        text = text.Replace("\\n", "\n");
         if (!ColorUtils.Equals(this.tmp.color, Color.clear)) {
             yield return StartCoroutine(FadeAway());
         }
         
-        this.tmp.text = text;
+        this.tmp.SetText(text);
+        this.tmp.parseCtrlCharacters = true;
         yield return StartCoroutine(Fade(this.fadeDuration, Color.clear, newTextColor));
     }
 
