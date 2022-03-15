@@ -242,12 +242,22 @@ MonoBehaviour:
   openingScript:
   - Hello! It is I, the Guardian!
   - My duty is to protect pizza's of all kind!
-  - 'This here is our protagonist: Pizza Delivery Guy!'
+  - This here is our protagonist:\nThe Pizza Delivery Guy!
   - He's a bit . . . distracted though.
   - Our mission is to ensure he delivers the pizza safely.
+  - 
+  - While the Pizza Guy is on his way, make sure he doesn't run into any obstacles!
+  - 
+  - Watch out!\nClick the window to save the Pizza Guy from that bush!
+  - Great!
+  - 
   dialogueBox: {fileID: 3181741854244087585}
-  clickToContinue: {fileID: 194283431}
-  pizzaGuy: {fileID: 0}
+  clickToContinueText: {fileID: 194283431}
+  pizza: {fileID: 0}
+  blackBG: {fileID: 4031321216017431056}
+  freezeTrigger: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  window: {fileID: 0}
 --- !u!1 &4031321216336736560
 GameObject:
   m_ObjectHideFlags: 0

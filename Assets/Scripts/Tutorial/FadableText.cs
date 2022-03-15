@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class FadableText : MonoBehaviour
 {
-    [SerializeField] private float fadeDuration = 1.0f;
+    [SerializeField] public float fadeDuration = 1.0f;
 
     public float FadeDuration => this.fadeDuration;
 

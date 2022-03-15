@@ -9,6 +9,9 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
     [SerializeField] protected Color aboutToDeactivateColor = Color.red;
     [SerializeField] protected List<Renderer> targetRenderers;
 
+    public event LevelManager.VoidDelegate OnActivated;
+    public event LevelManager.VoidDelegate OnDeactivated;
+    
     protected Color[] targetRenderersColors;
     protected MaterialPropertyBlock prpblk;
 
@@ -20,6 +23,8 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
         protected set {
             if (value == this._isActive) return;
             this._isActive = value;
+            if (this._isActive) OnActivated?.Invoke();
+            else                OnDeactivated?.Invoke();
             this.OnActivationChange(false);
         }
     }

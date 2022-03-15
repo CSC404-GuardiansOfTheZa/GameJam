@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PizzaMan : MonoBehaviour {
@@ -13,6 +14,7 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
     
     public bool IsGrounded { get; set; }
+    public int NumJumps { get; private set; }
 
     private Rigidbody rigidbody;
     private AudioSource asource;
@@ -24,16 +26,29 @@ public class PizzaMan : MonoBehaviour {
     private float distanceToGround;
     private bool hitFireHydrant = false;
     private bool wasGrounded = false;
+    private bool paused = false;
+    private Vector3 pausePos;
     
     // Event to be called everytime PizzaMan is grounded
-    public delegate void onGroundedDelegate();
-    public event onGroundedDelegate onGrounded;
+    public delegate void VoidDelegate();
+    public event VoidDelegate onGrounded;
 
     public void ActivateWaterSpout(float strength) {
         // Called when makes contact with the water spout from a fire hydrant
         this.hitFireHydrant = true;
         this.rigidbody.AddForce(Vector3.up * strength);
         Debug.Log("Player recieved function call from Spout!");
+    }
+
+    public void OnPause() {
+        this.paused = true;
+        this.pausePos = transform.position;
+        this.rigidbody.useGravity = false;
+    }
+
+    public void OnResume() {
+        this.paused = false;
+        this.rigidbody.useGravity = true;
     }
     
     private bool CheckIfGrounded() {
@@ -57,6 +72,7 @@ public class PizzaMan : MonoBehaviour {
         if (IsGrounded){
             isJump = true;
             asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
+            NumJumps++;
         } else {
             Debug.Log("couldn't jump because I'm not grounded!");
         }
@@ -77,10 +93,17 @@ public class PizzaMan : MonoBehaviour {
         startPos = transform.position;
         distanceToGround = Mathf.Abs(col.bounds.extents.y - col.bounds.center.y);
         IsGrounded = false;
+        LevelManager.Instance.OnPause += this.OnPause;
+        LevelManager.Instance.OnResume += this.OnResume;
     }
 
     private int __FRAME = 0;
     private void Update() {
+        if (this.paused) {
+            transform.position = this.pausePos;
+            return;
+        }
+        
 #if UNITY_EDITOR
         if (Input.GetButtonDown("Jump")) {
             Jump();
@@ -111,6 +134,8 @@ public class PizzaMan : MonoBehaviour {
 
 
     private void FixedUpdate() {
+        if (this.paused) return;
+        
         float verticalSpeed = rigidbody.velocity.y;
 
         if (isJump) {

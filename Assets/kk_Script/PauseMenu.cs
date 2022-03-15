@@ -8,65 +8,43 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    private AudioSource _audioSource;
-    private AudioSource _pauseaudioSource;
+    [SerializeField] private bool allowPausing = true;
 
     void Start()
     {
         pauseMenuUI.SetActive(false);
-        _audioSource = GameObject.Find("LevelManager").GetComponent<AudioSource>();
-        _pauseaudioSource = GameObject.Find("PauseMusic")?.GetComponent<AudioSource>();
-        if (this._pauseaudioSource != null) {
-			_pauseaudioSource.Stop();
-        }
+        LevelManager.Instance.OnPause += this.Pause;
+        LevelManager.Instance.OnResume += this.Resume;
     }
 
     // Update is called once per frame
     void Update()
     {
-     	if (Input.GetKeyDown(KeyCode.Space)){
-     		if (GameIsPaused){
-     			Resume();
-     		}else{
-     			Pause();
-     		}
+     	if (this.allowPausing && Input.GetKeyDown(KeyCode.Space)){
+     		LevelManager.Instance.PauseLevel();
      	}   
     }
 
-    public void Resume(){
-    	pauseMenuUI.SetActive(false);
-    	Time.timeScale = 1f;
+    public void Resume() {
+	    if (!this.allowPausing) return;
+	    
+	    pauseMenuUI.SetActive(false);
     	GameIsPaused = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
-        PlayMusic();
-
     }
 
-    void Pause(){
+    public void Pause() {
+	    if (!this.allowPausing) return;
+	    
     	pauseMenuUI.SetActive(true);
-    	Time.timeScale = 0f;
     	GameIsPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        StopMusic();
-    }
-
-    public void PlayMusic()
-    {
-         _audioSource.UnPause();
-         _pauseaudioSource.Stop();
-    }
- 
-     public void StopMusic() {
-	     _audioSource.Pause();
-         _pauseaudioSource.Play();
     }
 
     public void GoToMenu(){
-    	Time.timeScale = 1f;
     	SceneManager.LoadScene(0);
-        _pauseaudioSource.Stop();
     }
 
     public void QuitGame(){

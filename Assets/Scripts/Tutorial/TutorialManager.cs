@@ -2,28 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour {
     [SerializeField] private List<string> openingScript = new List<string>();
     [Header("Scene Objects")]
     [SerializeField] private DialogueBox dialogueBox;
-    [SerializeField] private FadableText clickToContinue;
-    [SerializeField] private Rigidbody pizzaGuyRb;
+    [FormerlySerializedAs("clickToContinue")]
+    [SerializeField] private FadableText clickToContinueText;
+    [SerializeField] private PizzaMan pizza;
     [SerializeField] private Image blackBG;
+    [SerializeField] private TriggerEventDispatcher freezeTrigger;
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private LimitedDurationInteractable window;
+    
     private int scriptIndex = -1;
+    private Rigidbody pizzaRb;
+    private bool clickToContinue = true;
 
     // Start is called before the first frame update
     void Start() {
         this.SetDialogueToNextLineInScript();
-        this.pizzaGuyRb.useGravity = false;
+        this.pizzaRb = this.pizza.GetComponent<Rigidbody>();
+        this.pizzaRb.useGravity = false;
+        Conductor.Instance.onBeat += this.OnBeat;
+        this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
+        this.window.OnActivated += this.OnWindowActivated;
+    }
+
+    public void OnWindowActivated() {
+        LevelManager.Instance.ResumeLevel();
+        this.SetDialogueToNextLineInScript();
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetMouseButtonDown(0)) {
+        if (this.clickToContinue && Input.GetMouseButtonDown(0)) {
             this.SetDialogueToNextLineInScript();
         }
+        this.pauseMenu.SetActive(false);
     }
 
     private void SetDialogueToNextLineInScript() {
@@ -43,11 +61,11 @@ public class TutorialManager : MonoBehaviour {
             case 0:
                 break;
             case 1:
-                this.StartCoroutine(this.clickToContinue.FadeOut());
+                this.StartCoroutine(this.clickToContinueText.FadeOut());
                 break;
             case 2:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
-                this.pizzaGuyRb.useGravity = true;
+                this.pizzaRb.useGravity = true;
                 break;
             case 3:
                 break;
@@ -60,14 +78,37 @@ public class TutorialManager : MonoBehaviour {
                     yield return null;
                 }
 
-                this.StartCoroutine(this.clickToContinue.FadeIn());
+                this.StartCoroutine(this.clickToContinueText.FadeIn());
                 break;
             case 5:
                 LevelManager.Instance.StartLevel();
-                this.StartCoroutine(this.clickToContinue.FadeOut());
+                this.StartCoroutine(this.clickToContinueText.FadeOut());
+                this.clickToContinue = false;
+                break;
+            case 7:
+                yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
+                this.dialogueBox.fadeDuration = 0.2f; // VERY HACKY BUT IT WORKS BUT IS NOT PROPER OOP
                 break;
         }
 
         yield return null;
+    }
+
+    private void OnBeat(int beat) {
+        switch (beat) {
+            case 2: // before 2nd jump
+                SetDialogueToNextLineInScript();
+                break;
+            case 7: // after 2nd jump, before 3rd jump
+                this.SetDialogueToNextLineInScript();
+                break;
+        }
+    }
+
+    private void OnFreeze(Collider other) {
+        if (!other.CompareTag("PizzaFeet")) return;
+
+        LevelManager.Instance.PauseLevel();
+        this.SetDialogueToNextLineInScript();
     }
 }

@@ -13,11 +13,31 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private float secondsToWait = 1.0f;
 
-    public delegate void OnLevelStartDelegate();
-    public event OnLevelStartDelegate OnLevelStart;
+    public delegate void VoidDelegate();
+    public event VoidDelegate OnLevelStart;
+    public event VoidDelegate OnPause;
+    public event VoidDelegate OnResume;
+    public event VoidDelegate OnLoadingFinish;
+
+    private bool paused = false;
 
     public void StartLevel() {
         this.OnLevelStart?.Invoke();
+    }
+
+    public void PauseLevel() {
+        this.paused = true;
+        this.OnPause?.Invoke();
+    }
+
+    public void ResumeLevel() {
+        this.paused = false;
+        this.OnResume?.Invoke();
+    }
+
+    public void TogglePause() {
+        if (this.paused) this.ResumeLevel();
+        else this.PauseLevel();
     }
     
     void Awake() { // Set to run before all other scripts
@@ -52,5 +72,6 @@ public class LevelManager : MonoBehaviour
         if (this.autoStart) {
             this.StartLevel();
         }
+        this.OnLoadingFinish?.Invoke();
     }
 }
