@@ -8,6 +8,8 @@ public class FadableText : MonoBehaviour
 {
     [SerializeField] private float fadeDuration = 1.0f;
 
+    public float FadeDuration => this.fadeDuration;
+
     protected Color startColor;
     protected TextMeshProUGUI tmp;
     

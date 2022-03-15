@@ -7,21 +7,19 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] private List<string> openingScript = new List<string>();
     [SerializeField] private DialogueBox dialogueBox;
     [SerializeField] private FadableText clickToContinue;
+    [SerializeField] private GameObject pizzaGuy;
     private int scriptIndex = -1;
 
     // Start is called before the first frame update
     void Start() {
         this.SetDialogueToNextLineInScript();
+        this.pizzaGuy.GetComponent<Rigidbody>().useGravity = false;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (Input.GetMouseButtonDown(0)) {
             this.SetDialogueToNextLineInScript();
-            if (this.scriptIndex == 1) {
-                this.StartCoroutine(this.clickToContinue.FadeAway());
-            }
         }
     }
 
@@ -32,5 +30,24 @@ public class TutorialManager : MonoBehaviour {
         } else {
             this.StartCoroutine(this.dialogueBox.FadeAway());
         }
+
+        StartCoroutine(this.OnScriptAdvance());
+    }
+
+    private IEnumerator OnScriptAdvance() {
+        switch (this.scriptIndex) {
+            // indices start at 0
+            case 0:
+                break;
+            case 1:
+                this.StartCoroutine(this.clickToContinue.FadeAway());
+                break;
+            case 2:
+                yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
+                this.pizzaGuy.GetComponent<Rigidbody>().useGravity = true;
+                break;
+        }
+
+        yield return null;
     }
 }
