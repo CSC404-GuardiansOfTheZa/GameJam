@@ -22,7 +22,7 @@ public class FadableText : MonoBehaviour
     public IEnumerator SetText(string text, Color newTextColor) {
         text = text.Replace("\\n", "\n");
         if (!ColorUtils.Equals(this.tmp.color, Color.clear)) {
-            yield return StartCoroutine(FadeAway());
+            yield return StartCoroutine(this.FadeOut());
         }
         
         this.tmp.SetText(text);
@@ -34,8 +34,12 @@ public class FadableText : MonoBehaviour
         yield return StartCoroutine(SetText(text, this.startColor));
     }
 
-    public IEnumerator FadeAway() {
+    public IEnumerator FadeOut() {
         yield return StartCoroutine(Fade(this.fadeDuration, this.tmp.color, Color.clear));
+    }
+
+    public IEnumerator FadeIn() {
+        yield return StartCoroutine(Fade(this.fadeDuration, Color.clear, this.startColor));
     }
 
     private IEnumerator Fade(float duration, Color startColor, Color endColor) {

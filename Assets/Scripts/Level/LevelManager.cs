@@ -15,6 +15,10 @@ public class LevelManager : MonoBehaviour
 
     public delegate void OnLevelStartDelegate();
     public event OnLevelStartDelegate OnLevelStart;
+
+    public void StartLevel() {
+        this.OnLevelStart?.Invoke();
+    }
     
     void Awake() { // Set to run before all other scripts
         if (_instance != null && _instance != this) {
@@ -46,7 +50,7 @@ public class LevelManager : MonoBehaviour
         }
 
         if (this.autoStart) {
-            this.OnLevelStart?.Invoke();
+            this.StartLevel();
         }
     }
 }

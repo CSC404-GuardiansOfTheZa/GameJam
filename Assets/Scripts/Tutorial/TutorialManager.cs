@@ -31,7 +31,7 @@ public class TutorialManager : MonoBehaviour {
         if (this.scriptIndex < this.openingScript.Count) {
             this.StartCoroutine(this.dialogueBox.SetText(this.openingScript[this.scriptIndex]));
         } else {
-            this.StartCoroutine(this.dialogueBox.FadeAway());
+            this.StartCoroutine(this.dialogueBox.FadeOut());
         }
 
         StartCoroutine(this.OnScriptAdvance());
@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour {
             case 0:
                 break;
             case 1:
-                this.StartCoroutine(this.clickToContinue.FadeAway());
+                this.StartCoroutine(this.clickToContinue.FadeOut());
                 break;
             case 2:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
@@ -59,6 +59,12 @@ public class TutorialManager : MonoBehaviour {
                     elapsedTime += Time.deltaTime;
                     yield return null;
                 }
+
+                this.StartCoroutine(this.clickToContinue.FadeIn());
+                break;
+            case 5:
+                LevelManager.Instance.StartLevel();
+                this.StartCoroutine(this.clickToContinue.FadeOut());
                 break;
         }
 
