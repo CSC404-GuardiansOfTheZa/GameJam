@@ -14572,11 +14572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 423.48
+      value: 423.36002
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.21
+      value: 8.429999
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36741,7 +36741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
-      value: 1.32
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: aboutToDeactivateColor.b
@@ -52987,7 +52987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.3
+      value: 4.21
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62517,7 +62517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
-      value: 0.6
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: scaleMultiplierWhenOpen
@@ -65239,7 +65239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4966562456714589997, guid: 66020ee43847e98449cd4ae92326dd0b, type: 3}
       propertyPath: bounceStrength
-      value: 1300
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 7088841673480905443, guid: 66020ee43847e98449cd4ae92326dd0b, type: 3}
       propertyPath: m_RootOrder
@@ -74501,11 +74501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5376877093099881044, guid: 6222ab156f52ad048af15cbf331a3df0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.619986
+      value: -12.31
       objectReference: {fileID: 0}
     - target: {fileID: 5376877093099881044, guid: 6222ab156f52ad048af15cbf331a3df0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.77
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 5376877093099881044, guid: 6222ab156f52ad048af15cbf331a3df0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -74589,7 +74589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: aboutToDeactivateColor.b
@@ -74645,7 +74645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.77
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -79175,11 +79175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 416.81
+      value: 416.69
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.18
+      value: 8.4
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -86333,7 +86333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
-      value: 1.32
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: aboutToDeactivateColor.b
@@ -89852,7 +89852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.0729675
+      value: 4.6986113
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalScale.y
@@ -89864,11 +89864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.89
+      value: -40.69
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.49
+      value: 4.24
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106264,6 +106264,10 @@ PrefabInstance:
       propertyPath: levelGeometry
       value: 
       objectReference: {fileID: 954892994}
+    - target: {fileID: 1076072968123455287, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: <BPM>k__BackingField
+      value: 67.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: dynamicLevelParent
       value: 
