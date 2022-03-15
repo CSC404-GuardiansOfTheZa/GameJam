@@ -11,18 +11,8 @@ public class LevelsMenu : MonoBehaviour
         music = GameObject.Find("OptionMusic").GetComponent<MusicSound>();
     }
 
-    public void PlayEasyGame(){
-        SceneManager.LoadScene(1);
-        StopMusic();
-    }
-
-    public void PlayMediumGame(){
-    	SceneManager.LoadScene(1);
-        StopMusic();
-    }
-
-   	public void PlayHardGame(){
-    	SceneManager.LoadScene(1);
+    public void PlayScene(int scene){
+        SceneManager.LoadScene(scene);
         StopMusic();
     }
 
