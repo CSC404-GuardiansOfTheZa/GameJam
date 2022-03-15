@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 739ac86c5b16144449b08689284543d8, type: 3}
       propertyPath: m_Name
-      value: Scaffolding
+      value: Scaffolding Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 739ac86c5b16144449b08689284543d8, type: 3}
@@ -85,5 +85,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3737131, y: 0.3507159, z: 0.018790996}
-  m_Center: {x: 0.6268986, y: 0.13295592, z: 0.0047389544}
+  m_Size: {x: 1.3737131, y: 0.3507159, z: 0.004729182}
+  m_Center: {x: 0.6268986, y: 0.13295594, z: 0.011770026}

@@ -15,6 +15,7 @@ TagManager:
   - CoverArea
   - OptionMusic
   - EndWall
+  - SubCamera
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Outline
   - Pizza
   - Platforms
-  - 
+  - Angel
   - 
   - 
   - 
