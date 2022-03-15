@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     private static LevelManager _instance;
     public static LevelManager Instance { get { return _instance; } }
 
+    [SerializeField] private bool autoStart=true;
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private float secondsToWait = 1.0f;
 
@@ -44,6 +45,8 @@ public class LevelManager : MonoBehaviour
             this.loadingScreen.SetActive(false);
         }
 
-        this.OnLevelStart?.Invoke();
+        if (this.autoStart) {
+            this.OnLevelStart?.Invoke();
+        }
     }
 }
