@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948c1f3efef0f45aaab76b1404c018c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoStart: 1
   loadingScreen: {fileID: 0}
   secondsToWait: 1.5
 --- !u!114 &1076072968123455287
@@ -62,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96f9782cebcd8e229aa15eaed2e3434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicTrack: {fileID: 8300000, guid: b211b115be2f34e8e8079d1e015ed01a, type: 3}
+  musicTrack: {fileID: 8300000, guid: 599d46fb091faf94f8794daea93a1bf1, type: 3}
   <BPM>k__BackingField: 68
   <TrackLengthInSeconds>k__BackingField: 84
   <TrackOffsetInSeconds>k__BackingField: 0
