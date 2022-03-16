@@ -14281,7 +14281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
-      value: 0.9
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274184569547, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73150,6 +73150,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535776667}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1536940309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 905345763094487673, guid: 182e2cfdfbd5b8542bfc162916707c2d, type: 3}
+  m_PrefabInstance: {fileID: 1862100524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1536940314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536940309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4677b791d69f0444bb673c06de0797a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1537941939
 GameObject:
   m_ObjectHideFlags: 0
@@ -104213,7 +104230,7 @@ PrefabInstance:
       objectReference: {fileID: 954892994}
     - target: {fileID: 1076072968123455287, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: <BPM>k__BackingField
-      value: 67.9
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 5963458518764226006, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: dynamicLevelParent

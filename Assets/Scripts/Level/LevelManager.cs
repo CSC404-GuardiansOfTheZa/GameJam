@@ -19,24 +19,26 @@ public class LevelManager : MonoBehaviour
     public event VoidDelegate OnResume;
     public event VoidDelegate OnLoadingFinish;
 
-    private bool paused = false;
+    public bool Paused { get; private set; }
+    public bool Started { get; private set; }
 
     public void StartLevel() {
+        Started = true;
         this.OnLevelStart?.Invoke();
     }
 
     public void PauseLevel() {
-        this.paused = true;
+        this.Paused = true;
         this.OnPause?.Invoke();
     }
 
     public void ResumeLevel() {
-        this.paused = false;
+        this.Paused = false;
         this.OnResume?.Invoke();
     }
 
     public void TogglePause() {
-        if (this.paused) this.ResumeLevel();
+        if (this.Paused) this.ResumeLevel();
         else this.PauseLevel();
     }
     
