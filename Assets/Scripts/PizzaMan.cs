@@ -12,7 +12,10 @@ public class PizzaMan : MonoBehaviour {
     [Header("SFX")]
     [SerializeField] private List<AudioClip> jumpSFX;
     [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
-    [Header("Misc.")] [SerializeField] private Animator modelAnimator;
+    [Header("Children")] 
+    [SerializeField] private Animator modelAnimator;
+
+    [SerializeField] private ParticleSystem musicNoteEmitter;
     
     public bool IsGrounded { get; set; }
     public int NumJumps { get; private set; }
@@ -66,6 +69,7 @@ public class PizzaMan : MonoBehaviour {
         );
     }
     private void JumpOnBeat(int beat){
+        this.musicNoteEmitter.Emit(1);
         if (beat % jumpOnEveryNthBeat == 0){
             this.Jump();
         }
