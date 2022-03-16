@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         LevelManager.Instance.OnPause += this.Pause;
-        LevelManager.Instance.OnResume += this.Resume;
+        LevelManager.Instance.OnResume += this.OnResume;
     }
 
     // Update is called once per frame
@@ -26,6 +26,10 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Resume() {
+	    LevelManager.Instance.ResumeLevel();
+    }
+
+    public void OnResume() {
 	    if (!this.allowPausing) return;
 	    
 	    pauseMenuUI.SetActive(false);

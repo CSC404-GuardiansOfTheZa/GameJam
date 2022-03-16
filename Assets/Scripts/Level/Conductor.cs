@@ -26,6 +26,8 @@ public class Conductor : MonoBehaviour
         get {
             if (this.dspTimeStart < 0) {
                 return 0.0f;
+            } else if (this.isPaused && this.pauseTimeStart > 0.0f) {
+                return this.pauseTimeStart - this.dspTimeStart;
             }
             return AudioSettings.dspTime - dspTimeStart - this.pauseOffset;
         }
@@ -56,6 +58,7 @@ public class Conductor : MonoBehaviour
         
         double resumeTime = AudioSettings.dspTime;
         this.pauseOffset += resumeTime - this.pauseTimeStart;
+        this.pauseTimeStart = 0.0f;
         this.asource.UnPause();
         this.isPaused = false;
     }

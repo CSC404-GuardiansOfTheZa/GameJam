@@ -14,6 +14,7 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
     
     protected Color[] targetRenderersColors;
     protected MaterialPropertyBlock prpblk;
+    protected bool isPaused { get; private set; }
 
     private bool _isActive;
     public bool IsActive {
@@ -39,6 +40,8 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
         for (int i = 0; i < this.targetRenderers.Count; i++) {
             this.targetRenderersColors[i] = this.targetRenderers[i].material.color;
         }
+        LevelManager.Instance.OnPause += delegate { isPaused = true; };
+        LevelManager.Instance.OnResume += delegate { isPaused = false; };
     }
 
     public void Trigger() {
@@ -60,6 +63,10 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
             float elapsedTime = 0.0f;
             while (elapsedTime < duration) 
             {
+                if (isPaused) {
+                    yield return null;
+                    continue;
+                }
                 // Turn progressively red
                 for (int i = 0; i < this.targetRenderers.Count; i++) {
                     var rnd = this.targetRenderers[i];

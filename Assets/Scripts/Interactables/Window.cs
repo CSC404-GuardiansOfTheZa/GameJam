@@ -45,8 +45,12 @@ public class Window : LimitedDurationInteractable {
 
         float timeElapsed = 0.0f;
         while (timeElapsed < this.secondsToOpen) {
+            if (this.isPaused) {
+                yield return null;
+                continue;
+            }
+            
             float t = timeElapsed / this.secondsToOpen;
-
             float xRotation = this.EasedLerp(startRot, endRot, t);
             this.pivot.eulerAngles = new Vector3(xRotation, 0, 0);
 

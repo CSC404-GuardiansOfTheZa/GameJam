@@ -72,7 +72,7 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private void Jump() {
-        if (IsGrounded){
+        if (!this.isJump && IsGrounded){
             isJump = true;
             asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
             NumJumps++;
