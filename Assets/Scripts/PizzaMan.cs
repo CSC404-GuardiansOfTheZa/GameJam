@@ -80,6 +80,7 @@ public class PizzaMan : MonoBehaviour {
             isJump = true;
             asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
             NumJumps++;
+            this.modelAnimator.SetTrigger(Jump_Anim);
         } else {
             Debug.Log("couldn't jump because I'm not grounded!");
         }
@@ -90,7 +91,6 @@ public class PizzaMan : MonoBehaviour {
         asource = GetComponent<AudioSource>();
         col = GetComponent<Collider>();
     }
-
 
     private void Start() {
         if (Conductor.Instance != null) {
@@ -105,6 +105,9 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private int __FRAME = 0;
+    private static readonly int IsGrounded_Anim = Animator.StringToHash("IsGrounded");
+    private static readonly int Jump_Anim = Animator.StringToHash("Jump");
+
     private void Update() {
         if (this.paused) {
             transform.position = this.pausePos;
@@ -124,6 +127,7 @@ public class PizzaMan : MonoBehaviour {
         );
 
         IsGrounded = this.CheckIfGrounded();
+        this.modelAnimator.SetBool(IsGrounded_Anim, IsGrounded);
 
         if (IsGrounded) {
             Debug.Log($"Grounded on frame {this.__FRAME}");
