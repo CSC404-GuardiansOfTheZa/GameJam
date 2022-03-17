@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable {
     [SerializeField] private float activeDuration = 1.0f; // set to <= 0 for infinite duration
     [SerializeField] private bool isActiveAtStart = false;
+    [SerializeField] private bool waitForNextBeatToClose = false; // if true, will close on next beat after active-duration is up
     [Header("Visual Indicators")]
     [SerializeField] protected Color aboutToDeactivateColor = Color.red;
     [SerializeField] protected List<Renderer> targetRenderers;
@@ -85,14 +86,21 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
                 rnd.material.color = startColor;
                 rnd.GetPropertyBlock(this.prpblk);
             }
-            IsActive = isActive_copy;
+
+            if (this.waitForNextBeatToClose) {
+                Conductor.Instance.onBeat += this.WaitForBeat;
+            } else {
+                IsActive = isActive_copy;
+            }
+
             this.mutex = false;
         } else {
             IsActive = !isActive_copy;
         }
     }
 
-    protected void SetRendererColors(Color targetColor) {
-        
+    private void WaitForBeat(int beat) {
+        IsActive = !IsActive;
+        Conductor.Instance.onBeat -= this.WaitForBeat;
     }
 }

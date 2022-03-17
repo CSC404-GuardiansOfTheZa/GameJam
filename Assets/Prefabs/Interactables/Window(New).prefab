@@ -443,6 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeDuration: 1.85
   isActiveAtStart: 0
+  waitForNextBeatToClose: 1
   aboutToDeactivateColor: {r: 1, g: 0, b: 0, a: 1}
   targetRenderers:
   - {fileID: 8220487273621469504}
