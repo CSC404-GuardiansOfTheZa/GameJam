@@ -11,7 +11,7 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
 
     public event LevelManager.VoidDelegate OnActivated;
     public event LevelManager.VoidDelegate OnDeactivated;
-    
+
     protected Color[] targetRenderersColors;
     protected MaterialPropertyBlock prpblk;
     protected bool isPaused { get; private set; }
@@ -25,7 +25,7 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
             if (value == this._isActive) return;
             this._isActive = value;
             if (this._isActive) OnActivated?.Invoke();
-            else                OnDeactivated?.Invoke();
+            else OnDeactivated?.Invoke();
             this.OnActivationChange(false);
         }
     }
@@ -40,8 +40,11 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
         for (int i = 0; i < this.targetRenderers.Count; i++) {
             this.targetRenderersColors[i] = this.targetRenderers[i].material.color;
         }
-        LevelManager.Instance.OnPause += delegate { isPaused = true; };
-        LevelManager.Instance.OnResume += delegate { isPaused = false; };
+        if (LevelManager.Instance) {
+            LevelManager.Instance.OnPause += delegate { isPaused = true; };
+            LevelManager.Instance.OnResume += delegate { isPaused = false; };
+        }
+
     }
 
     public void Trigger() {
@@ -52,17 +55,16 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
 
     protected IEnumerator ActivateForDuration(float duration) {
         bool isActive_copy = IsActive; // we just use a copy in case mutex doesn't work and there's a race condition
-        
+
         if (duration > 0) {
             if (this.mutex) {
                 yield break;
             }
-            
+
             this.mutex = true;
             IsActive = !isActive_copy;
             float elapsedTime = 0.0f;
-            while (elapsedTime < duration) 
-            {
+            while (elapsedTime < duration) {
                 if (isPaused) {
                     yield return null;
                     continue;
@@ -93,6 +95,6 @@ public abstract class LimitedDurationInteractable : MonoBehaviour, IInteractable
     }
 
     protected void SetRendererColors(Color targetColor) {
-        
+
     }
 }
