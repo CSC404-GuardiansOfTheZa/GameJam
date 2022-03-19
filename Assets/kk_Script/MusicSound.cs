@@ -25,18 +25,18 @@ public class MusicSound : MonoBehaviour
              Destroy(gameObject);
          }
          DontDestroyOnLoad(transform.gameObject);
-         _audioSource = GameObject.Find("OptionMusic").GetComponent<AudioSource>();
+         _audioSource = GameObject.Find("OptionMusic")?.GetComponent<AudioSource>();
     }
 
     public void PlayMusic()
     {
         if (_audioSource.isPlaying) return;
-        _audioSource.Play();
+        _audioSource?.Play();
     }
  
     public void StopMusic()
     {
-        _audioSource.Stop();
+        _audioSource?.Stop();
     }
 
 }

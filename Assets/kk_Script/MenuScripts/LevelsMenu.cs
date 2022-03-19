@@ -12,8 +12,8 @@ public class LevelsMenu : MonoBehaviour
     }
 
     public void PlayScene(int scene){
+        this.music.StopMusic();
         SceneManager.LoadScene(scene);
-        StopMusic();
     }
 
     public void GoBack(){

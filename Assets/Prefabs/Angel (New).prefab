@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa8e978f89f6a34a91285401851b987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 5
+  smoothTime: 0.05
   rotateSpeed: 10
   detectionRadius: 2
   highlightParticles: {fileID: 741317304422217463}
