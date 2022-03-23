@@ -237,7 +237,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8220487274184569546}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -372,7 +372,7 @@ Transform:
   m_GameObject: {fileID: 8220487274264493491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.8}
-  m_LocalScale: {x: 6.557559, y: 1, z: 1}
+  m_LocalScale: {x: 3.8674674, y: 0.86172, z: 1.3042995}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8220487274184569547}
@@ -411,8 +411,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.23, y: 1.58, z: 0.22}
-  m_Center: {x: 0, y: -0.9, z: 0}
+  m_Size: {x: 1.7543228, y: 4.3146377, z: 0.22}
+  m_Center: {x: 0.03827882, y: -0.98051965, z: 0}
 --- !u!114 &854788998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,12 +441,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba4c981654c8754cac386a4eeac112a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeDuration: 1.85
-  isActiveAtStart: 0
-  aboutToDeactivateColor: {r: 1, g: 0, b: 0, a: 1}
+  activeDuration: 2.5
+  isActiveAtStart: 1
+  aboutToDeactivateColor: {r: 0.9245283, g: 0.14391243, b: 0.14391243, a: 1}
   targetRenderers:
   - {fileID: 8220487273621469504}
-  secondsToOpen: 0.125
+  secondsToOpen: 0.075
   platformCol: {fileID: 8220487273621469511}
   pivot: {fileID: 8220487274184569547}
   closedXRotation: 0
@@ -461,7 +461,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8220487274264493491}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 02a14566377f118429a57b52d40a5cc6, type: 3}
