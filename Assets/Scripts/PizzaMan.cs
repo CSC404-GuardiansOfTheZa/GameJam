@@ -11,12 +11,12 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private float groundingRaycastShift = 0.5f;
     [Header("SFX")]
     [SerializeField] private List<AudioClip> jumpSFX;
-    [SerializeField] [Range(0, 1)] private float jumpSFXVolume = 0.8f;
-    [Header("Children")] 
+    [SerializeField][Range(0, 1)] private float jumpSFXVolume = 0.8f;
+    [Header("Children")]
     [SerializeField] private Animator modelAnimator;
 
     [SerializeField] private ParticleSystem musicNoteEmitter;
-    
+
     public bool IsGrounded { get; set; }
     public int NumJumps { get; private set; }
 
@@ -32,7 +32,7 @@ public class PizzaMan : MonoBehaviour {
     private bool wasGrounded = false;
     private bool paused = false;
     private Vector3 pausePos;
-    
+
     // Event to be called everytime PizzaMan is grounded
     public delegate void VoidDelegate();
     public event VoidDelegate onGrounded;
@@ -56,27 +56,27 @@ public class PizzaMan : MonoBehaviour {
         this.rigidbody.useGravity = true;
         this.modelAnimator.speed = 1.0f;
     }
-    
+
     private bool CheckIfGrounded() {
         // int layerMask = Physics.DefaultRaycastLayers & ~LayerMask.GetMask("Pizza");
         int layerMask = LayerMask.GetMask("Platforms");
         // Shoot the raycast from one unit up: this helps pre
         return Physics.Raycast(
-            transform.position + (groundingRaycastShift * Vector3.up), 
-            Vector3.down, 
-            distanceToGround + groundingSensitivity + groundingRaycastShift, 
+            transform.position + (groundingRaycastShift * Vector3.up),
+            Vector3.down,
+            distanceToGround + groundingSensitivity + groundingRaycastShift,
             layerMask
         );
     }
-    private void JumpOnBeat(int beat){
+    private void JumpOnBeat(int beat) {
         this.musicNoteEmitter.Emit(1);
-        if (beat % jumpOnEveryNthBeat == 0){
+        if (beat % jumpOnEveryNthBeat == 0) {
             this.Jump();
         }
     }
 
     private void Jump() {
-        if (!this.isJump && IsGrounded){
+        if (!this.isJump && IsGrounded) {
             isJump = true;
             asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
             NumJumps++;
@@ -113,7 +113,7 @@ public class PizzaMan : MonoBehaviour {
             transform.position = this.pausePos;
             return;
         }
-        
+
 #if UNITY_EDITOR
         if (Input.GetButtonDown("Jump")) {
             Jump();
@@ -130,15 +130,15 @@ public class PizzaMan : MonoBehaviour {
         this.modelAnimator.SetBool(IsGrounded_Anim, IsGrounded);
 
         if (IsGrounded) {
-            Debug.Log($"Grounded on frame {this.__FRAME}");
+            // Debug.Log($"Grounded on frame {this.__FRAME}");
             if (!this.wasGrounded && onGrounded != null) {
                 // became grounded this frame
                 onGrounded();
             }
         } else {
-            Debug.Log($"Airborne on frame {this.__FRAME}");
+            // Debug.Log($"Airborne on frame {this.__FRAME}");
         }
-        
+
         this.wasGrounded = IsGrounded;
         this.__FRAME++;
     }
@@ -146,7 +146,7 @@ public class PizzaMan : MonoBehaviour {
 
     private void FixedUpdate() {
         if (this.paused) return;
-        
+
         float verticalSpeed = rigidbody.velocity.y;
 
         if (isJump) {
@@ -173,7 +173,7 @@ public class PizzaMan : MonoBehaviour {
         from.y += this.groundingRaycastShift;
         Vector3 until = currentPos;
         until.y -= (this.groundingSensitivity + this.distanceToGround);
-        
+
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(from, until);
     }

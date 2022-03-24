@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
-public class Conductor : MonoBehaviour
-{
+public class Conductor : MonoBehaviour {
     private static Conductor _instance;
-    public static Conductor Instance { get { return _instance; } } 
+    public static Conductor Instance { get { return _instance; } }
 
     public delegate void onBeatDelegate(int beatNum);
     public event onBeatDelegate onBeat;
 
     [Header("NOTE: Add music track HERE, not at AudioSource")]
     [SerializeField] private AudioClip musicTrack;
-    [field: SerializeField] public float BPM {get; private set;}
-    [field: SerializeField] public float TrackLengthInSeconds {get; private set;}
-    [field: SerializeField] public float TrackOffsetInSeconds {get; private set;}
-    [field: SerializeField] public int BeatsPerMeasure {get; private set;}
-    
+    [field: SerializeField] public float BPM { get; private set; }
+    [field: SerializeField] public float TrackLengthInSeconds { get; private set; }
+    [field: SerializeField] public float TrackOffsetInSeconds { get; private set; }
+    [field: SerializeField] public int BeatsPerMeasure { get; private set; }
+
     public float Crotchet { // length of a beat
         get; private set;
     }
@@ -41,13 +40,14 @@ public class Conductor : MonoBehaviour
     private double pauseTimeStart = 0.0f;
 
     public void StartSong() {
-       this.asource.Play(); 
-       dspTimeStart = AudioSettings.dspTime;
+        this.asource.Play();
+        dspTimeStart = AudioSettings.dspTime;
+        beat = 1;
     }
 
     public void Pause() {
         if (this.isPaused) return;
-        
+
         this.isPaused = true;
         this.asource.Pause();
         this.pauseTimeStart = AudioSettings.dspTime;
@@ -55,14 +55,14 @@ public class Conductor : MonoBehaviour
 
     public void Resume() {
         if (!this.isPaused) return;
-        
+
         double resumeTime = AudioSettings.dspTime;
         this.pauseOffset += resumeTime - this.pauseTimeStart;
         this.pauseTimeStart = 0.0f;
         this.asource.UnPause();
         this.isPaused = false;
     }
-    
+
     void Awake() {
         if (_instance != null && _instance != this) {
             Destroy(this.gameObject);
@@ -72,12 +72,12 @@ public class Conductor : MonoBehaviour
 
         asource = GetComponent<AudioSource>();
         asource.clip = this.musicTrack;
-        Crotchet = 60.0f / (float) BPM;
+        Crotchet = 60.0f / (float)BPM;
         LevelManager.Instance.OnLevelStart += this.StartSong;
         LevelManager.Instance.OnPause += this.Pause;
         LevelManager.Instance.OnResume += this.Resume;
     }
-    
+
     void Update() {
         if (!this.isPaused && SongPosition > Crotchet * beat && onBeat != null) {
             onBeat(beat);
