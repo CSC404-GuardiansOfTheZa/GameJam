@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dd07568a433c94ea04ec570804dea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  automaticTiming: 0
+  automaticTiming: 1
   beatShouldBeActivatedOn: -2
   tolerances:
   - name: Perfect

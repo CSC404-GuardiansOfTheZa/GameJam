@@ -67726,6 +67726,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2470672729100436321, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
 --- !u!1 &1387716727 stripped
@@ -71971,6 +71975,10 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365006762257340143, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: automaticTiming
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1365006762257340143, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: beatShouldBeActivatedOn
@@ -78998,7 +79006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6389186319616852581, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.001000002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6389186319616852581, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
       propertyPath: m_LocalPosition.y
