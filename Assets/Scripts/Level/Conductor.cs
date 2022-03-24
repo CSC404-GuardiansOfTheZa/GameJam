@@ -45,6 +45,9 @@ public class Conductor : MonoBehaviour {
         this.asource.Play();
         dspTimeStart = AudioSettings.dspTime;
         beat = 1;
+        DebugPanel.Instance.AddDebugLog("beat", () => {
+            return this.SongPositionInBeats.ToString();
+        });
     }
 
     public void Pause() {

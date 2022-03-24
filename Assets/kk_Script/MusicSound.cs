@@ -7,25 +7,19 @@ public class MusicSound : MonoBehaviour
 {
     private AudioSource _audioSource;
     private GameObject[] other;
-    private bool NotFirst = false;
 
     private void Awake()
     {
          other = GameObject.FindGameObjectsWithTag("OptionMusic");
- 
-         foreach (GameObject oneOther in other)
-         {
-             if (oneOther.scene.buildIndex == -1)
-             {
-                 NotFirst = true;
+
+         foreach (GameObject oneOther in other) {
+             if (oneOther.scene.buildIndex == -1) { 
+                 Destroy(gameObject);
              }
+
+             DontDestroyOnLoad(transform.gameObject);
+             _audioSource = GameObject.Find("OptionMusic")?.GetComponent<AudioSource>();
          }
-         if (NotFirst == true)
-         {
-             Destroy(gameObject);
-         }
-         DontDestroyOnLoad(transform.gameObject);
-         _audioSource = GameObject.Find("OptionMusic")?.GetComponent<AudioSource>();
     }
 
     public void PlayMusic()
