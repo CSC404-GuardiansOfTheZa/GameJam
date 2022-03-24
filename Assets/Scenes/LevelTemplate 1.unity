@@ -71972,6 +71972,10 @@ PrefabInstance:
       propertyPath: activeDuration
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1365006762257340143, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: beatShouldBeActivatedOn
+      value: 4.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493491, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_Name
       value: Window(New)
