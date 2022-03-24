@@ -17,26 +17,26 @@ public class TimingClassData {
 public class PerfectTiming : MonoBehaviour
 {
     // These fields are public so we can have a custom editor for them
-    public bool automaticTiming;
-    public float beatShouldBeActivatedOn = -2.0f;
+    [SerializeField] private bool areTimingsEnabled = true;
+    [SerializeField] private float beatsToAddToTiming = 0.0f;
 
     [Header("Tolerances")] 
     [SerializeField] private List<TimingClassData> tolerances; 
 
     private bool hasBeenTriggered;
     private AudioSource asource;
+    private float beatShouldBeActivatedOn = -2.0f;
 
     private void Start() {
         this.asource = this.GetComponent<AudioSource>();
         this.GetComponent<Interactable>().OnTrigger += this.OnTrigger;
         
-        if (this.automaticTiming) {
-            float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
-            float crotchet = Conductor.Instance.Crotchet;
-            float distancePerBeat = scrollSpeed * crotchet;
+        float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
+        float crotchet = Conductor.Instance.Crotchet;
+        float distancePerBeat = scrollSpeed * crotchet;
 
-            this.beatShouldBeActivatedOn = transform.position.x / distancePerBeat; // assumes pizza guy starts at x=0
-        }
+        this.beatShouldBeActivatedOn = transform.position.x / distancePerBeat; // assumes pizza guy starts at x=0
+        this.beatShouldBeActivatedOn += this.beatsToAddToTiming;
     }
 
     private void OnTrigger() {
@@ -62,19 +62,3 @@ public class PerfectTiming : MonoBehaviour
         
     }
 }
-//
-// [CustomEditor(typeof(PerfectTiming))]
-// public class PerfectTimingEditor : Editor {
-//     public override void OnInspectorGUI() {
-//         base.OnInspectorGUI();
-//         
-//         PerfectTiming originalScript = target as PerfectTiming;
-//
-//         originalScript.automaticTiming = GUILayout.Toggle(originalScript.automaticTiming, "Automatic Timing");
-//         if (!originalScript.automaticTiming) {
-//             originalScript.beatShouldBeActivatedOn = EditorGUILayout.FloatField(
-//                 "Beat Should Be Activated On", 
-//                 originalScript.beatShouldBeActivatedOn);
-//         }
-//     }
-// }
