@@ -444,9 +444,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiveAtStart: 0
   activeDuration: 1.85
+  cooldownDuration: 1
   aboutToDeactivateColor: {r: 1, g: 0, b: 0, a: 1}
   targetRenderers:
   - {fileID: 8220487273621469504}
+  - {fileID: 8220487273429608742}
+  - {fileID: 8220487274189819668}
   secondsToOpen: 0.125
   platformCol: {fileID: 8220487273621469511}
   pivot: {fileID: 8220487274184569547}

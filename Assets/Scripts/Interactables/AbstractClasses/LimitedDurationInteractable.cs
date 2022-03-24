@@ -5,10 +5,10 @@ using UnityEngine;
 public abstract class LimitedDurationInteractable : BinaryInteractable {
     [Header("Limited Duration Interactable")]
     [SerializeField] private float activeDuration = 1.0f; // set to <= 0 for infinite duration
+
+    [SerializeField] private float cooldownDuration = 0.5f;
     [SerializeField] protected Color aboutToDeactivateColor = Color.red;
     [SerializeField] protected List<Renderer> targetRenderers;
-
-    
 
     protected Color[] targetRenderersColors;
     protected MaterialPropertyBlock prpblk;
@@ -25,7 +25,9 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
     }
 
     protected override void TriggerAction() {
-        StartCoroutine(ActivateForDuration(this.activeDuration));
+        if (!this.mutex) {
+            StartCoroutine(ActivateForDuration(this.activeDuration));
+        }
     }
 
     protected IEnumerator ActivateForDuration(float duration) {
@@ -55,6 +57,13 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
+            IsActive = isActiveCopy;
+            
+            // cooldown
+            SetRendererColor(Color.black);
+            yield return new WaitForSeconds(this.cooldownDuration);
+            
+            // revert to original 
             for (int i = 0; i < this.targetRenderers.Count; i++) {
                 var rnd = this.targetRenderers[i];
                 var startColor = this.targetRenderersColors[i];
@@ -62,10 +71,18 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
                 rnd.material.color = startColor;
                 rnd.GetPropertyBlock(this.prpblk);
             }
-            IsActive = isActiveCopy;
             this.mutex = false;
         } else {
             IsActive = !isActiveCopy;
+        }
+    }
+
+    private void SetRendererColor(Color color) {
+        for (int i = 0; i < this.targetRenderers.Count; i++) {
+            var rnd = this.targetRenderers[i];
+            rnd.GetPropertyBlock(this.prpblk);
+            rnd.material.color = color;
+            rnd.GetPropertyBlock(this.prpblk);
         }
     }
 }
