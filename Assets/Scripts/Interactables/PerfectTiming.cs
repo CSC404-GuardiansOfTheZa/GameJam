@@ -13,12 +13,11 @@ public class TimingClassData {
     public AudioClip audio;
 }
 
-[RequireComponent(typeof(Interactable))]
 public class PerfectTiming : MonoBehaviour
 {
     // These fields are public so we can have a custom editor for them
     [SerializeField] private bool areTimingsEnabled = true;
-    [SerializeField] private float beatsToAddToTiming = 0.0f;
+    [SerializeField] private Interactable parentInteractable;
 
     [Header("Tolerances")] 
     [SerializeField] private List<TimingClassData> tolerances; 
@@ -29,14 +28,13 @@ public class PerfectTiming : MonoBehaviour
 
     private void Start() {
         this.asource = this.GetComponent<AudioSource>();
-        this.GetComponent<Interactable>().OnTrigger += this.OnTrigger;
         
         float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
         float crotchet = Conductor.Instance.Crotchet;
         float distancePerBeat = scrollSpeed * crotchet;
-
         this.beatShouldBeActivatedOn = transform.position.x / distancePerBeat; // assumes pizza guy starts at x=0
-        this.beatShouldBeActivatedOn += this.beatsToAddToTiming;
+        
+        parentInteractable.OnTrigger += this.OnTrigger;
     }
 
     private void OnTrigger() {
