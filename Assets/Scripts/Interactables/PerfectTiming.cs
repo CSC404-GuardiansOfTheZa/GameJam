@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -23,9 +24,12 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private List<TimingClassData> tolerances; 
 
     private bool hasBeenTriggered;
+    private AudioSource asource;
 
     private void Start() {
+        this.asource = this.GetComponent<AudioSource>();
         this.GetComponent<Interactable>().OnTrigger += this.OnTrigger;
+        
         if (this.automaticTiming) {
             float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
             float crotchet = Conductor.Instance.Crotchet;
@@ -43,9 +47,14 @@ public class PerfectTiming : MonoBehaviour
         float triggeredBeat = Conductor.Instance.SongPositionInBeats;
         float diff = this.beatShouldBeActivatedOn - triggeredBeat; // positive ==> early, negative ==> late
 
-        for (int i = this.tolerances.Count - 1; i >= 0; i--) {
-            if (diff < this.tolerances[i].toleranceInBeats) {
-                Debug.Log(this.tolerances[i].name);
+        foreach (var tolerance in this.tolerances) {
+            if (diff < tolerance.toleranceInBeats) {
+                Debug.Log(tolerance.name);
+                if (tolerance.audio is not null)
+                    this.asource.PlayOneShot(tolerance.audio, 5.0f);
+                else 
+                    Debug.Log("AAAAAAAAAAAAAAAAAAAA");
+                
                 // todo: actually show something
                 break;
             }
