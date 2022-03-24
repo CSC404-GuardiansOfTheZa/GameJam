@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AngelController : MonoBehaviour {
-
     [SerializeField] private float smoothTime = 5f;
     [SerializeField] private float rotateSpeed = 10f;
     [SerializeField] private float detectionRadius = 1f;
@@ -56,6 +55,17 @@ public class AngelController : MonoBehaviour {
         Ray ray = this.cam.ScreenPointToRay(this.cam.WorldToScreenPoint(transform.position));
         bool didRaycastHit = Physics.Raycast(ray, out RaycastHit hit, 100.0f, this.raycastLayerMask);
         if (didRaycastHit) {
+            Interactable target = (Interactable) hit.transform.GetComponent(typeof(Interactable));
+
+            bool isTargetActive = false;
+            if (target is not null) {
+                if (Input.GetMouseButtonDown(0)) {
+                    // TODO: somehow disable highlights when target is already active
+                    // May need to refactor code and turn IInteractable into an abstract class, not interface
+                    target.Trigger();
+                }
+            }
+            
             this.highlightParticles.Play();
             if (selectedInteractable != hit.collider.gameObject) {
                 // switching to different gameobject, so adjust the outlines
@@ -64,14 +74,6 @@ public class AngelController : MonoBehaviour {
                 selectedInteractable = hit.collider.gameObject;
             }
 
-            if (Input.GetMouseButtonDown(0)) {
-                IInteractable target = (IInteractable) hit.transform.GetComponent(typeof(IInteractable));
-                if (target != null) {
-                    // TODO: somehow disable highlights when target is already active
-                    // May need to refactor code and turn IInteractable into an abstract class, not interface
-                    target.Trigger();
-                }
-            }
         } else {
             this.selectedInteractable?.GetComponent<Outline>()?.HideOutline();
             this.selectedInteractable = null;

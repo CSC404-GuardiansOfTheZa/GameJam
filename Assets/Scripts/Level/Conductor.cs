@@ -33,6 +33,8 @@ public class Conductor : MonoBehaviour
         }
     }
 
+    public float SongPositionInBeats => (float) SongPosition / Crotchet;
+
     private AudioSource asource;
     private double dspTimeStart = -1.0f;
     private int beat = 1;

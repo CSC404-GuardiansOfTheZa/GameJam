@@ -140,7 +140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2530368424902770116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0b73cb009767f4591bfe32cea2b53a, type: 3}
+  m_Script: {fileID: 11500000, guid: ecf01039761f36b4ca5e1a609a1d36fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bird: {fileID: 7179143482918330351}
@@ -203,7 +203,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 295987068785085914, guid: 6f125c0dd6f452149bc6db35a5f20d4e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f125c0dd6f452149bc6db35a5f20d4e, type: 3}
 --- !u!114 &7179143482918330351 stripped
 MonoBehaviour:

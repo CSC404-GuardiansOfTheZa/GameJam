@@ -130,13 +130,13 @@ public class PizzaMan : MonoBehaviour {
         this.modelAnimator.SetBool(IsGrounded_Anim, IsGrounded);
 
         if (IsGrounded) {
-            Debug.Log($"Grounded on frame {this.__FRAME}");
+            // Debug.Log($"Grounded on frame {this.__FRAME}");
             if (!this.wasGrounded && onGrounded != null) {
                 // became grounded this frame
                 onGrounded();
             }
         } else {
-            Debug.Log($"Airborne on frame {this.__FRAME}");
+            // Debug.Log($"Airborne on frame {this.__FRAME}");
         }
         
         this.wasGrounded = IsGrounded;

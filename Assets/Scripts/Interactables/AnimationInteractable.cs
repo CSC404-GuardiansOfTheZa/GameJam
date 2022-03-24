@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationInteractable : MonoBehaviour, IInteractable {
+public class AnimationInteractable : BinaryInteractable {
     [SerializeField] protected string animationName = "";
 
     [SerializeField]
@@ -11,7 +11,6 @@ public class AnimationInteractable : MonoBehaviour, IInteractable {
     protected Animator animator;
     protected ParticleSystem particles;
 
-    protected bool isActivated = false;
 
     void Awake() {
         animator = GetComponent<Animator>();
@@ -19,19 +18,21 @@ public class AnimationInteractable : MonoBehaviour, IInteractable {
         animator.speed = animSpeedMult;
     }
 
-    public void Trigger() {
+    protected override void TriggerAction() {
+        IsActive = true;
+        
+        particles?.Play();
         if (animator) {
             animator.SetTrigger(animationName);
-            isActivated = !isActivated;
         }
 #if UNITY_EDITOR
         else {
             Debug.LogError("Interactable animation was triggered, but no Animator was set");
         }
-
-        particles?.Play();
-
-
 #endif
+    }
+
+    protected override void OnActivationChange(bool isStart) {
+        // no use here
     }
 }
