@@ -15,6 +15,6 @@ public class Checkpoint : MonoBehaviour {
         if (other.tag != "Player")
             return;
         hasGoneThru = true;
-        CheckpointManager.Instance.RecordCheckpoint(actualXPosition);
+        CheckpointManager.Instance.RecordCheckpoint(transform.position.x);
     }
 }
