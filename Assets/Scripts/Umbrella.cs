@@ -8,7 +8,8 @@ public class Umbrella : AnimationInteractable {
     private float bounceStrength = 5.0f;
 
     private void OnTriggerEnter(Collider other) {
-        if (!this.isActivated) return;
+        if (!this.IsActive) return;
+        
         if (!other.CompareTag("Player")) return;
         print("Player bounce on umbrella!");
 

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 
 public class Window : LimitedDurationInteractable {
+    [OnChangedCall("SetStartWindow")]
     [Header("Window Settings")]
     [SerializeField] private float secondsToOpen = 2.0f;
     [SerializeField] private Collider platformCol;
@@ -13,7 +14,6 @@ public class Window : LimitedDurationInteractable {
     [Header("Scale")]
     [SerializeField] private float scaleMultiplierWhenOpen = 2.5f;
     [Header("Start the window open")]
-    [OnChangedCall("SetStartWindow")]
     [SerializeField] private bool startOpen;
     private AudioSource _audioSource;
     public AudioClip clip;
@@ -31,7 +31,7 @@ public class Window : LimitedDurationInteractable {
             _audioSource.PlayOneShot(clip);
     }
 
-    public void SetStartWindow() {
+    public void SetStartWindow() { // is used in the OnChangedCall statement
         float xRotation = !this.startOpen ? this.openXRotation : this.closedXRotation;
         this.pivot.eulerAngles = new Vector3(xRotation, 0, 0);
     }
@@ -45,7 +45,7 @@ public class Window : LimitedDurationInteractable {
 
         float timeElapsed = 0.0f;
         while (timeElapsed < this.secondsToOpen) {
-            if (this.isPaused) {
+            if (LevelManager.Instance.Paused) {
                 yield return null;
                 continue;
             }

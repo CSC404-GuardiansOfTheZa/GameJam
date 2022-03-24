@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using VoxelImporter;
 
-public class Bird : MonoBehaviour, IInteractable {
+public class Bird : Interactable {
 	[SerializeField] private Vector3 relativeStartPos = new Vector3(-40, 50, 0); // Where to move to when beginning hover animation; relative to pizza guy's coords
 	[SerializeField] private float hoverDistance = 2.5f; // # of units to hover over the ground 
 	[SerializeField] private float hoverDuration = 10f; // # of seconds to hover over the pizza guy, if not shoo'd
@@ -47,7 +47,7 @@ public class Bird : MonoBehaviour, IInteractable {
 
 	IEnumerator Hover() {
 		yield return new WaitForSeconds(this.hoverDuration);
-		if (!this.isShooed) this.Trigger();
+		if (!this.isShooed) this.TriggerAction();
 	}
 
 	IEnumerator EndHover(float newHeight) {
@@ -63,27 +63,18 @@ public class Bird : MonoBehaviour, IInteractable {
 		this.gameObject.SetActive(false);
 	}
 
-	public void Trigger() {
-		// Shoo away the Bird
-		// Disable colider 
-		this.isShooed = true;
-		this.col.enabled = false;
-		
-		StartCoroutine(EndHover(10f)); // TODO: turn this magic number into a SerializeField
-	}
-
 	private void Update() {
 		#if UNITY_EDITOR
-		if (Input.GetKeyDown(KeyCode.B)) this.Trigger();
+		if (Input.GetKeyDown(KeyCode.B)) this.TriggerAction();
 		#endif
 	}
-
-	float easeOutBack(float x) {
-		// Given x in range [0, 1], ease it according to easeOutBack
-		// Code from https://easings.net/en#easeOutBack
-		// TODO: doesn't work rn, may use later. if you're reading this, feel free to delete this function  -Stew
-		const float A = 1.70158f;
-		const float B = A + 1;
-		return 1 + (A * Mathf.Pow(x-1, 2)) + (B * Mathf.Pow(x - 1, 3));
+	
+	protected override void TriggerAction() {
+		if (isShooed) return;
+		
+		this.col.enabled = false;
+		isShooed = true;
+		
+		StartCoroutine(EndHover(10f)); // TODO: turn this magic number into a SerializeField
 	}
 }

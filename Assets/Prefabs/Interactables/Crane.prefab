@@ -223,6 +223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f196c2fa5ba44786ed54baefd033f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActiveAtStart: 0
+  beatShouldBeActivatedOn: -1
 --- !u!114 &730602597980872882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837f196c2fa5ba44786ed54baefd033f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActiveAtStart: 0
+  beatShouldBeActivatedOn: -1
 --- !u!114 &5122806128101325622
 MonoBehaviour:
   m_ObjectHideFlags: 0
