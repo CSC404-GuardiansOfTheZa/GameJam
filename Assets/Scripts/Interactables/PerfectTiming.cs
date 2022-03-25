@@ -40,7 +40,7 @@ public class PerfectTiming : MonoBehaviour
         float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
         float crotchet = Conductor.Instance.Crotchet;
         float distancePerBeat = scrollSpeed * crotchet;
-        this.beatShouldBeActivatedOn = transform.position.x / distancePerBeat; // assumes pizza guy starts at x=0
+        this.beatShouldBeActivatedOn = (transform.position.x - PizzaMan.Instance.transform.position.x) / distancePerBeat; // assumes pizza guy starts at x=0
         
         parentInteractable.OnTrigger += this.OnTrigger;
     }

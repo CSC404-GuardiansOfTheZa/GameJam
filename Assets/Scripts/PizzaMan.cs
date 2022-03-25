@@ -14,9 +14,11 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField][Range(0, 1)] private float jumpSFXVolume = 0.8f;
     [Header("Children")]
     [SerializeField] private Animator modelAnimator;
-
     [SerializeField] private ParticleSystem musicNoteEmitter;
 
+    private static PizzaMan _instance;
+    public static PizzaMan Instance { get { return _instance; } }
+    
     public bool IsGrounded { get; set; }
     public int NumJumps { get; private set; }
 
@@ -87,6 +89,12 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private void Awake() {
+        if (_instance != null && _instance != this) {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+        
         rigidbody = GetComponent<Rigidbody>();
         asource = GetComponent<AudioSource>();
         col = GetComponent<Collider>();
