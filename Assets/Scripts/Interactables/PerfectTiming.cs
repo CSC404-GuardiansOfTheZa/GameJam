@@ -58,7 +58,7 @@ public class PerfectTiming : MonoBehaviour
             if (diff < tolerance.toleranceInBeats) {
                 Debug.Log(tolerance.name);
                 if (tolerance.audio is not null)
-                    this.asource.PlayOneShot(tolerance.audio, 5.0f);
+                    this.asource.PlayOneShot(tolerance.audio, 3.0f);
                 else 
                     Debug.Log("AAAAAAAAAAAAAAAAAAAA");
 
