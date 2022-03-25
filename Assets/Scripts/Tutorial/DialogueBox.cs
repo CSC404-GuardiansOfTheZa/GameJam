@@ -6,7 +6,7 @@ using TMPro;
 public class DialogueBox : FadableText {
 	protected void Start() {
 		base.Start();
-		this.tmp.text = "";
-		this.tmp.color = Color.clear;
+		this.textField.text = "";
+		this.textField.color = Color.clear;
 	}
 }

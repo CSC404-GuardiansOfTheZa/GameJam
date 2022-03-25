@@ -49,8 +49,10 @@ public class Conductor : MonoBehaviour {
         dspTimeStart = AudioSettings.dspTime;
         beat = 1;
         this.SavePlaybackTime();
+        #if UNITY_EDITOR
         DebugPanel.Instance?.AddDebugLog("beat", () => this.SongPositionInBeats.ToString());
         DebugPanel.Instance?.AddDebugLog("beat (real)", () => this.beat.ToString());
+        #endif
     }
 
     public void Pause(bool addToOffset) {

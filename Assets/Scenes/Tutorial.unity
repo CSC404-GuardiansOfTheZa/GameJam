@@ -3460,6 +3460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2765501439178692904, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6389186319616852576, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
       propertyPath: m_Name
       value: Pizza Man

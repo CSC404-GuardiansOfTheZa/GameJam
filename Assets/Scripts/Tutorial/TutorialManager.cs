@@ -28,7 +28,7 @@ public class TutorialManager : MonoBehaviour {
         Conductor.Instance.onBeat += this.OnBeat;
         this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
         this.window.OnActivated += this.OnWindowActivated;
-        this.StartCoroutine(this.clickToContinueText.FadeOut());
+        // this.StartCoroutine(this.clickToContinueText.FadeOut());
         LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
     }
 
