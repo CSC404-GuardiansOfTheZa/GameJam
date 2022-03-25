@@ -15,7 +15,6 @@ public class Conductor : MonoBehaviour {
     [SerializeField] private AudioClip musicTrack;
     [field: SerializeField] public float BPM { get; private set; }
     [field: SerializeField] public float TrackLengthInSeconds { get; private set; }
-    [field: SerializeField] public float TrackOffsetInSeconds { get; private set; }
     [field: SerializeField] public int BeatsPerMeasure { get; private set; }
 
     public float Crotchet { // length of a beat
@@ -26,9 +25,9 @@ public class Conductor : MonoBehaviour {
             if (this.dspTimeStart < 0) {
                 return 0.0f;
             } else if (this.isPaused && this.pauseTimeStart > 0.0f) {
-                return this.pauseTimeStart - this.dspTimeStart; // this works out if you factor it out trust me bro ~stew
+                return this.dspCheckpointSongPosition + (this.pauseTimeStart - this.dspTimeStart); // this works out if you factor it out trust me bro ~stew
             }
-            return AudioSettings.dspTime - dspTimeStart - this.pauseOffset;
+            return this.dspCheckpointSongPosition + (AudioSettings.dspTime - this.dspTimeStart - this.pauseOffset);
         }
     }
 
@@ -40,33 +39,57 @@ public class Conductor : MonoBehaviour {
     private bool isPaused = false;
     private double pauseOffset = 0.0f;
     private double pauseTimeStart = 0.0f;
-    private double checkpointProgress; // todo: 
+    private float asourceTime;
+    private double dspCheckpointSongPosition;
+    private int checkpointBeat;
+    private double checkpointPauseOffset;
 
     public void StartSong() {
         this.asource.Play();
         dspTimeStart = AudioSettings.dspTime;
         beat = 1;
-        DebugPanel.Instance.AddDebugLog("beat", () => {
-            return this.SongPositionInBeats.ToString();
-        });
+        this.SavePlaybackTime();
+        DebugPanel.Instance.AddDebugLog("beat", () => this.SongPositionInBeats.ToString());
+        DebugPanel.Instance.AddDebugLog("beat (real)", () => this.beat.ToString());
     }
 
-    public void Pause() {
+    public void Pause(bool addToOffset) {
         if (this.isPaused) return;
 
         this.isPaused = true;
         this.asource.Pause();
-        this.pauseTimeStart = AudioSettings.dspTime;
+        if (addToOffset) {
+            this.pauseTimeStart = AudioSettings.dspTime;
+        }
     }
 
-    public void Resume() {
+    public void Resume(bool addToOffset) {
         if (!this.isPaused) return;
 
-        double resumeTime = AudioSettings.dspTime;
-        this.pauseOffset += resumeTime - this.pauseTimeStart;
-        this.pauseTimeStart = 0.0f;
+        if (addToOffset) {
+            double resumeTime = AudioSettings.dspTime;
+            this.pauseOffset += resumeTime - this.pauseTimeStart;
+            this.pauseTimeStart = 0.0f;
+        }
+        
         this.asource.UnPause();
         this.isPaused = false;
+    }
+
+    public void SavePlaybackTime() {
+        this.asourceTime = this.asource.time;
+        this.dspCheckpointSongPosition = SongPosition;
+        this.dspTimeStart = AudioSettings.dspTime;
+        this.checkpointBeat = this.beat;
+        this.checkpointPauseOffset = this.pauseOffset;
+    }
+
+    public void Reload() {
+        this.asource.time = this.asourceTime;
+        this.beat = this.checkpointBeat;
+        this.dspTimeStart = AudioSettings.dspTime;
+        this.pauseOffset = this.checkpointPauseOffset;
+        this.Resume(false);
     }
 
     void Awake() {
@@ -80,10 +103,10 @@ public class Conductor : MonoBehaviour {
         asource.clip = this.musicTrack;
         Crotchet = 60.0f / (float)BPM;
         LevelManager.Instance.OnLevelStart += this.StartSong;
-        LevelManager.Instance.OnPause += this.Pause;
-        LevelManager.Instance.OnResume += this.Resume;
-        PizzaMan.Instance.OnKilled += this.Pause;
-        LevelManager.Instance.OnLevelReload += this.Resume;
+        LevelManager.Instance.OnPause += delegate { this.Pause(true); };
+        LevelManager.Instance.OnResume += delegate { this.Resume(true); };
+        PizzaMan.Instance.OnKilled += delegate { this.Pause(false); };
+        LevelManager.Instance.OnLevelReload += this.Reload;
     }
 
     void Update() {

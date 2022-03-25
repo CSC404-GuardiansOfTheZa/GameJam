@@ -22,8 +22,8 @@ public class CheckpointManager : MonoBehaviour {
     public void RecordCheckpoint() {
         PizzaMan.Instance.SetNextSpawnToCurrentPos();
         LevelManager.Instance.SaveCheckpointScroll();
+        Conductor.Instance.SavePlaybackTime();
         checkpointReachedIndicator.SetTrigger("Show");
-        // todo: also record position of the song
     }
 
     private void OnRespawn() {
