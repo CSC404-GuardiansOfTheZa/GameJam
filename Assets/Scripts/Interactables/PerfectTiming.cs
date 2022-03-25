@@ -43,6 +43,7 @@ public class PerfectTiming : MonoBehaviour
         this.beatShouldBeActivatedOn = (transform.position.x - PizzaMan.Instance.transform.position.x) / distancePerBeat; // assumes pizza guy starts at x=0
         
         parentInteractable.OnTrigger += this.OnTrigger;
+        LevelManager.Instance.OnLevelReload += delegate { this.hasBeenTriggered = false; };
     }
 
     private void OnTrigger() {

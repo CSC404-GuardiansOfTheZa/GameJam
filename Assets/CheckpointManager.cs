@@ -7,34 +7,33 @@ public class CheckpointManager : MonoBehaviour {
     private static CheckpointManager _instance;
     public static CheckpointManager Instance { get { return _instance; } }
 
-    [SerializeField] private Transform levelParent;
     [SerializeField] private Animator checkpointReachedIndicator;
     [SerializeField] private float secondsBeforeRespawn = 3.0f;
 
-    private float checkpointXPos;
-    
     private void Awake() {
         if (_instance != null && _instance != this)
             Destroy(this.gameObject);
         else
             _instance = this;
 
-        PizzaMan.Instance.OnKilled += delegate { StartCoroutine(this.Respawn()); };
+        PizzaMan.Instance.OnKilled += this.OnRespawn;
     }
 
-    public void RecordCheckpoint(float xPos) {
-        checkpointXPos = xPos;
-        Debug.Log("checkpoint at " + xPos);
+    public void RecordCheckpoint() {
+        PizzaMan.Instance.SetNextSpawnToCurrentPos();
+        LevelManager.Instance.SaveCheckpointScroll();
         checkpointReachedIndicator.SetTrigger("Show");
+        // todo: also record position of the song
+    }
+
+    private void OnRespawn() {
+        StartCoroutine(this.Respawn());
     }
 
     public IEnumerator Respawn() {
+        PizzaMan.Instance.OnKilled -= this.OnRespawn;
         yield return new WaitForSeconds(this.secondsBeforeRespawn);
-        
-        // todo: have checkpoints store both an X *and* Y pos, and reload the level there.
-        levelParent.localPosition = Vector3.left * checkpointXPos;
-        print("RESPAWN AT CHECKPOINT" + checkpointXPos);
-        
-        LevelManager.Instance.ResumeLevel();
+        PizzaMan.Instance.OnKilled += this.OnRespawn;
+        LevelManager.Instance.ReloadLevel();
     }
 }

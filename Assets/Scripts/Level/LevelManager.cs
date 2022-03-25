@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool autoStart=true;
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private float secondsToWait = 1.0f;
+    [SerializeField] private Scroller scroller;
 
     public delegate void VoidDelegate();
     public event VoidDelegate OnLevelStart;
@@ -47,6 +48,10 @@ public class LevelManager : MonoBehaviour
     public void TogglePause() {
         if (this.Paused) this.ResumeLevel();
         else this.PauseLevel();
+    }
+
+    public void SaveCheckpointScroll() {
+        this.scroller.SaveCheckpointScroll();
     }
     
     void Awake() { // Set to run before all other scripts

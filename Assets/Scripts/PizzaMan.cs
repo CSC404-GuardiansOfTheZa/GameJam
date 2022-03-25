@@ -58,6 +58,8 @@ public class PizzaMan : MonoBehaviour {
     public void Respawn() {
         this.model.gameObject.SetActive(true);
         this.ragdoll.gameObject.SetActive(false);
+        this.killed = false;        
+        transform.position = this.startPos;
     }
 
     public void ActivateWaterSpout(float strength) {
@@ -80,12 +82,8 @@ public class PizzaMan : MonoBehaviour {
         this.modelAnimator.speed = 1.0f;
     }
 
-    public void SetNextSpawnPoint(Vector3 spawnPt) {
-        this.startPos = spawnPt;
-    }
-
-    public void SetNextSpawnPoint(float x, float y) {
-        this.SetNextSpawnPoint(new Vector3(x, y, this.startPos.z));
+    public void SetNextSpawnToCurrentPos() {
+        this.startPos = transform.position;
     }
     
     /// //////////////////////////////////////////////////////////////////
@@ -141,7 +139,6 @@ public class PizzaMan : MonoBehaviour {
         IsGrounded = false;
         LevelManager.Instance.OnPause += this.OnPause;
         LevelManager.Instance.OnResume += this.OnResume;
-        LevelManager.Instance.OnLevelStart += this.Respawn;
         LevelManager.Instance.OnLevelReload += this.Respawn;
     }
 
@@ -162,7 +159,7 @@ public class PizzaMan : MonoBehaviour {
 #endif
         // lock pizzaguy into a set path
         transform.position = new Vector3(
-            startPos.x,
+            transform.position.x,
             transform.position.y,
             startPos.z
         );

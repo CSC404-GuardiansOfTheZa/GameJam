@@ -40,6 +40,7 @@ public class Conductor : MonoBehaviour {
     private bool isPaused = false;
     private double pauseOffset = 0.0f;
     private double pauseTimeStart = 0.0f;
+    private double checkpointProgress; // todo: 
 
     public void StartSong() {
         this.asource.Play();
@@ -81,6 +82,8 @@ public class Conductor : MonoBehaviour {
         LevelManager.Instance.OnLevelStart += this.StartSong;
         LevelManager.Instance.OnPause += this.Pause;
         LevelManager.Instance.OnResume += this.Resume;
+        PizzaMan.Instance.OnKilled += this.Pause;
+        LevelManager.Instance.OnLevelReload += this.Resume;
     }
 
     void Update() {

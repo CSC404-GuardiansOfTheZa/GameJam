@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour {
 
-    public float actualXPosition = 0;
-
     private bool hasGoneThru = false;
-
 
     void OnTriggerEnter(Collider other) {
         if (hasGoneThru)
@@ -15,6 +12,6 @@ public class Checkpoint : MonoBehaviour {
         if (other.tag != "Player")
             return;
         hasGoneThru = true;
-        CheckpointManager.Instance.RecordCheckpoint(transform.position.x);
+        CheckpointManager.Instance.RecordCheckpoint();
     }
 }
