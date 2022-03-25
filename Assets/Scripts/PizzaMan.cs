@@ -159,7 +159,7 @@ public class PizzaMan : MonoBehaviour {
 #endif
         // lock pizzaguy into a set path
         transform.position = new Vector3(
-            transform.position.x,
+            startPos.x,
             transform.position.y,
             startPos.z
         );
