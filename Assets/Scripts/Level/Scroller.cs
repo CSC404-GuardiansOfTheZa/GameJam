@@ -16,6 +16,7 @@ public class Scroller : MonoBehaviour {
     public void Awake() {
         LevelManager.Instance.OnLevelStart += this.Init;
         LevelManager.Instance.OnPause += this.Stop;
+        PizzaMan.Instance.OnKilled += this.Stop;
         LevelManager.Instance.OnResume += this.Resume;
     }
     
@@ -25,7 +26,6 @@ public class Scroller : MonoBehaviour {
         this.trackLength = Conductor.Instance.TrackLengthInSeconds;
     }
     
-
     public void Stop() {
         this.isScrolling = false;
     }

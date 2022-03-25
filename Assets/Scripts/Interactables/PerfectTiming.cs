@@ -65,7 +65,6 @@ public class PerfectTiming : MonoBehaviour
                 break;
             }
         }
-        
     }
 
     private IEnumerator ShowSprite(Sprite spriteToShow) {

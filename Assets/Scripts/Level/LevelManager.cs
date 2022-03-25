@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public event VoidDelegate OnPause;
     public event VoidDelegate OnResume;
     public event VoidDelegate OnLoadingFinish;
+    public event VoidDelegate OnLevelReload;
 
     public bool Paused { get; private set; }
     public bool Started { get; private set; }
@@ -35,6 +37,11 @@ public class LevelManager : MonoBehaviour
     public void ResumeLevel() {
         this.Paused = false;
         this.OnResume?.Invoke();
+    }
+
+    public void ReloadLevel() {
+        Debug.Log("Reloading level");
+        this.OnLevelReload?.Invoke();
     }
 
     public void TogglePause() {
