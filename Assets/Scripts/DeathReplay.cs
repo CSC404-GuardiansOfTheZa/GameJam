@@ -14,7 +14,7 @@ public class DeathReplay : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         if (collision.collider.tag == "Player" && _transform.tag != "CoverArea") {
             Debug.Log("collide with dead object");
-            CheckpointManager.Instance.Respawn();
+            PizzaMan.Instance.Kill();
             // SceneManager.LoadScene(5);
             // Cursor.lockState = CursorLockMode.None;
             // Cursor.visible = true;

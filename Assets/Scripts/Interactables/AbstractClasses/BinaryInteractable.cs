@@ -28,6 +28,11 @@ public abstract class BinaryInteractable : Interactable
     }
 
     protected virtual void Awake() {
+        this.InitializeIsActive();
+        LevelManager.Instance.OnLevelReload += this.InitializeIsActive;
+    }
+
+    private void InitializeIsActive() {
         _isActive = this.isActiveAtStart;
         this.OnActivationChange(true);
     }

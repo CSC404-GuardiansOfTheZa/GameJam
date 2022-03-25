@@ -24,7 +24,7 @@ public class FollowTargetVertically : MonoBehaviour {
 	public void Start() {
 		this.cam = this.GetComponent<Camera>();
 		this.baseCameraHeight = transform.position.y;
-		this.pizzaMan.onGrounded += this.OnTargetGrounded;
+		this.pizzaMan.OnGrounded += this.OnTargetGrounded;
 		LevelManager.Instance.OnLevelStart += this.OnLevelStart;
 	}
 

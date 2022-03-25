@@ -54,7 +54,7 @@ public class AngelController : MonoBehaviour {
 
         Ray ray = this.cam.ScreenPointToRay(this.cam.WorldToScreenPoint(transform.position));
         bool didRaycastHit = Physics.Raycast(ray, out RaycastHit hit, 100.0f, this.raycastLayerMask);
-        if (didRaycastHit) {
+        if (!LevelManager.Instance.Paused && didRaycastHit) {
             Interactable target = (Interactable) hit.transform.GetComponent(typeof(Interactable));
 
             bool isTargetActive = false;

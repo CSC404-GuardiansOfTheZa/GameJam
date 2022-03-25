@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,12 +13,14 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool autoStart=true;
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private float secondsToWait = 1.0f;
-
+    private Scroller scroller;
+    
     public delegate void VoidDelegate();
     public event VoidDelegate OnLevelStart;
     public event VoidDelegate OnPause;
     public event VoidDelegate OnResume;
     public event VoidDelegate OnLoadingFinish;
+    public event VoidDelegate OnLevelReload;
 
     public bool Paused { get; private set; }
     public bool Started { get; private set; }
@@ -37,9 +40,18 @@ public class LevelManager : MonoBehaviour
         this.OnResume?.Invoke();
     }
 
+    public void ReloadLevel() {
+        Debug.Log("Reloading level");
+        this.OnLevelReload?.Invoke();
+    }
+
     public void TogglePause() {
         if (this.Paused) this.ResumeLevel();
         else this.PauseLevel();
+    }
+
+    public void SaveCheckpointScroll() {
+        this.scroller?.SaveCheckpointScroll();
     }
     
     void Awake() { // Set to run before all other scripts
@@ -50,6 +62,7 @@ public class LevelManager : MonoBehaviour
         }
 
         StartCoroutine(WaitForLoading());
+        this.scroller = this.GetComponent<Scroller>();
     }
     
     void Start(){

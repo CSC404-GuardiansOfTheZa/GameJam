@@ -14,7 +14,7 @@ public class Umbrella : AnimationInteractable {
         print("Player bounce on umbrella!");
 
         Rigidbody rigidbody = other.GetComponent<Rigidbody>();
-        rigidbody.AddForce(Vector3.up * bounceStrength);
+        rigidbody.AddForce(Vector3.up * bounceStrength, ForceMode.Impulse); 
     }
 
 }

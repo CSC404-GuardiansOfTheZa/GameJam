@@ -12,9 +12,12 @@ public class PizzaMan : MonoBehaviour {
     [Header("SFX")]
     [SerializeField] private List<AudioClip> jumpSFX;
     [SerializeField][Range(0, 1)] private float jumpSFXVolume = 0.8f;
+    [SerializeField] private AudioClip deathSFX;
     [Header("Children")]
     [SerializeField] private Animator modelAnimator;
     [SerializeField] private ParticleSystem musicNoteEmitter;
+    [SerializeField] private Transform model;
+    [SerializeField] private Rigidbody ragdoll;
 
     private static PizzaMan _instance;
     public static PizzaMan Instance { get { return _instance; } }
@@ -33,11 +36,31 @@ public class PizzaMan : MonoBehaviour {
     private bool hitFireHydrant = false;
     private bool wasGrounded = false;
     private bool paused = false;
+    private bool killed = false;
     private Vector3 pausePos;
 
     // Event to be called everytime PizzaMan is grounded
-    public delegate void VoidDelegate();
-    public event VoidDelegate onGrounded;
+    public event LevelManager.VoidDelegate OnGrounded;
+    public event LevelManager.VoidDelegate OnKilled;
+
+    public void Kill() {
+        this.killed = true;
+        
+        this.model.gameObject.SetActive(false);
+        this.ragdoll.gameObject.SetActive(true);
+        this.ragdoll.AddForce(Vector3.forward * 40f, ForceMode.Impulse);
+        
+        this.asource.PlayOneShot(this.deathSFX);
+        
+        OnKilled?.Invoke();
+    }
+
+    public void Respawn() {
+        this.model.gameObject.SetActive(true);
+        this.ragdoll.gameObject.SetActive(false);
+        this.killed = false;        
+        transform.position = this.startPos;
+    }
 
     public void ActivateWaterSpout(float strength) {
         // Called when makes contact with the water spout from a fire hydrant
@@ -59,6 +82,12 @@ public class PizzaMan : MonoBehaviour {
         this.modelAnimator.speed = 1.0f;
     }
 
+    public void SetNextSpawnToCurrentPos() {
+        this.startPos = transform.position;
+    }
+    
+    /// //////////////////////////////////////////////////////////////////
+
     private bool CheckIfGrounded() {
         // int layerMask = Physics.DefaultRaycastLayers & ~LayerMask.GetMask("Pizza");
         int layerMask = LayerMask.GetMask("Platforms");
@@ -78,7 +107,7 @@ public class PizzaMan : MonoBehaviour {
     }
 
     private void Jump() {
-        if (!this.isJump && IsGrounded) {
+        if (!this.killed && !this.isJump && IsGrounded) {
             isJump = true;
             asource.PlayOneShot(jumpSFX[UnityEngine.Random.Range(0, this.jumpSFX.Count)], jumpSFXVolume);
             NumJumps++;
@@ -110,6 +139,7 @@ public class PizzaMan : MonoBehaviour {
         IsGrounded = false;
         LevelManager.Instance.OnPause += this.OnPause;
         LevelManager.Instance.OnResume += this.OnResume;
+        LevelManager.Instance.OnLevelReload += this.Respawn;
     }
 
     private int __FRAME = 0;
@@ -129,7 +159,7 @@ public class PizzaMan : MonoBehaviour {
 #endif
         // lock pizzaguy into a set path
         transform.position = new Vector3(
-            startPos.x,
+            transform.position.x,
             transform.position.y,
             startPos.z
         );
@@ -139,9 +169,9 @@ public class PizzaMan : MonoBehaviour {
 
         if (IsGrounded) {
             // Debug.Log($"Grounded on frame {this.__FRAME}");
-            if (!this.wasGrounded && onGrounded != null) {
+            if (!this.wasGrounded && this.OnGrounded != null) {
                 // became grounded this frame
-                onGrounded();
+                this.OnGrounded();
             }
         } else {
             // Debug.Log($"Airborne on frame {this.__FRAME}");
