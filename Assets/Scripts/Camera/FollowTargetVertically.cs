@@ -34,6 +34,12 @@ public class FollowTargetVertically : MonoBehaviour {
 		this.targetYRelative = (this.cam.WorldToViewportPoint(pizzaPos).y * 2) - 1;
 
 		if (this.mutex) {}  // i.e. do nothing if a mutex is already set
+		else if (this.justGrounded) {
+			if (this.targetYRelative > this.innerBoundaryTop || this.targetYRelative < -this.outerBoundaryBottom) {
+				StartCoroutine(SmoothDampUntilTarget(pizzaPos.y + this.baseCameraHeight));
+			} 
+			this.justGrounded = false;
+		}
 		else if (this.targetYRelative > this.outerBoundaryTop || this.targetYRelative < -this.outerBoundaryBottom) {
 			transform.position = Vector3.SmoothDamp(
 				cameraPos,
@@ -41,11 +47,6 @@ public class FollowTargetVertically : MonoBehaviour {
 				ref this.velocity, 
 				this.smoothTime/2 // double speed for panning 
 			);
-		} else if (this.justGrounded) {
-			if (this.targetYRelative > this.innerBoundaryTop || this.targetYRelative < -this.outerBoundaryBottom) {
-				StartCoroutine(SmoothDampUntilTarget(pizzaPos.y + this.baseCameraHeight));
-			} 
-			this.justGrounded = false;
 		}
 	}
 
