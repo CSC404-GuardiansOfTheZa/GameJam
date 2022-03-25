@@ -29,7 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/EndMenu.unity
     guid: 4119b4f419f174e39adaf4d412b4d50c
+  - enabled: 0
+    path: Assets/Scenes/TestScenes/Ethan_beta.unity
+    guid: 1aae5b4e1c732b543a0dc7b970c1ea36
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
-    guid: 1aae5b4e1c732b543a0dc7b970c1ea36
+    guid: a0295281db2e8af42a6e5ce4d1dcbb82
   m_configObjects: {}

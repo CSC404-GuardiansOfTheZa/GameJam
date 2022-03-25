@@ -17,8 +17,8 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private Animator modelAnimator;
     [SerializeField] private ParticleSystem musicNoteEmitter;
     [SerializeField] private Transform model;
-    [SerializeField] private Rigidbody ragdoll;
-
+    [SerializeField] private GameObject ragdollPrefab;
+    
     private static PizzaMan _instance;
     public static PizzaMan Instance { get { return _instance; } }
     
@@ -38,17 +38,20 @@ public class PizzaMan : MonoBehaviour {
     private bool paused = false;
     private bool killed = false;
     private Vector3 pausePos;
+    private GameObject ragdoll;
 
     // Event to be called everytime PizzaMan is grounded
     public event LevelManager.VoidDelegate OnGrounded;
     public event LevelManager.VoidDelegate OnKilled;
 
     public void Kill() {
+        if (this.killed) return;
+        
         this.killed = true;
         
         this.model.gameObject.SetActive(false);
-        this.ragdoll.gameObject.SetActive(true);
-        this.ragdoll.AddForce(Vector3.forward * 40f, ForceMode.Impulse);
+        this.ragdoll = Instantiate(this.ragdollPrefab, transform) as GameObject;
+        this.ragdoll.GetComponentInChildren<Rigidbody>()?.AddForce(new Vector3(0, 0.2f, 1) * 200f, ForceMode.Impulse);
         
         this.asource.PlayOneShot(this.deathSFX);
         
@@ -57,7 +60,7 @@ public class PizzaMan : MonoBehaviour {
 
     public void Respawn() {
         this.model.gameObject.SetActive(true);
-        this.ragdoll.gameObject.SetActive(false);
+        Destroy(this.ragdoll);
         this.killed = false;        
         transform.position = this.startPos;
     }
@@ -131,8 +134,9 @@ public class PizzaMan : MonoBehaviour {
 
     private void Start() {
         if (Conductor.Instance != null) {
-            Debug.LogWarning("Pizza Guy could not find conductor, and can not connect to the beat");
             Conductor.Instance.onBeat += JumpOnBeat;
+        } else {
+            Debug.LogWarning("Pizza Guy could not find conductor, and can not connect to the beat");
         }
         startPos = transform.position;
         distanceToGround = Mathf.Abs(col.bounds.extents.y - col.bounds.center.y);

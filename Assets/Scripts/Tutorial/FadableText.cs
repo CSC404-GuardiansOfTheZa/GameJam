@@ -11,23 +11,25 @@ public class FadableText : MonoBehaviour
     public float FadeDuration => this.fadeDuration;
 
     protected Color startColor;
-    protected TextMeshProUGUI tmp;
+    protected TextMeshProUGUI textField;
     
     // Start is called before the first frame update
     protected void Start() {
-        this.tmp = this.GetComponent<TextMeshProUGUI>();
-        this.startColor = this.tmp.color;
+        this.textField = this.GetComponent<TextMeshProUGUI>();
+        this.startColor = this.textField.color;
     }
 
     public IEnumerator SetText(string text, Color newTextColor) {
         text = text.Replace("\\n", "\n");
-        if (!ColorUtils.Equals(this.tmp.color, Color.clear)) {
-            yield return StartCoroutine(this.FadeOut());
+        if (this.textField != null) {
+            if (!ColorUtils.Equals(this.textField.color, Color.clear)) {
+                yield return StartCoroutine(this.FadeOut());
+            }
+
+            this.textField.SetText(text);
+            this.textField.parseCtrlCharacters = true;
+            yield return StartCoroutine(Fade(this.fadeDuration, Color.clear, newTextColor));
         }
-        
-        this.tmp.SetText(text);
-        this.tmp.parseCtrlCharacters = true;
-        yield return StartCoroutine(Fade(this.fadeDuration, Color.clear, newTextColor));
     }
 
     public IEnumerator SetText(string text) {
@@ -35,7 +37,7 @@ public class FadableText : MonoBehaviour
     }
 
     public IEnumerator FadeOut() {
-        yield return StartCoroutine(Fade(this.fadeDuration, this.tmp.color, Color.clear));
+        yield return StartCoroutine(Fade(this.fadeDuration, this.textField.color, Color.clear));
     }
 
     public IEnumerator FadeIn() {
@@ -46,7 +48,7 @@ public class FadableText : MonoBehaviour
         float elapsedTime = 0.0f;
         while (elapsedTime < duration) {
             float t = elapsedTime / duration;
-            this.tmp.color = Color.Lerp(startColor, endColor, t);
+            this.textField.color = Color.Lerp(startColor, endColor, t);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
