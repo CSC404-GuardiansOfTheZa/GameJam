@@ -26,6 +26,7 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private Vector3 scalingFactor = 2 * Vector3.one;
 
     [Header("Tolerances")] 
+    [SerializeField] private TimingClassData yTolerance;
     [SerializeField] private List<TimingClassData> tolerances; 
 
     private bool hasBeenTriggered;
@@ -49,22 +50,33 @@ public class PerfectTiming : MonoBehaviour
         if (this.hasBeenTriggered || this.beatShouldBeActivatedOn <= 0) return;
         this.hasBeenTriggered = true;
         
+        // first, check the y-threshold
+        float pizzaY = PizzaMan.Instance.transform.position.y;
+        float yThreshold = transform.position.y + this.yTolerance.toleranceInBeats;
+        if (pizzaY < yThreshold) {
+            TriggerTolerance(this.yTolerance);
+            return;
+        }
+
         Debug.LogFormat("CheckingTimings: {0}", this.beatShouldBeActivatedOn);
         float triggeredBeat = Conductor.Instance.SongPositionInBeats;
         float diff = this.beatShouldBeActivatedOn - triggeredBeat; // positive ==> early, negative ==> late
 
         foreach (var tolerance in this.tolerances) {
             if (diff < tolerance.toleranceInBeats) {
-                Debug.Log(tolerance.name);
-                if (tolerance.audio is not null)
-                    this.asource.PlayOneShot(tolerance.audio, 1.0f);
-                else 
-                    Debug.Log("AAAAAAAAAAAAAAAAAAAA");
-
-                StartCoroutine(this.ShowSprite(tolerance.sprite));
-                break;
+                TriggerTolerance(tolerance); 
+                return;
             }
         }
+    }
+
+    private void TriggerTolerance(TimingClassData tolerance) {
+        Debug.Log(tolerance.name);
+        
+        if (tolerance.audio is not null)
+            this.asource.PlayOneShot(tolerance.audio, 1.0f);
+        
+        StartCoroutine(this.ShowSprite(tolerance.sprite));
     }
 
     private IEnumerator ShowSprite(Sprite spriteToShow) {
