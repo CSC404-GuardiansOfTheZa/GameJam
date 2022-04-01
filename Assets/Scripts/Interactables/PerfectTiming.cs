@@ -11,6 +11,7 @@ public class TimingClassData {
     public Sprite sprite;
     public float toleranceInBeats;
     public AudioClip audio;
+    public Color debugColor;
 }
 
 public class PerfectTiming : MonoBehaviour
@@ -32,6 +33,7 @@ public class PerfectTiming : MonoBehaviour
     private bool hasBeenTriggered;
     private AudioSource asource;
     private float beatShouldBeActivatedOn = -2.0f;
+    private float distancePerBeat;
 
     private void Start() {
         this.asource = this.GetComponent<AudioSource>();
@@ -39,7 +41,7 @@ public class PerfectTiming : MonoBehaviour
         
         float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
         float crotchet = Conductor.Instance.Crotchet;
-        float distancePerBeat = scrollSpeed * crotchet;
+        this.distancePerBeat = scrollSpeed * crotchet;
         this.beatShouldBeActivatedOn = (transform.position.x - PizzaMan.Instance.transform.position.x) / distancePerBeat; // assumes pizza guy starts at x=0
         
         parentInteractable.OnTrigger += this.OnTrigger;
@@ -120,5 +122,25 @@ public class PerfectTiming : MonoBehaviour
 
     private float DelayedLinear(float t, float threshold) {
         return t < threshold ? 0 : (1 / (1 - threshold)) * (t - threshold);
+    }
+
+    private void OnDrawGizmosSelected() {
+        Vector3 pos = transform.position;
+        
+        // draw y threshold
+        float y = pos.y + this.yTolerance.toleranceInBeats;
+        Gizmos.color = this.yTolerance.debugColor;
+        Gizmos.DrawLine(new Vector3(pos.x - 5, y, pos.z), new Vector3(pos.x + 5, y, pos.z));
+
+        // draw each x threshold
+        Gizmos.color = Color.yellow;
+        foreach (var tolerance in this.tolerances) {
+            float dist = tolerance.toleranceInBeats * this.distancePerBeat;
+            Gizmos.color = tolerance.debugColor;
+            Gizmos.DrawLine(
+                new Vector3(pos.x - dist, pos.y-5, pos.z), 
+                new Vector3(pos.x - dist, pos.y+5, pos.z)
+            );
+        }
     }
 }
