@@ -11,6 +11,7 @@ public class TimingClassData {
     public Sprite sprite;
     public float toleranceInBeats;
     public AudioClip audio;
+    public Color debugColor;
 }
 
 public class PerfectTiming : MonoBehaviour
@@ -26,11 +27,13 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private Vector3 scalingFactor = 2 * Vector3.one;
 
     [Header("Tolerances")] 
+    [SerializeField] private TimingClassData yTolerance;
     [SerializeField] private List<TimingClassData> tolerances; 
 
     private bool hasBeenTriggered;
     private AudioSource asource;
     private float beatShouldBeActivatedOn = -2.0f;
+    private float distancePerBeat;
 
     private void Start() {
         this.asource = this.GetComponent<AudioSource>();
@@ -38,7 +41,7 @@ public class PerfectTiming : MonoBehaviour
         
         float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
         float crotchet = Conductor.Instance.Crotchet;
-        float distancePerBeat = scrollSpeed * crotchet;
+        this.distancePerBeat = scrollSpeed * crotchet;
         this.beatShouldBeActivatedOn = (transform.position.x - PizzaMan.Instance.transform.position.x) / distancePerBeat; // assumes pizza guy starts at x=0
         
         parentInteractable.OnTrigger += this.OnTrigger;
@@ -49,22 +52,33 @@ public class PerfectTiming : MonoBehaviour
         if (this.hasBeenTriggered || this.beatShouldBeActivatedOn <= 0) return;
         this.hasBeenTriggered = true;
         
+        // first, check the y-threshold
+        float pizzaY = PizzaMan.Instance.transform.position.y;
+        float yThreshold = transform.position.y + this.yTolerance.toleranceInBeats;
+        if (pizzaY < yThreshold) {
+            TriggerTolerance(this.yTolerance);
+            return;
+        }
+
         Debug.LogFormat("CheckingTimings: {0}", this.beatShouldBeActivatedOn);
         float triggeredBeat = Conductor.Instance.SongPositionInBeats;
         float diff = this.beatShouldBeActivatedOn - triggeredBeat; // positive ==> early, negative ==> late
 
         foreach (var tolerance in this.tolerances) {
             if (diff < tolerance.toleranceInBeats) {
-                Debug.Log(tolerance.name);
-                if (tolerance.audio is not null)
-                    this.asource.PlayOneShot(tolerance.audio, 1.0f);
-                else 
-                    Debug.Log("AAAAAAAAAAAAAAAAAAAA");
-
-                StartCoroutine(this.ShowSprite(tolerance.sprite));
-                break;
+                TriggerTolerance(tolerance); 
+                return;
             }
         }
+    }
+
+    private void TriggerTolerance(TimingClassData tolerance) {
+        Debug.Log(tolerance.name);
+        
+        if (tolerance.audio is not null)
+            this.asource.PlayOneShot(tolerance.audio, 1.0f);
+        
+        StartCoroutine(this.ShowSprite(tolerance.sprite));
     }
 
     private IEnumerator ShowSprite(Sprite spriteToShow) {
@@ -108,5 +122,25 @@ public class PerfectTiming : MonoBehaviour
 
     private float DelayedLinear(float t, float threshold) {
         return t < threshold ? 0 : (1 / (1 - threshold)) * (t - threshold);
+    }
+
+    private void OnDrawGizmosSelected() {
+        Vector3 pos = transform.position;
+        
+        // draw y threshold
+        float y = pos.y + this.yTolerance.toleranceInBeats;
+        Gizmos.color = this.yTolerance.debugColor;
+        Gizmos.DrawLine(new Vector3(pos.x - 5, y, pos.z), new Vector3(pos.x + 5, y, pos.z));
+
+        // draw each x threshold
+        Gizmos.color = Color.yellow;
+        foreach (var tolerance in this.tolerances) {
+            float dist = tolerance.toleranceInBeats * this.distancePerBeat;
+            Gizmos.color = tolerance.debugColor;
+            Gizmos.DrawLine(
+                new Vector3(pos.x - dist, y, pos.z), 
+                new Vector3(pos.x - dist, y + 5, pos.z)
+            );
+        }
     }
 }
