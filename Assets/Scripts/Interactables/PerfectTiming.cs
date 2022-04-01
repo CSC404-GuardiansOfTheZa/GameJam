@@ -138,8 +138,8 @@ public class PerfectTiming : MonoBehaviour
             float dist = tolerance.toleranceInBeats * this.distancePerBeat;
             Gizmos.color = tolerance.debugColor;
             Gizmos.DrawLine(
-                new Vector3(pos.x - dist, pos.y-5, pos.z), 
-                new Vector3(pos.x - dist, pos.y+5, pos.z)
+                new Vector3(pos.x - dist, y, pos.z), 
+                new Vector3(pos.x - dist, y + 5, pos.z)
             );
         }
     }
