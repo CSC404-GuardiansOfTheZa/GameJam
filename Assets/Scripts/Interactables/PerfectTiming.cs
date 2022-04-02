@@ -54,9 +54,11 @@ public class PerfectTiming : MonoBehaviour
         this.hasBeenTriggered = true;
         
         // first, check the y-threshold
-        float pizzaY = PizzaMan.Instance.transform.position.y;
+        var pizza = PizzaMan.Instance.transform.position;
         float yThreshold = transform.position.y + this.yTolerance.toleranceInBeats;
-        if ((!this.isYToleranceAbove && pizzaY < yThreshold) || (this.isYToleranceAbove && pizzaY > yThreshold)) {
+        if ( pizza.x > transform.position.x && 
+                    (!this.isYToleranceAbove && pizza.y < yThreshold) || 
+                    (this.isYToleranceAbove && pizza.y > yThreshold)) {
             TriggerTolerance(this.yTolerance);
             return;
         }
@@ -131,7 +133,8 @@ public class PerfectTiming : MonoBehaviour
         // draw y threshold
         float y = pos.y + this.yTolerance.toleranceInBeats;
         Gizmos.color = this.yTolerance.debugColor;
-        Gizmos.DrawLine(new Vector3(pos.x - 5, y, pos.z), new Vector3(pos.x + 5, y, pos.z));
+        // Gizmos.DrawLine(new Vector3(pos.x, y, pos.z), new Vector3(pos.x + 5, y, pos.z));
+        Gizmos.DrawCube(new Vector3(pos.x + 5, y + (this.isYToleranceAbove ? 5 : -5), pos.z), new Vector3(10, 10, Single.Epsilon));
 
         // draw each x threshold
         Gizmos.color = Color.yellow;

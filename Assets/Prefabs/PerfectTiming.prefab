@@ -137,12 +137,13 @@ MonoBehaviour:
   spriteDuration: 2
   whenToFadeSprite: 0.5
   scalingFactor: {x: 2, y: 2, z: 2}
+  isYToleranceAbove: 0
   yTolerance:
     name: Y_LATE
     sprite: {fileID: 21300000, guid: 3d983b70b1ae52eae8f90e7987464a53, type: 3}
     toleranceInBeats: -1
     audio: {fileID: 8300000, guid: 3486e8b06074cf049b06a5c88f18f935, type: 3}
-    debugColor: {r: 1, g: 0.15566039, b: 0.15566039, a: 1}
+    debugColor: {r: 1, g: 0.15566039, b: 0.15566039, a: 0.5019608}
   tolerances:
   - name: Perfect
     sprite: {fileID: -1227541227, guid: 27915f6b9e14b64499e7d63b5f559e36, type: 3}
