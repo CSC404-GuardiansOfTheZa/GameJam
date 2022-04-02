@@ -27,6 +27,7 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private Vector3 scalingFactor = 2 * Vector3.one;
 
     [Header("Tolerances")] 
+    [SerializeField] private bool isYToleranceAbove;
     [SerializeField] private TimingClassData yTolerance;
     [SerializeField] private List<TimingClassData> tolerances; 
 
@@ -55,7 +56,7 @@ public class PerfectTiming : MonoBehaviour
         // first, check the y-threshold
         float pizzaY = PizzaMan.Instance.transform.position.y;
         float yThreshold = transform.position.y + this.yTolerance.toleranceInBeats;
-        if (pizzaY < yThreshold) {
+        if ((!this.isYToleranceAbove && pizzaY < yThreshold) || (this.isYToleranceAbove && pizzaY > yThreshold)) {
             TriggerTolerance(this.yTolerance);
             return;
         }
@@ -139,7 +140,7 @@ public class PerfectTiming : MonoBehaviour
             Gizmos.color = tolerance.debugColor;
             Gizmos.DrawLine(
                 new Vector3(pos.x - dist, y, pos.z), 
-                new Vector3(pos.x - dist, y + 5, pos.z)
+                new Vector3(pos.x - dist, y + (this.isYToleranceAbove ? -15 : 15), pos.z)
             );
         }
     }
