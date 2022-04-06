@@ -1,19 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuAudio : MonoBehaviour {
+public class MenuAudio : SingletonMonoBehaviour<MenuAudio> {
 
-    void Awake() {
-        var objs = Object.FindObjectsOfType<MenuAudio>();
+    private AudioSource source;
 
-        if (objs.Length > 1)
-            Destroy(this.gameObject);
-
-        DontDestroyOnLoad(this.gameObject);
+    void Start() {
+        source = GetComponent<AudioSource>();
     }
 
-    void Update() {
-
+    public void PlaySoundEffect() {
+        source.Play();
     }
 }

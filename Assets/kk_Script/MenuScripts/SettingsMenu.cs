@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SettingsMenu : MonoBehaviour
-{
-    public void GoBack(){
-    	SceneManager.LoadScene(0);
+public class SettingsMenu : MonoBehaviour {
+    public void GoBack() {
+        MenuAudio.Instance.PlaySoundEffect();
+        SceneManager.LoadScene(0);
     }
 }
