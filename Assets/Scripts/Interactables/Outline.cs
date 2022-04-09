@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +19,21 @@ public class Outline : MonoBehaviour {
     async void Start() {
         // outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
         // outlineObject.SetActive(false);
-        childrenRenderers = GetComponentsInChildren<Renderer>();
+        childrenRenderers = GetComponentsInChildren<MeshRenderer>();
         materialColors = new Color[childrenRenderers.Length];
-        for (int i = 0; i < childrenRenderers.Length; i++) {
-            materialColors[i] = childrenRenderers[i].material.color;
+        int i = 0;
+        while (i < childrenRenderers.Length) {
+            try {
+                // todo: check if the meshrenderer has a "score text" tag
+                //       if so, remove that renderer from childrenRenderers (without increasing i, using i--)
+                
+                materialColors[i] = childrenRenderers[i].material.color;
+            } catch (Exception ex)
+            {
+                continue;
+            }
+
+            i++;
         }
     }
 
