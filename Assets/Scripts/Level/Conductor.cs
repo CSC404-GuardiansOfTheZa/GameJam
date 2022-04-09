@@ -10,6 +10,7 @@ public class Conductor : MonoBehaviour {
 
     public delegate void onBeatDelegate(int beatNum);
     public event onBeatDelegate onBeat;
+    public event onBeatDelegate onOffBeat;
 
     [Header("NOTE: Add music track HERE, not at AudioSource")]
     [SerializeField] private AudioClip musicTrack;
@@ -43,6 +44,7 @@ public class Conductor : MonoBehaviour {
     private double dspCheckpointSongPosition;
     private int checkpointBeat;
     private double checkpointPauseOffset;
+    private bool wasOffBeatTriggered;
 
     public void StartSong() {
         this.asource.Play();
@@ -112,9 +114,14 @@ public class Conductor : MonoBehaviour {
     }
 
     void Update() {
-        if (!this.isPaused && SongPosition > Crotchet * beat && onBeat != null) {
-            onBeat(beat);
-            beat += 1;
+        if (this.isPaused) return;
+        if (this.SongPosition > this.Crotchet * this.beat) {
+            this.onBeat?.Invoke(this.beat);
+            this.beat += 1;
+            this.wasOffBeatTriggered = false;
+        } else if (!this.wasOffBeatTriggered && this.SongPosition > this.Crotchet * (this.beat - 0.5f)) {
+            this.onOffBeat?.Invoke(this.beat);
+            this.wasOffBeatTriggered = true;
         }
     }
 

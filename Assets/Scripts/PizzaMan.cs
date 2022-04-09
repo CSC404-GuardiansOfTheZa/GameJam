@@ -15,7 +15,8 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private AudioClip deathSFX;
     [Header("Children")]
     [SerializeField] private Animator modelAnimator;
-    [SerializeField] private ParticleSystem musicNoteEmitter;
+    [SerializeField] private ParticleSystem onBeatMetronome;
+    [SerializeField] private ParticleSystem offBeatMetronome;
     [SerializeField] private Transform model;
     [SerializeField] private GameObject ragdollPrefab;
     
@@ -103,7 +104,7 @@ public class PizzaMan : MonoBehaviour {
         );
     }
     private void JumpOnBeat(int beat) {
-        this.musicNoteEmitter.Emit(1);
+        this.onBeatMetronome.Emit(1);
         if (beat % jumpOnEveryNthBeat == 0) {
             this.Jump();
         }
@@ -135,6 +136,7 @@ public class PizzaMan : MonoBehaviour {
     private void Start() {
         if (Conductor.Instance != null) {
             Conductor.Instance.onBeat += JumpOnBeat;
+            Conductor.Instance.onOffBeat += delegate(int num) { this.offBeatMetronome.Emit(1); }; 
         } else {
             Debug.LogWarning("Pizza Guy could not find conductor, and can not connect to the beat");
         }
