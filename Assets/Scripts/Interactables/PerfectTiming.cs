@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class TimingClassData {
     public Sprite sprite;
     public float toleranceInBeats;
     public AudioClip audio;
+    public int score;
     public Color debugColor;
 }
 
@@ -21,6 +23,7 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private Interactable parentInteractable;
     [Header("Sprite")]
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private TextMeshPro scoreText;
     [SerializeField] private float unitsSpriteRises = 1.5f;
     [SerializeField] private float spriteDuration = 2.0f;
     [Range(0, 1)] [SerializeField] private float whenToFadeSprite = 0.5f;
@@ -80,7 +83,12 @@ public class PerfectTiming : MonoBehaviour
         
         if (tolerance.audio is not null)
             this.asource.PlayOneShot(tolerance.audio, 1.0f);
-        
+
+        if (ScoreManager.Instance is not null && this.scoreText is not null) {
+            ScoreManager.Instance.AddToScore(tolerance.score);
+            scoreText.SetText(tolerance.score.ToString());
+            scoreText.color = tolerance.debugColor;
+        }
         StartCoroutine(this.ShowSprite(tolerance.sprite));
     }
 
@@ -99,6 +107,7 @@ public class PerfectTiming : MonoBehaviour
         Vector3 spritePos = this.sprite.transform.localPosition;
         float startingY = spritePos.y;
         float targetY = startingY + this.unitsSpriteRises;
+        Color sColor = this.scoreText.color;
 
         float progress = 0.0f;
         while (progress < 1.0f) {
@@ -107,7 +116,9 @@ public class PerfectTiming : MonoBehaviour
             this.sprite.transform.localPosition = spritePos;
 
             float alphaT = DelayedLinear(progress, this.whenToFadeSprite);
-            sprite.color = new Color(1, 1, 1, Mathf.Lerp(1, 0, alphaT));
+            float alpha = Mathf.Lerp(1, 0, alphaT);
+            sprite.color = new Color(1, 1, 1, alpha);
+            this.scoreText.color = new Color(sColor.r, sColor.g, sColor.b, alpha);
             
             progress += Time.deltaTime / this.spriteDuration;
             yield return null;
@@ -117,7 +128,7 @@ public class PerfectTiming : MonoBehaviour
         this.sprite.transform.localPosition = spritePos;
         this.sprite.gameObject.SetActive(false);
     }
-
+    
     private float EaseOutExpo(float t) {
         // given a linear value t, from 0 to 1, ease out expo
         return Mathf.Approximately(t, 1) ? 1 : 1 - Mathf.Pow(2, -10 * t);
