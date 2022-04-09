@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Outline : MonoBehaviour {
@@ -20,20 +21,12 @@ public class Outline : MonoBehaviour {
         // outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
         // outlineObject.SetActive(false);
         childrenRenderers = GetComponentsInChildren<MeshRenderer>();
+        childrenRenderers = this.childrenRenderers.Where((rnd => !rnd.CompareTag("TextMesh"))).ToArray();
+        
         materialColors = new Color[childrenRenderers.Length];
-        int i = 0;
-        while (i < childrenRenderers.Length) {
-            try {
-                // todo: check if the meshrenderer has a "score text" tag
-                //       if so, remove that renderer from childrenRenderers (without increasing i, using i--)
-                
-                materialColors[i] = childrenRenderers[i].material.color;
-            } catch (Exception ex)
-            {
-                continue;
-            }
-
-            i++;
+        
+        for (int i = 0; i < childrenRenderers.Length; i++) {
+            materialColors[i] = childrenRenderers[i].material.color;
         }
     }
 

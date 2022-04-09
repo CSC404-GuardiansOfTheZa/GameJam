@@ -17,6 +17,7 @@ TagManager:
   - EndWall
   - SubCamera
   - PizzaFeet
+  - TextMesh
   layers:
   - Default
   - TransparentFX
