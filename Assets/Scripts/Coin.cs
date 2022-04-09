@@ -2,19 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
-{
+public class Coin : MonoBehaviour {
+	[SerializeField] private int pointValue = 500;
 
-	public ScoreManager ScoreManager;
-
-	void Start(){
-		ScoreManager = FindObjectOfType<ScoreManager>();
-	}
-
-    private void OnCollisionEnter(Collision collision){
-    	if(collision.collider.tag == "Player"){
-    		Destroy(this.gameObject);
-    		ScoreManager.UpdateScore();
-    	}
+    private void OnCollisionEnter(Collision collision) {
+	    if (!collision.collider.CompareTag("Player")) return;
+	    Destroy(this.gameObject);
+	    ScoreManager.Instance.AddToScore(this.pointValue);
     }
 }

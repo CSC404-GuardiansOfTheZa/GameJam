@@ -1,25 +1,53 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-	public static int playerScore = 0;
-	public ScoreUpdate ScoreUpdate;
-    // Start is called before the first frame update
-    void Start()
-    {
-        ScoreUpdate = FindObjectOfType<ScoreUpdate>();
+	private static ScoreManager _instance;
+	public static ScoreManager Instance => _instance;
+	
+	public int Score { get; private set; }
+	public int Deaths { get; private set; }
+
+	public delegate void IntDelegate(int num);
+	public event IntDelegate onScoreUpdate;
+	public event IntDelegate onDeathsUpdate;
+	
+	[SerializeField] private bool enableScoring;
+
+	void Awake() {
+        if (_instance != null && _instance != this) {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+
+        this.Score = 0;
+        this.Deaths = 0;
+	}
+
+	void Start() {
+		PizzaMan.Instance.OnKilled += this.AddDeath;
+	}
+
+	public void AddToScore(int amt) {
+	    Score += amt;
+	    Score = Score < 0 ? 0 : Score;
+	    Debug.Log(Score);
+	    onScoreUpdate?.Invoke(Score);
     }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
+    public void AddDeath() {
+	    this.AddDeaths(1);
+    }
 
-    public void UpdateScore(){
-    	playerScore += 1;
-    	ScoreUpdate.UpdateScoreText(playerScore);
+    public void AddDeaths(int n) {
+	    Deaths += n;
+	    Deaths = Deaths < 0 ? 0 : Deaths;
+	    Debug.Log(Deaths);
+	    onDeathsUpdate?.Invoke(Deaths);
     }
 }

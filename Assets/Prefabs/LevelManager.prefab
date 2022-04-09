@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2132565474}
   - component: {fileID: 5545452569423160545}
   - component: {fileID: 6641841076381036153}
+  - component: {fileID: 3368467508957787918}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -67,7 +68,6 @@ MonoBehaviour:
   musicTrack: {fileID: 8300000, guid: 599d46fb091faf94f8794daea93a1bf1, type: 3}
   <BPM>k__BackingField: 68
   <TrackLengthInSeconds>k__BackingField: 84
-  <TrackOffsetInSeconds>k__BackingField: 0
   <BeatsPerMeasure>k__BackingField: 4
 --- !u!114 &5963458518764226006
 MonoBehaviour:
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b626d9a6ea9cf458e82c54127aab43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelParent: {fileID: 0}
   checkpointReachedIndicator: {fileID: 0}
+  secondsBeforeRespawn: 3
 --- !u!82 &6641841076381036153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -209,3 +209,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3368467508957787918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6641841076381036152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08c8232d026b41f0a4fe41093d8e0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreUpdate: {fileID: 0}
