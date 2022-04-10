@@ -1735,13 +1735,105 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1133014071}
     m_Modifications:
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: isYToleranceAbove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: yTolerance.sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e4e990e6abb633439336ef2d74a4c78, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: yTolerance.toleranceInBeats
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].name
+      value: Perfect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].name
+      value: Great
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].name
+      value: Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 765f05a4726d68943beb4ca3523adea0, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].score
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: c6edeb624f7589f4385748b45a6622fd, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].score
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 3486e8b06074cf049b06a5c88f18f935, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -1227541227, guid: 27915f6b9e14b64499e7d63b5f559e36, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -206369506, guid: 27915f6b9e14b64499e7d63b5f559e36, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: -1825828583, guid: 27915f6b9e14b64499e7d63b5f559e36, type: 3}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].debugColor.g
+      value: 0.97576314
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].debugColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].debugColor.g
+      value: 0.86289185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].debugColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].debugColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].debugColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[0].toleranceInBeats
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[1].toleranceInBeats
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791608300783928018, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: tolerances.Array.data[2].toleranceInBeats
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493491, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_Name
       value: Window(New)
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_RootOrder
@@ -1798,6 +1890,14 @@ PrefabInstance:
     - target: {fileID: 8220487274264493501, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767312831435296298, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4220007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8767312831435296298, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3899999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
@@ -2368,6 +2468,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2059720872369960513, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462554750600461712, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
+      propertyPath: allowPausing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461739, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
@@ -4457,6 +4561,10 @@ PrefabInstance:
     - target: {fileID: 1076072968123455287, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: <BPM>k__BackingField
       value: 67.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368467508957787918, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
+      propertyPath: enableScoring
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5545452569423160545, guid: 8eb70e4f0e4e10a4da0401a527401869, type: 3}
       propertyPath: levelParent
