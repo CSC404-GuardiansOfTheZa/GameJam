@@ -251,6 +251,12 @@ MonoBehaviour:
   - Watch out!\nClick the window to save the Pizza Guy from that bush!
   - Great!
   - 
+  - Try to time your actions to the beat of the music!
+  - Sync clicks to the music notes for the most points!
+  - For the music students:\nClick on the latest possible eighth-note before it's
+    too late!
+  - 
+  beatsToContinueTutorialOn: 02000000070000000d000000110000001500000019000000
   dialogueBox: {fileID: 3181741854244087585}
   clickToContinueText: {fileID: 194283431}
   pizza: {fileID: 0}

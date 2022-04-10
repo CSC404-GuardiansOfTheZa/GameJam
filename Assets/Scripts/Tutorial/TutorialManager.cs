@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour {
     [SerializeField] private List<string> openingScript = new List<string>();
+    [SerializeField] private List<int> beatsToContinueTutorialOn = new List<int>();
     [Header("Scene Objects")]
     [SerializeField] private DialogueBox dialogueBox;
     [FormerlySerializedAs("clickToContinue")]
@@ -110,13 +111,16 @@ public class TutorialManager : MonoBehaviour {
     }
 
     private void OnBeat(int beat) {
-        switch (beat) {
-            case 2: // before 2nd jump
-                SetDialogueToNextLineInScript();
-                break;
-            case 7: // after 2nd jump, before 3rd jump
-                this.SetDialogueToNextLineInScript();
-                break;
+        // switch (beat) {
+        //     case 2: // before 2nd jump
+        //     case 7: // after 2nd jump, before 3rd jump
+        //     case 15: // after freeze
+        //     case 19:
+        //         break;
+        // }
+
+        if (this.beatsToContinueTutorialOn.Contains(beat)) {
+            SetDialogueToNextLineInScript();
         }
     }
 

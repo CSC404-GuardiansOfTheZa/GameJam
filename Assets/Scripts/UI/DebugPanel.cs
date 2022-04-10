@@ -27,8 +27,10 @@ public class DebugPanel : MonoBehaviour
 	public void AddDebugLog(string label, Func<string> func) {
 		if (this.debugFieldInstance is null) return;
 
-		GameObject debugFieldObj = Instantiate(this.debugFieldInstance, transform) as GameObject;
-		DebugField debugField = debugFieldObj.GetComponent<DebugField>();
-		debugField.Init(label, func);
+		try {
+			GameObject debugFieldObj = Instantiate(this.debugFieldInstance, transform) as GameObject;
+			DebugField debugField = debugFieldObj.GetComponent<DebugField>();
+			debugField.Init(label, func);
+		} catch (MissingReferenceException ex) {}
 	}
 }
