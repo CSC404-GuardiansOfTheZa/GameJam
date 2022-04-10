@@ -28,7 +28,7 @@ public class TutorialManager : MonoBehaviour {
         Conductor.Instance.onBeat += this.OnBeat;
         this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
         this.window.OnActivated += this.OnWindowActivated;
-        // this.StartCoroutine(this.clickToContinueText.FadeOut());
+        this.StartCoroutine(this.clickToContinueText.FadeOut());
         LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
     }
 
@@ -54,18 +54,29 @@ public class TutorialManager : MonoBehaviour {
         }
 
         StartCoroutine(this.OnScriptAdvance());
+        StartCoroutine(this.WaitForDialogue(this.dialogueBox.FadeDuration));
+    }
+
+    private IEnumerator WaitForDialogue(float duration) {
+        float elapsedTime = 0;
+        while (elapsedTime < duration) {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+            this.clickToContinue = false;
+        }
+        this.clickToContinue = true;
     }
 
     private IEnumerator OnScriptAdvance() {
+        float elapsedTime;
         switch (this.scriptIndex) {
             // indices start at 0
             case 0:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration * 5.0f / 3.0f);
                 this.StartCoroutine(this.clickToContinueText.FadeIn());
-                this.clickToContinue = true;
+                this.StartCoroutine(WaitForDialogue(this.clickToContinueText.FadeDuration));
                 break;
             case 1:
-                this.StartCoroutine(this.clickToContinueText.FadeOut());
                 break;
             case 2:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
@@ -75,7 +86,7 @@ public class TutorialManager : MonoBehaviour {
                 break;
             case 4:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
-                float elapsedTime = 0;
+                elapsedTime = 0;
                 while (elapsedTime < this.dialogueBox.FadeDuration) {
                     float t = elapsedTime / this.dialogueBox.FadeDuration;
                     this.blackBG.color = Color.Lerp(Color.black, Color.clear, t);
@@ -83,7 +94,6 @@ public class TutorialManager : MonoBehaviour {
                     yield return null;
                 }
 
-                this.StartCoroutine(this.clickToContinueText.FadeIn());
                 break;
             case 5:
                 LevelManager.Instance.StartLevel();
@@ -112,8 +122,12 @@ public class TutorialManager : MonoBehaviour {
 
     private void OnFreeze(Collider other) {
         if (!other.CompareTag("PizzaFeet")) return;
+        if (this.window.IsActive) {
+            this.SetDialogueToNextLineInScript();
+        } else {
+            LevelManager.Instance.PauseLevel();
+        }
 
-        LevelManager.Instance.PauseLevel();
         this.SetDialogueToNextLineInScript();
     }
 }
