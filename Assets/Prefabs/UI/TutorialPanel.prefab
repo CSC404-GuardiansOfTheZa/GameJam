@@ -264,6 +264,7 @@ MonoBehaviour:
   freezeTrigger: {fileID: 0}
   pauseMenu: {fileID: 0}
   window: {fileID: 0}
+  subcam: {fileID: 0}
 --- !u!1 &4031321216336736560
 GameObject:
   m_ObjectHideFlags: 0

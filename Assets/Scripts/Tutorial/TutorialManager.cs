@@ -17,6 +17,7 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] private TriggerEventDispatcher freezeTrigger;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private LimitedDurationInteractable window;
+    [SerializeField] private Camera subcam;
     
     private int scriptIndex = -1;
     private Rigidbody pizzaRb;
@@ -98,6 +99,8 @@ public class TutorialManager : MonoBehaviour {
                 break;
             case 5:
                 LevelManager.Instance.StartLevel();
+                // remove pizza from the subcamera's culling mask
+                this.subcam.cullingMask |= ~(1 << LayerMask.NameToLayer("Pizza"));
                 this.StartCoroutine(this.clickToContinueText.FadeOut());
                 this.clickToContinue = false;
                 break;

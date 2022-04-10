@@ -5231,7 +5231,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1495
+    m_Bits: 2007
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5340,6 +5340,10 @@ PrefabInstance:
       propertyPath: pizza
       value: 
       objectReference: {fileID: 1626342052}
+    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+      propertyPath: subcam
+      value: 
+      objectReference: {fileID: 390218591}
     - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: window
       value: 
