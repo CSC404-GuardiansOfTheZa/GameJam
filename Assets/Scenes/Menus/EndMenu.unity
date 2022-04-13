@@ -2123,6 +2123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: {fileID: 1668165408}
   playerDeaths: {fileID: 1621116271}
+  nextLevelButton: {fileID: 99797233}
 --- !u!224 &1619999138
 RectTransform:
   m_ObjectHideFlags: 0

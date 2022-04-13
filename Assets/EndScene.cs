@@ -9,10 +9,15 @@ public class EndScene : MonoBehaviour
     // Start is called before the first frame update
     public TextMeshProUGUI playerScore;
     public TextMeshProUGUI playerDeaths;
+    [SerializeField] public GameObject nextLevelButton;
 
     void Start() {
         playerScore.SetText(ScoreManager.Instance.Score.ToString());
         this.playerDeaths.SetText(ScoreManager.Instance.Deaths.ToString());
+        if (this.nextLevelButton is not null) {
+            int nextLevelScene = LevelManager.Instance.GetLevelScene(1);
+            this.nextLevelButton.SetActive(nextLevelScene >= 0);
+        } 
     }
 
     public void ReplayGame()
@@ -22,7 +27,7 @@ public class EndScene : MonoBehaviour
 
     public void NextLevel() {
         int scene = LevelManager.Instance.GetLevelScene(1);
-        if (scene > 0)
+        if (scene >= 0)
             SceneManager.LoadScene(scene);
         else
             this.ReplayGame();
