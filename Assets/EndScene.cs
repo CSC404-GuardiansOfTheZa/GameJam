@@ -17,7 +17,15 @@ public class EndScene : MonoBehaviour
 
     public void ReplayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(LevelManager.Instance.GetLevelScene());
+    }
+
+    public void NextLevel() {
+        int scene = LevelManager.Instance.GetLevelScene(1);
+        if (scene > 0)
+            SceneManager.LoadScene(scene);
+        else
+            this.ReplayGame();
     }
 
     public void GoToMenu(){
