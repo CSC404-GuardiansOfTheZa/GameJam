@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CraneRotation : Interactable
-{
+{   
+    private Transform transform;
+    private bool rotate = true;
+    void Start(){
+        transform = GetComponent<Transform>();
+    }
+
     IEnumerator RotateMe(Vector3 byAngles, float inTime, Transform tnsfm)
      {
          var fromAngle = tnsfm.rotation;
@@ -16,9 +22,13 @@ public class CraneRotation : Interactable
          }
             
          tnsfm.rotation = toAngle;
+         rotate = true;
      }
 
     protected override void TriggerAction() {
-        StartCoroutine(RotateMe(Vector3.up * (-180), 0.5f, transform.parent));
+        if(rotate){
+            rotate = false;
+            StartCoroutine(RotateMe(Vector3.up * (-180), 0.5f, transform.parent));
+        }
     }
 }
