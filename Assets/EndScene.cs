@@ -11,8 +11,12 @@ public class EndScene : MonoBehaviour
     public TextMeshProUGUI playerDeaths;
 
     void Start() {
+        // playerScore.SetText(ScoreManager.Instance.Score.ToString());
+        // this.playerDeaths.SetText(ScoreManager.Instance.Deaths.ToString());
         playerScore.SetText(ScoreManager.Instance.Score.ToString());
         this.playerDeaths.SetText(ScoreManager.Instance.Deaths.ToString());
+        PlayerPrefs.SetString("prevScene", "Finish");
+        PlayerPrefs.Save();
     }
 
     public void ReplayGame()
@@ -27,4 +31,11 @@ public class EndScene : MonoBehaviour
     public void QuitGame(){
     	Application.Quit();
     }
+
+    public void OpenScoreBoard() {
+        MenuAudio.Instance.PlaySoundEffect();
+        SceneManager.LoadScene(3);
+    }
+
+
 }

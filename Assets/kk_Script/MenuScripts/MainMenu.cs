@@ -3,6 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    void Start(){
+        PlayerPrefs.SetString("prevScene", "Begin");
+        PlayerPrefs.Save();
+    }
+
     public void PlayGame() {
         MenuAudio.Instance.PlaySoundEffect();
         SceneManager.LoadScene(4);

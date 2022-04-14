@@ -1646,5 +1646,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1619999137}
+    - target: {fileID: 1554751634445114926, guid: 39e8e1c47dda4443599cb3f511246218, type: 3}
+      propertyPath: m_text
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e8e1c47dda4443599cb3f511246218, type: 3}
