@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 800187529849324263}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 4458801529630211463}
   - component: {fileID: 362630922103744176}
   - component: {fileID: 3343021061288700937}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: hand.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 905345763094487678}
   - component: {fileID: 1742417034}
   - component: {fileID: 1536940314}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Angel (New)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa8e978f89f6a34a91285401851b987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0.05
-  rotateSpeed: 10
+  smoothTime: 0.3
+  rotateSpeed: 2
   detectionRadius: 2
   highlightParticles: {fileID: 741317304422217463}
   maxLeanSpeed: 50
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 905345763153384794}
   - component: {fileID: 905345763153384792}
   - component: {fileID: 905345763153384793}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trail Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5045,7 +5045,7 @@ GameObject:
   - component: {fileID: 905345763798895315}
   - component: {fileID: 905345763798895313}
   - component: {fileID: 905345763798895314}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sparkle Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9900,7 +9900,7 @@ GameObject:
   - component: {fileID: 1274887373813597048}
   - component: {fileID: 4144462671401339802}
   - component: {fileID: 3635340497624367984}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wing 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9983,7 +9983,7 @@ GameObject:
   - component: {fileID: 2465853033137700915}
   - component: {fileID: 3986269061767207146}
   - component: {fileID: 8778647757307469744}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14887,7 +14887,7 @@ GameObject:
   - component: {fileID: 4999837511066700481}
   - component: {fileID: 8746609611745363580}
   - component: {fileID: 6421597118222867855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14970,7 +14970,7 @@ GameObject:
   - component: {fileID: 4062624863524729168}
   - component: {fileID: 5072418583350844040}
   - component: {fileID: 1369171642154182384}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: wing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
