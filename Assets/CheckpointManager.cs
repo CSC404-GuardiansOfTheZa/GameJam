@@ -10,6 +10,8 @@ public class CheckpointManager : MonoBehaviour {
     [SerializeField] private Animator checkpointReachedIndicator;
     [SerializeField] private float secondsBeforeRespawn = 3.0f;
 
+    private int savedScore = 0;
+
     private void Awake() {
         if (_instance != null && _instance != this)
             Destroy(this.gameObject);
@@ -24,6 +26,7 @@ public class CheckpointManager : MonoBehaviour {
         LevelManager.Instance.SaveCheckpointScroll();
         Conductor.Instance.SavePlaybackTime();
         checkpointReachedIndicator.SetTrigger("Show");
+        ScoreManager.Instance.SaveScore();
     }
 
     private void OnRespawn() {
@@ -35,5 +38,6 @@ public class CheckpointManager : MonoBehaviour {
         yield return new WaitForSeconds(this.secondsBeforeRespawn);
         PizzaMan.Instance.OnKilled += this.OnRespawn;
         LevelManager.Instance.ReloadLevel();
+        ScoreManager.Instance.LoadScore();
     }
 }

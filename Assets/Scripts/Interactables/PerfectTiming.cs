@@ -16,8 +16,7 @@ public class TimingClassData {
     public Color debugColor;
 }
 
-public class PerfectTiming : MonoBehaviour
-{
+public class PerfectTiming : MonoBehaviour {
     // These fields are public so we can have a custom editor for them
     [SerializeField] private bool areTimingsEnabled = true;
     [SerializeField] private Interactable parentInteractable;
@@ -26,13 +25,13 @@ public class PerfectTiming : MonoBehaviour
     [SerializeField] private TextMeshPro scoreText;
     [SerializeField] private float unitsSpriteRises = 1.5f;
     [SerializeField] private float spriteDuration = 2.0f;
-    [Range(0, 1)] [SerializeField] private float whenToFadeSprite = 0.5f;
+    [Range(0, 1)][SerializeField] private float whenToFadeSprite = 0.5f;
     [SerializeField] private Vector3 scalingFactor = 2 * Vector3.one;
 
-    [Header("Tolerances")] 
+    [Header("Tolerances")]
     [SerializeField] private bool isYToleranceAbove;
     [SerializeField] private TimingClassData yTolerance;
-    [SerializeField] private List<TimingClassData> tolerances; 
+    [SerializeField] private List<TimingClassData> tolerances;
 
     private bool hasBeenTriggered;
     private AudioSource asource;
@@ -42,12 +41,12 @@ public class PerfectTiming : MonoBehaviour
     private void Start() {
         this.asource = this.GetComponent<AudioSource>();
         this.sprite.gameObject.SetActive(false);
-        
+
         float scrollSpeed = LevelManager.Instance.gameObject.GetComponent<Scroller>().scrollSpeed;
         float crotchet = Conductor.Instance.Crotchet;
         this.distancePerBeat = scrollSpeed * crotchet;
         this.beatShouldBeActivatedOn = (transform.position.x - PizzaMan.Instance.transform.position.x) / distancePerBeat; // assumes pizza guy starts at x=0
-        
+
         parentInteractable.OnTrigger += this.OnTrigger;
         LevelManager.Instance.OnLevelReload += delegate { this.hasBeenTriggered = false; };
     }
@@ -55,12 +54,12 @@ public class PerfectTiming : MonoBehaviour
     private void OnTrigger() {
         if (this.hasBeenTriggered || this.beatShouldBeActivatedOn <= 0) return;
         this.hasBeenTriggered = true;
-        
+
         // first, check the y-threshold
         var pizza = PizzaMan.Instance.transform.position;
         float yThreshold = transform.position.y + this.yTolerance.toleranceInBeats;
-        if ( pizza.x > transform.position.x && 
-                    (!this.isYToleranceAbove && pizza.y < yThreshold) || 
+        if (pizza.x > transform.position.x &&
+                    (!this.isYToleranceAbove && pizza.y < yThreshold) ||
                     (this.isYToleranceAbove && pizza.y > yThreshold)) {
             TriggerTolerance(this.yTolerance);
             return;
@@ -72,7 +71,7 @@ public class PerfectTiming : MonoBehaviour
 
         foreach (var tolerance in this.tolerances) {
             if (diff < tolerance.toleranceInBeats) {
-                TriggerTolerance(tolerance); 
+                TriggerTolerance(tolerance);
                 return;
             }
         }
@@ -80,12 +79,13 @@ public class PerfectTiming : MonoBehaviour
 
     private void TriggerTolerance(TimingClassData tolerance) {
         Debug.Log(tolerance.name);
-        
+
         if (tolerance.audio is not null)
             this.asource.PlayOneShot(tolerance.audio, 1.0f);
 
         if (ScoreManager.Instance is not null && this.scoreText is not null) {
             ScoreManager.Instance.AddToScore(tolerance.score);
+            // ScoreManager.Instance.AddToScore(10);
             scoreText.SetText(tolerance.score.ToString());
             scoreText.color = tolerance.debugColor;
         }
@@ -95,12 +95,12 @@ public class PerfectTiming : MonoBehaviour
     private IEnumerator ShowSprite(Sprite spriteToShow) {
         // ensure scaling is fine:
         transform.localScale = Vector3.one;
-        transform.localScale = new Vector3 (
-            this.scalingFactor.x/transform.lossyScale.x, 
-            this.scalingFactor.y/transform.lossyScale.y, 
-            this.scalingFactor.z/transform.lossyScale.z
-        ); 
-        
+        transform.localScale = new Vector3(
+            this.scalingFactor.x / transform.lossyScale.x,
+            this.scalingFactor.y / transform.lossyScale.y,
+            this.scalingFactor.z / transform.lossyScale.z
+        );
+
         this.sprite.gameObject.SetActive(true);
         this.sprite.sprite = spriteToShow;
 
@@ -119,7 +119,7 @@ public class PerfectTiming : MonoBehaviour
             float alpha = Mathf.Lerp(1, 0, alphaT);
             sprite.color = new Color(1, 1, 1, alpha);
             this.scoreText.color = new Color(sColor.r, sColor.g, sColor.b, alpha);
-            
+
             progress += Time.deltaTime / this.spriteDuration;
             yield return null;
         }
@@ -128,7 +128,7 @@ public class PerfectTiming : MonoBehaviour
         this.sprite.transform.localPosition = spritePos;
         this.sprite.gameObject.SetActive(false);
     }
-    
+
     private float EaseOutExpo(float t) {
         // given a linear value t, from 0 to 1, ease out expo
         return Mathf.Approximately(t, 1) ? 1 : 1 - Mathf.Pow(2, -10 * t);
@@ -140,7 +140,7 @@ public class PerfectTiming : MonoBehaviour
 
     private void OnDrawGizmosSelected() {
         Vector3 pos = transform.position;
-        
+
         // draw y threshold
         float y = pos.y + this.yTolerance.toleranceInBeats;
         Gizmos.color = this.yTolerance.debugColor;
@@ -153,7 +153,7 @@ public class PerfectTiming : MonoBehaviour
             float dist = tolerance.toleranceInBeats * this.distancePerBeat;
             Gizmos.color = tolerance.debugColor;
             Gizmos.DrawLine(
-                new Vector3(pos.x - dist, y, pos.z), 
+                new Vector3(pos.x - dist, y, pos.z),
                 new Vector3(pos.x - dist, y + (this.isYToleranceAbove ? -15 : 15), pos.z)
             );
         }
