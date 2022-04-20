@@ -12,6 +12,8 @@ public class LevelsMenu : MonoBehaviour {
         MenuAudio.Instance.PlaySoundEffect();
         this.music?.StopMusic();
         SceneManager.LoadScene(scene);
+        PlayerPrefs.SetInt("playScene", scene);
+        PlayerPrefs.Save();
     }
 
     public void GoBack() {

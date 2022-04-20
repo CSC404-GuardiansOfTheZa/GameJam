@@ -14,9 +14,10 @@ public class ScoreTable : MonoBehaviour
     	entryContainer = transform.Find("ScoreContainer");
     	entryTemplate = entryContainer.Find("ScoreTemplate");
     	string Scene = PlayerPrefs.GetString("prevScene");
+        int playScene = PlayerPrefs.GetInt("playScene");
 
     	entryTemplate.gameObject.SetActive(false);
-    	if(Scene == "Finish"){
+    	if(Scene == "Finish" && playScene == 1){
     		AddHighscoreEntry(ScoreManager.Instance.Score,ScoreManager.Instance.Deaths);
     	}
 
