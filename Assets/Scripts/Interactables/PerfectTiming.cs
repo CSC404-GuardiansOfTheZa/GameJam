@@ -52,7 +52,7 @@ public class PerfectTiming : MonoBehaviour {
     }
 
     private void OnTrigger() {
-        if (this.hasBeenTriggered || this.beatShouldBeActivatedOn <= 0) return;
+        if (LevelManager.Instance.Paused || this.hasBeenTriggered || this.beatShouldBeActivatedOn <= 0) return;
         this.hasBeenTriggered = true;
 
         // first, check the y-threshold
