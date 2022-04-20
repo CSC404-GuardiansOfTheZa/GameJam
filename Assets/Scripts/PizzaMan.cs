@@ -81,6 +81,8 @@ public class PizzaMan : MonoBehaviour {
         pauseVelocity = this.rigidbody.velocity;
         this.rigidbody.velocity = Vector3.zero;
         this.modelAnimator.speed = 0;
+        this.onBeatMetronome.Pause();
+        this.offBeatMetronome.Pause();
     }
 
     public void OnResume() {
@@ -88,6 +90,8 @@ public class PizzaMan : MonoBehaviour {
         this.rigidbody.useGravity = true;
         this.rigidbody.velocity = pauseVelocity;
         this.modelAnimator.speed = 1.0f;
+        this.onBeatMetronome.Play();
+        this.offBeatMetronome.Play();
     }
 
     public void SetNextSpawnToCurrentPos() {
@@ -167,7 +171,7 @@ public class PizzaMan : MonoBehaviour {
 //             Jump();
 //         }
 // #endif
-        // lock pizzaguy into a set path
+         // lock pizzaguy into a set path
         transform.position = new Vector3(
             startPos.x,
             transform.position.y,
