@@ -19,6 +19,7 @@ public class PizzaMan : MonoBehaviour {
     [SerializeField] private ParticleSystem offBeatMetronome;
     [SerializeField] private Transform model;
     [SerializeField] private GameObject ragdollPrefab;
+    private Vector3 pauseVelocity;
     
     private static PizzaMan _instance;
     public static PizzaMan Instance { get { return _instance; } }
@@ -77,12 +78,15 @@ public class PizzaMan : MonoBehaviour {
         this.paused = true;
         this.pausePos = transform.position;
         this.rigidbody.useGravity = false;
+        pauseVelocity = this.rigidbody.velocity;
+        this.rigidbody.velocity = Vector3.zero;
         this.modelAnimator.speed = 0;
     }
 
     public void OnResume() {
         this.paused = false;
         this.rigidbody.useGravity = true;
+        this.rigidbody.velocity = pauseVelocity;
         this.modelAnimator.speed = 1.0f;
     }
 
@@ -154,15 +158,15 @@ public class PizzaMan : MonoBehaviour {
 
     private void Update() {
         if (this.paused) {
-            transform.position = this.pausePos;
+            // transform.position = this.pausePos;
             return;
         }
 
-#if UNITY_EDITOR
-        if (Input.GetButtonDown("Jump")) {
-            Jump();
-        }
-#endif
+// #if UNITY_EDITOR
+//         if (Input.GetButtonDown("Jump")) {
+//             Jump();
+//         }
+// #endif
         // lock pizzaguy into a set path
         transform.position = new Vector3(
             startPos.x,

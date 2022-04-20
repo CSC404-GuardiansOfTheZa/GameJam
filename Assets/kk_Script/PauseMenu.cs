@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
      	if (this.allowPausing && Input.GetKeyDown(KeyCode.Space)){
-     		LevelManager.Instance.PauseLevel();
+     		LevelManager.Instance.TogglePause();
      	}   
     }
 

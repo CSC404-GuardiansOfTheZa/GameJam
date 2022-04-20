@@ -11,6 +11,7 @@ public class Conductor : MonoBehaviour {
     public delegate void onBeatDelegate(int beatNum);
     public event onBeatDelegate onBeat;
     public event onBeatDelegate onOffBeat;
+    private bool localAddToOffset;
 
     [Header("NOTE: Add music track HERE, not at AudioSource")]
     [SerializeField] private AudioClip musicTrack;
@@ -58,6 +59,7 @@ public class Conductor : MonoBehaviour {
     }
 
     public void Pause(bool addToOffset) {
+        localAddToOffset = addToOffset;
         if (this.isPaused) return;
 
         this.isPaused = true;
@@ -68,12 +70,13 @@ public class Conductor : MonoBehaviour {
     }
 
     public void Resume(bool addToOffset) {
+        localAddToOffset = addToOffset;
         if (!this.isPaused) return;
 
-        if (addToOffset) {
-            double resumeTime = AudioSettings.dspTime;
-            this.pauseOffset += resumeTime - this.pauseTimeStart;
+        if (addToOffset) {double resumeTime = AudioSettings.dspTime;
+            // this.pauseOffset += resumeTime - this.pauseTimeStart;
             this.pauseTimeStart = 0.0f;
+            
         }
         
         this.asource.UnPause();
@@ -114,7 +117,10 @@ public class Conductor : MonoBehaviour {
     }
 
     void Update() {
-        if (this.isPaused) return;
+        if (this.isPaused && localAddToOffset){
+            this.pauseOffset += Time.deltaTime;
+            return;
+        } 
         if (this.SongPosition > this.Crotchet * this.beat) {
             this.onBeat?.Invoke(this.beat);
             this.beat += 1;
