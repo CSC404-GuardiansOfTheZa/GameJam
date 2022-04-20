@@ -26,7 +26,6 @@ public class ScoreTable : MonoBehaviour
 
     	// use for reset table (don't remove it!)
     	// for (int i = 0; i < highscores.highscoreEntryList.Count; i++){
-    	// 	highscores.highscoreEntryList[i].numPeople = 0;
     	// 	highscores.highscoreEntryList[i].score = 0;
     	// 	highscores.highscoreEntryList[i].death = 1000;
     	// }
@@ -57,7 +56,7 @@ public class ScoreTable : MonoBehaviour
 
     private void AddHighscoreEntry(int score, int death){
     	// create new entry
-    	HighscoreEntry highscoreEntry = new HighscoreEntry{ score = score, numPeople = 1, death = death};
+    	HighscoreEntry highscoreEntry = new HighscoreEntry{ score = score, death = death};
     	string jsonString = PlayerPrefs.GetString("highscoreTable");
     	Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
     	//sort the score and death
@@ -76,13 +75,13 @@ public class ScoreTable : MonoBehaviour
     		}
     	}
     	bool hasSame = false;
-    	for(int i = 0; i < highscores.highscoreEntryList.Count; i++){
-    		HighscoreEntry checkEntry = highscores.highscoreEntryList[i];
-    		if(checkEntry.score == score && checkEntry.death == death){
-    			highscores.highscoreEntryList[i].numPeople += 1;
-    			hasSame = true;
-    		}
-    	}
+    	// for(int i = 0; i < highscores.highscoreEntryList.Count; i++){
+    	// 	HighscoreEntry checkEntry = highscores.highscoreEntryList[i];
+    	// 	if(checkEntry.score == score && checkEntry.death == death){
+    	// 		highscores.highscoreEntryList[i].numPeople += 1;
+    	// 		hasSame = true;
+    	// 	}
+    	// }
     	if(!hasSame){
     		if(highscores.highscoreEntryList.Count < 5){
     			// add new one 
@@ -108,9 +107,7 @@ public class ScoreTable : MonoBehaviour
 		RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
 		entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
 		int score = highscoreEntry.score;
-		int numPeople = highscoreEntry.numPeople;
 		int death = highscoreEntry.death;
-		entryTransform.Find("numberText").GetComponent<TextMeshProUGUI>().text = numPeople.ToString();
 		entryTransform.Find("scoreText").GetComponent<TextMeshProUGUI>().text = score.ToString();
 		entryTransform.Find("deathText").GetComponent<TextMeshProUGUI>().text = death.ToString();
 		transformList.Add(entryTransform);
@@ -124,7 +121,6 @@ public class ScoreTable : MonoBehaviour
     [System.Serializable]
     private class HighscoreEntry{
     	public int score;
-    	public int numPeople;
     	public int death;
     }
 }
