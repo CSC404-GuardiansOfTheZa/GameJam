@@ -8,6 +8,7 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
 
     [SerializeField] private float cooldownDuration = 0.5f;
     [SerializeField] protected Color aboutToDeactivateColor = Color.red;
+    [SerializeField] protected Color disabledColor = Color.black;
     [SerializeField] protected List<Renderer> targetRenderers;
 
     protected Color[] targetRenderersColors;
@@ -31,7 +32,7 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
     public void SetClickable(bool clickable) {
         this.mutex = !clickable;
         if (!clickable) {
-            SetRendererColor(Color.black);
+            SetRendererColor(disabledColor);
             if (outliner is not null)
                 outliner.allowOutlines = false;
         } else {
@@ -79,7 +80,7 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
             IsActive = isActiveCopy;
             
             // cooldown
-            SetRendererColor(Color.black);
+            SetRendererColor(disabledColor);
             yield return new WaitForSeconds(this.cooldownDuration);
             
             // revert to original 

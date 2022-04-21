@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09181083, g: 0.09337396, b: 0.1518588, a: 1}
+  m_IndirectSpecularColor: {r: 0.09181083, g: 0.093374155, b: 0.1518588, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1463,6 +1463,18 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.g
+      value: 0.8206116
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.r
+      value: 0.7905838
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
@@ -8277,6 +8289,18 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.g
+      value: 0.8206116
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.r
+      value: 0.7905838
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
@@ -18644,6 +18668,18 @@ PrefabInstance:
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: activeDuration
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.g
+      value: 0.8206116
+      objectReference: {fileID: 0}
+    - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
+      propertyPath: disabledColor.r
+      value: 0.7905838
       objectReference: {fileID: 0}
     - target: {fileID: 546111412338764097, guid: 0bb06f269b7d4e044b09e5420be076eb, type: 3}
       propertyPath: isActiveAtStart
