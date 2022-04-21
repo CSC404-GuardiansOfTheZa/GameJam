@@ -24,6 +24,15 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
         }
     }
 
+    public void SetClickable(bool clickable) {
+        this.mutex = clickable;
+        if (clickable) {
+            SetRendererColor(Color.black);
+        } else {
+            RevertRendererColors();
+        }
+    }
+
     protected override void TriggerAction() {
         if (!this.mutex) {
             StartCoroutine(ActivateForDuration(this.activeDuration));
@@ -64,16 +73,20 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
             yield return new WaitForSeconds(this.cooldownDuration);
             
             // revert to original 
-            for (int i = 0; i < this.targetRenderers.Count; i++) {
-                var rnd = this.targetRenderers[i];
-                var startColor = this.targetRenderersColors[i];
-                rnd.GetPropertyBlock(this.prpblk);
-                rnd.material.color = startColor;
-                rnd.GetPropertyBlock(this.prpblk);
-            }
+            RevertRendererColors();
             this.mutex = false;
         } else {
             IsActive = !isActiveCopy;
+        }
+    }
+
+    private void RevertRendererColors() {
+        for (int i = 0; i < this.targetRenderers.Count; i++) {
+            var rnd = this.targetRenderers[i];
+            var startColor = this.targetRenderersColors[i];
+            rnd.GetPropertyBlock(this.prpblk);
+            rnd.material.color = startColor;
+            rnd.GetPropertyBlock(this.prpblk);
         }
     }
 

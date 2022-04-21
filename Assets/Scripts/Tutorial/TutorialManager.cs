@@ -18,7 +18,17 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private LimitedDurationInteractable window;
     [SerializeField] private Camera subcam;
-    
+
+    [Header(
+        "THE BEYOND REALM"
+    )]
+    [SerializeField] private TriggerEventDispatcher window2Freeze;
+    [SerializeField] private LimitedDurationInteractable window2;
+    [SerializeField] private TriggerEventDispatcher window3Freeze;
+    [SerializeField] private LimitedDurationInteractable window3;
+    [SerializeField] private TriggerEventDispatcher umbrellaFreeze;
+    [SerializeField] private Umbrella umbrella;
+
     private int scriptIndex = -1;
     private Rigidbody pizzaRb;
     private bool clickToContinue = false;
@@ -28,10 +38,17 @@ public class TutorialManager : MonoBehaviour {
         this.pizzaRb = this.pizza.GetComponent<Rigidbody>();
         this.pizzaRb.useGravity = false;
         Conductor.Instance.onBeat += this.OnBeat;
-        this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
+        this.freezeTrigger.OnTriggerEnterEvent += delegate(Collider c) { this.OnFreeze(c, this.window.IsActive); }; 
         this.window.OnActivated += this.OnWindowActivated;
         this.StartCoroutine(this.clickToContinueText.FadeOut());
         LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
+
+        this.window2Freeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.window2.OnActivated += this.OnWindowActivated;
+        this.window3Freeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.window3.OnActivated += this.OnWindowActivated;        
+        this.umbrellaFreeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.umbrella.OnActivated += this.OnWindowActivated;
     }
 
     public void OnWindowActivated() {
@@ -125,16 +142,20 @@ public class TutorialManager : MonoBehaviour {
         if (this.beatsToContinueTutorialOn.Contains(beat)) {
             SetDialogueToNextLineInScript();
         }
-    }
+    } 
 
-    private void OnFreeze(Collider other) {
+    private void OnFreeze(Collider other, bool flag) {
         if (!other.CompareTag("PizzaFeet")) return;
-        if (this.window.IsActive) {
+        if (flag) {
             this.SetDialogueToNextLineInScript();
         } else {
             LevelManager.Instance.PauseLevel();
         }
 
         this.SetDialogueToNextLineInScript();
+    }
+
+    private void OnFreeze(Collider other) {
+        this.OnFreeze(other, false);
     }
 }

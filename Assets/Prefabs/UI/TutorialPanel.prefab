@@ -249,13 +249,25 @@ MonoBehaviour:
   - The Pizza Guy loves his tunes!\nHe jumps to the beat of the music
   - 
   - Watch out!\nClick the window to save the Pizza Guy from that bush!
-  - Great!
+  - Phew!
   - 
-  - Try to time your actions to the beat of the music!
-  - Sync clicks to the music notes for the most points!
-  - For the music students:\nClick on the latest possible eighth-note before it's
-    too late!
+  - Notice the metronome next to the pizza guy.
+  - The metronome helps you stay on the beat of the music.
   - 
+  - 'Click the platform when it matches the colour of the metronome for perfect timing. '
+  - The closer your click timing is to the correct beat, the more points you get
+  - Try clicking now that the colour matches!
+  - Perfect!
+  - 
+  - Try clicking now that the colours match!
+  - Perfect!
+  - 
+  - Go for the high score by mastering your rhythmic timing!
+  - 
+  - Unique objects highlighted in purple can be interacted with.\nClick these any
+    time.
+  - You got it!
+  - Now you're ready to play!
   beatsToContinueTutorialOn: 02000000070000000d000000110000001500000019000000
   dialogueBox: {fileID: 3181741854244087585}
   clickToContinueText: {fileID: 194283431}
