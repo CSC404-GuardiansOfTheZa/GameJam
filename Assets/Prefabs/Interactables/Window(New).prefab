@@ -735,7 +735,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8220487274184569546}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -916,6 +916,7 @@ MonoBehaviour:
   outlineScaleFactor: 1.5
   outlineColor: {r: 1, g: 0.02020948, b: 0, a: 0.6313726}
   highlightColor: {r: 0.0627451, g: 0.76862746, b: 1, a: 1}
+  allowOutlines: 1
 --- !u!114 &546111412338764097
 MonoBehaviour:
   m_ObjectHideFlags: 0
