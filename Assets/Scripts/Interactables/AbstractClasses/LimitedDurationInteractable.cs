@@ -34,11 +34,11 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
         if (!clickable) {
             SetRendererColor(disabledColor);
             if (outliner is not null)
-                outliner.allowOutlines = false;
+                outliner.SetOutlineEnabled(false);
         } else {
             RevertRendererColors();
             if (outliner is not null)
-                outliner.allowOutlines = true;
+                outliner.SetOutlineEnabled(true);
         }
     }
 
@@ -58,7 +58,7 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
 
             this.mutex = true;
             if (outliner is not null)
-                outliner.allowOutlines = false;
+                outliner.SetOutlineEnabled(false);
             IsActive = !isActiveCopy;
             float elapsedTime = 0.0f;
             while (elapsedTime < duration) {
@@ -86,7 +86,7 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
             // revert to original 
             RevertRendererColors();
             if (outliner is not null)
-                outliner.allowOutlines = true;
+                outliner.SetOutlineEnabled(true);
             this.mutex = false;
         } else {
             IsActive = !isActiveCopy;

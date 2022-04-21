@@ -126,7 +126,7 @@ public class TutorialManager : MonoBehaviour {
             case 5:
                 LevelManager.Instance.StartLevel();
                 // remove pizza from the subcamera's culling mask
-                this.subcam.cullingMask |= ~(1 << LayerMask.NameToLayer("Pizza"));
+                // this.subcam.cullingMask |= ~(1 << LayerMask.NameToLayer("Pizza"));
                 this.StartCoroutine(this.clickToContinueText.FadeOut());
                 this.allowToClick = false;
                 break;
