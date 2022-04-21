@@ -53,6 +53,7 @@ MonoBehaviour:
   autoStart: 1
   loadingScreen: {fileID: 0}
   secondsToWait: 2.5
+  LevelSceneNumbers: 0700000001000000
 --- !u!114 &1076072968123455287
 MonoBehaviour:
   m_ObjectHideFlags: 0

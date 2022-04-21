@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,10 @@ public class AnimationInteractable : BinaryInteractable {
         animator = GetComponent<Animator>();
         particles = GetComponentInChildren<ParticleSystem>();
         animator.speed = animSpeedMult;
+    }
+
+    private void Start() {
+        LevelManager.Instance.OnLevelReload += delegate { this.animator.Rebind(); this.animator.Update(0f); };
     }
 
     protected override void TriggerAction() {

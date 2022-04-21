@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private bool autoStart=true;
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private float secondsToWait = 1.0f;
+    [SerializeField] private List<int> LevelSceneNumbers; // contains the scene numbers in order (tutorial, level 1, etc.)
     private Scroller scroller;
     
     public delegate void VoidDelegate();
@@ -24,9 +26,11 @@ public class LevelManager : MonoBehaviour
 
     public bool Paused { get; private set; }
     public bool Started { get; private set; }
+    public int CurrentLevel { get; private set; } // stores the current level index (0 for tutorial, 1 for level 1, etc.)
 
     public void StartLevel() {
         Started = true;
+        this.SetCurrentLevel();
         this.OnLevelStart?.Invoke();
     }
 
@@ -42,6 +46,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadLevel() {
         Debug.Log("Reloading level");
+        this.SetCurrentLevel();
         this.OnLevelReload?.Invoke();
     }
 
@@ -52,6 +57,13 @@ public class LevelManager : MonoBehaviour
 
     public void SaveCheckpointScroll() {
         this.scroller?.SaveCheckpointScroll();
+    }
+
+    public int GetLevelScene(int offset=0) {
+        int index = CurrentLevel + offset;
+        return index >= 0 && index < this.LevelSceneNumbers.Count ?
+            this.LevelSceneNumbers[index] :
+            -1;
     }
     
     void Awake() { // Set to run before all other scripts
@@ -88,5 +100,9 @@ public class LevelManager : MonoBehaviour
             this.StartLevel();
         }
         this.OnLoadingFinish?.Invoke();
+    }
+
+    private void SetCurrentLevel() {
+        CurrentLevel = this.LevelSceneNumbers.IndexOf(SceneManager.GetActiveScene().buildIndex);
     }
 }

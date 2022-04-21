@@ -1,13 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CraneRotation : Interactable
 {   
-    private Transform transform;
+    private Vector3 startRotation;
     private bool rotate = true;
-    void Start(){
-        transform = GetComponent<Transform>();
+
+    public void Start() {
+        this.startRotation = transform.parent.eulerAngles;
+        LevelManager.Instance.OnLevelReload += delegate { transform.parent.eulerAngles = this.startRotation; };
     }
 
     IEnumerator RotateMe(Vector3 byAngles, float inTime, Transform tnsfm)
