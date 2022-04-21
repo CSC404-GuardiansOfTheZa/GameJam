@@ -25,8 +25,8 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
     }
 
     public void SetClickable(bool clickable) {
-        this.mutex = clickable;
-        if (clickable) {
+        this.mutex = !clickable;
+        if (!clickable) {
             SetRendererColor(Color.black);
         } else {
             RevertRendererColors();

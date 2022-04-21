@@ -45,8 +45,12 @@ public class TutorialManager : MonoBehaviour {
 
         this.window2Freeze.OnTriggerEnterEvent += this.OnFreeze;
         this.window2.OnActivated += this.OnWindowActivated;
+        this.window2.SetClickable(false);
+
         this.window3Freeze.OnTriggerEnterEvent += this.OnFreeze;
-        this.window3.OnActivated += this.OnWindowActivated;        
+        this.window3.OnActivated += this.OnWindowActivated;
+        this.window3.SetClickable(false);
+
         this.umbrellaFreeze.OnTriggerEnterEvent += this.OnFreeze;
         this.umbrella.OnActivated += this.OnWindowActivated;
     }
@@ -124,6 +128,15 @@ public class TutorialManager : MonoBehaviour {
             case 7:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
                 this.dialogueBox.fadeDuration = 0.2f; // VERY HACKY BUT IT WORKS BUT IS NOT PROPER OOP
+                break;
+            case 14:
+            case 15:
+                yield return new WaitForSeconds(3.5f);
+                this.clickToContinue = false;
+                this.SetDialogueToNextLineInScript();
+                break;
+            case 16:
+                window2.SetClickable(true);
                 break;
         }
 
