@@ -16,6 +16,8 @@ public class Outline : MonoBehaviour {
     private Color[] materialColors;
     private Renderer[] childrenRenderers;
 
+    [HideInInspector] public bool allowOutlines = true;
+
 
     async void Start() {
         // outlineObject = CreateOutline(outlineMaterial, outlineScaleFactor, outlineColor);
@@ -54,6 +56,8 @@ public class Outline : MonoBehaviour {
     }
 
     public void ShowOutline() {
+        if (!allowOutlines) return; 
+
         foreach (var renderer in childrenRenderers) {
             renderer.material.color = highlightColor;
         }
@@ -61,6 +65,8 @@ public class Outline : MonoBehaviour {
     }
 
     public void HideOutline() {
+        if (!allowOutlines) return;
+
         for (int i = 0; i < childrenRenderers.Length; i++) {
             childrenRenderers[i].material.color = materialColors[i];
         }

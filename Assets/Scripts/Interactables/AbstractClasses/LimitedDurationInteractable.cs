@@ -14,6 +14,8 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
     protected MaterialPropertyBlock prpblk;
     private bool mutex = false;
 
+    private Outline outliner;
+
     protected override void Awake() {
         base.Awake();
         
@@ -21,6 +23,21 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
         this.targetRenderersColors = new Color[this.targetRenderers.Count];
         for (int i = 0; i < this.targetRenderers.Count; i++) {
             this.targetRenderersColors[i] = this.targetRenderers[i].material.color;
+        }
+
+        outliner = GetComponent<Outline>();
+    }
+
+    public void SetClickable(bool clickable) {
+        this.mutex = !clickable;
+        if (!clickable) {
+            SetRendererColor(Color.black);
+            if (outliner is not null)
+                outliner.allowOutlines = false;
+        } else {
+            RevertRendererColors();
+            if (outliner is not null)
+                outliner.allowOutlines = true;
         }
     }
 
@@ -39,6 +56,8 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
             }
 
             this.mutex = true;
+            if (outliner is not null)
+                outliner.allowOutlines = false;
             IsActive = !isActiveCopy;
             float elapsedTime = 0.0f;
             while (elapsedTime < duration) {
@@ -64,16 +83,22 @@ public abstract class LimitedDurationInteractable : BinaryInteractable {
             yield return new WaitForSeconds(this.cooldownDuration);
             
             // revert to original 
-            for (int i = 0; i < this.targetRenderers.Count; i++) {
-                var rnd = this.targetRenderers[i];
-                var startColor = this.targetRenderersColors[i];
-                rnd.GetPropertyBlock(this.prpblk);
-                rnd.material.color = startColor;
-                rnd.GetPropertyBlock(this.prpblk);
-            }
+            RevertRendererColors();
+            if (outliner is not null)
+                outliner.allowOutlines = true;
             this.mutex = false;
         } else {
             IsActive = !isActiveCopy;
+        }
+    }
+
+    private void RevertRendererColors() {
+        for (int i = 0; i < this.targetRenderers.Count; i++) {
+            var rnd = this.targetRenderers[i];
+            var startColor = this.targetRenderersColors[i];
+            rnd.GetPropertyBlock(this.prpblk);
+            rnd.material.color = startColor;
+            rnd.GetPropertyBlock(this.prpblk);
         }
     }
 

@@ -18,20 +18,42 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private LimitedDurationInteractable window;
     [SerializeField] private Camera subcam;
-    
+
+    [Header(
+        "THE BEYOND REALM"
+    )]
+    [SerializeField] private TriggerEventDispatcher window2Freeze;
+    [SerializeField] private LimitedDurationInteractable window2;
+    [SerializeField] private TriggerEventDispatcher window3Freeze;
+    [SerializeField] private LimitedDurationInteractable window3;
+    [SerializeField] private TriggerEventDispatcher umbrellaFreeze;
+    [SerializeField] private Umbrella umbrella;
+
     private int scriptIndex = -1;
     private Rigidbody pizzaRb;
     private bool clickToContinue = false;
+    private bool allowToClick = true;
 
     // Start is called before the first frame update
     void Start() {
         this.pizzaRb = this.pizza.GetComponent<Rigidbody>();
         this.pizzaRb.useGravity = false;
         Conductor.Instance.onBeat += this.OnBeat;
-        this.freezeTrigger.OnTriggerEnterEvent += this.OnFreeze;
+        this.freezeTrigger.OnTriggerEnterEvent += delegate(Collider c) { this.OnFreeze(c, this.window.IsActive); }; 
         this.window.OnActivated += this.OnWindowActivated;
         this.StartCoroutine(this.clickToContinueText.FadeOut());
         LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
+
+        this.window2Freeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.window2.OnActivated += this.OnWindowActivated;
+        this.window2.SetClickable(false);
+
+        this.window3Freeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.window3.OnActivated += this.OnWindowActivated;
+        this.window3.SetClickable(false);
+
+        this.umbrellaFreeze.OnTriggerEnterEvent += this.OnFreeze;
+        this.umbrella.OnActivated += this.OnWindowActivated;
     }
 
     public void OnWindowActivated() {
@@ -41,8 +63,10 @@ public class TutorialManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (this.clickToContinue && Input.GetMouseButtonDown(0)) {
-            this.SetDialogueToNextLineInScript();
+        if (Input.GetMouseButtonDown(0)) {
+            if (this.clickToContinue && allowToClick) {
+                this.SetDialogueToNextLineInScript();
+            }
         }
         this.pauseMenu.SetActive(false);
     }
@@ -102,11 +126,23 @@ public class TutorialManager : MonoBehaviour {
                 // remove pizza from the subcamera's culling mask
                 this.subcam.cullingMask |= ~(1 << LayerMask.NameToLayer("Pizza"));
                 this.StartCoroutine(this.clickToContinueText.FadeOut());
-                this.clickToContinue = false;
+                this.allowToClick = false;
                 break;
             case 7:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
                 this.dialogueBox.fadeDuration = 0.2f; // VERY HACKY BUT IT WORKS BUT IS NOT PROPER OOP
+                break;
+            case 14:
+            case 15:
+                yield return new WaitForSeconds(3.5f);
+                this.allowToClick = false;
+                this.SetDialogueToNextLineInScript();
+                break;
+            case 16:
+                window2.SetClickable(true);
+                break;
+            case 19:
+                window3.SetClickable(true);
                 break;
         }
 
@@ -125,16 +161,20 @@ public class TutorialManager : MonoBehaviour {
         if (this.beatsToContinueTutorialOn.Contains(beat)) {
             SetDialogueToNextLineInScript();
         }
-    }
+    } 
 
-    private void OnFreeze(Collider other) {
+    private void OnFreeze(Collider other, bool flag) {
         if (!other.CompareTag("PizzaFeet")) return;
-        if (this.window.IsActive) {
+        if (flag) {
             this.SetDialogueToNextLineInScript();
         } else {
             LevelManager.Instance.PauseLevel();
         }
 
         this.SetDialogueToNextLineInScript();
+    }
+
+    private void OnFreeze(Collider other) {
+        this.OnFreeze(other, false);
     }
 }
