@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 0.3
-  rotateSpeed: 2
+  rotateSpeed: 5
   detectionRadius: 2
   highlightParticles: {fileID: 741317304422217463}
   maxLeanSpeed: 50
@@ -10917,7 +10917,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
