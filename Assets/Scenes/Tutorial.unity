@@ -10854,7 +10854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461712, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: allowPausing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461739, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: m_Name
@@ -19718,6 +19718,11 @@ PrefabInstance:
     - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: openingScript.Array.data[16]
       value: Try clicking now that the colour matches the note!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
+      propertyPath: openingScript.Array.data[24]
+      value: Unique objects highlighted in <color=#ff00ffff>purple</color>\ncan also
+        be interacted with.\nClick these any time.
       objectReference: {fileID: 0}
     - target: {fileID: 4031321216017431058, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: m_Name
