@@ -32,6 +32,7 @@ public class TutorialManager : MonoBehaviour {
     private int scriptIndex = -1;
     private Rigidbody pizzaRb;
     private bool clickToContinue = false;
+    private bool allowToClick = true;
 
     // Start is called before the first frame update
     void Start() {
@@ -62,8 +63,10 @@ public class TutorialManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (this.clickToContinue && Input.GetMouseButtonDown(0)) {
-            this.SetDialogueToNextLineInScript();
+        if (Input.GetMouseButtonDown(0)) {
+            if (this.clickToContinue && allowToClick) {
+                this.SetDialogueToNextLineInScript();
+            }
         }
         this.pauseMenu.SetActive(false);
     }
@@ -123,7 +126,7 @@ public class TutorialManager : MonoBehaviour {
                 // remove pizza from the subcamera's culling mask
                 this.subcam.cullingMask |= ~(1 << LayerMask.NameToLayer("Pizza"));
                 this.StartCoroutine(this.clickToContinueText.FadeOut());
-                this.clickToContinue = false;
+                this.allowToClick = false;
                 break;
             case 7:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
@@ -132,11 +135,14 @@ public class TutorialManager : MonoBehaviour {
             case 14:
             case 15:
                 yield return new WaitForSeconds(3.5f);
-                this.clickToContinue = false;
+                this.allowToClick = false;
                 this.SetDialogueToNextLineInScript();
                 break;
             case 16:
                 window2.SetClickable(true);
+                break;
+            case 19:
+                window3.SetClickable(true);
                 break;
         }
 
