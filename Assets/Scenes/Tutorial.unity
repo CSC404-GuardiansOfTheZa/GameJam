@@ -10854,7 +10854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461712, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: allowPausing
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2462554750600461739, guid: bb6bfad9c41e65c409302bae734cf6e1, type: 3}
       propertyPath: m_Name

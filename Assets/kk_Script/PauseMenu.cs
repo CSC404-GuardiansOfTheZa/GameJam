@@ -20,8 +20,11 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     	if (this.allowPausing && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape))){
-     		LevelManager.Instance.TogglePause();
+     	if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape)){
+            if (this.allowPausing)
+     		    LevelManager.Instance.TogglePause();
+            else
+                SceneManager.LoadScene(0);  // go to the main menu
      	}   
     }
 
