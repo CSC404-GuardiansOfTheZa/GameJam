@@ -39,10 +39,12 @@ public class TutorialManager : MonoBehaviour {
         this.pizzaRb = this.pizza.GetComponent<Rigidbody>();
         this.pizzaRb.useGravity = false;
         Conductor.Instance.onBeat += this.OnBeat;
-        this.freezeTrigger.OnTriggerEnterEvent += delegate(Collider c) { this.OnFreeze(c, this.window.IsActive); }; 
-        this.window.OnActivated += this.OnWindowActivated;
         this.StartCoroutine(this.clickToContinueText.FadeOut());
         LevelManager.Instance.OnLoadingFinish += this.SetDialogueToNextLineInScript;
+
+        this.freezeTrigger.OnTriggerEnterEvent += delegate(Collider c) { this.OnFreeze(c, this.window.IsActive); }; 
+        this.window.OnActivated += this.OnWindowActivated;
+        this.window.SetClickable(false);
 
         this.window2Freeze.OnTriggerEnterEvent += this.OnFreeze;
         this.window2.OnActivated += this.OnWindowActivated;
@@ -131,6 +133,9 @@ public class TutorialManager : MonoBehaviour {
             case 7:
                 yield return new WaitForSeconds(this.dialogueBox.FadeDuration);
                 this.dialogueBox.fadeDuration = 0.2f; // VERY HACKY BUT IT WORKS BUT IS NOT PROPER OOP
+                break;
+            case 8:
+                window.SetClickable(true);
                 break;
             case 14:
             case 15:
