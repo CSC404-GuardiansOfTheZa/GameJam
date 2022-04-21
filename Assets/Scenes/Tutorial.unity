@@ -853,7 +853,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 2079145414}
+  m_Camera: {fileID: 390218591}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -9686,6 +9686,10 @@ PrefabInstance:
     - target: {fileID: 904592079299850909, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215820844655248820, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2627227202064314866, guid: 02676f8e60edf9445bc27d1eb67dfeab, type: 3}
       propertyPath: m_LocalScale.x
@@ -19698,46 +19702,6 @@ PrefabInstance:
       propertyPath: umbrellaFreeze
       value: 
       objectReference: {fileID: 783565069}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[2]
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[3]
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[4]
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[5]
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[6]
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[7]
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[8]
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[9]
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 3325976888533410690, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
-      propertyPath: beatsToContinueTutorialOn.Array.data[10]
-      value: 44
-      objectReference: {fileID: 0}
     - target: {fileID: 4031321216017431058, guid: 5c88af60b5d4f224791fc627066567be, type: 3}
       propertyPath: m_Name
       value: TutorialPanel
